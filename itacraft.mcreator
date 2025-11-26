@@ -1053,6 +1053,19 @@
           "src/main/resources/assets/itacraft/models/item/ti_ore.json"
         ]
       }
+    },
+    {
+      "name": "ModularPliersRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "modular_pliers_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/itacraft/recipe/modular_pliers_recipe.json",
+          "src/main/resources/data/itacraft/advancement/recipes/modular_pliers_recipe.json"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -1200,7 +1213,7 @@
       "item.itacraft.tjue_kroner": "20 Kroner",
       "item.itacraft.to_hundre_kroner": "To Hundre Kroner",
       "item.itacraft.hundre_kroner": "Hundre Kroner",
-      "item.itacraft.red_colored_plastic": "White Colored Plastic",
+      "item.itacraft.red_colored_plastic": "Red Colored Plastic",
       "item.itacraft.ett_ore": "Ett Øre",
       "item.itacraft.ti_ore": "10 Øre"
     }

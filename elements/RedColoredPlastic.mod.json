@@ -9,9 +9,13 @@
     "customProperties": {},
     "states": [],
     "animations": [],
-    "name": "White Colored Plastic",
+    "name": "Red Colored Plastic",
     "rarity": "COMMON",
-    "creativeTabs": [],
+    "creativeTabs": [
+      {
+        "value": "MATERIALS"
+      }
+    ],
     "stackSize": 64,
     "enchantability": 0,
     "useDuration": 0,

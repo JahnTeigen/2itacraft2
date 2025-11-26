@@ -57,6 +57,10 @@ public class ItacraftModTabs {
 			tabData.accept(ItacraftModItems.HEROIN.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
 			tabData.accept(ItacraftModBlocks.BLOCK_OF_BYGG_54.get().asItem());
+		} else if (tabData.getTabKey() == CreativeModeTabs.INGREDIENTS) {
+			tabData.accept(ItacraftModItems.PLASTIC.get());
+			tabData.accept(ItacraftModItems.WHITE_COLORED_PLASTIC.get());
+			tabData.accept(ItacraftModItems.RED_COLORED_PLASTIC.get());
 		}
 	}
 }
