@@ -13,13 +13,13 @@ other mod elements defined through MCreator's workspace system.
 -   `build.gradle`, `settings.gradle` -- Gradle configuration files\
 -   `ITACraft.mcreator` -- Main MCreator project definition
 
-Andre forsøk, lets go guys!
+##Andre forsøk, lets go guys!
 
+##Project Contributors:
 
-
-
-
-
+- Fredrik P. - Jahn Teigen
+- Mathias H. - CyberHansen
+- Matvey G. - JahBoiMat
 
 
 
@@ -66,4 +66,4 @@ Made in heaven.
 This is line,
 Six-Seven.
 
-- Merk / JahBoiMat 11/26/2025
+- Merk 11/26/2025
