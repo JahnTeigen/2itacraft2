@@ -52,9 +52,7 @@ public class ItacraftMod {
 		ItacraftModEntities.REGISTRY.register(modEventBus);
 		ItacraftModTabs.REGISTRY.register(modEventBus);
 		ItacraftModVariables.ATTACHMENT_TYPES.register(modEventBus);
-		ItacraftModMobEffects.REGISTRY.register(modEventBus);
 		ItacraftModMenus.REGISTRY.register(modEventBus);
-		ItacraftModParticleTypes.REGISTRY.register(modEventBus);
 		ItacraftModFluids.REGISTRY.register(modEventBus);
 		ItacraftModFluidTypes.REGISTRY.register(modEventBus);
 		// Start of user code block mod init

@@ -877,19 +877,6 @@
       }
     },
     {
-      "name": "RussiaParticle",
-      "type": "particle",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "russia_particle",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/itacraft/client/particle/RussiaParticleParticle.java",
-          "src/main/resources/assets/itacraft/particles/russia_particle.json"
-        ]
-      }
-    },
-    {
       "name": "EnKrone",
       "type": "item",
       "compiles": true,
@@ -1055,48 +1042,6 @@
       }
     },
     {
-      "name": "DeportationIminentOnEffectActiveTick",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "deportation_iminent_on_effect_active_tick",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ],
-        "files": [
-          "src/main/java/net/mcreator/itacraft/procedures/DeportationIminentOnEffectActiveTickProcedure.java"
-        ]
-      }
-    },
-    {
-      "name": "DeportationIminent",
-      "type": "potioneffect",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "deportation_iminent",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/itacraft/potion/DeportationIminentMobEffect.java"
-        ]
-      }
-    },
-    {
       "name": "ModularPliersRecipe",
       "type": "recipe",
       "compiles": true,
@@ -1104,8 +1049,8 @@
       "registry_name": "modular_pliers_recipe",
       "metadata": {
         "files": [
-          "src/main/resources/data/itacraft/recipe/modular_pliers_recipe.json",
-          "src/main/resources/data/itacraft/advancement/recipes/modular_pliers_recipe.json"
+          "src/main/resources/data/itacraft/advancement/recipes/modular_pliers_recipe.json",
+          "src/main/resources/data/itacraft/recipe/modular_pliers_recipe.json"
         ]
       }
     }
@@ -1257,8 +1202,7 @@
       "item.itacraft.hundre_kroner": "Hundre Kroner",
       "item.itacraft.red_colored_plastic": "Red Colored Plastic",
       "item.itacraft.ett_ore": "Ett Øre",
-      "item.itacraft.ti_ore": "10 Øre",
-      "effect.itacraft.deportation_iminent": "Deportation Iminent"
+      "item.itacraft.ti_ore": "10 Øre"
     }
   },
   "metadata": {
@@ -1269,9 +1213,6 @@
       "src/main/java/net/mcreator/itacraft/init/ItacraftModScreens.java",
       "src/main/java/net/mcreator/itacraft/init/ItacraftModMenus.java",
       "src/main/java/net/mcreator/itacraft/init/ItacraftModKeyMappings.java",
-      "src/main/java/net/mcreator/itacraft/init/ItacraftModParticleTypes.java",
-      "src/main/java/net/mcreator/itacraft/init/ItacraftModParticles.java",
-      "src/main/java/net/mcreator/itacraft/init/ItacraftModMobEffects.java",
       "src/main/java/net/mcreator/itacraft/init/ItacraftModTrades.java",
       "src/main/java/net/mcreator/itacraft/init/ItacraftModBlocks.java",
       "src/main/java/net/mcreator/itacraft/init/ItacraftModItems.java",
