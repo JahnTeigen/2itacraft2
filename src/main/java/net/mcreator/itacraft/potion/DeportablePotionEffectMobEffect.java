@@ -36,7 +36,7 @@ public class DeportablePotionEffectMobEffect extends MobEffect {
 
 	@Override
 	public boolean applyEffectTick(ServerLevel level, LivingEntity entity, int amplifier) {
-		DeportablePotionEffectOnEffectActiveTickProcedure.execute(level, entity.getX(), entity.getY(), entity.getZ());
+		DeportablePotionEffectOnEffectActiveTickProcedure.execute(level, entity.getX(), entity.getY(), entity.getZ(), entity);
 		return super.applyEffectTick(level, entity, amplifier);
 	}
 

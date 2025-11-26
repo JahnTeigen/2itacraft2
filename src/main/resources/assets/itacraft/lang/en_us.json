@@ -76,5 +76,8 @@
   "item.itacraft.russia_block": "Russia Block",
   "effect.itacraft.deportable_potion_effect": "Deportable Potion Effect",
   "item.itacraft.hp_monitor": "HP Monitor",
-  "biome.itacraft.drammen": "Drammen"
+  "biome.itacraft.drammen": "Drammen",
+  "gui.itacraft.vipps_mini_bank_gui.withdrawalSlider_prefix": "",
+  "gui.itacraft.vipps_mini_bank_gui.withdrawalSlider_suffix": "",
+  "gui.itacraft.vipps_mini_bank_gui.button_hent_penger": "Hent Alle Penger"
 }

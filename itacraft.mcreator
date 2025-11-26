@@ -1050,8 +1050,8 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/itacraft/models/item/hawk_phone.json",
-          "src/main/resources/assets/itacraft/items/hawk_phone.json",
-          "src/main/java/net/mcreator/itacraft/item/HawkPhoneItem.java"
+          "src/main/java/net/mcreator/itacraft/item/HawkPhoneItem.java",
+          "src/main/resources/assets/itacraft/items/hawk_phone.json"
         ]
       }
     },
@@ -1063,9 +1063,9 @@
       "registry_name": "vipps_mini_bank_gui",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/itacraft/world/inventory/VippsMiniBankGUIMenu.java",
           "src/main/java/net/mcreator/itacraft/client/gui/VippsMiniBankGUIScreen.java",
-          "src/main/java/net/mcreator/itacraft/network/VippsMiniBankGUIButtonMessage.java"
+          "src/main/java/net/mcreator/itacraft/network/VippsMiniBankGUIButtonMessage.java",
+          "src/main/java/net/mcreator/itacraft/world/inventory/VippsMiniBankGUIMenu.java"
         ]
       }
     },
@@ -1090,12 +1090,12 @@
       "registry_name": "vippsminibank",
       "metadata": {
         "files": [
-          "src/main/resources/assets/itacraft/models/block/vippsminibank.json",
-          "src/main/resources/assets/itacraft/items/vippsminibank.json",
+          "src/main/resources/data/itacraft/loot_table/blocks/vippsminibank.json",
           "src/main/resources/assets/itacraft/models/item/vippsminibank.json",
           "src/main/resources/assets/itacraft/blockstates/vippsminibank.json",
-          "src/main/resources/data/itacraft/loot_table/blocks/vippsminibank.json",
+          "src/main/resources/assets/itacraft/items/vippsminibank.json",
           "src/main/java/net/mcreator/itacraft/block/entity/VippsminibankBlockEntity.java",
+          "src/main/resources/assets/itacraft/models/block/vippsminibank.json",
           "src/main/java/net/mcreator/itacraft/block/VippsminibankBlock.java"
         ]
       }
@@ -1141,10 +1141,10 @@
         "files": [
           "src/main/resources/data/itacraft/loot_table/blocks/russia_block.json",
           "src/main/resources/assets/itacraft/models/item/russia_block.json",
-          "src/main/resources/assets/itacraft/items/russia_block.json",
-          "src/main/resources/assets/itacraft/models/block/russia_block.json",
           "src/main/resources/assets/itacraft/blockstates/russia_block.json",
-          "src/main/java/net/mcreator/itacraft/block/RussiaBlockBlock.java"
+          "src/main/resources/assets/itacraft/items/russia_block.json",
+          "src/main/java/net/mcreator/itacraft/block/RussiaBlockBlock.java",
+          "src/main/resources/assets/itacraft/models/block/russia_block.json"
         ]
       }
     },
@@ -1168,10 +1168,10 @@
       "registry_name": "hp_monitor",
       "metadata": {
         "files": [
-          "src/main/resources/data/itacraft/loot_table/blocks/hp_monitor.json",
-          "src/main/java/net/mcreator/itacraft/block/HPMonitorBlock.java",
-          "src/main/resources/assets/itacraft/items/hp_monitor.json",
           "src/main/resources/assets/itacraft/blockstates/hp_monitor.json",
+          "src/main/java/net/mcreator/itacraft/block/HPMonitorBlock.java",
+          "src/main/resources/data/itacraft/loot_table/blocks/hp_monitor.json",
+          "src/main/resources/assets/itacraft/items/hp_monitor.json",
           "src/main/resources/assets/itacraft/models/block/hp_monitor.json",
           "src/main/resources/assets/itacraft/models/item/hp_monitor.json"
         ]
@@ -1219,8 +1219,8 @@
       "registry_name": "drammen",
       "metadata": {
         "files": [
-          "src/main/resources/data/itacraft/worldgen/placed_feature/drammen_tree.json",
           "src/main/resources/data/itacraft/worldgen/configured_feature/drammen_tree.json",
+          "src/main/resources/data/itacraft/worldgen/placed_feature/drammen_tree.json",
           "src/main/resources/data/itacraft/worldgen/biome/drammen.json"
         ]
       }
@@ -1256,6 +1256,32 @@
         ],
         "files": [
           "src/main/java/net/mcreator/itacraft/procedures/DeportablePotionEffectOnEffectActiveTickProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "UpdateSliderMax",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "update_slider_max",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/mcreator/itacraft/procedures/UpdateSliderMaxProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "TaUTPenger",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "ta_ut_penger",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/mcreator/itacraft/procedures/TaUTPengerProcedure.java"
         ]
       }
     }
@@ -1380,6 +1406,19 @@
     ],
     "BIOMES:minecraft:has_structure/village_taiga": [
       "~CUSTOM:Drammen"
+    ],
+    "ITEMS:mod:penger": [
+      "CUSTOM:FemtiKroner",
+      "CUSTOM:FemHundreKroner",
+      "CUSTOM:EttTusenKroner",
+      "CUSTOM:EnKrone",
+      "CUSTOM:FemKroner",
+      "CUSTOM:TiKroner",
+      "CUSTOM:TjueKroner",
+      "CUSTOM:ToHundreKroner",
+      "CUSTOM:HundreKroner",
+      "CUSTOM:EttOre",
+      "CUSTOM:TiOre"
     ]
   },
   "tab_element_order": {},
@@ -1462,7 +1501,10 @@
       "item.itacraft.russia_block": "Russia Block",
       "effect.itacraft.deportable_potion_effect": "Deportable Potion Effect",
       "item.itacraft.hp_monitor": "HP Monitor",
-      "biome.itacraft.drammen": "Drammen"
+      "biome.itacraft.drammen": "Drammen",
+      "gui.itacraft.vipps_mini_bank_gui.withdrawalSlider_prefix": "",
+      "gui.itacraft.vipps_mini_bank_gui.withdrawalSlider_suffix": "",
+      "gui.itacraft.vipps_mini_bank_gui.button_hent_penger": "Hent Alle Penger"
     }
   },
   "metadata": {

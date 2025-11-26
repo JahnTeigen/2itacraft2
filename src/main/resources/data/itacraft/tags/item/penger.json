@@ -1,0 +1,16 @@
+{
+  "replace": false,
+  "values": [
+    "itacraft:en_krone",
+    "itacraft:to_hundre_kroner",
+    "itacraft:femti_kroner",
+    "itacraft:ett_tusen_kroner",
+    "itacraft:ett_ore",
+    "itacraft:ti_kroner",
+    "itacraft:hundre_kroner",
+    "itacraft:ti_ore",
+    "itacraft:fem_hundre_kroner",
+    "itacraft:tjue_kroner",
+    "itacraft:fem_kroner"
+  ]
+}
