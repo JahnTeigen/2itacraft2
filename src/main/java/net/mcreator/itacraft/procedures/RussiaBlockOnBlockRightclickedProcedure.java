@@ -1,6 +1,14 @@
 package net.mcreator.itacraft.procedures;
 
-import net.neoforged.bus.api.Event;
+import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.world.effect.MobEffectInstance;
+import net.minecraft.server.level.ServerLevel;
+import net.minecraft.core.particles.SimpleParticleType;
+
+import net.mcreator.itacraft.init.ItacraftModParticleTypes;
+import net.mcreator.itacraft.init.ItacraftModMobEffects;
 
 public class RussiaBlockOnBlockRightclickedProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
