@@ -1107,8 +1107,8 @@
       "registry_name": "russiaparticles",
       "metadata": {
         "files": [
-          "src/main/resources/assets/itacraft/particles/russiaparticles.json",
-          "src/main/java/net/mcreator/itacraft/client/particle/RussiaparticlesParticle.java"
+          "src/main/java/net/mcreator/itacraft/client/particle/RussiaparticlesParticle.java",
+          "src/main/resources/assets/itacraft/particles/russiaparticles.json"
         ]
       }
     },
@@ -1260,18 +1260,6 @@
       }
     },
     {
-      "name": "RussiaBlockRecipe",
-      "type": "recipe",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "russia_block_recipe",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/itacraft/recipe/russia_block_recipe.json"
-        ]
-      }
-    },
-    {
       "name": "RussiaPotion",
       "type": "potion",
       "compiles": true,
@@ -1292,6 +1280,18 @@
           "src/main/java/net/mcreator/itacraft/item/CommunismItem.java",
           "src/main/resources/assets/itacraft/items/communism.json",
           "src/main/resources/assets/itacraft/models/item/communism.json"
+        ]
+      }
+    },
+    {
+      "name": "RussiaBlockRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "russia_block_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/itacraft/recipe/russia_block_recipe.json"
         ]
       }
     },
@@ -1550,7 +1550,6 @@
       "src/main/java/net/mcreator/itacraft/init/ItacraftModParticleTypes.java",
       "src/main/java/net/mcreator/itacraft/init/ItacraftModParticles.java",
       "src/main/java/net/mcreator/itacraft/init/ItacraftModMobEffects.java",
-      "src/main/java/net/mcreator/itacraft/init/ItacraftModPotions.java",
       "src/main/java/net/mcreator/itacraft/init/ItacraftModTrades.java",
       "src/main/java/net/mcreator/itacraft/init/ItacraftModBlocks.java",
       "src/main/java/net/mcreator/itacraft/init/ItacraftModBlockEntities.java",
