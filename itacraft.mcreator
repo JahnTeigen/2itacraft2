@@ -612,9 +612,9 @@
       "registry_name": "oslo_bors_structure",
       "metadata": {
         "files": [
-          "src/main/resources/data/itacraft/worldgen/template_pool/oslo_bors_structure.json",
+          "src/main/resources/data/itacraft/worldgen/structure_set/oslo_bors_structure.json",
           "src/main/resources/data/itacraft/worldgen/structure/oslo_bors_structure.json",
-          "src/main/resources/data/itacraft/worldgen/structure_set/oslo_bors_structure.json"
+          "src/main/resources/data/itacraft/worldgen/template_pool/oslo_bors_structure.json"
         ]
       }
     },
@@ -1258,6 +1258,60 @@
           "src/main/java/net/mcreator/itacraft/procedures/DeportablePotionEffectOnEffectActiveTickProcedure.java"
         ]
       }
+    },
+    {
+      "name": "MaxBurgers",
+      "type": "painting",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "max_burgers",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/itacraft/painting_variant/max_burgers.json"
+        ]
+      }
+    },
+    {
+      "name": "NalMedNoeRartI",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nal_med_noe_rart_i",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/itacraft/items/nal_med_noe_rart_i.json",
+          "src/main/java/net/mcreator/itacraft/item/NalMedNoeRartIItem.java",
+          "src/main/resources/assets/itacraft/models/item/nal_med_noe_rart_i.json"
+        ]
+      }
+    },
+    {
+      "name": "TomNal",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tom_nal",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/itacraft/models/item/tom_nal.json",
+          "src/main/resources/assets/itacraft/items/tom_nal.json",
+          "src/main/java/net/mcreator/itacraft/item/TomNalItem.java"
+        ]
+      }
+    },
+    {
+      "name": "Crackhouse",
+      "type": "structure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crackhouse",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/itacraft/worldgen/structure_set/crackhouse.json",
+          "src/main/resources/data/itacraft/worldgen/structure/crackhouse.json",
+          "src/main/resources/data/itacraft/worldgen/template_pool/crackhouse.json"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -1462,7 +1516,12 @@
       "item.itacraft.russia_block": "Russia Block",
       "effect.itacraft.deportable_potion_effect": "Deportable Potion Effect",
       "item.itacraft.hp_monitor": "HP Monitor",
-      "biome.itacraft.drammen": "Drammen"
+      "biome.itacraft.drammen": "Drammen",
+      "painting.itacraft.max_burgers.title": "Max Burgers",
+      "painting.itacraft.max_burgers.author": "Richard Bergfors",
+      "item.itacraft.nal_med_noe_rart_i": "Nål med noe rart i",
+      "item.itacraft.tom_nal": "Tom Nål",
+      "item.itacraft.nal_med_noe_rart_i.description_0": "Hva er det oppi her mon tro?"
     }
   },
   "metadata": {
@@ -1475,6 +1534,7 @@
       "src/main/java/net/mcreator/itacraft/init/ItacraftModMenus.java",
       "src/main/java/net/mcreator/itacraft/init/ItacraftModScreens.java",
       "src/main/java/net/mcreator/itacraft/init/ItacraftModKeyMappings.java",
+      "src/main/resources/data/minecraft/tags/painting_variant/placeable.json",
       "src/main/java/net/mcreator/itacraft/init/ItacraftModParticles.java",
       "src/main/java/net/mcreator/itacraft/init/ItacraftModParticleTypes.java",
       "src/main/java/net/mcreator/itacraft/init/ItacraftModMobEffects.java",

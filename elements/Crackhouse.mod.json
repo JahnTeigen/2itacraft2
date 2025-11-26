@@ -9,14 +9,14 @@
         "value": "Blocks.STRUCTURE_BLOCK"
       }
     ],
-    "spacing": 12,
-    "separation": 8,
+    "spacing": 1,
+    "separation": 0,
     "restrictionBiomes": [
       {
-        "value": "plains"
+        "value": "CUSTOM:Drammen"
       }
     ],
-    "terrainAdaptation": "none",
+    "terrainAdaptation": "beard_thin",
     "generationStep": "SURFACE_STRUCTURES",
     "surfaceDetectionType": "WORLD_SURFACE_WG",
     "useStartHeight": false,

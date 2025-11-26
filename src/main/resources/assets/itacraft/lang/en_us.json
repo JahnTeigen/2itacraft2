@@ -76,5 +76,10 @@
   "item.itacraft.russia_block": "Russia Block",
   "effect.itacraft.deportable_potion_effect": "Deportable Potion Effect",
   "item.itacraft.hp_monitor": "HP Monitor",
-  "biome.itacraft.drammen": "Drammen"
+  "biome.itacraft.drammen": "Drammen",
+  "painting.itacraft.max_burgers.title": "Max Burgers",
+  "painting.itacraft.max_burgers.author": "Richard Bergfors",
+  "item.itacraft.nal_med_noe_rart_i": "Nål med noe rart i",
+  "item.itacraft.tom_nal": "Tom Nål",
+  "item.itacraft.nal_med_noe_rart_i.description_0": "Hva er det oppi her mon tro?"
 }
