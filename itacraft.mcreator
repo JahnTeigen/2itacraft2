@@ -1082,8 +1082,8 @@
     {
       "name": "VippsMiniBankGUI",
       "type": "gui",
-      "compiles": false,
-      "locked_code": false,
+      "compiles": true,
+      "locked_code": true,
       "registry_name": "vipps_mini_bank_gui",
       "metadata": {
         "files": [
