@@ -1080,6 +1080,23 @@
           "src/main/java/net/mcreator/itacraft/client/gui/VippsMiniBankGUIScreen.java"
         ]
       }
+    },
+    {
+      "name": "HPMonitor",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hp_monitor",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/itacraft/loot_table/blocks/hp_monitor.json",
+          "src/main/java/net/mcreator/itacraft/block/HPMonitorBlock.java",
+          "src/main/resources/assets/itacraft/items/hp_monitor.json",
+          "src/main/resources/assets/itacraft/blockstates/hp_monitor.json",
+          "src/main/resources/assets/itacraft/models/block/hp_monitor.json",
+          "src/main/resources/assets/itacraft/models/item/hp_monitor.json"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -1154,9 +1171,11 @@
       "~CUSTOM:Oil"
     ],
     "BLOCKS:minecraft:mineable/pickaxe": [
+      "~CUSTOM:HPMonitor",
       "~CUSTOM:HPWorkstation"
     ],
     "BLOCKS:minecraft:needs_iron_tool": [
+      "~CUSTOM:HPMonitor",
       "~CUSTOM:HPWorkstation"
     ]
   },
@@ -1235,29 +1254,30 @@
       "gui.itacraft.vipps_mini_bank_gui.label_hawkphone": "Hawk Phone",
       "gui.itacraft.vipps_mini_bank_gui.label_vipps_minibank": "Vipps Minibank",
       "gui.itacraft.vipps_mini_bank_gui.button_overfor": "Overfør",
-      "gui.itacraft.vipps_mini_bank_gui.label_kontanter": "Kontanter"
+      "gui.itacraft.vipps_mini_bank_gui.label_kontanter": "Kontanter",
+      "item.itacraft.hp_monitor": "HP Monitor"
     }
   },
   "metadata": {
     "files": [
-      "src/main/java/net/mcreator/itacraft/init/ItacraftModFluidTypes.java",
       "src/main/java/net/mcreator/itacraft/init/ItacraftModFluids.java",
+      "src/main/java/net/mcreator/itacraft/init/ItacraftModFluidTypes.java",
       "src/main/java/net/mcreator/itacraft/network/MenuStateUpdateMessage.java",
-      "src/main/java/net/mcreator/itacraft/init/ItacraftModScreens.java",
       "src/main/java/net/mcreator/itacraft/init/ItacraftModMenus.java",
+      "src/main/java/net/mcreator/itacraft/init/ItacraftModScreens.java",
       "src/main/java/net/mcreator/itacraft/init/ItacraftModKeyMappings.java",
       "src/main/java/net/mcreator/itacraft/init/ItacraftModTrades.java",
       "src/main/java/net/mcreator/itacraft/init/ItacraftModBlocks.java",
       "src/main/java/net/mcreator/itacraft/init/ItacraftModItems.java",
-      "src/main/java/net/mcreator/itacraft/init/ItacraftModEntities.java",
       "src/main/java/net/mcreator/itacraft/init/ItacraftModEntityRenderers.java",
-      "src/main/java/net/mcreator/itacraft/ItacraftMod.java",
-      "src/main/java/net/mcreator/itacraft/init/ItacraftModSounds.java",
-      "src/main/java/net/mcreator/itacraft/network/ItacraftModVariables.java",
+      "src/main/java/net/mcreator/itacraft/init/ItacraftModEntities.java",
       "src/main/resources/META-INF/neoforge.mods.toml",
-      "src/main/resources/pack.mcmeta",
       "src/main/resources/assets/itacraft/sounds.json",
+      "src/main/java/net/mcreator/itacraft/init/ItacraftModSounds.java",
+      "src/main/java/net/mcreator/itacraft/ItacraftMod.java",
+      "src/main/java/net/mcreator/itacraft/network/ItacraftModVariables.java",
       "src/main/java/net/mcreator/itacraft/init/ItacraftModModels.java",
+      "src/main/resources/pack.mcmeta",
       "src/main/java/net/mcreator/itacraft/init/ItacraftModTabs.java"
     ]
   },
