@@ -1049,8 +1049,8 @@
       "registry_name": "modular_pliers_recipe",
       "metadata": {
         "files": [
-          "src/main/resources/data/itacraft/advancement/recipes/modular_pliers_recipe.json",
-          "src/main/resources/data/itacraft/recipe/modular_pliers_recipe.json"
+          "src/main/resources/data/itacraft/recipe/modular_pliers_recipe.json",
+          "src/main/resources/data/itacraft/advancement/recipes/modular_pliers_recipe.json"
         ]
       }
     }
@@ -1213,6 +1213,9 @@
       "src/main/java/net/mcreator/itacraft/init/ItacraftModScreens.java",
       "src/main/java/net/mcreator/itacraft/init/ItacraftModMenus.java",
       "src/main/java/net/mcreator/itacraft/init/ItacraftModKeyMappings.java",
+      "src/main/java/net/mcreator/itacraft/init/ItacraftModParticleTypes.java",
+      "src/main/java/net/mcreator/itacraft/init/ItacraftModParticles.java",
+      "src/main/java/net/mcreator/itacraft/init/ItacraftModMobEffects.java",
       "src/main/java/net/mcreator/itacraft/init/ItacraftModTrades.java",
       "src/main/java/net/mcreator/itacraft/init/ItacraftModBlocks.java",
       "src/main/java/net/mcreator/itacraft/init/ItacraftModItems.java",

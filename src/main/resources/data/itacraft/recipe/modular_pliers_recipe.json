@@ -3,13 +3,13 @@
   "category": "misc",
   "pattern": [
     " a ",
-    " b ",
-    "c c"
+    "bcb",
+    "b b"
   ],
   "key": {
     "a": "minecraft:iron_nugget",
-    "b": "minecraft:iron_ingot",
-    "c": "itacraft:red_colored_plastic"
+    "b": "itacraft:red_colored_plastic",
+    "c": "minecraft:iron_ingot"
   },
   "result": {
     "id": "itacraft:modular_pliers",
