@@ -3,7 +3,7 @@
   "_type": "gui",
   "definition": {
     "type": 1,
-    "width": 200,
+    "width": 300,
     "height": 200,
     "inventoryOffsetX": 0,
     "inventoryOffsetY": 0,
@@ -24,8 +24,118 @@
             "fixedValue": false
           },
           "dropItemsWhenNotBound": true,
-          "x": 146,
-          "y": 56,
+          "x": 105,
+          "y": 49,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_overfor",
+          "text": "Overfør",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "VippsMiniBankProcedure"
+          },
+          "width": 61,
+          "height": 20,
+          "x": 141,
+          "y": 82,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_kontanter",
+          "text": {
+            "fixedValue": "Kontanter"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 94,
+          "y": 35,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_hawkphone",
+          "text": {
+            "fixedValue": "Hawk Phone"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 203,
+          "y": 33,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "pil_opmvent.png",
+          "use1Xscale": false,
+          "x": 205,
+          "y": 69,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "pil.png",
+          "use1Xscale": false,
+          "x": 107,
+          "y": 71,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_vipps_minibank",
+          "text": {
+            "fixedValue": "Vipps Minibank"
+          },
+          "color": {
+            "value": -42204,
+            "falpha": 0.0
+          },
+          "x": 181,
+          "y": 201,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_hent_penger",
+          "text": "Hent Alle Penger",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "TaUTPenger"
+          },
+          "width": 82,
+          "height": 20,
+          "x": 276,
+          "y": 48,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "rett_pil.png",
+          "use1Xscale": false,
+          "x": 243,
+          "y": 41,
           "locked": false
         }
       },
@@ -43,92 +153,48 @@
             "fixedValue": false
           },
           "dropItemsWhenNotBound": true,
-          "x": 258,
-          "y": 54,
-          "locked": false
-        }
-      },
-      {
-        "type": "button",
-        "data": {
-          "name": "button_overfor",
-          "text": "Overfør",
-          "isUndecorated": false,
-          "onClick": {
-            "name": "VippsMiniBankProcedure"
-          },
-          "width": 61,
-          "height": 20,
-          "x": 183,
-          "y": 87,
-          "locked": false
-        }
-      },
-      {
-        "type": "label",
-        "data": {
-          "name": "label_kontanter",
-          "text": {
-            "fixedValue": "Kontanter"
-          },
-          "color": {
-            "value": -12829636,
-            "falpha": 0.0
-          },
-          "x": 133,
-          "y": 42,
-          "locked": false
-        }
-      },
-      {
-        "type": "label",
-        "data": {
-          "name": "label_hawkphone",
-          "text": {
-            "fixedValue": "Hawk Phone"
-          },
-          "color": {
-            "value": -12829636,
-            "falpha": 0.0
-          },
-          "x": 244,
-          "y": 41,
+          "x": 219,
+          "y": 47,
           "locked": false
         }
       },
       {
         "type": "image",
         "data": {
-          "image": "pil_opmvent.png",
+          "image": "burh_ahahah_vipps.png",
           "use1Xscale": false,
-          "x": 244,
-          "y": 76,
+          "x": 335,
+          "y": 190,
           "locked": false
         }
       },
       {
         "type": "image",
         "data": {
-          "image": "pil.png",
+          "image": "burh_ahahah_vipps.png",
           "use1Xscale": false,
-          "x": 148,
-          "y": 76,
+          "x": 336,
+          "y": 25,
           "locked": false
         }
       },
       {
-        "type": "label",
+        "type": "image",
         "data": {
-          "name": "label_vipps_minibank",
-          "text": {
-            "fixedValue": "Vipps Minibank"
-          },
-          "color": {
-            "value": -42204,
-            "falpha": 0.0
-          },
-          "x": 181,
-          "y": 201,
+          "image": "burh_ahahah_vipps.png",
+          "use1Xscale": false,
+          "x": 71,
+          "y": 27,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "burh_ahahah_vipps.png",
+          "use1Xscale": false,
+          "x": 71,
+          "y": 192,
           "locked": false
         }
       }

@@ -1,13 +1,6 @@
 package net.mcreator.itacraft.procedures;
 
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.entity.Entity;
-import net.minecraft.world.effect.MobEffectInstance;
-
-import net.mcreator.itacraft.init.ItacraftModMobEffects;
-import net.mcreator.itacraft.init.ItacraftModBlocks;
+import net.neoforged.bus.api.Event;
 
 public class AndreasDisplayConditionProcedure {
 	public static boolean execute(Entity entity) {
