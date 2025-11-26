@@ -1,20 +1,9 @@
 {
-  "parent": "neoforge:item/default",
-  "loader": "neoforge:composite",
-  "children": {
-    "part1": {
-      "loader": "neoforge:obj",
-      "render_type": "solid",
-      "model": "itacraft:models/item/hpworkstation.obj",
-      "emissive_ambient": true,
-      "textures": {
-        "m_f1b001a3-94b3-e490-489a-5d7d73824059": "itacraft:block/",
-        "particle": "itacraft:block/workstation"
-      }
-    }
-  },
+  "parent": "itacraft:custom/hpworkstation",
   "textures": {
-    "particle": "itacraft:block/workstation"
+    "all": "itacraft:block/workstation",
+    "particle": "itacraft:block/workstation",
+    "1": "itacraft:block/workstation"
   },
   "render_type": "solid"
 }
