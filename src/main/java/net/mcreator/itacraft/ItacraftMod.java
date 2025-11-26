@@ -53,6 +53,7 @@ public class ItacraftMod {
 		ItacraftModEntities.REGISTRY.register(modEventBus);
 		ItacraftModTabs.REGISTRY.register(modEventBus);
 		ItacraftModVariables.ATTACHMENT_TYPES.register(modEventBus);
+		ItacraftModPotions.REGISTRY.register(modEventBus);
 		ItacraftModMobEffects.REGISTRY.register(modEventBus);
 		ItacraftModMenus.REGISTRY.register(modEventBus);
 		ItacraftModParticleTypes.REGISTRY.register(modEventBus);

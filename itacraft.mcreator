@@ -1272,20 +1272,6 @@
       }
     },
     {
-      "name": "NalMedNoeRartI",
-      "type": "item",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "nal_med_noe_rart_i",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/itacraft/items/nal_med_noe_rart_i.json",
-          "src/main/java/net/mcreator/itacraft/item/NalMedNoeRartIItem.java",
-          "src/main/resources/assets/itacraft/models/item/nal_med_noe_rart_i.json"
-        ]
-      }
-    },
-    {
       "name": "TomNal",
       "type": "item",
       "compiles": true,
@@ -1300,6 +1286,20 @@
       }
     },
     {
+      "name": "NalMedNoeRartI",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nal_med_noe_rart_i",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/itacraft/items/nal_med_noe_rart_i.json",
+          "src/main/java/net/mcreator/itacraft/item/NalMedNoeRartIItem.java",
+          "src/main/resources/assets/itacraft/models/item/nal_med_noe_rart_i.json"
+        ]
+      }
+    },
+    {
       "name": "Crackhouse",
       "type": "structure",
       "compiles": true,
@@ -1310,6 +1310,66 @@
           "src/main/resources/data/itacraft/worldgen/structure_set/crackhouse.json",
           "src/main/resources/data/itacraft/worldgen/structure/crackhouse.json",
           "src/main/resources/data/itacraft/worldgen/template_pool/crackhouse.json"
+        ]
+      }
+    },
+    {
+      "name": "RussiaPotion",
+      "type": "potion",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "russia_potion",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "Communism",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "communism",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/itacraft/models/item/communism.json",
+          "src/main/java/net/mcreator/itacraft/item/CommunismItem.java",
+          "src/main/resources/assets/itacraft/items/communism.json"
+        ]
+      }
+    },
+    {
+      "name": "RussiaBlockRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "russia_block_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/itacraft/recipe/russia_block_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "RussiaPotionRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "russia_potion_recipe",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/itacraft/recipe/brewing/RussiaPotionRecipeBrewingRecipe.java"
+        ]
+      }
+    },
+    {
+      "name": "CommunismRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "communism_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/itacraft/recipe/communism_recipe.json"
         ]
       }
     }
@@ -1390,6 +1450,7 @@
       "~Blocks.GRASS"
     ],
     "ITEMS:minecraft:pickaxes": [
+      "~CUSTOM:Communism",
       "~CUSTOM:HawkPhone",
       "~CUSTOM:ModularPliers"
     ],
@@ -1434,6 +1495,9 @@
     ],
     "BIOMES:minecraft:has_structure/village_taiga": [
       "~CUSTOM:Drammen"
+    ],
+    "ITEMS:itacraft:communism_repair_items": [
+      "~Items.NETHERITE_INGOT"
     ]
   },
   "tab_element_order": {},
@@ -1517,11 +1581,9 @@
       "effect.itacraft.deportable_potion_effect": "Deportable Potion Effect",
       "item.itacraft.hp_monitor": "HP Monitor",
       "biome.itacraft.drammen": "Drammen",
-      "painting.itacraft.max_burgers.title": "Max Burgers",
-      "painting.itacraft.max_burgers.author": "Richard Bergfors",
-      "item.itacraft.nal_med_noe_rart_i": "Nål med noe rart i",
-      "item.itacraft.tom_nal": "Tom Nål",
-      "item.itacraft.nal_med_noe_rart_i.description_0": "Hva er det oppi her mon tro?"
+      "subtitles.china_tts_1": "speaking chinese",
+      "subtitles.russia_tts_1": "speaking russian",
+      "subtitles.sukablyat": "swearing"
     }
   },
   "metadata": {
@@ -1534,7 +1596,6 @@
       "src/main/java/net/mcreator/itacraft/init/ItacraftModMenus.java",
       "src/main/java/net/mcreator/itacraft/init/ItacraftModScreens.java",
       "src/main/java/net/mcreator/itacraft/init/ItacraftModKeyMappings.java",
-      "src/main/resources/data/minecraft/tags/painting_variant/placeable.json",
       "src/main/java/net/mcreator/itacraft/init/ItacraftModParticles.java",
       "src/main/java/net/mcreator/itacraft/init/ItacraftModParticleTypes.java",
       "src/main/java/net/mcreator/itacraft/init/ItacraftModMobEffects.java",

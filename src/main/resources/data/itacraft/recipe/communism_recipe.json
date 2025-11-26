@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "abc",
+    "def",
+    "ghg"
+  ],
+  "key": {
+    "a": "minecraft:coal",
+    "b": "minecraft:bread",
+    "c": "minecraft:spruce_log",
+    "d": "minecraft:netherite_hoe",
+    "e": "minecraft:slime_ball",
+    "f": "minecraft:netherite_pickaxe",
+    "g": "#c:stones",
+    "h": "minecraft:stick"
+  },
+  "result": {
+    "id": "itacraft:communism",
+    "count": 1
+  }
+}
