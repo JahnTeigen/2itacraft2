@@ -71,6 +71,5 @@
   "gui.itacraft.vipps_mini_bank_gui.label_hawkphone": "Hawk Phone",
   "gui.itacraft.vipps_mini_bank_gui.label_vipps_minibank": "Vipps Minibank",
   "gui.itacraft.vipps_mini_bank_gui.button_overfor": "Overfør",
-  "gui.itacraft.vipps_mini_bank_gui.label_kontanter": "Kontanter",
-  "item.itacraft.hp_monitor": "HP Monitor"
+  "gui.itacraft.vipps_mini_bank_gui.label_kontanter": "Kontanter"
 }

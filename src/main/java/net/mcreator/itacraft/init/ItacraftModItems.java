@@ -62,6 +62,7 @@ public class ItacraftModItems {
 	public static final DeferredItem<Item> TI_ORE;
 	public static final DeferredItem<Item> HAWK_PHONE;
 	public static final DeferredItem<Item> HP_MONITOR;
+	public static final DeferredItem<Item> RUSSIA_BLOCK;
 	static {
 		GEIR_HAOY_SPAWN_EGG = register("geir_haoy_spawn_egg", properties -> new SpawnEggItem(ItacraftModEntities.GEIR_HAOY.get(), properties));
 		KOG_STOCK = register("kog_stock", KOGStockItem::new);
@@ -97,6 +98,7 @@ public class ItacraftModItems {
 		TI_ORE = register("ti_ore", TiOreItem::new);
 		HAWK_PHONE = register("hawk_phone", HawkPhoneItem::new);
 		HP_MONITOR = block(ItacraftModBlocks.HP_MONITOR);
+		RUSSIA_BLOCK = block(ItacraftModBlocks.RUSSIA_BLOCK, new Item.Properties().stacksTo(1).rarity(Rarity.RARE).fireResistant());
 	}
 
 	// Start of user code block custom items

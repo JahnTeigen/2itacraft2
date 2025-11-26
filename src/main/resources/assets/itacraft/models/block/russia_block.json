@@ -7,7 +7,7 @@
     "east": "itacraft:block/russia",
     "south": "itacraft:block/russia",
     "west": "itacraft:block/russia",
-    "particle": "itacraft:block/russia"
+    "particle": "itacraft:block/rb_bot"
   },
   "render_type": "solid"
 }

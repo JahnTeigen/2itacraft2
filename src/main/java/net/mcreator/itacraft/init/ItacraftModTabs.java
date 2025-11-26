@@ -62,6 +62,12 @@ public class ItacraftModTabs {
 			tabData.accept(ItacraftModItems.PLASTIC.get());
 			tabData.accept(ItacraftModItems.WHITE_COLORED_PLASTIC.get());
 			tabData.accept(ItacraftModItems.RED_COLORED_PLASTIC.get());
+		} else if (tabData.getTabKey() == CreativeModeTabs.OP_BLOCKS) {
+			if (tabData.hasPermissions()) {
+				tabData.accept(ItacraftModBlocks.RUSSIA_BLOCK.get().asItem());
+			}
+		} else if (tabData.getTabKey() == CreativeModeTabs.FUNCTIONAL_BLOCKS) {
+			tabData.accept(ItacraftModBlocks.RUSSIA_BLOCK.get().asItem());
 		}
 	}
 }
