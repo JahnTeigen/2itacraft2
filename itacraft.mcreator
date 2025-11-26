@@ -1089,12 +1089,12 @@
       "registry_name": "hp_monitor",
       "metadata": {
         "files": [
-          "src/main/resources/data/itacraft/loot_table/blocks/hp_monitor.json",
-          "src/main/java/net/mcreator/itacraft/block/HPMonitorBlock.java",
-          "src/main/resources/assets/itacraft/items/hp_monitor.json",
           "src/main/resources/assets/itacraft/blockstates/hp_monitor.json",
+          "src/main/resources/data/itacraft/loot_table/blocks/hp_monitor.json",
+          "src/main/resources/assets/itacraft/models/item/hp_monitor.json",
           "src/main/resources/assets/itacraft/models/block/hp_monitor.json",
-          "src/main/resources/assets/itacraft/models/item/hp_monitor.json"
+          "src/main/java/net/mcreator/itacraft/block/HPMonitorBlock.java",
+          "src/main/resources/assets/itacraft/items/hp_monitor.json"
         ]
       }
     },
@@ -1106,8 +1106,8 @@
       "registry_name": "russiaparticles",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/itacraft/client/particle/RussiaparticlesParticle.java",
-          "src/main/resources/assets/itacraft/particles/russiaparticles.json"
+          "src/main/resources/assets/itacraft/particles/russiaparticles.json",
+          "src/main/java/net/mcreator/itacraft/client/particle/RussiaparticlesParticle.java"
         ]
       }
     },
@@ -1119,12 +1119,12 @@
       "registry_name": "russia_block",
       "metadata": {
         "files": [
-          "src/main/resources/data/itacraft/loot_table/blocks/russia_block.json",
-          "src/main/resources/assets/itacraft/models/item/russia_block.json",
           "src/main/resources/assets/itacraft/items/russia_block.json",
           "src/main/resources/assets/itacraft/models/block/russia_block.json",
-          "src/main/resources/assets/itacraft/blockstates/russia_block.json",
-          "src/main/java/net/mcreator/itacraft/block/RussiaBlockBlock.java"
+          "src/main/resources/assets/itacraft/models/item/russia_block.json",
+          "src/main/java/net/mcreator/itacraft/block/RussiaBlockBlock.java",
+          "src/main/resources/data/itacraft/loot_table/blocks/russia_block.json",
+          "src/main/resources/assets/itacraft/blockstates/russia_block.json"
         ]
       }
     },
@@ -1183,6 +1183,10 @@
       "metadata": {
         "dependencies": [
           {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
             "name": "x",
             "type": "number"
           },
@@ -1229,6 +1233,30 @@
       ],
       "category": "ambient",
       "subtitle": ""
+    },
+    {
+      "name": "china_tts_1",
+      "files": [
+        "bian_yi_cuo_wu__bian_yi_cuo_wu__ni_de_dai_ma_lan_tou_liao__ni_xian_"
+      ],
+      "category": "ui",
+      "subtitle": "speaking chinese"
+    },
+    {
+      "name": "russia_tts_1",
+      "files": [
+        "bliat_ia_potierial_svoi"
+      ],
+      "category": "ui",
+      "subtitle": "speaking russian"
+    },
+    {
+      "name": "sukablyat",
+      "files": [
+        "blyat_nahui_cyka_nahui_cyka_tuberipper.cc"
+      ],
+      "category": "ambient",
+      "subtitle": "swearing"
     }
   ],
   "tag_elements": {
@@ -1364,7 +1392,13 @@
       "gui.itacraft.vipps_mini_bank_gui.label_hawkphone": "Hawk Phone",
       "gui.itacraft.vipps_mini_bank_gui.label_vipps_minibank": "Vipps Minibank",
       "gui.itacraft.vipps_mini_bank_gui.button_overfor": "Overfør",
-      "gui.itacraft.vipps_mini_bank_gui.label_kontanter": "Kontanter"
+      "gui.itacraft.vipps_mini_bank_gui.label_kontanter": "Kontanter",
+      "effect.itacraft.deportable_potion_effect": "Deportable Potion Effect",
+      "item.itacraft.hp_monitor": "HP Monitor",
+      "item.itacraft.russia_block": "Russia Block",
+      "subtitles.china_tts_1": "speaking chinese",
+      "subtitles.russia_tts_1": "speaking russian",
+      "subtitles.sukablyat": "swearing"
     }
   },
   "metadata": {
@@ -1375,6 +1409,9 @@
       "src/main/java/net/mcreator/itacraft/init/ItacraftModScreens.java",
       "src/main/java/net/mcreator/itacraft/init/ItacraftModMenus.java",
       "src/main/java/net/mcreator/itacraft/init/ItacraftModKeyMappings.java",
+      "src/main/java/net/mcreator/itacraft/init/ItacraftModParticleTypes.java",
+      "src/main/java/net/mcreator/itacraft/init/ItacraftModParticles.java",
+      "src/main/java/net/mcreator/itacraft/init/ItacraftModMobEffects.java",
       "src/main/java/net/mcreator/itacraft/init/ItacraftModTrades.java",
       "src/main/java/net/mcreator/itacraft/init/ItacraftModBlocks.java",
       "src/main/java/net/mcreator/itacraft/init/ItacraftModItems.java",

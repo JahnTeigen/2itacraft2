@@ -14,5 +14,32 @@
         "stream": false
       }
     ]
+  },
+  "china_tts_1": {
+    "subtitle": "subtitles.china_tts_1",
+    "sounds": [
+      {
+        "name": "itacraft:bian_yi_cuo_wu__bian_yi_cuo_wu__ni_de_dai_ma_lan_tou_liao__ni_xian_",
+        "stream": false
+      }
+    ]
+  },
+  "russia_tts_1": {
+    "subtitle": "subtitles.russia_tts_1",
+    "sounds": [
+      {
+        "name": "itacraft:bliat_ia_potierial_svoi",
+        "stream": false
+      }
+    ]
+  },
+  "sukablyat": {
+    "subtitle": "subtitles.sukablyat",
+    "sounds": [
+      {
+        "name": "itacraft:blyat_nahui_cyka_nahui_cyka_tuberipper.cc",
+        "stream": false
+      }
+    ]
   }
 }

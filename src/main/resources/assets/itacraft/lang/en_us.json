@@ -71,5 +71,11 @@
   "gui.itacraft.vipps_mini_bank_gui.label_hawkphone": "Hawk Phone",
   "gui.itacraft.vipps_mini_bank_gui.label_vipps_minibank": "Vipps Minibank",
   "gui.itacraft.vipps_mini_bank_gui.button_overfor": "Overfør",
-  "gui.itacraft.vipps_mini_bank_gui.label_kontanter": "Kontanter"
+  "gui.itacraft.vipps_mini_bank_gui.label_kontanter": "Kontanter",
+  "effect.itacraft.deportable_potion_effect": "Deportable Potion Effect",
+  "item.itacraft.hp_monitor": "HP Monitor",
+  "item.itacraft.russia_block": "Russia Block",
+  "subtitles.china_tts_1": "speaking chinese",
+  "subtitles.russia_tts_1": "speaking russian",
+  "subtitles.sukablyat": "swearing"
 }
