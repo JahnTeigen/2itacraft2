@@ -48,6 +48,7 @@ public class ItacraftMod {
 		modEventBus.addListener(this::registerNetworking);
 		ItacraftModSounds.REGISTRY.register(modEventBus);
 		ItacraftModBlocks.REGISTRY.register(modEventBus);
+		ItacraftModBlockEntities.REGISTRY.register(modEventBus);
 		ItacraftModItems.REGISTRY.register(modEventBus);
 		ItacraftModEntities.REGISTRY.register(modEventBus);
 		ItacraftModTabs.REGISTRY.register(modEventBus);

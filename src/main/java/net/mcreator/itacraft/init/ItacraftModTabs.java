@@ -68,6 +68,8 @@ public class ItacraftModTabs {
 			}
 		} else if (tabData.getTabKey() == CreativeModeTabs.FUNCTIONAL_BLOCKS) {
 			tabData.accept(ItacraftModBlocks.RUSSIA_BLOCK.get().asItem());
+		} else if (tabData.getTabKey() == CreativeModeTabs.REDSTONE_BLOCKS) {
+			tabData.accept(ItacraftModBlocks.VIPPSMINIBANK.get().asItem());
 		}
 	}
 }

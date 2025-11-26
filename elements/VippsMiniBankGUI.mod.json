@@ -14,7 +14,7 @@
         "type": "inputslot",
         "data": {
           "inputLimit": {
-            "value": ""
+            "value": "TAG:mod:tag"
           },
           "disablePlacement": {
             "fixedValue": false
@@ -33,7 +33,7 @@
         "type": "inputslot",
         "data": {
           "inputLimit": {
-            "value": ""
+            "value": "CUSTOM:HawkPhone"
           },
           "disablePlacement": {
             "fixedValue": false
@@ -54,6 +54,9 @@
           "name": "button_overfor",
           "text": "Overfør",
           "isUndecorated": false,
+          "onClick": {
+            "name": "VippsMiniBankProcedure"
+          },
           "width": 61,
           "height": 20,
           "x": 183,
