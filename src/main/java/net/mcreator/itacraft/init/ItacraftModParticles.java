@@ -9,11 +9,13 @@ import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.api.distmarker.Dist;
 
 import net.mcreator.itacraft.client.particle.RussiaparticlesParticle;
+import net.mcreator.itacraft.client.particle.RadiationParticle;
 
 @EventBusSubscriber(Dist.CLIENT)
 public class ItacraftModParticles {
 	@SubscribeEvent
 	public static void registerParticles(RegisterParticleProvidersEvent event) {
 		event.registerSpriteSet(ItacraftModParticleTypes.RUSSIAPARTICLES.get(), RussiaparticlesParticle::provider);
+		event.registerSpriteSet(ItacraftModParticleTypes.RADIATION.get(), RadiationParticle::provider);
 	}
 }

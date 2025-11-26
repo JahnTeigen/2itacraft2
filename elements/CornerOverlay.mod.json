@@ -1,0 +1,43 @@
+{
+  "_fv": 79,
+  "_type": "overlay",
+  "definition": {
+    "priority": "HIGH",
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "nrk_minecraft.png",
+          "use1Xscale": false,
+          "anchorPoint": "TOP_RIGHT",
+          "x": 368,
+          "y": 5,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "andreas_vanna_ut.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "AndreasDisplayCondition"
+          },
+          "anchorPoint": "CENTER",
+          "x": -32,
+          "y": -117,
+          "locked": false
+        }
+      }
+    ],
+    "baseTexture": "",
+    "overlayTarget": "Ingame",
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

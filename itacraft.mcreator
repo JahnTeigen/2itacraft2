@@ -1082,8 +1082,8 @@
     {
       "name": "VippsMiniBankGUI",
       "type": "gui",
-      "compiles": true,
-      "locked_code": true,
+      "compiles": false,
+      "locked_code": false,
       "registry_name": "vipps_mini_bank_gui",
       "metadata": {
         "files": [
@@ -1756,6 +1756,80 @@
         ]
       },
       "path": "~/Procedures"
+    },
+    {
+      "name": "CornerOverlay",
+      "type": "overlay",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "corner_overlay",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/itacraft/client/screens/CornerOverlayOverlay.java"
+        ]
+      }
+    },
+    {
+      "name": "RadiationPoisoningOnEffectActiveTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "radiation_poisoning_on_effect_active_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/itacraft/procedures/RadiationPoisoningOnEffectActiveTickProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "Radiation",
+      "type": "particle",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "radiation",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/itacraft/particles/radiation.json",
+          "src/main/java/net/mcreator/itacraft/client/particle/RadiationParticle.java"
+        ]
+      }
+    },
+    {
+      "name": "RadiationPoisoning",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "radiation_poisoning",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/itacraft/potion/RadiationPoisoningMobEffect.java"
+        ]
+      }
+    },
+    {
+      "name": "AndreasDisplayCondition",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "andreas_display_condition",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/itacraft/procedures/AndreasDisplayConditionProcedure.java"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -1982,15 +2056,7 @@
       "item.itacraft.tom_nal": "Tom Nål",
       "item.itacraft.nal_med_noe_rart_i.description_0": "Hva er det oppi her mon tro?",
       "item.itacraft.nal_med_noe_rart_i": "Nål med noe rart i",
-      "gui.itacraft.vipps_mini_bank_gui.withdrawalSlider_prefix": "",
-      "gui.itacraft.vipps_mini_bank_gui.withdrawalSlider_suffix": "",
-      "gui.itacraft.vipps_mini_bank_gui.button_hent_penger": "Hent Alle Penger",
-      "death.attack.forgiftet.player": "%1$s døde mens jetta fra %2$s",
-      "death.attack.forgiftet.item": "%1$s blev myrdet af %2$s ved bruk av %3$s",
-      "death.attack.forgiftet": "%1$s gjorde noe han ikke skulle.",
-      "item.itacraft.giftig_gugge": "Giftig Gugge",
-      "advancements.spiste_gugge.descr": "Spiste giftig gugge..... hvorfor????",
-      "advancements.spiste_gugge.title": "Spiste Gugge"
+      "gui.itacraft.vipps_mini_bank_gui.button_hent_penger": "Hent Alle Penger"
     }
   },
   "metadata": {
@@ -2030,11 +2096,11 @@
     "name": "~",
     "children": [
       {
-        "name": "MatveySaker",
+        "name": "Procedures",
         "children": []
       },
       {
-        "name": "Procedures",
+        "name": "MatveySaker",
         "children": []
       }
     ]
