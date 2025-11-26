@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "experience": 67,
+  "cookingtime": 670,
+  "ingredient": "itacraft:firestaff",
+  "result": {
+    "id": "itacraft:firestaff"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "a",
+    "b",
+    "b"
+  ],
+  "key": {
+    "a": "minecraft:blaze_powder",
+    "b": "minecraft:blaze_rod"
+  },
+  "result": {
+    "id": "itacraft:firestaff",
+    "count": 1
+  }
+}

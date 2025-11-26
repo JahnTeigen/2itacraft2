@@ -1110,7 +1110,8 @@
           "src/main/resources/assets/itacraft/particles/russiaparticles.json",
           "src/main/java/net/mcreator/itacraft/client/particle/RussiaparticlesParticle.java"
         ]
-      }
+      },
+      "path": "~/MatveySaker"
     },
     {
       "name": "RussiaBlock",
@@ -1127,7 +1128,8 @@
           "src/main/resources/data/itacraft/loot_table/blocks/russia_block.json",
           "src/main/resources/assets/itacraft/blockstates/russia_block.json"
         ]
-      }
+      },
+      "path": "~/MatveySaker"
     },
     {
       "name": "DeportablePotionEffect",
@@ -1139,7 +1141,8 @@
         "files": [
           "src/main/java/net/mcreator/itacraft/potion/DeportablePotionEffectMobEffect.java"
         ]
-      }
+      },
+      "path": "~/MatveySaker"
     },
     {
       "name": "RussiaBlockOnBlockRightclicked",
@@ -1173,7 +1176,8 @@
         "files": [
           "src/main/java/net/mcreator/itacraft/procedures/RussiaBlockOnBlockRightclickedProcedure.java"
         ]
-      }
+      },
+      "path": "~/MatveySaker"
     },
     {
       "name": "DeportablePotionEffectOnEffectActiveTick",
@@ -1207,7 +1211,8 @@
         "files": [
           "src/main/java/net/mcreator/itacraft/procedures/DeportablePotionEffectOnEffectActiveTickProcedure.java"
         ]
-      }
+      },
+      "path": "~/MatveySaker"
     },
     {
       "name": "Vippsminibank",
@@ -1267,7 +1272,8 @@
       "registry_name": "russia_potion",
       "metadata": {
         "files": []
-      }
+      },
+      "path": "~/MatveySaker"
     },
     {
       "name": "Communism",
@@ -1281,7 +1287,8 @@
           "src/main/resources/assets/itacraft/items/communism.json",
           "src/main/resources/assets/itacraft/models/item/communism.json"
         ]
-      }
+      },
+      "path": "~/MatveySaker"
     },
     {
       "name": "RussiaBlockRecipe",
@@ -1293,7 +1300,8 @@
         "files": [
           "src/main/resources/data/itacraft/recipe/russia_block_recipe.json"
         ]
-      }
+      },
+      "path": "~/MatveySaker"
     },
     {
       "name": "RussiaPotionRecipe",
@@ -1305,7 +1313,8 @@
         "files": [
           "src/main/java/net/mcreator/itacraft/recipe/brewing/RussiaPotionRecipeBrewingRecipe.java"
         ]
-      }
+      },
+      "path": "~/MatveySaker"
     },
     {
       "name": "CommunismRecipe",
@@ -1317,7 +1326,197 @@
         "files": [
           "src/main/resources/data/itacraft/recipe/communism_recipe.json"
         ]
-      }
+      },
+      "path": "~/MatveySaker"
+    },
+    {
+      "name": "Firestaff",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "firestaff",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/itacraft/item/FirestaffItem.java",
+          "src/main/resources/assets/itacraft/items/firestaff.json",
+          "src/main/resources/assets/itacraft/models/item/firestaff.json"
+        ]
+      },
+      "path": "~/MatveySaker"
+    },
+    {
+      "name": "FireballProjectileHitsBlock",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fireball_projectile_hits_block",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/itacraft/procedures/FireballProjectileHitsBlockProcedure.java"
+        ]
+      },
+      "path": "~/MatveySaker"
+    },
+    {
+      "name": "FireballProjectileHitsPlayer",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fireball_projectile_hits_player",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/mcreator/itacraft/procedures/FireballProjectileHitsPlayerProcedure.java"
+        ]
+      },
+      "path": "~/MatveySaker"
+    },
+    {
+      "name": "FireballProjectileHitsLivingEntity",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fireball_projectile_hits_living_entity",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/itacraft/procedures/FireballProjectileHitsLivingEntityProcedure.java"
+        ]
+      },
+      "path": "~/MatveySaker"
+    },
+    {
+      "name": "Fireball",
+      "type": "projectile",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fireball",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/itacraft/entity/FireballEntity.java"
+        ]
+      },
+      "path": "~/MatveySaker"
+    },
+    {
+      "name": "FireballWhileProjectileFlyingTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fireball_while_projectile_flying_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/itacraft/procedures/FireballWhileProjectileFlyingTickProcedure.java"
+        ]
+      },
+      "path": "~/MatveySaker"
+    },
+    {
+      "name": "FirestaffRightclickedOnBlock",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "firestaff_rightclicked_on_block",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/itacraft/procedures/FirestaffRightclickedOnBlockProcedure.java"
+        ]
+      },
+      "path": "~/MatveySaker"
+    },
+    {
+      "name": "RechargeProjectile",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "recharge_projectile",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/itacraft/advancement/recipes/recharge_projectile.json",
+          "src/main/resources/data/itacraft/recipe/recharge_projectile.json"
+        ]
+      },
+      "path": "~/MatveySaker"
+    },
+    {
+      "name": "FirestaffRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "firestaff_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/itacraft/recipe/firestaff_recipe.json"
+        ]
+      },
+      "path": "~/MatveySaker"
     }
   ],
   "variable_elements": [
@@ -1444,6 +1643,9 @@
     ],
     "ITEMS:itacraft:communism_repair_items": [
       "~Items.NETHERITE_INGOT"
+    ],
+    "ITEMS:minecraft:enchantable/durability": [
+      "~CUSTOM:Firestaff"
     ]
   },
   "tab_element_order": {},
@@ -1534,7 +1736,8 @@
       "item.minecraft.tipped_arrow.effect.russia_potion": "Arrow of Russia",
       "item.minecraft.lingering_potion.effect.russia_potion": "Lingering Potion of Russia",
       "item.minecraft.splash_potion.effect.russia_potion": "Splash Potion of Russia",
-      "item.itacraft.communism": "Communism"
+      "item.itacraft.communism": "Communism",
+      "item.itacraft.firestaff": "Firestaff"
     }
   },
   "metadata": {
@@ -1571,7 +1774,12 @@
   },
   "foldersRoot": {
     "name": "~",
-    "children": []
+    "children": [
+      {
+        "name": "MatveySaker",
+        "children": []
+      }
+    ]
   },
   "workspaceSettings": {
     "modid": "itacraft",

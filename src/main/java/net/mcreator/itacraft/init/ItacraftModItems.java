@@ -65,6 +65,7 @@ public class ItacraftModItems {
 	public static final DeferredItem<Item> RUSSIA_BLOCK;
 	public static final DeferredItem<Item> VIPPSMINIBANK;
 	public static final DeferredItem<Item> COMMUNISM;
+	public static final DeferredItem<Item> FIRESTAFF;
 	static {
 		GEIR_HAOY_SPAWN_EGG = register("geir_haoy_spawn_egg", properties -> new SpawnEggItem(ItacraftModEntities.GEIR_HAOY.get(), properties));
 		KOG_STOCK = register("kog_stock", KOGStockItem::new);
@@ -103,6 +104,7 @@ public class ItacraftModItems {
 		RUSSIA_BLOCK = block(ItacraftModBlocks.RUSSIA_BLOCK, new Item.Properties().stacksTo(1).rarity(Rarity.RARE).fireResistant());
 		VIPPSMINIBANK = block(ItacraftModBlocks.VIPPSMINIBANK);
 		COMMUNISM = register("communism", CommunismItem::new);
+		FIRESTAFF = register("firestaff", FirestaffItem::new);
 	}
 
 	// Start of user code block custom items
