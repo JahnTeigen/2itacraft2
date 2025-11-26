@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:black_dye"
+    },
+    "title": {
+      "translate": "advancements.spiste_gugge.title"
+    },
+    "description": {
+      "translate": "advancements.spiste_gugge.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "spiste_gugge_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "minecraft:story/root"
+}

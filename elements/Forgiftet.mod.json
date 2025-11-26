@@ -1,0 +1,12 @@
+{
+  "_fv": 79,
+  "_type": "damagetype",
+  "definition": {
+    "exhaustion": 10.0,
+    "scaling": "never",
+    "effects": "drowning",
+    "normalDeathMessage": "%1$s gjorde noe han ikke skulle.",
+    "itemDeathMessage": "%1$s blev myrdet af %2$s ved bruk av %3$s",
+    "playerDeathMessage": "%1$s døde mens jetta fra %2$s"
+  }
+}

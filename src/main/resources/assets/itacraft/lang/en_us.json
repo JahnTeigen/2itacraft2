@@ -90,5 +90,11 @@
   "painting.itacraft.max_burgers.author": "Richard Bergfors",
   "item.itacraft.tom_nal": "Tom Nål",
   "item.itacraft.nal_med_noe_rart_i.description_0": "Hva er det oppi her mon tro?",
-  "item.itacraft.nal_med_noe_rart_i": "Nål med noe rart i"
+  "item.itacraft.nal_med_noe_rart_i": "Nål med noe rart i",
+  "advancements.spiste_gugge.descr": "Spiste giftig gugge..... hvorfor????",
+  "advancements.spiste_gugge.title": "Spiste Gugge",
+  "death.attack.forgiftet.player": "%1$s døde mens jetta fra %2$s",
+  "death.attack.forgiftet.item": "%1$s blev myrdet af %2$s ved bruk av %3$s",
+  "death.attack.forgiftet": "%1$s gjorde noe han ikke skulle.",
+  "item.itacraft.giftig_gugge": "Giftig Gugge"
 }
