@@ -1076,6 +1076,7 @@
       "registry_name": "vipps_mini_bank_gui",
       "metadata": {
         "files": [
+          "src/main/java/net/mcreator/itacraft/network/VippsMiniBankGUIButtonMessage.java",
           "src/main/java/net/mcreator/itacraft/world/inventory/VippsMiniBankGUIMenu.java",
           "src/main/java/net/mcreator/itacraft/client/gui/VippsMiniBankGUIScreen.java"
         ]
@@ -1106,8 +1107,8 @@
       "registry_name": "russiaparticles",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/itacraft/client/particle/RussiaparticlesParticle.java",
-          "src/main/resources/assets/itacraft/particles/russiaparticles.json"
+          "src/main/resources/assets/itacraft/particles/russiaparticles.json",
+          "src/main/java/net/mcreator/itacraft/client/particle/RussiaparticlesParticle.java"
         ]
       }
     },
@@ -1183,6 +1184,10 @@
       "metadata": {
         "dependencies": [
           {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
             "name": "x",
             "type": "number"
           },
@@ -1251,6 +1256,66 @@
         ],
         "files": [
           "src/main/java/net/mcreator/itacraft/procedures/VippsMiniBankProcedureProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "RussiaBlockRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "russia_block_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/itacraft/recipe/russia_block_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "RussiaPotion",
+      "type": "potion",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "russia_potion",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "Communism",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "communism",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/itacraft/item/CommunismItem.java",
+          "src/main/resources/assets/itacraft/items/communism.json",
+          "src/main/resources/assets/itacraft/models/item/communism.json"
+        ]
+      }
+    },
+    {
+      "name": "RussiaPotionRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "russia_potion_recipe",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/itacraft/recipe/brewing/RussiaPotionRecipeBrewingRecipe.java"
+        ]
+      }
+    },
+    {
+      "name": "CommunismRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "communism_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/itacraft/recipe/communism_recipe.json"
         ]
       }
     }
@@ -1331,6 +1396,7 @@
       "~Blocks.GRASS"
     ],
     "ITEMS:minecraft:pickaxes": [
+      "~CUSTOM:Communism",
       "~CUSTOM:HawkPhone",
       "~CUSTOM:ModularPliers"
     ],
@@ -1375,6 +1441,9 @@
     ],
     "BIOMES:minecraft:has_structure/village_taiga": [
       "~CUSTOM:Drammen"
+    ],
+    "ITEMS:itacraft:communism_repair_items": [
+      "~Items.NETHERITE_INGOT"
     ]
   },
   "tab_element_order": {},
@@ -1458,7 +1527,14 @@
       "subtitles.russia_tts_1": "speaking russian",
       "subtitles.sukablyat": "swearing",
       "item.itacraft.russia_block": "Russia Block",
-      "effect.itacraft.deportable_potion_effect": "Deportable Potion Effect"
+      "effect.itacraft.deportable_potion_effect": "Deportable Potion Effect",
+      "item.itacraft.vippsminibank": "Vippsminibank",
+      "biome.itacraft.drammen": "Drammen",
+      "item.minecraft.potion.effect.russia_potion": "Potion of Russia",
+      "item.minecraft.tipped_arrow.effect.russia_potion": "Arrow of Russia",
+      "item.minecraft.lingering_potion.effect.russia_potion": "Lingering Potion of Russia",
+      "item.minecraft.splash_potion.effect.russia_potion": "Splash Potion of Russia",
+      "item.itacraft.communism": "Communism"
     }
   },
   "metadata": {
@@ -1474,6 +1550,7 @@
       "src/main/java/net/mcreator/itacraft/init/ItacraftModParticleTypes.java",
       "src/main/java/net/mcreator/itacraft/init/ItacraftModParticles.java",
       "src/main/java/net/mcreator/itacraft/init/ItacraftModMobEffects.java",
+      "src/main/java/net/mcreator/itacraft/init/ItacraftModPotions.java",
       "src/main/java/net/mcreator/itacraft/init/ItacraftModTrades.java",
       "src/main/java/net/mcreator/itacraft/init/ItacraftModBlocks.java",
       "src/main/java/net/mcreator/itacraft/init/ItacraftModBlockEntities.java",

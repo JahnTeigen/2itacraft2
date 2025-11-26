@@ -77,5 +77,12 @@
   "subtitles.russia_tts_1": "speaking russian",
   "subtitles.sukablyat": "swearing",
   "item.itacraft.russia_block": "Russia Block",
-  "effect.itacraft.deportable_potion_effect": "Deportable Potion Effect"
+  "effect.itacraft.deportable_potion_effect": "Deportable Potion Effect",
+  "item.itacraft.vippsminibank": "Vippsminibank",
+  "biome.itacraft.drammen": "Drammen",
+  "item.minecraft.potion.effect.russia_potion": "Potion of Russia",
+  "item.minecraft.tipped_arrow.effect.russia_potion": "Arrow of Russia",
+  "item.minecraft.lingering_potion.effect.russia_potion": "Lingering Potion of Russia",
+  "item.minecraft.splash_potion.effect.russia_potion": "Splash Potion of Russia",
+  "item.itacraft.communism": "Communism"
 }
