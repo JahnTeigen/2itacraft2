@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "itacraft:to_hundre_kroner",
+    "itacraft:to_hundre_kroner",
+    "itacraft:hundre_kroner"
+  ],
+  "result": {
+    "id": "itacraft:fem_hundre_kroner",
+    "count": 1
+  }
+}

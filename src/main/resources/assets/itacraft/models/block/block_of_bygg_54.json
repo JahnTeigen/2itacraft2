@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "itacraft:block/54",
+    "up": "itacraft:block/54",
+    "north": "itacraft:block/54",
+    "east": "itacraft:block/54",
+    "south": "itacraft:block/54",
+    "west": "itacraft:block/54",
+    "particle": "itacraft:block/54"
+  },
+  "render_type": "solid"
+}

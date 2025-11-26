@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "experience": 16.2,
+  "cookingtime": 230,
+  "ingredient": "itacraft:oil_bucket",
+  "result": {
+    "id": "itacraft:plastic"
+  }
+}

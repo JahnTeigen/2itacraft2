@@ -1,0 +1,27 @@
+{
+  "_fv": 79,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Smelting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "unlockingItems": [
+      {
+        "value": "CUSTOM:Oil.bucket"
+      }
+    ],
+    "cookingBookCategory": "MISC",
+    "xpReward": 16.200000000000003,
+    "cookingTime": 230,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "smeltingInputStack": {
+      "value": "CUSTOM:Oil.bucket"
+    },
+    "smeltingReturnStack": {
+      "value": "CUSTOM:Plastic"
+    },
+    "name": "plastic_recipe",
+    "namespace": "mod"
+  }
+}

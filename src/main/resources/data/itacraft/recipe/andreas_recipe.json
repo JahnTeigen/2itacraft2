@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "cdc",
+    "aca"
+  ],
+  "key": {
+    "a": "minecraft:nether_star",
+    "b": "minecraft:carved_pumpkin",
+    "c": "#c:stones",
+    "d": "minecraft:tnt"
+  },
+  "result": {
+    "id": "itacraft:andreas",
+    "count": 1
+  }
+}

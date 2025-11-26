@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aba",
+    "aaa"
+  ],
+  "key": {
+    "a": "itacraft:plastic",
+    "b": "minecraft:copper_ingot"
+  },
+  "result": {
+    "id": "itacraft:wire",
+    "count": 16
+  }
+}

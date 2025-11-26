@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "axis=z": {
+      "model": "itacraft:block/kongsberg_gruppen_portal_ew"
+    },
+    "axis=x": {
+      "model": "itacraft:block/kongsberg_gruppen_portal_ns"
+    }
+  }
+}

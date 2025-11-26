@@ -1,0 +1,6 @@
+{
+  "exhaustion": 0.37,
+  "message_id": "patch_cable_damage_type",
+  "scaling": "always",
+  "effects": "poking"
+}

@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "itacraft:block/rb_bot",
+    "up": "itacraft:block/rb_top",
+    "north": "itacraft:block/russia",
+    "east": "itacraft:block/russia",
+    "south": "itacraft:block/russia",
+    "west": "itacraft:block/russia",
+    "particle": "itacraft:block/russia"
+  },
+  "render_type": "solid"
+}

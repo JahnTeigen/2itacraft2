@@ -1,0 +1,10 @@
+{
+  "type": "neoforge:add_spawns",
+  "biomes": "end_barrens",
+  "spawners": {
+    "type": "itacraft:gamer_girl",
+    "weight": 32,
+    "minCount": 4,
+    "maxCount": 4
+  }
+}

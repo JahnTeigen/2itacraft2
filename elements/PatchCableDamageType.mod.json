@@ -1,0 +1,12 @@
+{
+  "_fv": 79,
+  "_type": "damagetype",
+  "definition": {
+    "exhaustion": 0.37,
+    "scaling": "always",
+    "effects": "poking",
+    "normalDeathMessage": "%1$s died while trying to assemble a fuckass twisted pair ethernet cable",
+    "itemDeathMessage": "%1$s was killed by %2$s using %3$s",
+    "playerDeathMessage": "%1$s died whilst trying to escape %2$s"
+  }
+}

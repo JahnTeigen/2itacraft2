@@ -1,0 +1,18 @@
+{
+  "thepriceisright": {
+    "sounds": [
+      {
+        "name": "itacraft:the_price_is_right_-_main",
+        "stream": true
+      }
+    ]
+  },
+  "kaching": {
+    "sounds": [
+      {
+        "name": "itacraft:kaching",
+        "stream": false
+      }
+    ]
+  }
+}

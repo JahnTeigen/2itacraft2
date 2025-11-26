@@ -1,0 +1,26 @@
+{
+  "_fv": 79,
+  "_type": "achievement",
+  "definition": {
+    "achievementName": "Privyet",
+    "achievementDescription": "Placed Russia block, permanently banned from KDA.",
+    "achievementIcon": {
+      "value": "CUSTOM:RussiaBlock"
+    },
+    "background": "Default",
+    "disableDisplay": false,
+    "showPopup": true,
+    "announceToChat": true,
+    "hideIfNotCompleted": true,
+    "rewardLoot": [],
+    "rewardRecipes": [
+      "TusenlappRecipe"
+    ],
+    "rewardXP": 67,
+    "achievementType": "task",
+    "parent": {
+      "value": "CUSTOM:Neger"
+    },
+    "triggerxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"advancement_trigger\" deletable=\"false\" x=\"40\" y=\"80\"><next><block type=\"block_placed\"><value name=\"block\"><block type=\"mcitem_allblocks\"><field name=\"value\">CUSTOM:RussiaBlock</field></block></value></block></next></block></xml>"
+  }
+}

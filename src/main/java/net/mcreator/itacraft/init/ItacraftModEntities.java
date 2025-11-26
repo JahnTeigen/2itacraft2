@@ -1,0 +1,83 @@
+/*
+ *    MCreator note: This file will be REGENERATED on each build.
+ */
+package net.mcreator.itacraft.init;
+
+import net.neoforged.neoforge.registries.DeferredRegister;
+import net.neoforged.neoforge.registries.DeferredHolder;
+import net.neoforged.neoforge.event.entity.RegisterSpawnPlacementsEvent;
+import net.neoforged.neoforge.event.entity.EntityAttributeCreationEvent;
+import net.neoforged.neoforge.capabilities.RegisterCapabilitiesEvent;
+import net.neoforged.neoforge.capabilities.Capabilities;
+import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.bus.api.EventPriority;
+
+import net.minecraft.world.entity.MobCategory;
+import net.minecraft.world.entity.EntityType;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.ResourceKey;
+import net.minecraft.core.registries.Registries;
+
+import net.mcreator.itacraft.entity.TonyHaynesEntity;
+import net.mcreator.itacraft.entity.JudeEntity;
+import net.mcreator.itacraft.entity.GudrunEntity;
+import net.mcreator.itacraft.entity.GeirHaoyEntity;
+import net.mcreator.itacraft.entity.GamerGirlEntity;
+import net.mcreator.itacraft.ItacraftMod;
+
+@EventBusSubscriber
+public class ItacraftModEntities {
+	public static final DeferredRegister<EntityType<?>> REGISTRY = DeferredRegister.create(Registries.ENTITY_TYPE, ItacraftMod.MODID);
+	public static final DeferredHolder<EntityType<?>, EntityType<GeirHaoyEntity>> GEIR_HAOY = register("geir_haoy",
+			EntityType.Builder.<GeirHaoyEntity>of(GeirHaoyEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune()
+
+					.sized(0.6f, 1.8f));
+	public static final DeferredHolder<EntityType<?>, EntityType<JudeEntity>> JUDE = register("jude",
+			EntityType.Builder.<JudeEntity>of(JudeEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
+
+					.sized(0.6f, 1.8f));
+	public static final DeferredHolder<EntityType<?>, EntityType<GudrunEntity>> BODIL = register("bodil",
+			EntityType.Builder.<GudrunEntity>of(GudrunEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
+
+					.sized(0.6f, 1.8f));
+	public static final DeferredHolder<EntityType<?>, EntityType<GamerGirlEntity>> GAMER_GIRL = register("gamer_girl",
+			EntityType.Builder.<GamerGirlEntity>of(GamerGirlEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
+
+					.sized(0.6f, 1.8f));
+	public static final DeferredHolder<EntityType<?>, EntityType<TonyHaynesEntity>> TONY_HAYNES = register("tony_haynes",
+			EntityType.Builder.<TonyHaynesEntity>of(TonyHaynesEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
+
+					.sized(0.6f, 1.8f));
+
+	// Start of user code block custom entities
+	// End of user code block custom entities
+	private static <T extends Entity> DeferredHolder<EntityType<?>, EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
+		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(ResourceKey.create(Registries.ENTITY_TYPE, ResourceLocation.fromNamespaceAndPath(ItacraftMod.MODID, registryname))));
+	}
+
+	@SubscribeEvent(priority = EventPriority.HIGHEST)
+	public static void registerCapabilities(RegisterCapabilitiesEvent event) {
+		event.registerEntity(Capabilities.ItemHandler.ENTITY, JUDE.get(), (living, context) -> living.getCombinedInventory());
+		event.registerEntity(Capabilities.ItemHandler.ENTITY, BODIL.get(), (living, context) -> living.getCombinedInventory());
+	}
+
+	@SubscribeEvent
+	public static void init(RegisterSpawnPlacementsEvent event) {
+		GeirHaoyEntity.init(event);
+		JudeEntity.init(event);
+		GudrunEntity.init(event);
+		GamerGirlEntity.init(event);
+		TonyHaynesEntity.init(event);
+	}
+
+	@SubscribeEvent
+	public static void registerAttributes(EntityAttributeCreationEvent event) {
+		event.put(GEIR_HAOY.get(), GeirHaoyEntity.createAttributes().build());
+		event.put(JUDE.get(), JudeEntity.createAttributes().build());
+		event.put(BODIL.get(), GudrunEntity.createAttributes().build());
+		event.put(GAMER_GIRL.get(), GamerGirlEntity.createAttributes().build());
+		event.put(TONY_HAYNES.get(), TonyHaynesEntity.createAttributes().build());
+	}
+}

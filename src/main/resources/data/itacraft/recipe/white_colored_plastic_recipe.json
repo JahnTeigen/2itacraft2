@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:white_dye",
+    "itacraft:plastic"
+  ],
+  "result": {
+    "id": "itacraft:white_colored_plastic",
+    "count": 1
+  }
+}

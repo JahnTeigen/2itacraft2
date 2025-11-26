@@ -1,0 +1,12 @@
+{
+  "_fv": 79,
+  "_type": "damagetype",
+  "definition": {
+    "exhaustion": 0.51,
+    "scaling": "never",
+    "effects": "hurt",
+    "normalDeathMessage": "%1$s commited suicide",
+    "itemDeathMessage": "%1$s was killed by %2$s using %3$s",
+    "playerDeathMessage": "%1$s commited suicide while trying to escape %2$s"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "type": "neoforge:add_spawns",
+  "biomes": "plains",
+  "spawners": {
+    "type": "itacraft:tony_haynes",
+    "weight": 20,
+    "minCount": 4,
+    "maxCount": 4
+  }
+}

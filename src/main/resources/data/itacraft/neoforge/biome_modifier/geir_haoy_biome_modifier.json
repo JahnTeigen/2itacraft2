@@ -1,0 +1,13 @@
+{
+  "type": "neoforge:add_spawns",
+  "biomes": [
+    "plains",
+    "itacraft:kongsberg"
+  ],
+  "spawners": {
+    "type": "itacraft:geir_haoy",
+    "weight": 40,
+    "minCount": 1,
+    "maxCount": 1
+  }
+}

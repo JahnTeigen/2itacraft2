@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "itacraft:block/hp_workstation"
+    },
+    "facing=east": {
+      "model": "itacraft:block/hp_workstation",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "itacraft:block/hp_workstation",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "itacraft:block/hp_workstation",
+      "y": 270
+    }
+  }
+}

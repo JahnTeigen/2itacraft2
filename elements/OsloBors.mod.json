@@ -1,0 +1,80 @@
+{
+  "_fv": 79,
+  "_type": "gui",
+  "definition": {
+    "type": 1,
+    "width": 289,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "name": "label_oslo_bors",
+          "text": {
+            "fixedValue": "Oslo Børs"
+          },
+          "color": {
+            "value": -13261,
+            "falpha": 0.0
+          },
+          "x": 189,
+          "y": 21,
+          "locked": false
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": "TAG:mod:stocks"
+          },
+          "disablePlacement": {
+            "fixedValue": false
+          },
+          "color": {
+            "value": -10027213,
+            "falpha": 0.0
+          },
+          "id": 0,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": true,
+          "x": 144,
+          "y": 72,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_selg_aksje",
+          "text": "Selg aksje",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "UpdateAura"
+          },
+          "width": 77,
+          "height": 20,
+          "x": 213,
+          "y": 71,
+          "locked": false
+        }
+      }
+    ],
+    "onOpen": {
+      "name": "OsloBorsThisGUIIsOpened"
+    },
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "_fv": 79,
+  "_type": "gui",
+  "definition": {
+    "type": 1,
+    "width": 271,
+    "height": 173,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 5,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "name": "label_nasjonal_sikkerhetsmyndighet",
+          "text": {
+            "fixedValue": "Nasjonal Sikkerhetsmyndighet"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 140,
+          "y": 48,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_kostnad",
+          "text": {
+            "fixedValue": "Kostnad:"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 93,
+          "y": 71,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "1000_downsized.png",
+          "use1Xscale": false,
+          "x": 93,
+          "y": 88,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_x100",
+          "text": {
+            "fixedValue": "x100"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 159,
+          "y": 109,
+          "locked": false
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 0,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": true,
+          "x": 277,
+          "y": 82,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_klarer_meg",
+          "text": "Bli klarert",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "GetPOB"
+          },
+          "width": 77,
+          "height": 20,
+          "x": 195,
+          "y": 81,
+          "locked": false
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

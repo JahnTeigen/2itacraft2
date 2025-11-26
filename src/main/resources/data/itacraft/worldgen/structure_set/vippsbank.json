@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "itacraft:vippsbank",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 31,
+    "separation": 30,
+    "salt": 22010103
+  }
+}

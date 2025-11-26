@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "itacraft:block/anders",
+    "up": "itacraft:block/anders",
+    "north": "itacraft:block/anders",
+    "east": "itacraft:block/anders",
+    "south": "itacraft:block/anders",
+    "west": "itacraft:block/anders",
+    "particle": "itacraft:block/anders"
+  },
+  "render_type": "solid"
+}

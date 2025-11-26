@@ -1,0 +1,32 @@
+{
+  "_fv": 79,
+  "_type": "potion",
+  "definition": {
+    "potionName": "Potion of Russia",
+    "splashName": "Splash Potion of Russia",
+    "lingeringName": "Lingering Potion of Russia",
+    "arrowName": "Arrow of Russia",
+    "effects": [
+      {
+        "effect": {
+          "value": "CUSTOM:Deportable"
+        },
+        "duration": 3600,
+        "infinite": false,
+        "amplifier": 1,
+        "ambient": false,
+        "showParticles": true
+      },
+      {
+        "effect": {
+          "value": "GLOWING"
+        },
+        "duration": 3600,
+        "infinite": false,
+        "amplifier": 1,
+        "ambient": false,
+        "showParticles": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "aaa",
+    "aba",
+    "aaa"
+  ],
+  "key": {
+    "a": "itacraft:wire",
+    "b": "itacraft:white_colored_plastic"
+  },
+  "result": {
+    "id": "itacraft:patch_cable",
+    "count": 2
+  }
+}

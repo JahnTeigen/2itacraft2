@@ -1,0 +1,1253 @@
+{
+  "mod_elements": [
+    {
+      "name": "GeirHaoy",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "geir_haoy",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/itacraft/entity/GeirHaoyEntity.java",
+          "src/main/java/net/mcreator/itacraft/client/renderer/GeirHaoyRenderer.java",
+          "src/main/resources/assets/itacraft/items/geir_haoy_spawn_egg.json",
+          "src/main/resources/assets/itacraft/models/item/geir_haoy_spawn_egg.json",
+          "src/main/resources/data/itacraft/neoforge/biome_modifier/geir_haoy_biome_modifier.json"
+        ]
+      }
+    },
+    {
+      "name": "KOGStock",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kog_stock",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/itacraft/models/item/kog_stock.json",
+          "src/main/java/net/mcreator/itacraft/item/KOGStockItem.java",
+          "src/main/resources/assets/itacraft/items/kog_stock.json"
+        ]
+      }
+    },
+    {
+      "name": "KOGStockPropertyValueProvider",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kog_stock_property_value_provider",
+      "metadata": {
+        "dependencies": [],
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/mcreator/itacraft/procedures/KOGStockPropertyValueProviderProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "OsloBors",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "oslo_bors",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/itacraft/client/gui/OsloBorsScreen.java",
+          "src/main/java/net/mcreator/itacraft/world/inventory/OsloBorsMenu.java",
+          "src/main/java/net/mcreator/itacraft/network/OsloBorsButtonMessage.java"
+        ]
+      }
+    },
+    {
+      "name": "Jude",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "jude",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/itacraft/entity/JudeEntity.java",
+          "src/main/resources/assets/itacraft/models/item/jude_spawn_egg.json",
+          "src/main/resources/assets/itacraft/items/jude_spawn_egg.json",
+          "src/main/resources/data/itacraft/neoforge/biome_modifier/jude_biome_modifier.json",
+          "src/main/java/net/mcreator/itacraft/client/renderer/JudeRenderer.java"
+        ]
+      }
+    },
+    {
+      "name": "OsloBorsThisGUIIsOpened",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "oslo_bors_this_gui_is_opened",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/itacraft/procedures/OsloBorsThisGUIIsOpenedProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "UpdateAura",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "update_aura",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/itacraft/procedures/UpdateAuraProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "OsloBorsThisGUIIsClosed",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "oslo_bors_this_gui_is_closed",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/itacraft/procedures/OsloBorsThisGUIIsClosedProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "AndreasSinHemmelighet",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "andreas_sin_hemmelighet",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/itacraft/procedures/AndreasSinHemmelighetProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "Andreas",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "andreas",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/itacraft/block/AndreasBlock.java",
+          "src/main/resources/data/itacraft/loot_table/blocks/andreas.json",
+          "src/main/resources/assets/itacraft/models/block/andreas.json",
+          "src/main/resources/assets/itacraft/models/item/andreas.json",
+          "src/main/resources/assets/itacraft/blockstates/andreas.json",
+          "src/main/resources/assets/itacraft/items/andreas.json"
+        ]
+      }
+    },
+    {
+      "name": "AndreasRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "andreas_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/itacraft/recipe/andreas_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "FemtiKroner",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "femti_kroner",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/itacraft/models/item/femti_kroner.json",
+          "src/main/java/net/mcreator/itacraft/item/FemtiKronerItem.java",
+          "src/main/resources/assets/itacraft/items/femti_kroner.json"
+        ]
+      }
+    },
+    {
+      "name": "FemHundreKroner",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fem_hundre_kroner",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/itacraft/items/fem_hundre_kroner.json",
+          "src/main/java/net/mcreator/itacraft/item/FemHundreKronerItem.java",
+          "src/main/resources/assets/itacraft/models/item/fem_hundre_kroner.json"
+        ]
+      }
+    },
+    {
+      "name": "EttTusenKroner",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ett_tusen_kroner",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/itacraft/models/item/ett_tusen_kroner.json",
+          "src/main/java/net/mcreator/itacraft/item/EttTusenKronerItem.java",
+          "src/main/resources/assets/itacraft/items/ett_tusen_kroner.json"
+        ]
+      }
+    },
+    {
+      "name": "Personopplysningsblankett",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "personopplysningsblankett",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/itacraft/item/PersonopplysningsblankettItem.java",
+          "src/main/resources/assets/itacraft/items/personopplysningsblankett.json",
+          "src/main/resources/assets/itacraft/models/item/personopplysningsblankett.json"
+        ]
+      }
+    },
+    {
+      "name": "Kongsberg",
+      "type": "biome",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kongsberg",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/itacraft/worldgen/configured_feature/kongsberg_tree.json",
+          "src/main/resources/data/itacraft/worldgen/placed_feature/kongsberg_tree.json",
+          "src/main/resources/data/itacraft/worldgen/biome/kongsberg.json"
+        ]
+      }
+    },
+    {
+      "name": "KongsbergGruppen",
+      "type": "dimension",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kongsberg_gruppen",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/itacraft/world/teleporter/KongsbergGruppenTeleporter.java",
+          "src/main/java/net/mcreator/itacraft/block/KongsbergGruppenPortalBlock.java",
+          "src/main/resources/data/itacraft/dimension_type/kongsberg_gruppen.json",
+          "src/main/java/net/mcreator/itacraft/world/dimension/KongsbergGruppenDimension.java",
+          "src/main/resources/assets/itacraft/models/block/kongsberg_gruppen_portal_ns.json",
+          "src/main/java/net/mcreator/itacraft/world/teleporter/KongsbergGruppenPortalShape.java",
+          "src/main/resources/assets/itacraft/models/block/kongsberg_gruppen_portal_ew.json",
+          "src/main/resources/data/itacraft/dimension/kongsberg_gruppen.json",
+          "src/main/resources/assets/itacraft/blockstates/kongsberg_gruppen_portal.json"
+        ]
+      }
+    },
+    {
+      "name": "KongsbergDimensionIgniter",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kongsberg_dimension_igniter",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "direction",
+            "type": "direction"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "actionresulttype",
+        "files": [
+          "src/main/java/net/mcreator/itacraft/procedures/KongsbergDimensionIgniterProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "NSMRequestInterface",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nsm_request_interface",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/itacraft/client/gui/NSMRequestInterfaceScreen.java",
+          "src/main/java/net/mcreator/itacraft/network/NSMRequestInterfaceButtonMessage.java",
+          "src/main/java/net/mcreator/itacraft/world/inventory/NSMRequestInterfaceMenu.java"
+        ]
+      }
+    },
+    {
+      "name": "Gudrun",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bodil",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/itacraft/entity/GudrunEntity.java",
+          "src/main/resources/assets/itacraft/items/bodil_spawn_egg.json",
+          "src/main/java/net/mcreator/itacraft/client/renderer/GudrunRenderer.java",
+          "src/main/resources/assets/itacraft/models/item/bodil_spawn_egg.json"
+        ]
+      }
+    },
+    {
+      "name": "GetPOB",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_pob",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/itacraft/procedures/GetPOBProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "SuicideKeyOnKeyPressed",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "suicide_key_on_key_pressed",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/itacraft/procedures/SuicideKeyOnKeyPressedProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "SuicideKey",
+      "type": "keybind",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "suicide_key",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/itacraft/network/SuicideKeyMessage.java"
+        ]
+      }
+    },
+    {
+      "name": "NSM",
+      "type": "structure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nsm",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/itacraft/worldgen/template_pool/nsm.json",
+          "src/main/resources/data/itacraft/worldgen/structure/nsm.json",
+          "src/main/resources/data/itacraft/worldgen/structure_set/nsm.json"
+        ]
+      }
+    },
+    {
+      "name": "TusenlappRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tusenlapp_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/itacraft/advancement/recipes/tusenlapp_recipe.json",
+          "src/main/resources/data/itacraft/recipe/tusenlapp_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "FemhundrelappRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "femhundrelapp_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/itacraft/advancement/recipes/femhundrelapp_recipe.json",
+          "src/main/resources/data/itacraft/recipe/femhundrelapp_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "HeroinPlayerFinishesUsingItem",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "heroin_player_finishes_using_item",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/itacraft/procedures/HeroinPlayerFinishesUsingItemProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "Heroin",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "heroin",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/itacraft/item/HeroinItem.java",
+          "src/main/resources/assets/itacraft/items/heroin.json",
+          "src/main/resources/assets/itacraft/models/item/heroin.json"
+        ]
+      }
+    },
+    {
+      "name": "StockTrade",
+      "type": "villagertrade",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stock_trade",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "Stocks",
+      "type": "tab",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stocks",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "StockValueGenerator",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stock_value_generator",
+      "metadata": {
+        "dependencies": [],
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/itacraft/procedures/StockValueGeneratorProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "BlockOfBygg54",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "block_of_bygg_54",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/itacraft/blockstates/block_of_bygg_54.json",
+          "src/main/resources/data/itacraft/loot_table/blocks/block_of_bygg_54.json",
+          "src/main/java/net/mcreator/itacraft/block/BlockOfBygg54Block.java",
+          "src/main/resources/assets/itacraft/items/block_of_bygg_54.json",
+          "src/main/resources/assets/itacraft/models/item/block_of_bygg_54.json",
+          "src/main/resources/assets/itacraft/models/block/block_of_bygg_54.json"
+        ]
+      }
+    },
+    {
+      "name": "GamerGirl",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gamer_girl",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/itacraft/client/renderer/GamerGirlRenderer.java",
+          "src/main/resources/assets/itacraft/items/gamer_girl_spawn_egg.json",
+          "src/main/java/net/mcreator/itacraft/entity/GamerGirlEntity.java",
+          "src/main/resources/data/itacraft/neoforge/biome_modifier/gamer_girl_biome_modifier.json",
+          "src/main/resources/assets/itacraft/models/item/gamer_girl_spawn_egg.json"
+        ]
+      }
+    },
+    {
+      "name": "TonyHaynes",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tony_haynes",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/itacraft/items/tony_haynes_spawn_egg.json",
+          "src/main/java/net/mcreator/itacraft/entity/TonyHaynesEntity.java",
+          "src/main/java/net/mcreator/itacraft/client/renderer/TonyHaynesRenderer.java",
+          "src/main/resources/assets/itacraft/models/item/tony_haynes_spawn_egg.json",
+          "src/main/resources/data/itacraft/neoforge/biome_modifier/tony_haynes_biome_modifier.json"
+        ]
+      }
+    },
+    {
+      "name": "OsloBorsStructure",
+      "type": "structure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "oslo_bors_structure",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/itacraft/worldgen/structure_set/oslo_bors_structure.json",
+          "src/main/resources/data/itacraft/worldgen/structure/oslo_bors_structure.json",
+          "src/main/resources/data/itacraft/worldgen/template_pool/oslo_bors_structure.json"
+        ]
+      }
+    },
+    {
+      "name": "Wire",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wire",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/itacraft/items/wire.json",
+          "src/main/java/net/mcreator/itacraft/item/WireItem.java",
+          "src/main/resources/assets/itacraft/models/item/wire.json"
+        ]
+      }
+    },
+    {
+      "name": "PatchCable",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "patch_cable",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/itacraft/items/patch_cable.json",
+          "src/main/java/net/mcreator/itacraft/item/PatchCableItem.java",
+          "src/main/resources/assets/itacraft/models/item/patch_cable.json"
+        ]
+      }
+    },
+    {
+      "name": "PatchCableRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "patch_cable_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/itacraft/recipe/patch_cable_recipe.json",
+          "src/main/resources/data/itacraft/advancement/recipes/patch_cable_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "RJ45TypePlug",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rj_45_type_plug",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/itacraft/items/rj_45_type_plug.json",
+          "src/main/resources/assets/itacraft/models/item/rj_45_type_plug.json",
+          "src/main/java/net/mcreator/itacraft/item/RJ45TypePlugItem.java"
+        ]
+      }
+    },
+    {
+      "name": "ModularPliers",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "modular_pliers",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/itacraft/items/modular_pliers.json",
+          "src/main/java/net/mcreator/itacraft/item/ModularPliersItem.java",
+          "src/main/resources/assets/itacraft/models/item/modular_pliers.json"
+        ]
+      }
+    },
+    {
+      "name": "RJ45TypeEthernetCable",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rj_45_type_ethernet_cable",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/itacraft/models/item/rj_45_type_ethernet_cable.json",
+          "src/main/java/net/mcreator/itacraft/item/RJ45TypeEthernetCableItem.java",
+          "src/main/resources/assets/itacraft/items/rj_45_type_ethernet_cable.json"
+        ]
+      }
+    },
+    {
+      "name": "PatchTableGUI",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "patch_table_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/itacraft/world/inventory/PatchTableGUIMenu.java",
+          "src/main/java/net/mcreator/itacraft/client/gui/PatchTableGUIScreen.java"
+        ]
+      }
+    },
+    {
+      "name": "AssembleCable",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "assemble_cable",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/itacraft/procedures/AssembleCableProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "FoiledRJ45TypeEthernetCable",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "foiled_rj_45_type_ethernet_cable",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/itacraft/models/item/foiled_rj_45_type_ethernet_cable.json",
+          "src/main/java/net/mcreator/itacraft/item/FoiledRJ45TypeEthernetCableItem.java",
+          "src/main/resources/assets/itacraft/items/foiled_rj_45_type_ethernet_cable.json"
+        ]
+      }
+    },
+    {
+      "name": "PatchCableDamageType",
+      "type": "damagetype",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "patch_cable_damage_type",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/itacraft/damage_type/patch_cable_damage_type.json"
+        ]
+      }
+    },
+    {
+      "name": "Suicide",
+      "type": "damagetype",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "suicide",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/itacraft/damage_type/suicide.json"
+        ]
+      }
+    },
+    {
+      "name": "Oil",
+      "type": "fluid",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "oil",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/itacraft/fluid/OilFluid.java",
+          "src/main/java/net/mcreator/itacraft/block/OilBlock.java",
+          "src/main/java/net/mcreator/itacraft/client/fluid/OilFluidExtension.java",
+          "src/main/resources/assets/itacraft/blockstates/oil.json",
+          "src/main/java/net/mcreator/itacraft/fluid/types/OilFluidType.java",
+          "src/main/java/net/mcreator/itacraft/item/OilItem.java",
+          "src/main/resources/assets/itacraft/models/block/oil.json",
+          "src/main/resources/assets/itacraft/items/oil_bucket.json"
+        ]
+      }
+    },
+    {
+      "name": "Plastic",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "plastic",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/itacraft/item/PlasticItem.java",
+          "src/main/resources/assets/itacraft/items/plastic.json",
+          "src/main/resources/assets/itacraft/models/item/plastic.json"
+        ]
+      }
+    },
+    {
+      "name": "PlasticRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "plastic_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/itacraft/advancement/recipes/plastic_recipe.json",
+          "src/main/resources/data/itacraft/recipe/plastic_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "WireRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wire_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/itacraft/advancement/recipes/wire_recipe.json",
+          "src/main/resources/data/itacraft/recipe/wire_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "WhiteColoredPlastic",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "white_colored_plastic",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/itacraft/models/item/white_colored_plastic.json",
+          "src/main/resources/assets/itacraft/items/white_colored_plastic.json",
+          "src/main/java/net/mcreator/itacraft/item/WhiteColoredPlasticItem.java"
+        ]
+      }
+    },
+    {
+      "name": "WhiteColoredPlasticRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "white_colored_plastic_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/itacraft/recipe/white_colored_plastic_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "HPWorkstation",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hp_workstation",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/itacraft/block/HPWorkstationBlock.java",
+          "src/main/resources/data/itacraft/loot_table/blocks/hp_workstation.json",
+          "src/main/resources/assets/itacraft/items/hp_workstation.json",
+          "src/main/resources/assets/itacraft/models/item/hp_workstation.json",
+          "src/main/resources/assets/itacraft/models/block/hp_workstation.json",
+          "src/main/resources/assets/itacraft/blockstates/hp_workstation.json"
+        ]
+      }
+    },
+    {
+      "name": "RussiaParticle",
+      "type": "particle",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "russia_particle",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/itacraft/particles/russia_particle.json",
+          "src/main/java/net/mcreator/itacraft/client/particle/RussiaParticleParticle.java"
+        ]
+      }
+    },
+    {
+      "name": "EnKrone",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "en_krone",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/itacraft/models/item/en_krone.json",
+          "src/main/java/net/mcreator/itacraft/item/EnKroneItem.java",
+          "src/main/resources/assets/itacraft/items/en_krone.json"
+        ]
+      }
+    },
+    {
+      "name": "FemKroner",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fem_kroner",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/itacraft/items/fem_kroner.json",
+          "src/main/java/net/mcreator/itacraft/item/FemKronerItem.java",
+          "src/main/resources/assets/itacraft/models/item/fem_kroner.json"
+        ]
+      }
+    },
+    {
+      "name": "TiKroner",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ti_kroner",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/itacraft/item/TiKronerItem.java",
+          "src/main/resources/assets/itacraft/items/ti_kroner.json",
+          "src/main/resources/assets/itacraft/models/item/ti_kroner.json"
+        ]
+      }
+    },
+    {
+      "name": "TjueKroner",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tjue_kroner",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/itacraft/items/tjue_kroner.json",
+          "src/main/resources/assets/itacraft/models/item/tjue_kroner.json",
+          "src/main/java/net/mcreator/itacraft/item/TjueKronerItem.java"
+        ]
+      }
+    },
+    {
+      "name": "ToHundreKroner",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "to_hundre_kroner",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/itacraft/items/to_hundre_kroner.json",
+          "src/main/resources/assets/itacraft/models/item/to_hundre_kroner.json",
+          "src/main/java/net/mcreator/itacraft/item/ToHundreKronerItem.java"
+        ]
+      }
+    },
+    {
+      "name": "HundreKroner",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hundre_kroner",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/itacraft/items/hundre_kroner.json",
+          "src/main/resources/assets/itacraft/models/item/hundre_kroner.json",
+          "src/main/java/net/mcreator/itacraft/item/HundreKronerItem.java"
+        ]
+      }
+    },
+    {
+      "name": "ToHundreKronerRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "to_hundre_kroner_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/itacraft/recipe/to_hundre_kroner_recipe.json",
+          "src/main/resources/data/itacraft/advancement/recipes/to_hundre_kroner_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "FemHundreKronerRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fem_hundre_kroner_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/itacraft/advancement/recipes/fem_hundre_kroner_recipe.json",
+          "src/main/resources/data/itacraft/recipe/fem_hundre_kroner_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "RedColoredPlastic",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "red_colored_plastic",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/itacraft/models/item/red_colored_plastic.json",
+          "src/main/resources/assets/itacraft/items/red_colored_plastic.json",
+          "src/main/java/net/mcreator/itacraft/item/RedColoredPlasticItem.java"
+        ]
+      }
+    },
+    {
+      "name": "RedColoredPlasticRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "red_colored_plastic_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/itacraft/advancement/recipes/red_colored_plastic_recipe.json",
+          "src/main/resources/data/itacraft/recipe/red_colored_plastic_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "EttOre",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ett_ore",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/itacraft/models/item/ett_ore.json",
+          "src/main/java/net/mcreator/itacraft/item/EttOreItem.java",
+          "src/main/resources/assets/itacraft/items/ett_ore.json"
+        ]
+      }
+    },
+    {
+      "name": "TiOre",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ti_ore",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/itacraft/item/TiOreItem.java",
+          "src/main/resources/assets/itacraft/items/ti_ore.json",
+          "src/main/resources/assets/itacraft/models/item/ti_ore.json"
+        ]
+      }
+    }
+  ],
+  "variable_elements": [
+    {
+      "name": "aura",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    }
+  ],
+  "sound_elements": [
+    {
+      "name": "thepriceisright",
+      "files": [
+        "the_price_is_right_-_main"
+      ],
+      "category": "music",
+      "subtitle": ""
+    },
+    {
+      "name": "kaching",
+      "files": [
+        "kaching"
+      ],
+      "category": "ambient",
+      "subtitle": ""
+    }
+  ],
+  "tag_elements": {
+    "ITEMS:mod:stocks": [
+      "CUSTOM:KOGStock"
+    ],
+    "BLOCKS:minecraft:mineable/hoe": [
+      "~CUSTOM:Andreas"
+    ],
+    "ITEMS:minecraft:piglin_loved": [
+      "~CUSTOM:EttTusenKroner",
+      "~CUSTOM:FemHundreKroner",
+      "~CUSTOM:FemtiKroner"
+    ],
+    "BIOMES:minecraft:has_structure/mineshaft_mesa": [
+      "~CUSTOM:Kongsberg"
+    ],
+    "BIOMES:minecraft:has_structure/woodland_mansion": [
+      "~CUSTOM:Kongsberg"
+    ],
+    "BLOCKS:minecraft:overworld_carver_replaceables": [
+      "~Blocks.STONE#0",
+      "~Blocks.GRASS"
+    ],
+    "ITEMS:minecraft:pickaxes": [
+      "~CUSTOM:ModularPliers"
+    ],
+    "ITEMS:minecraft:axes": [
+      "~CUSTOM:ModularPliers"
+    ],
+    "ITEMS:minecraft:swords": [
+      "~CUSTOM:ModularPliers"
+    ],
+    "ITEMS:itacraft:modular_pliers_repair_items": [
+      "~CUSTOM:EttTusenKroner",
+      "~CUSTOM:FemtiKroner"
+    ],
+    "ITEMS:mod:plugs": [
+      "CUSTOM:RJ45TypePlug"
+    ],
+    "ITEMS:mod:cables": [
+      "CUSTOM:PatchCable"
+    ],
+    "BLOCKS:minecraft:replaceable": [
+      "~CUSTOM:Oil"
+    ],
+    "BLOCKS:minecraft:mineable/pickaxe": [
+      "~CUSTOM:HPWorkstation"
+    ],
+    "BLOCKS:minecraft:needs_iron_tool": [
+      "~CUSTOM:HPWorkstation"
+    ]
+  },
+  "tab_element_order": {},
+  "language_map": {
+    "en_us": {
+      "entity.itacraft.geir_haoy": "Geir Håøy",
+      "item.itacraft.geir_haoy_spawn_egg": "Geir Håøy Spawn Egg",
+      "item.itacraft.kog_stock": "KOG Stock",
+      "gui.itacraft.aura_overlay.label_runkehjorne": "(runkehjørne)",
+      "gui.itacraft.oslo_bors.label_oslo_bors": "Oslo Børs",
+      "gui.itacraft.oslo_bors.button_selg_aksje": "Selg aksje",
+      "item.itacraft.jude_spawn_egg": "Jude Spawn Egg",
+      "entity.itacraft.jude": "Jude",
+      "subtitles.thepriceisright": "",
+      "item.itacraft.andreas": "andreas",
+      "gui.itacraft.oslo_bors.label_aura_0": "Din aura: 0",
+      "item.itacraft.femti_kroner": "50 Kroner",
+      "item.itacraft.fem_hundre_kroner": "500 Kroner",
+      "item.itacraft.ett_tusen_kroner": "1000 Kroner",
+      "item.itacraft.personopplysningsblankett": "Personopplysningsblankett",
+      "biome.itacraft.kongsberg": "Kongsberg",
+      "gui.itacraft.nsm_request_interface.label_nasjonal_sikkerhetsmyndighet": "Nasjonal Sikkerhetsmyndighet",
+      "gui.itacraft.nsm_request_interface.label_kostnad": "Kostnad:",
+      "gui.itacraft.nsm_request_interface.button_klarer_meg": "Bli klarert",
+      "gui.itacraft.nsm_request_interface.label_x100": "x100",
+      "entity.itacraft.bodil": "Bodil",
+      "item.itacraft.bodil_spawn_egg": "Bodil Spawn Egg",
+      "key.itacraft.suicide_key": "Suicide Key",
+      "item.itacraft.heroin.description_0": "Testet av norske leger",
+      "item.itacraft.heroin.description_2": "Kreftfremkallende",
+      "item.itacraft.heroin.description_1": "9/10 anbefaler",
+      "item.itacraft.heroin": "Heroin",
+      "item_group.itacraft.stocks": "Stocks",
+      "item.itacraft.block_of_bygg_54": "Block of Bygg 54",
+      "entity.itacraft.gamer_girl": "Gamer Girl",
+      "item.itacraft.gamer_girl_spawn_egg": "Gamer Girl Spawn Egg",
+      "entity.itacraft.tony_haynes": "Tony Haynes",
+      "item.itacraft.tony_haynes_spawn_egg": "Tony Haynes Spawn Egg",
+      "subtitles.kaching": "",
+      "item.itacraft.wire": "Wire",
+      "item.itacraft.patch_cable": "t568b Type Cable",
+      "item.itacraft.rj_45_type_plug": "RJ45 Type plug",
+      "item.itacraft.modular_pliers": "Modular Pliers",
+      "item.itacraft.rj_45_type_ethernet_cable": "RJ45 Type Ethernet Cable",
+      "gui.itacraft.patch_table_gui.label_foil": "Foil",
+      "gui.itacraft.patch_table_gui.label_cable": "Cable",
+      "gui.itacraft.patch_table_gui.label_plug": "Plug",
+      "gui.itacraft.patch_table_gui.button_assemble": "Assemble",
+      "item.itacraft.rj_45_type_ethernet_cable.description_0": "UTP",
+      "item.itacraft.foiled_rj_45_type_ethernet_cable": "Foiled RJ45 Type Ethernet Cable",
+      "item.itacraft.foiled_rj_45_type_ethernet_cable.description_0": "STP",
+      "death.attack.patch_cable_damage_type.item": "%1$s was killed by %2$s using %3$s",
+      "death.attack.patch_cable_damage_type.player": "%1$s died whilst trying to escape %2$s",
+      "death.attack.patch_cable_damage_type": "%1$s died while trying to assemble a fuckass twisted pair ethernet cable",
+      "death.attack.suicide.item": "%1$s was killed by %2$s using %3$s",
+      "death.attack.suicide": "%1$s commited suicide",
+      "death.attack.suicide.player": "%1$s commited suicide while trying to escape %2$s",
+      "fluid.itacraft.oil": "Oil",
+      "fluid_type.itacraft.oil": "Oil",
+      "block.itacraft.oil": "Oil",
+      "item.itacraft.oil_bucket": "Oil Bucket",
+      "item.itacraft.plastic": "Plastic",
+      "item.itacraft.white_colored_plastic": "White Colored Plastic",
+      "item.itacraft.hp_workstation": "HP Workstation",
+      "item.itacraft.en_krone": "En Krone",
+      "item.itacraft.fem_kroner": "5 Kroner",
+      "item.itacraft.ti_kroner": "10 Kroner",
+      "item.itacraft.tjue_kroner": "20 Kroner",
+      "item.itacraft.to_hundre_kroner": "To Hundre Kroner",
+      "item.itacraft.hundre_kroner": "Hundre Kroner",
+      "item.itacraft.red_colored_plastic": "White Colored Plastic",
+      "item.itacraft.ett_ore": "Ett Øre",
+      "item.itacraft.ti_ore": "10 Øre"
+    }
+  },
+  "metadata": {
+    "files": [
+      "src/main/java/net/mcreator/itacraft/init/ItacraftModFluids.java",
+      "src/main/java/net/mcreator/itacraft/init/ItacraftModFluidTypes.java",
+      "src/main/java/net/mcreator/itacraft/network/MenuStateUpdateMessage.java",
+      "src/main/java/net/mcreator/itacraft/init/ItacraftModMenus.java",
+      "src/main/java/net/mcreator/itacraft/init/ItacraftModScreens.java",
+      "src/main/java/net/mcreator/itacraft/init/ItacraftModKeyMappings.java",
+      "src/main/java/net/mcreator/itacraft/init/ItacraftModParticles.java",
+      "src/main/java/net/mcreator/itacraft/init/ItacraftModParticleTypes.java",
+      "src/main/java/net/mcreator/itacraft/init/ItacraftModTrades.java",
+      "src/main/java/net/mcreator/itacraft/init/ItacraftModBlocks.java",
+      "src/main/java/net/mcreator/itacraft/init/ItacraftModItems.java",
+      "src/main/java/net/mcreator/itacraft/init/ItacraftModEntityRenderers.java",
+      "src/main/java/net/mcreator/itacraft/init/ItacraftModEntities.java",
+      "src/main/resources/META-INF/neoforge.mods.toml",
+      "src/main/resources/assets/itacraft/sounds.json",
+      "src/main/java/net/mcreator/itacraft/init/ItacraftModSounds.java",
+      "src/main/java/net/mcreator/itacraft/ItacraftMod.java",
+      "src/main/java/net/mcreator/itacraft/network/ItacraftModVariables.java",
+      "src/main/java/net/mcreator/itacraft/init/ItacraftModModels.java",
+      "src/main/resources/pack.mcmeta",
+      "src/main/java/net/mcreator/itacraft/init/ItacraftModTabs.java"
+    ]
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "itacraft",
+    "modName": "2ITACRAFT",
+    "version": "1.0.0",
+    "author": "MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Not specified",
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "neoforge-1.21.8",
+    "modElementsPackage": "net.mcreator.itacraft"
+  },
+  "mcreatorVersion": 202500345720
+}

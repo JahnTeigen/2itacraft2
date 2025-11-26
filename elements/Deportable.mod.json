@@ -1,0 +1,27 @@
+{
+  "_fv": 79,
+  "_type": "potioneffect",
+  "definition": {
+    "effectName": "Deportable",
+    "icon": "russia_potion_effect",
+    "color": {
+      "value": -1,
+      "falpha": 0.0
+    },
+    "particle": {
+      "value": "CUSTOM:RussiaParticle"
+    },
+    "onAddedSound": {
+      "value": "entity.ghast.scream"
+    },
+    "isInstant": false,
+    "mobEffectCategory": "HARMFUL",
+    "renderStatusInInventory": true,
+    "renderStatusInHUD": true,
+    "isCuredbyHoney": true,
+    "modifiers": [],
+    "onActiveTick": {
+      "name": "DeportableOnEffectActiveTick"
+    }
+  }
+}

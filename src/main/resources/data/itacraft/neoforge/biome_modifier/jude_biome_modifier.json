@@ -1,0 +1,10 @@
+{
+  "type": "neoforge:add_spawns",
+  "biomes": "itacraft:kongsberg",
+  "spawners": {
+    "type": "itacraft:jude",
+    "weight": 20,
+    "minCount": 4,
+    "maxCount": 4
+  }
+}
