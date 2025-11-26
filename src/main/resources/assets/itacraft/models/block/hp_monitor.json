@@ -1,0 +1,9 @@
+{
+  "parent": "itacraft:custom/hpmonitor",
+  "textures": {
+    "all": "itacraft:block/monitor",
+    "particle": "itacraft:block/monitor",
+    "0": "itacraft:block/monitor"
+  },
+  "render_type": "solid"
+}

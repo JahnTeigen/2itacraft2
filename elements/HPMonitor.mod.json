@@ -2,15 +2,15 @@
   "_fv": 79,
   "_type": "block",
   "definition": {
-    "texture": "rb_bot",
-    "textureTop": "rb_top",
-    "textureLeft": "russia",
-    "textureFront": "russia",
-    "textureRight": "russia",
-    "textureBack": "russia",
-    "renderType": 10,
-    "customModelName": "Normal",
-    "rotationMode": 0,
+    "texture": "monitor",
+    "textureTop": "",
+    "textureLeft": "",
+    "textureFront": "",
+    "textureRight": "",
+    "textureBack": "",
+    "renderType": 2,
+    "customModelName": "hpmonitor:default",
+    "rotationMode": 1,
     "enablePitch": false,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
@@ -23,7 +23,7 @@
     },
     "tintType": "No tint",
     "isItemTinted": false,
-    "hasTransparency": false,
+    "hasTransparency": true,
     "connectedSides": false,
     "transparencyType": "SOLID",
     "disableOffset": false,
@@ -39,48 +39,41 @@
       }
     ],
     "customProperties": [],
-    "name": "Russia Block",
+    "name": "HP Monitor",
     "specialInformation": {
       "fixedValue": []
     },
     "hardness": 1.0,
-    "resistance": 20.0,
+    "resistance": 10.0,
     "hasGravity": false,
     "isWaterloggable": false,
     "hasBlockItem": true,
-    "maxStackSize": 1,
-    "rarity": "RARE",
-    "immuneToFire": true,
-    "creativeTabs": [
-      {
-        "value": "OP_BLOCKS"
-      },
-      {
-        "value": "TRANSPORTATION"
-      }
-    ],
-    "destroyTool": "hoe",
+    "maxStackSize": 64,
+    "rarity": "COMMON",
+    "immuneToFire": false,
+    "creativeTabs": [],
+    "destroyTool": "pickaxe",
     "customDrop": {
       "value": ""
     },
     "dropAmount": 1,
-    "xpAmountMin": 6,
-    "xpAmountMax": 7,
+    "xpAmountMin": 0,
+    "xpAmountMax": 0,
     "useLootTableForDrops": false,
     "requiresCorrectTool": true,
     "enchantPowerBonus": 0.0,
     "plantsGrowOn": false,
-    "canRedstoneConnect": true,
-    "lightOpacity": 15,
+    "canRedstoneConnect": false,
+    "lightOpacity": 0,
     "tickRate": 0,
     "tickRandomly": false,
     "isReplaceable": false,
-    "canProvidePower": true,
+    "canProvidePower": false,
     "emittedRedstonePower": {
-      "fixedValue": 1.0
+      "fixedValue": 15.0
     },
     "colorOnMap": "DEFAULT",
-    "noteBlockInstrument": "bass",
+    "noteBlockInstrument": "harp",
     "creativePickItem": {
       "value": ""
     },
@@ -93,14 +86,14 @@
     "flammability": 0,
     "fireSpreadSpeed": 0,
     "isLadder": false,
-    "slipperiness": 1.0,
-    "speedFactor": 1.1,
-    "jumpFactor": 1.1,
+    "slipperiness": 0.6,
+    "speedFactor": 1.0,
+    "jumpFactor": 1.0,
     "reactionToPushing": "NORMAL",
     "isNotColidable": false,
     "isCustomSoundType": false,
     "soundOnStep": {
-      "value": "LODESTONE"
+      "value": "ANVIL"
     },
     "breakSound": {
       "value": ""
@@ -119,7 +112,7 @@
     },
     "luminance": 0,
     "unbreakable": false,
-    "vanillaToolTier": "DIAMOND",
+    "vanillaToolTier": "IRON",
     "isBonemealable": false,
     "sensitiveToVibration": false,
     "vibrationalEvents": [],
@@ -142,9 +135,6 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
-    "onRightClicked": {
-      "name": "RussiaBlockOnBlockRightclicked"
-    },
     "generateFeature": false,
     "restrictionBiomes": [],
     "blocksToReplace": [
