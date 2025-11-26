@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "itacraft:block/udner_vipps",
+    "up": "itacraft:block/top",
+    "north": "itacraft:block/vipps_side",
+    "east": "itacraft:block/vipps_side",
+    "south": "itacraft:block/image",
+    "west": "itacraft:block/vipps_side",
+    "particle": "itacraft:block/udner_vipps"
+  },
+  "render_type": "solid"
+}

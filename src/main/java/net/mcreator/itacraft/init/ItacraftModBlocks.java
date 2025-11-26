@@ -9,11 +9,7 @@ import net.neoforged.neoforge.registries.DeferredBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.Block;
 
-import net.mcreator.itacraft.block.OilBlock;
-import net.mcreator.itacraft.block.KongsbergGruppenPortalBlock;
-import net.mcreator.itacraft.block.HPWorkstationBlock;
-import net.mcreator.itacraft.block.BlockOfBygg54Block;
-import net.mcreator.itacraft.block.AndreasBlock;
+import net.mcreator.itacraft.block.*;
 import net.mcreator.itacraft.ItacraftMod;
 
 import java.util.function.Function;
@@ -25,12 +21,14 @@ public class ItacraftModBlocks {
 	public static final DeferredBlock<Block> BLOCK_OF_BYGG_54;
 	public static final DeferredBlock<Block> OIL;
 	public static final DeferredBlock<Block> HP_WORKSTATION;
+	public static final DeferredBlock<Block> VIPPSMINIBANK;
 	static {
 		ANDREAS = register("andreas", AndreasBlock::new);
 		KONGSBERG_GRUPPEN_PORTAL = register("kongsberg_gruppen_portal", KongsbergGruppenPortalBlock::new);
 		BLOCK_OF_BYGG_54 = register("block_of_bygg_54", BlockOfBygg54Block::new);
 		OIL = register("oil", OilBlock::new);
 		HP_WORKSTATION = register("hp_workstation", HPWorkstationBlock::new);
+		VIPPSMINIBANK = register("vippsminibank", VippsminibankBlock::new);
 	}
 
 	// Start of user code block custom blocks

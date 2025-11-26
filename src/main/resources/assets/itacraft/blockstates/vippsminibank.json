@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "itacraft:block/vippsminibank"
+    },
+    "facing=east": {
+      "model": "itacraft:block/vippsminibank",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "itacraft:block/vippsminibank",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "itacraft:block/vippsminibank",
+      "y": 270
+    }
+  }
+}

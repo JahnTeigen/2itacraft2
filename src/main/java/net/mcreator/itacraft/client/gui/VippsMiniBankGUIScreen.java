@@ -1,5 +1,21 @@
 package net.mcreator.itacraft.client.gui;
 
+import net.neoforged.neoforge.client.network.ClientPacketDistributor;
+
+import net.minecraft.world.level.Level;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.player.Inventory;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.network.chat.Component;
+import net.minecraft.client.renderer.RenderPipelines;
+import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
+import net.minecraft.client.gui.components.Button;
+import net.minecraft.client.gui.GuiGraphics;
+
+import net.mcreator.itacraft.world.inventory.VippsMiniBankGUIMenu;
+import net.mcreator.itacraft.network.VippsMiniBankGUIButtonMessage;
+import net.mcreator.itacraft.init.ItacraftModScreens;
+
 public class VippsMiniBankGUIScreen extends AbstractContainerScreen<VippsMiniBankGUIMenu> implements ItacraftModScreens.ScreenAccessor {
 	private final Level world;
 	private final int x, y, z;
@@ -59,6 +75,12 @@ public class VippsMiniBankGUIScreen extends AbstractContainerScreen<VippsMiniBan
 	public void init() {
 		super.init();
 		button_overfor = Button.builder(Component.translatable("gui.itacraft.vipps_mini_bank_gui.button_overfor"), e -> {
+			int x = VippsMiniBankGUIScreen.this.x;
+			int y = VippsMiniBankGUIScreen.this.y;
+			if (true) {
+				ClientPacketDistributor.sendToServer(new VippsMiniBankGUIButtonMessage(0, x, y, z));
+				VippsMiniBankGUIButtonMessage.handleButtonAction(entity, 0, x, y, z);
+			}
 		}).bounds(this.leftPos + 69, this.topPos + 67, 61, 20).build();
 		this.addRenderableWidget(button_overfor);
 	}
