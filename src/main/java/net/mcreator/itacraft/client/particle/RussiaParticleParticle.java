@@ -26,17 +26,21 @@ public class RussiaParticleParticle extends TextureSheetParticle {
 	}
 
 	private final SpriteSet spriteSet;
+	private float angularVelocity;
+	private float angularAcceleration;
 
 	protected RussiaParticleParticle(ClientLevel world, double x, double y, double z, double vx, double vy, double vz, SpriteSet spriteSet) {
 		super(world, x, y, z);
 		this.spriteSet = spriteSet;
 		this.setSize(0.2f, 0.2f);
-		this.lifetime = 7;
-		this.gravity = 0f;
+		this.lifetime = 14;
+		this.gravity = 0.1f;
 		this.hasPhysics = true;
 		this.xd = vx * 1;
 		this.yd = vy * 1;
 		this.zd = vz * 1;
+		this.angularVelocity = 0.01f;
+		this.angularAcceleration = 0f;
 		this.setSpriteFromAge(spriteSet);
 	}
 
@@ -48,6 +52,9 @@ public class RussiaParticleParticle extends TextureSheetParticle {
 	@Override
 	public void tick() {
 		super.tick();
+		this.oRoll = this.roll;
+		this.roll += this.angularVelocity;
+		this.angularVelocity += this.angularAcceleration;
 		if (!this.removed) {
 			this.setSprite(this.spriteSet.get((this.age / 1) % 1 + 1, 1));
 		}

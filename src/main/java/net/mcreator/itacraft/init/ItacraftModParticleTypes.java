@@ -14,5 +14,5 @@ import net.mcreator.itacraft.ItacraftMod;
 
 public class ItacraftModParticleTypes {
 	public static final DeferredRegister<ParticleType<?>> REGISTRY = DeferredRegister.create(Registries.PARTICLE_TYPE, ItacraftMod.MODID);
-	public static final DeferredHolder<ParticleType<?>, SimpleParticleType> RUSSIA_PARTICLE = REGISTRY.register("russia_particle", () -> new SimpleParticleType(false));
+	public static final DeferredHolder<ParticleType<?>, SimpleParticleType> RUSSIA_PARTICLE = REGISTRY.register("russia_particle", () -> new SimpleParticleType(true));
 }
