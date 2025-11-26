@@ -1,0 +1,53 @@
+{
+  "_fv": 79,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "unlockingItems": [
+      {
+        "value": "CUSTOM:RedColoredPlastic"
+      }
+    ],
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": "Items.IRON_NUGGET"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:RedColoredPlastic"
+      },
+      {
+        "value": "Items.IRON_INGOT"
+      },
+      {
+        "value": "CUSTOM:RedColoredPlastic"
+      },
+      {
+        "value": "CUSTOM:RedColoredPlastic"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:RedColoredPlastic"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:ModularPliers"
+    },
+    "name": "modular_pliers_recipe",
+    "namespace": "mod"
+  }
+}

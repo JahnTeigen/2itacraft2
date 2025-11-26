@@ -8,7 +8,7 @@
     "textureFront": "",
     "textureRight": "",
     "textureBack": "",
-    "renderType": 3,
+    "renderType": 2,
     "customModelName": "hpworkstation:default",
     "rotationMode": 1,
     "enablePitch": false,

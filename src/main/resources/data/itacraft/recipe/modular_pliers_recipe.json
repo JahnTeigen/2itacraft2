@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "bcb",
+    "b b"
+  ],
+  "key": {
+    "a": "minecraft:iron_nugget",
+    "b": "itacraft:red_colored_plastic",
+    "c": "minecraft:iron_ingot"
+  },
+  "result": {
+    "id": "itacraft:modular_pliers",
+    "count": 1
+  }
+}

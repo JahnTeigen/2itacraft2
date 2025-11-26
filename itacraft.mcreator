@@ -877,19 +877,6 @@
       }
     },
     {
-      "name": "RussiaParticle",
-      "type": "particle",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "russia_particle",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/itacraft/particles/russia_particle.json",
-          "src/main/java/net/mcreator/itacraft/client/particle/RussiaParticleParticle.java"
-        ]
-      }
-    },
-    {
       "name": "EnKrone",
       "type": "item",
       "compiles": true,
@@ -1080,6 +1067,19 @@
           "src/main/java/net/mcreator/itacraft/world/inventory/VippsMiniBankGUIMenu.java"
         ]
       }
+    },
+    {
+      "name": "ModularPliersRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "modular_pliers_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/itacraft/advancement/recipes/modular_pliers_recipe.json",
+          "src/main/resources/data/itacraft/recipe/modular_pliers_recipe.json"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -1158,19 +1158,6 @@
     ],
     "BLOCKS:minecraft:needs_iron_tool": [
       "~CUSTOM:HPWorkstation"
-    ],
-    "ITEMS:mod:tag": [
-      "CUSTOM:FemtiKroner",
-      "CUSTOM:FemHundreKroner",
-      "CUSTOM:EttTusenKroner",
-      "CUSTOM:HundreKroner",
-      "CUSTOM:ToHundreKroner",
-      "CUSTOM:TjueKroner",
-      "CUSTOM:TiKroner",
-      "CUSTOM:FemKroner",
-      "CUSTOM:EnKrone",
-      "CUSTOM:EttOre",
-      "CUSTOM:TiOre"
     ]
   },
   "tab_element_order": {},
@@ -1253,27 +1240,27 @@
   },
   "metadata": {
     "files": [
-      "src/main/java/net/mcreator/itacraft/init/ItacraftModFluidTypes.java",
       "src/main/java/net/mcreator/itacraft/init/ItacraftModFluids.java",
-      "src/main/java/net/mcreator/itacraft/init/ItacraftModMenus.java",
+      "src/main/java/net/mcreator/itacraft/init/ItacraftModFluidTypes.java",
       "src/main/java/net/mcreator/itacraft/network/MenuStateUpdateMessage.java",
+      "src/main/java/net/mcreator/itacraft/init/ItacraftModMenus.java",
       "src/main/java/net/mcreator/itacraft/init/ItacraftModScreens.java",
       "src/main/java/net/mcreator/itacraft/init/ItacraftModKeyMappings.java",
-      "src/main/java/net/mcreator/itacraft/init/ItacraftModParticleTypes.java",
       "src/main/java/net/mcreator/itacraft/init/ItacraftModParticles.java",
+      "src/main/java/net/mcreator/itacraft/init/ItacraftModParticleTypes.java",
       "src/main/java/net/mcreator/itacraft/init/ItacraftModTrades.java",
       "src/main/java/net/mcreator/itacraft/init/ItacraftModBlocks.java",
       "src/main/java/net/mcreator/itacraft/init/ItacraftModItems.java",
-      "src/main/java/net/mcreator/itacraft/init/ItacraftModEntities.java",
       "src/main/java/net/mcreator/itacraft/init/ItacraftModEntityRenderers.java",
-      "src/main/resources/assets/itacraft/sounds.json",
-      "src/main/java/net/mcreator/itacraft/network/ItacraftModVariables.java",
-      "src/main/java/net/mcreator/itacraft/ItacraftMod.java",
+      "src/main/java/net/mcreator/itacraft/init/ItacraftModEntities.java",
       "src/main/resources/META-INF/neoforge.mods.toml",
+      "src/main/resources/assets/itacraft/sounds.json",
       "src/main/java/net/mcreator/itacraft/init/ItacraftModSounds.java",
-      "src/main/java/net/mcreator/itacraft/init/ItacraftModTabs.java",
+      "src/main/java/net/mcreator/itacraft/ItacraftMod.java",
+      "src/main/java/net/mcreator/itacraft/network/ItacraftModVariables.java",
+      "src/main/java/net/mcreator/itacraft/init/ItacraftModModels.java",
       "src/main/resources/pack.mcmeta",
-      "src/main/java/net/mcreator/itacraft/init/ItacraftModModels.java"
+      "src/main/java/net/mcreator/itacraft/init/ItacraftModTabs.java"
     ]
   },
   "foldersRoot": {
