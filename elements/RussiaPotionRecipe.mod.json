@@ -18,7 +18,7 @@
       "value": "CUSTOM:Communism"
     },
     "brewingReturnStack": {
-      "value": "CUSTOM:RussiaBlock"
+      "value": "POTION:CUSTOM:RussiaPotion"
     },
     "name": "russia_potion_recipe",
     "namespace": "mod"
