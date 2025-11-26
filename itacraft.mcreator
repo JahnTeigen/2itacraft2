@@ -1085,7 +1085,7 @@
     {
       "name": "Vippsminibank",
       "type": "block",
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "vippsminibank",
       "metadata": {
@@ -1134,7 +1134,7 @@
     {
       "name": "RussiaBlock",
       "type": "block",
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "russia_block",
       "metadata": {
@@ -1163,7 +1163,7 @@
     {
       "name": "HPMonitor",
       "type": "block",
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "hp_monitor",
       "metadata": {
