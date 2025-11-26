@@ -60,7 +60,7 @@ public class RussiaBlockBlock extends Block {
 		double hitY = hit.getLocation().y;
 		double hitZ = hit.getLocation().z;
 		Direction direction = hit.getDirection();
-		RussiaBlockOnBlockRightclickedProcedure.execute(world, x, y, z);
+		RussiaBlockOnBlockRightclickedProcedure.execute(world, x, y, z, entity);
 		return InteractionResult.SUCCESS;
 	}
 }
