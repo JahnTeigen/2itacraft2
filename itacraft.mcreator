@@ -1110,7 +1110,8 @@
           "src/main/resources/assets/itacraft/particles/russiaparticles.json",
           "src/main/java/net/mcreator/itacraft/client/particle/RussiaparticlesParticle.java"
         ]
-      }
+      },
+      "path": "~/MatveySaker"
     },
     {
       "name": "RussiaBlock",
@@ -1127,7 +1128,8 @@
           "src/main/resources/data/itacraft/loot_table/blocks/russia_block.json",
           "src/main/resources/assets/itacraft/blockstates/russia_block.json"
         ]
-      }
+      },
+      "path": "~/MatveySaker"
     },
     {
       "name": "DeportablePotionEffect",
@@ -1139,7 +1141,8 @@
         "files": [
           "src/main/java/net/mcreator/itacraft/potion/DeportablePotionEffectMobEffect.java"
         ]
-      }
+      },
+      "path": "~/MatveySaker"
     },
     {
       "name": "RussiaBlockOnBlockRightclicked",
@@ -1173,7 +1176,8 @@
         "files": [
           "src/main/java/net/mcreator/itacraft/procedures/RussiaBlockOnBlockRightclickedProcedure.java"
         ]
-      }
+      },
+      "path": "~/MatveySaker"
     },
     {
       "name": "DeportablePotionEffectOnEffectActiveTick",
@@ -1207,7 +1211,8 @@
         "files": [
           "src/main/java/net/mcreator/itacraft/procedures/DeportablePotionEffectOnEffectActiveTickProcedure.java"
         ]
-      }
+      },
+      "path": "~/MatveySaker"
     },
     {
       "name": "Vippsminibank",
@@ -1267,7 +1272,8 @@
       "registry_name": "russia_potion",
       "metadata": {
         "files": []
-      }
+      },
+      "path": "~/MatveySaker"
     },
     {
       "name": "Communism",
@@ -1281,7 +1287,8 @@
           "src/main/resources/assets/itacraft/items/communism.json",
           "src/main/resources/assets/itacraft/models/item/communism.json"
         ]
-      }
+      },
+      "path": "~/MatveySaker"
     },
     {
       "name": "RussiaBlockRecipe",
@@ -1293,7 +1300,8 @@
         "files": [
           "src/main/resources/data/itacraft/recipe/russia_block_recipe.json"
         ]
-      }
+      },
+      "path": "~/MatveySaker"
     },
     {
       "name": "RussiaPotionRecipe",
@@ -1305,7 +1313,8 @@
         "files": [
           "src/main/java/net/mcreator/itacraft/recipe/brewing/RussiaPotionRecipeBrewingRecipe.java"
         ]
-      }
+      },
+      "path": "~/MatveySaker"
     },
     {
       "name": "CommunismRecipe",
@@ -1317,7 +1326,8 @@
         "files": [
           "src/main/resources/data/itacraft/recipe/communism_recipe.json"
         ]
-      }
+      },
+      "path": "~/MatveySaker"
     },
     {
       "name": "FirestaffRightclickedOnBlock",
@@ -1823,7 +1833,13 @@
       "item.minecraft.tipped_arrow.effect.russia_potion": "Arrow of Russia",
       "item.minecraft.lingering_potion.effect.russia_potion": "Lingering Potion of Russia",
       "item.minecraft.splash_potion.effect.russia_potion": "Splash Potion of Russia",
-      "item.itacraft.communism": "Communism"
+      "item.itacraft.communism": "Communism",
+      "item.itacraft.firestaff": "Firestaff",
+      "painting.itacraft.max_burgers.title": "Max Burgers",
+      "painting.itacraft.max_burgers.author": "Richard Bergfors",
+      "item.itacraft.tom_nal": "Tom Nål",
+      "item.itacraft.nal_med_noe_rart_i.description_0": "Hva er det oppi her mon tro?",
+      "item.itacraft.nal_med_noe_rart_i": "Nål med noe rart i"
     }
   },
   "metadata": {
@@ -1836,6 +1852,7 @@
       "src/main/java/net/mcreator/itacraft/init/ItacraftModScreens.java",
       "src/main/java/net/mcreator/itacraft/init/ItacraftModMenus.java",
       "src/main/java/net/mcreator/itacraft/init/ItacraftModKeyMappings.java",
+      "src/main/resources/data/minecraft/tags/painting_variant/placeable.json",
       "src/main/java/net/mcreator/itacraft/init/ItacraftModParticleTypes.java",
       "src/main/java/net/mcreator/itacraft/init/ItacraftModParticles.java",
       "src/main/java/net/mcreator/itacraft/init/ItacraftModMobEffects.java",
