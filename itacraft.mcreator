@@ -42,7 +42,8 @@
         "files": [
           "src/main/java/net/mcreator/itacraft/procedures/KOGStockPropertyValueProviderProcedure.java"
         ]
-      }
+      },
+      "path": "~/Procedures"
     },
     {
       "name": "OsloBors",
@@ -102,7 +103,8 @@
         "files": [
           "src/main/java/net/mcreator/itacraft/procedures/OsloBorsThisGUIIsOpenedProcedure.java"
         ]
-      }
+      },
+      "path": "~/Procedures"
     },
     {
       "name": "UpdateAura",
@@ -136,7 +138,8 @@
         "files": [
           "src/main/java/net/mcreator/itacraft/procedures/UpdateAuraProcedure.java"
         ]
-      }
+      },
+      "path": "~/Procedures"
     },
     {
       "name": "OsloBorsThisGUIIsClosed",
@@ -166,7 +169,8 @@
         "files": [
           "src/main/java/net/mcreator/itacraft/procedures/OsloBorsThisGUIIsClosedProcedure.java"
         ]
-      }
+      },
+      "path": "~/Procedures"
     },
     {
       "name": "AndreasSinHemmelighet",
@@ -196,7 +200,8 @@
         "files": [
           "src/main/java/net/mcreator/itacraft/procedures/AndreasSinHemmelighetProcedure.java"
         ]
-      }
+      },
+      "path": "~/Procedures"
     },
     {
       "name": "Andreas",
@@ -350,7 +355,8 @@
         "files": [
           "src/main/java/net/mcreator/itacraft/procedures/KongsbergDimensionIgniterProcedure.java"
         ]
-      }
+      },
+      "path": "~/Procedures"
     },
     {
       "name": "NSMRequestInterface",
@@ -413,7 +419,8 @@
         "files": [
           "src/main/java/net/mcreator/itacraft/procedures/GetPOBProcedure.java"
         ]
-      }
+      },
+      "path": "~/Procedures"
     },
     {
       "name": "SuicideKeyOnKeyPressed",
@@ -435,7 +442,8 @@
         "files": [
           "src/main/java/net/mcreator/itacraft/procedures/SuicideKeyOnKeyPressedProcedure.java"
         ]
-      }
+      },
+      "path": "~/Procedures"
     },
     {
       "name": "SuicideKey",
@@ -505,7 +513,8 @@
         "files": [
           "src/main/java/net/mcreator/itacraft/procedures/HeroinPlayerFinishesUsingItemProcedure.java"
         ]
-      }
+      },
+      "path": "~/Procedures"
     },
     {
       "name": "Heroin",
@@ -553,7 +562,8 @@
         "files": [
           "src/main/java/net/mcreator/itacraft/procedures/StockValueGeneratorProcedure.java"
         ]
-      }
+      },
+      "path": "~/Procedures"
     },
     {
       "name": "BlockOfBygg54",
@@ -734,7 +744,8 @@
         "files": [
           "src/main/java/net/mcreator/itacraft/procedures/AssembleCableProcedure.java"
         ]
-      }
+      },
+      "path": "~/Procedures"
     },
     {
       "name": "FoiledRJ45TypeEthernetCable",
@@ -1262,7 +1273,8 @@
         "files": [
           "src/main/java/net/mcreator/itacraft/procedures/VippsMiniBankProcedureProcedure.java"
         ]
-      }
+      },
+      "path": "~/Procedures"
     },
     {
       "name": "RussiaPotion",
@@ -1560,7 +1572,8 @@
         "files": [
           "src/main/java/net/mcreator/itacraft/procedures/NalMedNoeRartIOnPlayerStoppedUsingProcedure.java"
         ]
-      }
+      },
+      "path": "~/Procedures"
     },
     {
       "name": "NalMedNoeRartI",
@@ -1727,7 +1740,8 @@
         "files": [
           "src/main/java/net/mcreator/itacraft/procedures/TaUTPengerProcedure.java"
         ]
-      }
+      },
+      "path": "~/Procedures"
     },
     {
       "name": "UpdateSliderMax",
@@ -1740,7 +1754,8 @@
         "files": [
           "src/main/java/net/mcreator/itacraft/procedures/UpdateSliderMaxProcedure.java"
         ]
-      }
+      },
+      "path": "~/Procedures"
     }
   ],
   "variable_elements": [
@@ -2016,6 +2031,10 @@
     "children": [
       {
         "name": "MatveySaker",
+        "children": []
+      },
+      {
+        "name": "Procedures",
         "children": []
       }
     ]
