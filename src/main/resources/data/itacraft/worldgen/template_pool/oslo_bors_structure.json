@@ -6,7 +6,7 @@
       "weight": 1,
       "element": {
         "element_type": "minecraft:single_pool_element",
-        "location": "itacraft:oslobors",
+        "location": "itacraft:crackhouse",
         "projection": "rigid",
         "processors": {
           "processors": [

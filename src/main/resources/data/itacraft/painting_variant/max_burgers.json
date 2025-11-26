@@ -1,0 +1,11 @@
+{
+  "asset_id": "itacraft:max_burgers",
+  "height": 4,
+  "width": 6,
+  "title": {
+    "translate": "painting.itacraft.max_burgers.title"
+  },
+  "author": {
+    "translate": "painting.itacraft.max_burgers.author"
+  }
+}

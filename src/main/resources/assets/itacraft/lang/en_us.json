@@ -79,5 +79,8 @@
   "biome.itacraft.drammen": "Drammen",
   "gui.itacraft.vipps_mini_bank_gui.withdrawalSlider_prefix": "",
   "gui.itacraft.vipps_mini_bank_gui.withdrawalSlider_suffix": "",
-  "gui.itacraft.vipps_mini_bank_gui.button_hent_penger": "Hent Alle Penger"
+  "gui.itacraft.vipps_mini_bank_gui.button_hent_penger": "Hent Alle Penger",
+  "subtitles.china_tts_1": "speaking chinese",
+  "subtitles.russia_tts_1": "speaking russian",
+  "subtitles.sukablyat": "swearing"
 }

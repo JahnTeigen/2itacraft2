@@ -1,0 +1,27 @@
+{
+  "_fv": 79,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Smelting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "unlockingItems": [
+      {
+        "value": "CUSTOM:Firestaff"
+      }
+    ],
+    "cookingBookCategory": "MISC",
+    "xpReward": 67.0,
+    "cookingTime": 670,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "smeltingInputStack": {
+      "value": "CUSTOM:Firestaff"
+    },
+    "smeltingReturnStack": {
+      "value": "CUSTOM:Firestaff"
+    },
+    "name": "recharge_projectile",
+    "namespace": "mod"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "_fv": 79,
+  "_type": "painting",
+  "definition": {
+    "texture": "max_painting",
+    "width": 96,
+    "height": 64,
+    "title": "Max Burgers",
+    "author": "Richard Bergfors"
+  }
+}

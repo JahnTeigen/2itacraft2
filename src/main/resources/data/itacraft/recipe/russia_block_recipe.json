@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "bcb",
+    "ddd"
+  ],
+  "key": {
+    "a": "minecraft:white_concrete",
+    "b": "minecraft:blue_concrete",
+    "c": "minecraft:redstone",
+    "d": "minecraft:red_concrete"
+  },
+  "result": {
+    "id": "itacraft:russia_block",
+    "count": 1
+  }
+}

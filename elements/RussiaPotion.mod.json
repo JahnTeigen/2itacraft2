@@ -9,7 +9,7 @@
     "effects": [
       {
         "effect": {
-          "value": "CUSTOM:Deportable"
+          "value": "CUSTOM:DeportablePotionEffect"
         },
         "duration": 3600,
         "infinite": false,
@@ -19,11 +19,31 @@
       },
       {
         "effect": {
-          "value": "GLOWING"
+          "value": "SPEED"
         },
-        "duration": 3600,
+        "duration": 1200,
         "infinite": false,
         "amplifier": 1,
+        "ambient": false,
+        "showParticles": true
+      },
+      {
+        "effect": {
+          "value": "HUNGER"
+        },
+        "duration": 600,
+        "infinite": false,
+        "amplifier": 2,
+        "ambient": false,
+        "showParticles": true
+      },
+      {
+        "effect": {
+          "value": "STRENGTH"
+        },
+        "duration": 1200,
+        "infinite": false,
+        "amplifier": 3,
         "ambient": false,
         "showParticles": true
       }
