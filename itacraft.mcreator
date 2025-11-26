@@ -1616,19 +1616,6 @@
       }
     },
     {
-      "name": "SpisteGugge",
-      "type": "achievement",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "spiste_gugge",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/itacraft/advancement/spiste_gugge.json"
-        ]
-      },
-      "path": "~/MatveySaker"
-    },
-    {
       "name": "Forgiftet",
       "type": "damagetype",
       "compiles": true,
@@ -1637,29 +1624,6 @@
       "metadata": {
         "files": [
           "src/main/resources/data/itacraft/damage_type/forgiftet.json"
-        ]
-      },
-      "path": "~/MatveySaker"
-    },
-    {
-      "name": "GiftigGuggeRightclicked",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "giftig_gugge_rightclicked",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ],
-        "files": [
-          "src/main/java/net/mcreator/itacraft/procedures/GiftigGuggeRightclickedProcedure.java"
         ]
       },
       "path": "~/MatveySaker"
@@ -1703,6 +1667,42 @@
       "path": "~/MatveySaker"
     },
     {
+      "name": "SpisteGugge",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spiste_gugge",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/itacraft/advancement/spiste_gugge.json"
+        ]
+      },
+      "path": "~/MatveySaker"
+    },
+    {
+      "name": "GiftigGuggeRightclicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "giftig_gugge_rightclicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/itacraft/procedures/GiftigGuggeRightclickedProcedure.java"
+        ]
+      },
+      "path": "~/MatveySaker"
+    },
+    {
       "name": "GuggeCraft",
       "type": "recipe",
       "compiles": true,
@@ -1715,6 +1715,32 @@
         ]
       },
       "path": "~/MatveySaker"
+    },
+    {
+      "name": "TaUTPenger",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "ta_ut_penger",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/mcreator/itacraft/procedures/TaUTPengerProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "UpdateSliderMax",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "update_slider_max",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/mcreator/itacraft/procedures/UpdateSliderMaxProcedure.java"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -1941,12 +1967,9 @@
       "item.itacraft.tom_nal": "Tom Nål",
       "item.itacraft.nal_med_noe_rart_i.description_0": "Hva er det oppi her mon tro?",
       "item.itacraft.nal_med_noe_rart_i": "Nål med noe rart i",
-      "advancements.spiste_gugge.descr": "Spiste giftig gugge..... hvorfor????",
-      "advancements.spiste_gugge.title": "Spiste Gugge",
-      "death.attack.forgiftet.player": "%1$s døde mens jetta fra %2$s",
-      "death.attack.forgiftet.item": "%1$s blev myrdet af %2$s ved bruk av %3$s",
-      "death.attack.forgiftet": "%1$s gjorde noe han ikke skulle.",
-      "item.itacraft.giftig_gugge": "Giftig Gugge"
+      "gui.itacraft.vipps_mini_bank_gui.withdrawalSlider_prefix": "",
+      "gui.itacraft.vipps_mini_bank_gui.withdrawalSlider_suffix": "",
+      "gui.itacraft.vipps_mini_bank_gui.button_hent_penger": "Hent Alle Penger"
     }
   },
   "metadata": {

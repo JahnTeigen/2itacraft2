@@ -14,72 +14,58 @@ public class VippsMiniBankProcedureProcedure {
         if (entity == null)
             return;
         
-        // Check if both slots have items
-        if (getAmountInGUISlot(entity, 1) > 0 && getAmountInGUISlot(entity, 2) > 0) {
+        // CHECK IF SLOT 2 HAS A HAWKPHONE
+        ItemStack phoneItem = (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof ItacraftModMenus.MenuAccessor _menu ? _menu.getSlots().get(2).getItem() : ItemStack.EMPTY);
+        
+        if (phoneItem.getItem() != ItacraftModItems.HAWK_PHONE.get()) {
+            return; // Exit if it's not a HawkPhone
+        }
+        
+        // DEPOSIT: If slot 1 has money items, deposit them into the phone
+        if (getAmountInGUISlot(entity, 1) > 0) {
+            depositMoney(entity, phoneItem);
+        }
+    }
+    
+    // DEPOSIT MONEY INTO PHONE
+    private static void depositMoney(Entity entity, ItemStack phoneItem) {
+        ItemStack moneyItem = (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof ItacraftModMenus.MenuAccessor _menu ? _menu.getSlots().get(1).getItem() : ItemStack.EMPTY);
+        
+        int moneyCount = moneyItem.getCount();
+        double moneyValuePerItem = getMoneyValue(moneyItem);
+        
+        if (moneyValuePerItem > 0) {
+            double totalMoneyValue = moneyCount * moneyValuePerItem;
+            double currentMoney = phoneItem.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("money").orElse(0.0);
+            double newMoney = currentMoney + totalMoneyValue;
             
-            // Get the items from both slots
-            ItemStack moneyItem = (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof ItacraftModMenus.MenuAccessor _menu ? _menu.getSlots().get(1).getItem() : ItemStack.EMPTY);
-            ItemStack phoneItem = (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof ItacraftModMenus.MenuAccessor _menu ? _menu.getSlots().get(2).getItem() : ItemStack.EMPTY);
+            // Update phone's money tag
+            CustomData.update(DataComponents.CUSTOM_DATA, phoneItem, tag -> tag.putDouble("money", newMoney));
             
-            // CHECK IF SLOT 2 IS ACTUALLY A HAWKPHONE
-            if (phoneItem.getItem() != ItacraftModItems.HAWK_PHONE.get()) {
-                return; // Exit if it's not a HawkPhone
-            }
-            
-            // Get the COUNT of money items (how many in the stack)
-            int moneyCount = moneyItem.getCount();
-            
-            // Determine the value of ONE money item
-            double moneyValuePerItem = 0;
-            
-            // Check which money item it is and set the value
-            if (moneyItem.getItem() == ItacraftModItems.ETT_ORE.get()) {
-                moneyValuePerItem = 0.01;
-            } else if (moneyItem.getItem() == ItacraftModItems.TI_ORE.get()) {
-                moneyValuePerItem = 0.10;
-            } else if (moneyItem.getItem() == ItacraftModItems.FEM_KRONER.get()) {
-                moneyValuePerItem = 5;
-            } else if (moneyItem.getItem() == ItacraftModItems.TI_KRONER.get()) {
-                moneyValuePerItem = 10;
-            } else if (moneyItem.getItem() == ItacraftModItems.TJUE_KRONER.get()) {
-                moneyValuePerItem = 20;
-            } else if (moneyItem.getItem() == ItacraftModItems.FEMTI_KRONER.get()) {
-                moneyValuePerItem = 50;
-            } else if (moneyItem.getItem() == ItacraftModItems.HUNDRE_KRONER.get()) {
-                moneyValuePerItem = 100;
-            } else if (moneyItem.getItem() == ItacraftModItems.TO_HUNDRE_KRONER.get()) {
-                moneyValuePerItem = 200;
-            } else if (moneyItem.getItem() == ItacraftModItems.FEM_HUNDRE_KRONER.get()) {
-                moneyValuePerItem = 500;
-            } else if (moneyItem.getItem() == ItacraftModItems.ETT_TUSEN_KRONER.get()) {
-                moneyValuePerItem = 1000;
-            }
-            
-            if (moneyValuePerItem > 0) {
-                // Calculate TOTAL money value (count × value per item)
-                double totalMoneyValue = moneyCount * moneyValuePerItem;
-                
-                // Get current money value from phone (default to 0 if tag doesn't exist)
-                double currentMoney = phoneItem.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("money").orElse(0.0);
-                
-                // Calculate new money value
-                double newMoney = currentMoney + totalMoneyValue;
-                
-                // Update the phone's money tag
-                {
-                    final String _tagName = "money";
-                    final double _tagValue = newMoney;
-                    CustomData.update(DataComponents.CUSTOM_DATA, phoneItem, tag -> tag.putDouble(_tagName, _tagValue));
-                }
-                
-                // Remove ALL the money items from slot 1
-                if (entity instanceof Player _player && _player.containerMenu instanceof ItacraftModMenus.MenuAccessor _menu) {
-                    _menu.getSlots().get(1).set(ItemStack.EMPTY);
-                }
+            // Remove money items from slot 1
+            if (entity instanceof Player _player && _player.containerMenu instanceof ItacraftModMenus.MenuAccessor _menu) {
+                _menu.getSlots().get(1).set(ItemStack.EMPTY);
             }
         }
     }
-
+    
+    // Helper method to get money value
+    private static double getMoneyValue(ItemStack moneyItem) {
+        if (moneyItem.getItem() == ItacraftModItems.ETT_ORE.get()) return 0.01;
+        if (moneyItem.getItem() == ItacraftModItems.TI_ORE.get()) return 0.10;
+        if (moneyItem.getItem() == ItacraftModItems.EN_KRONE.get()) return 1;
+        if (moneyItem.getItem() == ItacraftModItems.FEM_KRONER.get()) return 5;
+        if (moneyItem.getItem() == ItacraftModItems.TI_KRONER.get()) return 10;
+        if (moneyItem.getItem() == ItacraftModItems.TJUE_KRONER.get()) return 20;
+        if (moneyItem.getItem() == ItacraftModItems.FEMTI_KRONER.get()) return 50;
+        if (moneyItem.getItem() == ItacraftModItems.HUNDRE_KRONER.get()) return 100;
+        if (moneyItem.getItem() == ItacraftModItems.TO_HUNDRE_KRONER.get()) return 200;
+        if (moneyItem.getItem() == ItacraftModItems.FEM_HUNDRE_KRONER.get()) return 500;
+        if (moneyItem.getItem() == ItacraftModItems.ETT_TUSEN_KRONER.get()) return 1000;
+        return 0;
+    }
+    
+    // Helper method to get amount in GUI slot
     private static int getAmountInGUISlot(Entity entity, int sltid) {
         if (entity instanceof Player player && player.containerMenu instanceof ItacraftModMenus.MenuAccessor menuAccessor) {
             ItemStack stack = menuAccessor.getSlots().get(sltid).getItem();
