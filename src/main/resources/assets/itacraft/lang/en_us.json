@@ -72,5 +72,9 @@
   "gui.itacraft.vipps_mini_bank_gui.label_vipps_minibank": "Vipps Minibank",
   "gui.itacraft.vipps_mini_bank_gui.button_overfor": "Overfør",
   "gui.itacraft.vipps_mini_bank_gui.label_kontanter": "Kontanter",
-  "item.itacraft.vippsminibank": "Vippsminibank"
+  "item.itacraft.vippsminibank": "Vippsminibank",
+  "item.itacraft.russia_block": "Russia Block",
+  "effect.itacraft.deportable_potion_effect": "Deportable Potion Effect",
+  "item.itacraft.hp_monitor": "HP Monitor",
+  "biome.itacraft.drammen": "Drammen"
 }
