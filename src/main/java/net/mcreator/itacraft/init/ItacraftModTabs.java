@@ -53,6 +53,7 @@ public class ItacraftModTabs {
 			tabData.accept(ItacraftModItems.HUNDRE_KRONER.get());
 			tabData.accept(ItacraftModItems.ETT_ORE.get());
 			tabData.accept(ItacraftModItems.TI_ORE.get());
+			tabData.accept(ItacraftModItems.HAWK_PHONE.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS) {
 			tabData.accept(ItacraftModItems.HEROIN.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {

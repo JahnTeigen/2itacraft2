@@ -60,6 +60,7 @@ public class ItacraftModItems {
 	public static final DeferredItem<Item> RED_COLORED_PLASTIC;
 	public static final DeferredItem<Item> ETT_ORE;
 	public static final DeferredItem<Item> TI_ORE;
+	public static final DeferredItem<Item> HAWK_PHONE;
 	static {
 		GEIR_HAOY_SPAWN_EGG = register("geir_haoy_spawn_egg", properties -> new SpawnEggItem(ItacraftModEntities.GEIR_HAOY.get(), properties));
 		KOG_STOCK = register("kog_stock", KOGStockItem::new);
@@ -93,6 +94,7 @@ public class ItacraftModItems {
 		RED_COLORED_PLASTIC = register("red_colored_plastic", RedColoredPlasticItem::new);
 		ETT_ORE = register("ett_ore", EttOreItem::new);
 		TI_ORE = register("ti_ore", TiOreItem::new);
+		HAWK_PHONE = register("hawk_phone", HawkPhoneItem::new);
 	}
 
 	// Start of user code block custom items

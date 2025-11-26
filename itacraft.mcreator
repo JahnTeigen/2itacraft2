@@ -1053,6 +1053,33 @@
           "src/main/resources/data/itacraft/advancement/recipes/modular_pliers_recipe.json"
         ]
       }
+    },
+    {
+      "name": "HawkPhone",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hawk_phone",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/itacraft/models/item/hawk_phone.json",
+          "src/main/resources/assets/itacraft/items/hawk_phone.json",
+          "src/main/java/net/mcreator/itacraft/item/HawkPhoneItem.java"
+        ]
+      }
+    },
+    {
+      "name": "VippsMiniBankGUI",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "vipps_mini_bank_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/itacraft/world/inventory/VippsMiniBankGUIMenu.java",
+          "src/main/java/net/mcreator/itacraft/client/gui/VippsMiniBankGUIScreen.java"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -1104,6 +1131,7 @@
       "~Blocks.GRASS"
     ],
     "ITEMS:minecraft:pickaxes": [
+      "~CUSTOM:HawkPhone",
       "~CUSTOM:ModularPliers"
     ],
     "ITEMS:minecraft:axes": [
@@ -1207,24 +1235,27 @@
   },
   "metadata": {
     "files": [
-      "src/main/java/net/mcreator/itacraft/init/ItacraftModFluids.java",
       "src/main/java/net/mcreator/itacraft/init/ItacraftModFluidTypes.java",
+      "src/main/java/net/mcreator/itacraft/init/ItacraftModFluids.java",
       "src/main/java/net/mcreator/itacraft/network/MenuStateUpdateMessage.java",
-      "src/main/java/net/mcreator/itacraft/init/ItacraftModMenus.java",
       "src/main/java/net/mcreator/itacraft/init/ItacraftModScreens.java",
+      "src/main/java/net/mcreator/itacraft/init/ItacraftModMenus.java",
       "src/main/java/net/mcreator/itacraft/init/ItacraftModKeyMappings.java",
+      "src/main/java/net/mcreator/itacraft/init/ItacraftModParticleTypes.java",
+      "src/main/java/net/mcreator/itacraft/init/ItacraftModParticles.java",
+      "src/main/java/net/mcreator/itacraft/init/ItacraftModMobEffects.java",
       "src/main/java/net/mcreator/itacraft/init/ItacraftModTrades.java",
       "src/main/java/net/mcreator/itacraft/init/ItacraftModBlocks.java",
       "src/main/java/net/mcreator/itacraft/init/ItacraftModItems.java",
-      "src/main/java/net/mcreator/itacraft/init/ItacraftModEntityRenderers.java",
       "src/main/java/net/mcreator/itacraft/init/ItacraftModEntities.java",
-      "src/main/resources/META-INF/neoforge.mods.toml",
-      "src/main/resources/assets/itacraft/sounds.json",
-      "src/main/java/net/mcreator/itacraft/init/ItacraftModSounds.java",
+      "src/main/java/net/mcreator/itacraft/init/ItacraftModEntityRenderers.java",
       "src/main/java/net/mcreator/itacraft/ItacraftMod.java",
+      "src/main/java/net/mcreator/itacraft/init/ItacraftModSounds.java",
       "src/main/java/net/mcreator/itacraft/network/ItacraftModVariables.java",
-      "src/main/java/net/mcreator/itacraft/init/ItacraftModModels.java",
+      "src/main/resources/META-INF/neoforge.mods.toml",
       "src/main/resources/pack.mcmeta",
+      "src/main/resources/assets/itacraft/sounds.json",
+      "src/main/java/net/mcreator/itacraft/init/ItacraftModModels.java",
       "src/main/java/net/mcreator/itacraft/init/ItacraftModTabs.java"
     ]
   },

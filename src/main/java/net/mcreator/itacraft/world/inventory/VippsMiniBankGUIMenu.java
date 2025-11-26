@@ -2,11 +2,11 @@ package net.mcreator.itacraft.world.inventory;
 
 import net.mcreator.itacraft.ItacraftMod;
 
-public class PatchTableGUIMenu extends AbstractContainerMenu implements ItacraftModMenus.MenuAccessor {
+public class VippsMiniBankGUIMenu extends AbstractContainerMenu implements ItacraftModMenus.MenuAccessor {
 	public final Map<String, Object> menuState = new HashMap<>() {
 		@Override
 		public Object put(String key, Object value) {
-			if (!this.containsKey(key) && this.size() >= 11)
+			if (!this.containsKey(key) && this.size() >= 8)
 				return null;
 			return super.put(key, value);
 		}
@@ -22,11 +22,11 @@ public class PatchTableGUIMenu extends AbstractContainerMenu implements Itacraft
 	private Entity boundEntity = null;
 	private BlockEntity boundBlockEntity = null;
 
-	public PatchTableGUIMenu(int id, Inventory inv, FriendlyByteBuf extraData) {
-		super(ItacraftModMenus.PATCH_TABLE_GUI.get(), id);
+	public VippsMiniBankGUIMenu(int id, Inventory inv, FriendlyByteBuf extraData) {
+		super(ItacraftModMenus.VIPPS_MINI_BANK_GUI.get(), id);
 		this.entity = inv.player;
 		this.world = inv.player.level();
-		this.internal = new ItemStackHandler(5);
+		this.internal = new ItemStackHandler(3);
 		BlockPos pos = null;
 		if (extraData != null) {
 			pos = extraData.readBlockPos();
@@ -63,61 +63,21 @@ public class PatchTableGUIMenu extends AbstractContainerMenu implements Itacraft
 				}
 			}
 		}
-		this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 232, 128) {
-			private final int slot = 0;
-			private int x = PatchTableGUIMenu.this.x;
-			private int y = PatchTableGUIMenu.this.y;
-
-			@Override
-			public boolean mayPlace(ItemStack stack) {
-				return ItacraftModItems.MODULAR_PLIERS.get() == stack.getItem();
-			}
-		}));
-		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 19, 31) {
+		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 33, 37) {
 			private final int slot = 1;
-			private int x = PatchTableGUIMenu.this.x;
-			private int y = PatchTableGUIMenu.this.y;
-
-			@Override
-			public boolean mayPlace(ItemStack stack) {
-				return stack.is(ItemTags.create(ResourceLocation.parse("itacraft:cables")));
-			}
+			private int x = VippsMiniBankGUIMenu.this.x;
+			private int y = VippsMiniBankGUIMenu.this.y;
 		}));
-		this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 62, 31) {
+		this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 145, 35) {
 			private final int slot = 2;
-			private int x = PatchTableGUIMenu.this.x;
-			private int y = PatchTableGUIMenu.this.y;
-
-			@Override
-			public boolean mayPlace(ItemStack stack) {
-				return stack.is(ItemTags.create(ResourceLocation.parse("itacraft:plugs")));
-			}
-		}));
-		this.customSlots.put(3, this.addSlot(new SlotItemHandler(internal, 3, 103, 31) {
-			private final int slot = 3;
-			private int x = PatchTableGUIMenu.this.x;
-			private int y = PatchTableGUIMenu.this.y;
-
-			@Override
-			public boolean mayPlace(ItemStack stack) {
-				return Items.IRON_INGOT == stack.getItem();
-			}
-		}));
-		this.customSlots.put(4, this.addSlot(new SlotItemHandler(internal, 4, 229, 31) {
-			private final int slot = 4;
-			private int x = PatchTableGUIMenu.this.x;
-			private int y = PatchTableGUIMenu.this.y;
-
-			@Override
-			public boolean mayPlace(ItemStack stack) {
-				return false;
-			}
+			private int x = VippsMiniBankGUIMenu.this.x;
+			private int y = VippsMiniBankGUIMenu.this.y;
 		}));
 		for (int si = 0; si < 3; ++si)
 			for (int sj = 0; sj < 9; ++sj)
-				this.addSlot(new Slot(inv, sj + (si + 1) * 9, 14 + 8 + sj * 18, 31 + 84 + si * 18));
+				this.addSlot(new Slot(inv, sj + (si + 1) * 9, 12 + 8 + sj * 18, 17 + 84 + si * 18));
 		for (int si = 0; si < 9; ++si)
-			this.addSlot(new Slot(inv, si, 14 + 8 + si * 18, 31 + 142));
+			this.addSlot(new Slot(inv, si, 12 + 8 + si * 18, 17 + 142));
 	}
 
 	@Override
@@ -140,16 +100,16 @@ public class PatchTableGUIMenu extends AbstractContainerMenu implements Itacraft
 		if (slot != null && slot.hasItem()) {
 			ItemStack itemstack1 = slot.getItem();
 			itemstack = itemstack1.copy();
-			if (index < 5) {
-				if (!this.moveItemStackTo(itemstack1, 5, this.slots.size(), true))
+			if (index < 2) {
+				if (!this.moveItemStackTo(itemstack1, 2, this.slots.size(), true))
 					return ItemStack.EMPTY;
 				slot.onQuickCraft(itemstack1, itemstack);
-			} else if (!this.moveItemStackTo(itemstack1, 0, 5, false)) {
-				if (index < 5 + 27) {
-					if (!this.moveItemStackTo(itemstack1, 5 + 27, this.slots.size(), true))
+			} else if (!this.moveItemStackTo(itemstack1, 0, 2, false)) {
+				if (index < 2 + 27) {
+					if (!this.moveItemStackTo(itemstack1, 2 + 27, this.slots.size(), true))
 						return ItemStack.EMPTY;
 				} else {
-					if (!this.moveItemStackTo(itemstack1, 5, 5 + 27, false))
+					if (!this.moveItemStackTo(itemstack1, 2, 2 + 27, false))
 						return ItemStack.EMPTY;
 				}
 				return ItemStack.EMPTY;

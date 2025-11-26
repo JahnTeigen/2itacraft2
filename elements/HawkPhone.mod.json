@@ -9,7 +9,7 @@
     "customModelName": "Normal",
     "blockingModelName": "Normal blocking",
     "guiTexture": "",
-    "name": "HawkPhone",
+    "name": "Hawk Phone",
     "specialInformation": {
       "fixedValue": []
     },
@@ -18,16 +18,16 @@
         "value": "TOOLS"
       }
     ],
-    "efficiency": 0.0,
+    "efficiency": 4.0,
     "attackSpeed": 1.0,
-    "enchantability": 1,
-    "damageVsEntity": 2.0,
+    "enchantability": 2,
+    "damageVsEntity": 4.0,
     "usageCount": 100,
     "glowCondition": {
-      "fixedValue": true
+      "fixedValue": false
     },
     "repairItems": [],
-    "immuneToFire": false,
+    "immuneToFire": true,
     "blockDropsTier": "WOOD",
     "blocksAffected": [],
     "stayInGridWhenCrafting": false,
