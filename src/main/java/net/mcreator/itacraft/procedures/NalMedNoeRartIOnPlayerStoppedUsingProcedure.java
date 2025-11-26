@@ -1,6 +1,9 @@
 package net.mcreator.itacraft.procedures;
 
-import net.neoforged.bus.api.Event;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.world.effect.MobEffects;
+import net.minecraft.world.effect.MobEffectInstance;
 
 public class NalMedNoeRartIOnPlayerStoppedUsingProcedure {
 	public static void execute(Entity entity) {

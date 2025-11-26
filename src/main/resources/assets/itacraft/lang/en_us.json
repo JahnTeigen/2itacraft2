@@ -82,5 +82,16 @@
   "gui.itacraft.vipps_mini_bank_gui.button_hent_penger": "Hent Alle Penger",
   "subtitles.china_tts_1": "speaking chinese",
   "subtitles.russia_tts_1": "speaking russian",
-  "subtitles.sukablyat": "swearing"
+  "subtitles.sukablyat": "swearing",
+  "item.itacraft.tom_nal": "Tom Nål",
+  "item.itacraft.nal_med_noe_rart_i.description_0": "Hva er det oppi her mon tro?",
+  "item.itacraft.nal_med_noe_rart_i": "Nål med noe rart i",
+  "item.itacraft.communism": "Communism",
+  "painting.itacraft.max_burgers.title": "Max Burgers",
+  "painting.itacraft.max_burgers.author": "Richard Bergfors",
+  "item.itacraft.firestaff": "Firestaff",
+  "item.minecraft.potion.effect.russia_potion": "Potion of Russia",
+  "item.minecraft.tipped_arrow.effect.russia_potion": "Arrow of Russia",
+  "item.minecraft.lingering_potion.effect.russia_potion": "Lingering Potion of Russia",
+  "item.minecraft.splash_potion.effect.russia_potion": "Splash Potion of Russia"
 }
