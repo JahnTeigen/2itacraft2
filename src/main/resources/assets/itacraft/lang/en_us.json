@@ -66,5 +66,10 @@
   "item.itacraft.hundre_kroner": "Hundre Kroner",
   "item.itacraft.red_colored_plastic": "White Colored Plastic",
   "item.itacraft.ett_ore": "Ett Øre",
-  "item.itacraft.ti_ore": "10 Øre"
+  "item.itacraft.ti_ore": "10 Øre",
+  "item.itacraft.hawk_phone": "Hawk Phone",
+  "gui.itacraft.vipps_mini_bank_gui.label_hawkphone": "Hawk Phone",
+  "gui.itacraft.vipps_mini_bank_gui.label_vipps_minibank": "Vipps Minibank",
+  "gui.itacraft.vipps_mini_bank_gui.button_overfor": "Overfør",
+  "gui.itacraft.vipps_mini_bank_gui.label_kontanter": "Kontanter"
 }

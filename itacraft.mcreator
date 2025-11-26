@@ -1053,6 +1053,33 @@
           "src/main/resources/assets/itacraft/models/item/ti_ore.json"
         ]
       }
+    },
+    {
+      "name": "HawkPhone",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hawk_phone",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/itacraft/models/item/hawk_phone.json",
+          "src/main/java/net/mcreator/itacraft/item/HawkPhoneItem.java",
+          "src/main/resources/assets/itacraft/items/hawk_phone.json"
+        ]
+      }
+    },
+    {
+      "name": "VippsMiniBankGUI",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "vipps_mini_bank_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/itacraft/client/gui/VippsMiniBankGUIScreen.java",
+          "src/main/java/net/mcreator/itacraft/world/inventory/VippsMiniBankGUIMenu.java"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -1104,6 +1131,7 @@
       "~Blocks.GRASS"
     ],
     "ITEMS:minecraft:pickaxes": [
+      "~CUSTOM:HawkPhone",
       "~CUSTOM:ModularPliers"
     ],
     "ITEMS:minecraft:axes": [
@@ -1130,6 +1158,19 @@
     ],
     "BLOCKS:minecraft:needs_iron_tool": [
       "~CUSTOM:HPWorkstation"
+    ],
+    "ITEMS:mod:tag": [
+      "CUSTOM:FemtiKroner",
+      "CUSTOM:FemHundreKroner",
+      "CUSTOM:EttTusenKroner",
+      "CUSTOM:HundreKroner",
+      "CUSTOM:ToHundreKroner",
+      "CUSTOM:TjueKroner",
+      "CUSTOM:TiKroner",
+      "CUSTOM:FemKroner",
+      "CUSTOM:EnKrone",
+      "CUSTOM:EttOre",
+      "CUSTOM:TiOre"
     ]
   },
   "tab_element_order": {},
@@ -1202,32 +1243,37 @@
       "item.itacraft.hundre_kroner": "Hundre Kroner",
       "item.itacraft.red_colored_plastic": "White Colored Plastic",
       "item.itacraft.ett_ore": "Ett Øre",
-      "item.itacraft.ti_ore": "10 Øre"
+      "item.itacraft.ti_ore": "10 Øre",
+      "item.itacraft.hawk_phone": "Hawk Phone",
+      "gui.itacraft.vipps_mini_bank_gui.label_hawkphone": "Hawk Phone",
+      "gui.itacraft.vipps_mini_bank_gui.label_vipps_minibank": "Vipps Minibank",
+      "gui.itacraft.vipps_mini_bank_gui.button_overfor": "Overfør",
+      "gui.itacraft.vipps_mini_bank_gui.label_kontanter": "Kontanter"
     }
   },
   "metadata": {
     "files": [
-      "src/main/java/net/mcreator/itacraft/init/ItacraftModFluids.java",
       "src/main/java/net/mcreator/itacraft/init/ItacraftModFluidTypes.java",
-      "src/main/java/net/mcreator/itacraft/network/MenuStateUpdateMessage.java",
+      "src/main/java/net/mcreator/itacraft/init/ItacraftModFluids.java",
       "src/main/java/net/mcreator/itacraft/init/ItacraftModMenus.java",
+      "src/main/java/net/mcreator/itacraft/network/MenuStateUpdateMessage.java",
       "src/main/java/net/mcreator/itacraft/init/ItacraftModScreens.java",
       "src/main/java/net/mcreator/itacraft/init/ItacraftModKeyMappings.java",
-      "src/main/java/net/mcreator/itacraft/init/ItacraftModParticles.java",
       "src/main/java/net/mcreator/itacraft/init/ItacraftModParticleTypes.java",
+      "src/main/java/net/mcreator/itacraft/init/ItacraftModParticles.java",
       "src/main/java/net/mcreator/itacraft/init/ItacraftModTrades.java",
       "src/main/java/net/mcreator/itacraft/init/ItacraftModBlocks.java",
       "src/main/java/net/mcreator/itacraft/init/ItacraftModItems.java",
-      "src/main/java/net/mcreator/itacraft/init/ItacraftModEntityRenderers.java",
       "src/main/java/net/mcreator/itacraft/init/ItacraftModEntities.java",
-      "src/main/resources/META-INF/neoforge.mods.toml",
+      "src/main/java/net/mcreator/itacraft/init/ItacraftModEntityRenderers.java",
       "src/main/resources/assets/itacraft/sounds.json",
-      "src/main/java/net/mcreator/itacraft/init/ItacraftModSounds.java",
-      "src/main/java/net/mcreator/itacraft/ItacraftMod.java",
       "src/main/java/net/mcreator/itacraft/network/ItacraftModVariables.java",
-      "src/main/java/net/mcreator/itacraft/init/ItacraftModModels.java",
+      "src/main/java/net/mcreator/itacraft/ItacraftMod.java",
+      "src/main/resources/META-INF/neoforge.mods.toml",
+      "src/main/java/net/mcreator/itacraft/init/ItacraftModSounds.java",
+      "src/main/java/net/mcreator/itacraft/init/ItacraftModTabs.java",
       "src/main/resources/pack.mcmeta",
-      "src/main/java/net/mcreator/itacraft/init/ItacraftModTabs.java"
+      "src/main/java/net/mcreator/itacraft/init/ItacraftModModels.java"
     ]
   },
   "foldersRoot": {
