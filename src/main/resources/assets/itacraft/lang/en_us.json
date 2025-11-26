@@ -84,5 +84,12 @@
   "item.minecraft.tipped_arrow.effect.russia_potion": "Arrow of Russia",
   "item.minecraft.lingering_potion.effect.russia_potion": "Lingering Potion of Russia",
   "item.minecraft.splash_potion.effect.russia_potion": "Splash Potion of Russia",
-  "item.itacraft.communism": "Communism"
+  "item.itacraft.communism": "Communism",
+  "item.itacraft.firestaff": "Firestaff",
+  "painting.itacraft.max_burgers.title": "Max Burgers",
+  "painting.itacraft.max_burgers.author": "Richard Bergfors",
+  "item.itacraft.tom_nal": "Tom Nål",
+  "item.itacraft.nal_med_noe_rart_i.description_0": "Hva er det oppi her mon tro?",
+  "item.itacraft.nal_med_noe_rart_i": "Nål med noe rart i",
+  "effect.itacraft.radiation_poisoning": "Radiation Poisoning"
 }

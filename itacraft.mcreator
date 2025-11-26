@@ -8,11 +8,11 @@
       "registry_name": "geir_haoy",
       "metadata": {
         "files": [
-          "src/main/resources/data/itacraft/neoforge/biome_modifier/geir_haoy_biome_modifier.json",
           "src/main/java/net/mcreator/itacraft/entity/GeirHaoyEntity.java",
           "src/main/java/net/mcreator/itacraft/client/renderer/GeirHaoyRenderer.java",
           "src/main/resources/assets/itacraft/items/geir_haoy_spawn_egg.json",
-          "src/main/resources/assets/itacraft/models/item/geir_haoy_spawn_egg.json"
+          "src/main/resources/assets/itacraft/models/item/geir_haoy_spawn_egg.json",
+          "src/main/resources/data/itacraft/neoforge/biome_modifier/geir_haoy_biome_modifier.json"
         ]
       }
     },
@@ -67,10 +67,10 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/itacraft/entity/JudeEntity.java",
-          "src/main/resources/assets/itacraft/items/jude_spawn_egg.json",
-          "src/main/java/net/mcreator/itacraft/client/renderer/JudeRenderer.java",
           "src/main/resources/assets/itacraft/models/item/jude_spawn_egg.json",
-          "src/main/resources/data/itacraft/neoforge/biome_modifier/jude_biome_modifier.json"
+          "src/main/resources/assets/itacraft/items/jude_spawn_egg.json",
+          "src/main/resources/data/itacraft/neoforge/biome_modifier/jude_biome_modifier.json",
+          "src/main/java/net/mcreator/itacraft/client/renderer/JudeRenderer.java"
         ]
       }
     },
@@ -206,12 +206,12 @@
       "registry_name": "andreas",
       "metadata": {
         "files": [
-          "src/main/resources/data/itacraft/loot_table/blocks/andreas.json",
-          "src/main/resources/assets/itacraft/models/item/andreas.json",
-          "src/main/resources/assets/itacraft/models/block/andreas.json",
-          "src/main/resources/assets/itacraft/items/andreas.json",
           "src/main/java/net/mcreator/itacraft/block/AndreasBlock.java",
-          "src/main/resources/assets/itacraft/blockstates/andreas.json"
+          "src/main/resources/data/itacraft/loot_table/blocks/andreas.json",
+          "src/main/resources/assets/itacraft/models/block/andreas.json",
+          "src/main/resources/assets/itacraft/models/item/andreas.json",
+          "src/main/resources/assets/itacraft/blockstates/andreas.json",
+          "src/main/resources/assets/itacraft/items/andreas.json"
         ]
       }
     },
@@ -235,9 +235,9 @@
       "registry_name": "femti_kroner",
       "metadata": {
         "files": [
-          "src/main/resources/assets/itacraft/items/femti_kroner.json",
+          "src/main/resources/assets/itacraft/models/item/femti_kroner.json",
           "src/main/java/net/mcreator/itacraft/item/FemtiKronerItem.java",
-          "src/main/resources/assets/itacraft/models/item/femti_kroner.json"
+          "src/main/resources/assets/itacraft/items/femti_kroner.json"
         ]
       }
     },
@@ -249,9 +249,9 @@
       "registry_name": "fem_hundre_kroner",
       "metadata": {
         "files": [
+          "src/main/resources/assets/itacraft/items/fem_hundre_kroner.json",
           "src/main/java/net/mcreator/itacraft/item/FemHundreKronerItem.java",
-          "src/main/resources/assets/itacraft/models/item/fem_hundre_kroner.json",
-          "src/main/resources/assets/itacraft/items/fem_hundre_kroner.json"
+          "src/main/resources/assets/itacraft/models/item/fem_hundre_kroner.json"
         ]
       }
     },
@@ -264,8 +264,8 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/itacraft/models/item/ett_tusen_kroner.json",
-          "src/main/resources/assets/itacraft/items/ett_tusen_kroner.json",
-          "src/main/java/net/mcreator/itacraft/item/EttTusenKronerItem.java"
+          "src/main/java/net/mcreator/itacraft/item/EttTusenKronerItem.java",
+          "src/main/resources/assets/itacraft/items/ett_tusen_kroner.json"
         ]
       }
     },
@@ -278,8 +278,8 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/itacraft/item/PersonopplysningsblankettItem.java",
-          "src/main/resources/assets/itacraft/models/item/personopplysningsblankett.json",
-          "src/main/resources/assets/itacraft/items/personopplysningsblankett.json"
+          "src/main/resources/assets/itacraft/items/personopplysningsblankett.json",
+          "src/main/resources/assets/itacraft/models/item/personopplysningsblankett.json"
         ]
       }
     },
@@ -291,9 +291,9 @@
       "registry_name": "kongsberg",
       "metadata": {
         "files": [
-          "src/main/resources/data/itacraft/worldgen/biome/kongsberg.json",
+          "src/main/resources/data/itacraft/worldgen/configured_feature/kongsberg_tree.json",
           "src/main/resources/data/itacraft/worldgen/placed_feature/kongsberg_tree.json",
-          "src/main/resources/data/itacraft/worldgen/configured_feature/kongsberg_tree.json"
+          "src/main/resources/data/itacraft/worldgen/biome/kongsberg.json"
         ]
       }
     },
@@ -305,15 +305,15 @@
       "registry_name": "kongsberg_gruppen",
       "metadata": {
         "files": [
-          "src/main/resources/assets/itacraft/blockstates/kongsberg_gruppen_portal.json",
-          "src/main/resources/data/itacraft/dimension_type/kongsberg_gruppen.json",
-          "src/main/resources/assets/itacraft/models/block/kongsberg_gruppen_portal_ns.json",
           "src/main/java/net/mcreator/itacraft/world/teleporter/KongsbergGruppenTeleporter.java",
-          "src/main/java/net/mcreator/itacraft/world/dimension/KongsbergGruppenDimension.java",
-          "src/main/java/net/mcreator/itacraft/world/teleporter/KongsbergGruppenPortalShape.java",
           "src/main/java/net/mcreator/itacraft/block/KongsbergGruppenPortalBlock.java",
+          "src/main/resources/data/itacraft/dimension_type/kongsberg_gruppen.json",
+          "src/main/java/net/mcreator/itacraft/world/dimension/KongsbergGruppenDimension.java",
+          "src/main/resources/assets/itacraft/models/block/kongsberg_gruppen_portal_ns.json",
+          "src/main/java/net/mcreator/itacraft/world/teleporter/KongsbergGruppenPortalShape.java",
+          "src/main/resources/assets/itacraft/models/block/kongsberg_gruppen_portal_ew.json",
           "src/main/resources/data/itacraft/dimension/kongsberg_gruppen.json",
-          "src/main/resources/assets/itacraft/models/block/kongsberg_gruppen_portal_ew.json"
+          "src/main/resources/assets/itacraft/blockstates/kongsberg_gruppen_portal.json"
         ]
       }
     },
@@ -374,10 +374,10 @@
       "registry_name": "bodil",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/itacraft/client/renderer/GudrunRenderer.java",
+          "src/main/java/net/mcreator/itacraft/entity/GudrunEntity.java",
           "src/main/resources/assets/itacraft/items/bodil_spawn_egg.json",
-          "src/main/resources/assets/itacraft/models/item/bodil_spawn_egg.json",
-          "src/main/java/net/mcreator/itacraft/entity/GudrunEntity.java"
+          "src/main/java/net/mcreator/itacraft/client/renderer/GudrunRenderer.java",
+          "src/main/resources/assets/itacraft/models/item/bodil_spawn_egg.json"
         ]
       }
     },
@@ -516,8 +516,8 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/itacraft/item/HeroinItem.java",
-          "src/main/resources/assets/itacraft/models/item/heroin.json",
-          "src/main/resources/assets/itacraft/items/heroin.json"
+          "src/main/resources/assets/itacraft/items/heroin.json",
+          "src/main/resources/assets/itacraft/models/item/heroin.json"
         ]
       }
     },
@@ -563,11 +563,11 @@
       "registry_name": "block_of_bygg_54",
       "metadata": {
         "files": [
-          "src/main/resources/assets/itacraft/items/block_of_bygg_54.json",
-          "src/main/java/net/mcreator/itacraft/block/BlockOfBygg54Block.java",
-          "src/main/resources/assets/itacraft/models/item/block_of_bygg_54.json",
-          "src/main/resources/data/itacraft/loot_table/blocks/block_of_bygg_54.json",
           "src/main/resources/assets/itacraft/blockstates/block_of_bygg_54.json",
+          "src/main/resources/data/itacraft/loot_table/blocks/block_of_bygg_54.json",
+          "src/main/java/net/mcreator/itacraft/block/BlockOfBygg54Block.java",
+          "src/main/resources/assets/itacraft/items/block_of_bygg_54.json",
+          "src/main/resources/assets/itacraft/models/item/block_of_bygg_54.json",
           "src/main/resources/assets/itacraft/models/block/block_of_bygg_54.json"
         ]
       }
@@ -581,10 +581,10 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/itacraft/client/renderer/GamerGirlRenderer.java",
-          "src/main/java/net/mcreator/itacraft/entity/GamerGirlEntity.java",
           "src/main/resources/assets/itacraft/items/gamer_girl_spawn_egg.json",
-          "src/main/resources/assets/itacraft/models/item/gamer_girl_spawn_egg.json",
-          "src/main/resources/data/itacraft/neoforge/biome_modifier/gamer_girl_biome_modifier.json"
+          "src/main/java/net/mcreator/itacraft/entity/GamerGirlEntity.java",
+          "src/main/resources/data/itacraft/neoforge/biome_modifier/gamer_girl_biome_modifier.json",
+          "src/main/resources/assets/itacraft/models/item/gamer_girl_spawn_egg.json"
         ]
       }
     },
@@ -596,11 +596,11 @@
       "registry_name": "tony_haynes",
       "metadata": {
         "files": [
-          "src/main/resources/assets/itacraft/models/item/tony_haynes_spawn_egg.json",
-          "src/main/resources/data/itacraft/neoforge/biome_modifier/tony_haynes_biome_modifier.json",
-          "src/main/java/net/mcreator/itacraft/entity/TonyHaynesEntity.java",
           "src/main/resources/assets/itacraft/items/tony_haynes_spawn_egg.json",
-          "src/main/java/net/mcreator/itacraft/client/renderer/TonyHaynesRenderer.java"
+          "src/main/java/net/mcreator/itacraft/entity/TonyHaynesEntity.java",
+          "src/main/java/net/mcreator/itacraft/client/renderer/TonyHaynesRenderer.java",
+          "src/main/resources/assets/itacraft/models/item/tony_haynes_spawn_egg.json",
+          "src/main/resources/data/itacraft/neoforge/biome_modifier/tony_haynes_biome_modifier.json"
         ]
       }
     },
@@ -612,9 +612,9 @@
       "registry_name": "oslo_bors_structure",
       "metadata": {
         "files": [
+          "src/main/resources/data/itacraft/worldgen/structure_set/oslo_bors_structure.json",
           "src/main/resources/data/itacraft/worldgen/structure/oslo_bors_structure.json",
-          "src/main/resources/data/itacraft/worldgen/template_pool/oslo_bors_structure.json",
-          "src/main/resources/data/itacraft/worldgen/structure_set/oslo_bors_structure.json"
+          "src/main/resources/data/itacraft/worldgen/template_pool/oslo_bors_structure.json"
         ]
       }
     },
@@ -626,9 +626,9 @@
       "registry_name": "wire",
       "metadata": {
         "files": [
-          "src/main/resources/assets/itacraft/models/item/wire.json",
           "src/main/resources/assets/itacraft/items/wire.json",
-          "src/main/java/net/mcreator/itacraft/item/WireItem.java"
+          "src/main/java/net/mcreator/itacraft/item/WireItem.java",
+          "src/main/resources/assets/itacraft/models/item/wire.json"
         ]
       }
     },
@@ -640,8 +640,8 @@
       "registry_name": "patch_cable",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/itacraft/item/PatchCableItem.java",
           "src/main/resources/assets/itacraft/items/patch_cable.json",
+          "src/main/java/net/mcreator/itacraft/item/PatchCableItem.java",
           "src/main/resources/assets/itacraft/models/item/patch_cable.json"
         ]
       }
@@ -667,9 +667,9 @@
       "registry_name": "rj_45_type_plug",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/itacraft/item/RJ45TypePlugItem.java",
+          "src/main/resources/assets/itacraft/items/rj_45_type_plug.json",
           "src/main/resources/assets/itacraft/models/item/rj_45_type_plug.json",
-          "src/main/resources/assets/itacraft/items/rj_45_type_plug.json"
+          "src/main/java/net/mcreator/itacraft/item/RJ45TypePlugItem.java"
         ]
       }
     },
@@ -681,8 +681,8 @@
       "registry_name": "modular_pliers",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/itacraft/item/ModularPliersItem.java",
           "src/main/resources/assets/itacraft/items/modular_pliers.json",
+          "src/main/java/net/mcreator/itacraft/item/ModularPliersItem.java",
           "src/main/resources/assets/itacraft/models/item/modular_pliers.json"
         ]
       }
@@ -695,9 +695,9 @@
       "registry_name": "rj_45_type_ethernet_cable",
       "metadata": {
         "files": [
-          "src/main/resources/assets/itacraft/items/rj_45_type_ethernet_cable.json",
+          "src/main/resources/assets/itacraft/models/item/rj_45_type_ethernet_cable.json",
           "src/main/java/net/mcreator/itacraft/item/RJ45TypeEthernetCableItem.java",
-          "src/main/resources/assets/itacraft/models/item/rj_45_type_ethernet_cable.json"
+          "src/main/resources/assets/itacraft/items/rj_45_type_ethernet_cable.json"
         ]
       }
     },
@@ -709,8 +709,8 @@
       "registry_name": "patch_table_gui",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/itacraft/client/gui/PatchTableGUIScreen.java",
-          "src/main/java/net/mcreator/itacraft/world/inventory/PatchTableGUIMenu.java"
+          "src/main/java/net/mcreator/itacraft/world/inventory/PatchTableGUIMenu.java",
+          "src/main/java/net/mcreator/itacraft/client/gui/PatchTableGUIScreen.java"
         ]
       }
     },
@@ -745,8 +745,8 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/itacraft/models/item/foiled_rj_45_type_ethernet_cable.json",
-          "src/main/resources/assets/itacraft/items/foiled_rj_45_type_ethernet_cable.json",
-          "src/main/java/net/mcreator/itacraft/item/FoiledRJ45TypeEthernetCableItem.java"
+          "src/main/java/net/mcreator/itacraft/item/FoiledRJ45TypeEthernetCableItem.java",
+          "src/main/resources/assets/itacraft/items/foiled_rj_45_type_ethernet_cable.json"
         ]
       }
     },
@@ -782,14 +782,14 @@
       "registry_name": "oil",
       "metadata": {
         "files": [
-          "src/main/resources/assets/itacraft/blockstates/oil.json",
-          "src/main/java/net/mcreator/itacraft/fluid/types/OilFluidType.java",
-          "src/main/java/net/mcreator/itacraft/client/fluid/OilFluidExtension.java",
-          "src/main/resources/assets/itacraft/items/oil_bucket.json",
-          "src/main/java/net/mcreator/itacraft/item/OilItem.java",
           "src/main/java/net/mcreator/itacraft/fluid/OilFluid.java",
           "src/main/java/net/mcreator/itacraft/block/OilBlock.java",
-          "src/main/resources/assets/itacraft/models/block/oil.json"
+          "src/main/java/net/mcreator/itacraft/client/fluid/OilFluidExtension.java",
+          "src/main/resources/assets/itacraft/blockstates/oil.json",
+          "src/main/java/net/mcreator/itacraft/fluid/types/OilFluidType.java",
+          "src/main/java/net/mcreator/itacraft/item/OilItem.java",
+          "src/main/resources/assets/itacraft/models/block/oil.json",
+          "src/main/resources/assets/itacraft/items/oil_bucket.json"
         ]
       }
     },
@@ -802,8 +802,8 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/itacraft/item/PlasticItem.java",
-          "src/main/resources/assets/itacraft/models/item/plastic.json",
-          "src/main/resources/assets/itacraft/items/plastic.json"
+          "src/main/resources/assets/itacraft/items/plastic.json",
+          "src/main/resources/assets/itacraft/models/item/plastic.json"
         ]
       }
     },
@@ -815,8 +815,8 @@
       "registry_name": "plastic_recipe",
       "metadata": {
         "files": [
-          "src/main/resources/data/itacraft/recipe/plastic_recipe.json",
-          "src/main/resources/data/itacraft/advancement/recipes/plastic_recipe.json"
+          "src/main/resources/data/itacraft/advancement/recipes/plastic_recipe.json",
+          "src/main/resources/data/itacraft/recipe/plastic_recipe.json"
         ]
       }
     },
@@ -828,8 +828,8 @@
       "registry_name": "wire_recipe",
       "metadata": {
         "files": [
-          "src/main/resources/data/itacraft/recipe/wire_recipe.json",
-          "src/main/resources/data/itacraft/advancement/recipes/wire_recipe.json"
+          "src/main/resources/data/itacraft/advancement/recipes/wire_recipe.json",
+          "src/main/resources/data/itacraft/recipe/wire_recipe.json"
         ]
       }
     },
@@ -841,9 +841,9 @@
       "registry_name": "white_colored_plastic",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/itacraft/item/WhiteColoredPlasticItem.java",
           "src/main/resources/assets/itacraft/models/item/white_colored_plastic.json",
-          "src/main/resources/assets/itacraft/items/white_colored_plastic.json"
+          "src/main/resources/assets/itacraft/items/white_colored_plastic.json",
+          "src/main/java/net/mcreator/itacraft/item/WhiteColoredPlasticItem.java"
         ]
       }
     },
@@ -867,12 +867,12 @@
       "registry_name": "hp_workstation",
       "metadata": {
         "files": [
-          "src/main/resources/data/itacraft/loot_table/blocks/hp_workstation.json",
           "src/main/java/net/mcreator/itacraft/block/HPWorkstationBlock.java",
+          "src/main/resources/data/itacraft/loot_table/blocks/hp_workstation.json",
           "src/main/resources/assets/itacraft/items/hp_workstation.json",
-          "src/main/resources/assets/itacraft/blockstates/hp_workstation.json",
           "src/main/resources/assets/itacraft/models/item/hp_workstation.json",
-          "src/main/resources/assets/itacraft/models/block/hp_workstation.json"
+          "src/main/resources/assets/itacraft/models/block/hp_workstation.json",
+          "src/main/resources/assets/itacraft/blockstates/hp_workstation.json"
         ]
       }
     },
@@ -885,8 +885,8 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/itacraft/models/item/en_krone.json",
-          "src/main/resources/assets/itacraft/items/en_krone.json",
-          "src/main/java/net/mcreator/itacraft/item/EnKroneItem.java"
+          "src/main/java/net/mcreator/itacraft/item/EnKroneItem.java",
+          "src/main/resources/assets/itacraft/items/en_krone.json"
         ]
       }
     },
@@ -926,9 +926,9 @@
       "registry_name": "tjue_kroner",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/itacraft/item/TjueKronerItem.java",
           "src/main/resources/assets/itacraft/items/tjue_kroner.json",
-          "src/main/resources/assets/itacraft/models/item/tjue_kroner.json"
+          "src/main/resources/assets/itacraft/models/item/tjue_kroner.json",
+          "src/main/java/net/mcreator/itacraft/item/TjueKronerItem.java"
         ]
       }
     },
@@ -941,8 +941,8 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/itacraft/items/to_hundre_kroner.json",
-          "src/main/java/net/mcreator/itacraft/item/ToHundreKronerItem.java",
-          "src/main/resources/assets/itacraft/models/item/to_hundre_kroner.json"
+          "src/main/resources/assets/itacraft/models/item/to_hundre_kroner.json",
+          "src/main/java/net/mcreator/itacraft/item/ToHundreKronerItem.java"
         ]
       }
     },
@@ -954,9 +954,9 @@
       "registry_name": "hundre_kroner",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/itacraft/item/HundreKronerItem.java",
           "src/main/resources/assets/itacraft/items/hundre_kroner.json",
-          "src/main/resources/assets/itacraft/models/item/hundre_kroner.json"
+          "src/main/resources/assets/itacraft/models/item/hundre_kroner.json",
+          "src/main/java/net/mcreator/itacraft/item/HundreKronerItem.java"
         ]
       }
     },
@@ -968,8 +968,8 @@
       "registry_name": "to_hundre_kroner_recipe",
       "metadata": {
         "files": [
-          "src/main/resources/data/itacraft/advancement/recipes/to_hundre_kroner_recipe.json",
-          "src/main/resources/data/itacraft/recipe/to_hundre_kroner_recipe.json"
+          "src/main/resources/data/itacraft/recipe/to_hundre_kroner_recipe.json",
+          "src/main/resources/data/itacraft/advancement/recipes/to_hundre_kroner_recipe.json"
         ]
       }
     },
@@ -994,8 +994,8 @@
       "registry_name": "red_colored_plastic",
       "metadata": {
         "files": [
-          "src/main/resources/assets/itacraft/items/red_colored_plastic.json",
           "src/main/resources/assets/itacraft/models/item/red_colored_plastic.json",
+          "src/main/resources/assets/itacraft/items/red_colored_plastic.json",
           "src/main/java/net/mcreator/itacraft/item/RedColoredPlasticItem.java"
         ]
       }
@@ -1036,8 +1036,8 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/itacraft/item/TiOreItem.java",
-          "src/main/resources/assets/itacraft/models/item/ti_ore.json",
-          "src/main/resources/assets/itacraft/items/ti_ore.json"
+          "src/main/resources/assets/itacraft/items/ti_ore.json",
+          "src/main/resources/assets/itacraft/models/item/ti_ore.json"
         ]
       }
     },
@@ -1049,8 +1049,8 @@
       "registry_name": "modular_pliers_recipe",
       "metadata": {
         "files": [
-          "src/main/resources/data/itacraft/advancement/recipes/modular_pliers_recipe.json",
-          "src/main/resources/data/itacraft/recipe/modular_pliers_recipe.json"
+          "src/main/resources/data/itacraft/recipe/modular_pliers_recipe.json",
+          "src/main/resources/data/itacraft/advancement/recipes/modular_pliers_recipe.json"
         ]
       }
     },
@@ -1062,9 +1062,9 @@
       "registry_name": "hawk_phone",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/itacraft/item/HawkPhoneItem.java",
           "src/main/resources/assets/itacraft/models/item/hawk_phone.json",
-          "src/main/resources/assets/itacraft/items/hawk_phone.json"
+          "src/main/resources/assets/itacraft/items/hawk_phone.json",
+          "src/main/java/net/mcreator/itacraft/item/HawkPhoneItem.java"
         ]
       }
     },
@@ -1076,9 +1076,9 @@
       "registry_name": "vipps_mini_bank_gui",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/itacraft/network/VippsMiniBankGUIButtonMessage.java",
           "src/main/java/net/mcreator/itacraft/world/inventory/VippsMiniBankGUIMenu.java",
-          "src/main/java/net/mcreator/itacraft/client/gui/VippsMiniBankGUIScreen.java"
+          "src/main/java/net/mcreator/itacraft/client/gui/VippsMiniBankGUIScreen.java",
+          "src/main/java/net/mcreator/itacraft/network/VippsMiniBankGUIButtonMessage.java"
         ]
       }
     },
@@ -1090,12 +1090,12 @@
       "registry_name": "hp_monitor",
       "metadata": {
         "files": [
-          "src/main/resources/assets/itacraft/blockstates/hp_monitor.json",
           "src/main/resources/data/itacraft/loot_table/blocks/hp_monitor.json",
-          "src/main/resources/assets/itacraft/models/item/hp_monitor.json",
-          "src/main/resources/assets/itacraft/models/block/hp_monitor.json",
           "src/main/java/net/mcreator/itacraft/block/HPMonitorBlock.java",
-          "src/main/resources/assets/itacraft/items/hp_monitor.json"
+          "src/main/resources/assets/itacraft/items/hp_monitor.json",
+          "src/main/resources/assets/itacraft/blockstates/hp_monitor.json",
+          "src/main/resources/assets/itacraft/models/block/hp_monitor.json",
+          "src/main/resources/assets/itacraft/models/item/hp_monitor.json"
         ]
       }
     },
@@ -1107,8 +1107,8 @@
       "registry_name": "russiaparticles",
       "metadata": {
         "files": [
-          "src/main/resources/assets/itacraft/particles/russiaparticles.json",
-          "src/main/java/net/mcreator/itacraft/client/particle/RussiaparticlesParticle.java"
+          "src/main/java/net/mcreator/itacraft/client/particle/RussiaparticlesParticle.java",
+          "src/main/resources/assets/itacraft/particles/russiaparticles.json"
         ]
       }
     },
@@ -1120,12 +1120,12 @@
       "registry_name": "russia_block",
       "metadata": {
         "files": [
+          "src/main/resources/data/itacraft/loot_table/blocks/russia_block.json",
+          "src/main/resources/assets/itacraft/models/item/russia_block.json",
           "src/main/resources/assets/itacraft/items/russia_block.json",
           "src/main/resources/assets/itacraft/models/block/russia_block.json",
-          "src/main/resources/assets/itacraft/models/item/russia_block.json",
-          "src/main/java/net/mcreator/itacraft/block/RussiaBlockBlock.java",
-          "src/main/resources/data/itacraft/loot_table/blocks/russia_block.json",
-          "src/main/resources/assets/itacraft/blockstates/russia_block.json"
+          "src/main/resources/assets/itacraft/blockstates/russia_block.json",
+          "src/main/java/net/mcreator/itacraft/block/RussiaBlockBlock.java"
         ]
       }
     },
@@ -1217,12 +1217,12 @@
       "registry_name": "vippsminibank",
       "metadata": {
         "files": [
+          "src/main/resources/assets/itacraft/models/block/vippsminibank.json",
+          "src/main/resources/assets/itacraft/items/vippsminibank.json",
           "src/main/resources/assets/itacraft/models/item/vippsminibank.json",
           "src/main/resources/assets/itacraft/blockstates/vippsminibank.json",
-          "src/main/resources/assets/itacraft/models/block/vippsminibank.json",
           "src/main/resources/data/itacraft/loot_table/blocks/vippsminibank.json",
           "src/main/java/net/mcreator/itacraft/block/entity/VippsminibankBlockEntity.java",
-          "src/main/resources/assets/itacraft/items/vippsminibank.json",
           "src/main/java/net/mcreator/itacraft/block/VippsminibankBlock.java"
         ]
       }
@@ -1235,9 +1235,9 @@
       "registry_name": "drammen",
       "metadata": {
         "files": [
-          "src/main/resources/data/itacraft/worldgen/biome/drammen.json",
           "src/main/resources/data/itacraft/worldgen/placed_feature/drammen_tree.json",
-          "src/main/resources/data/itacraft/worldgen/configured_feature/drammen_tree.json"
+          "src/main/resources/data/itacraft/worldgen/configured_feature/drammen_tree.json",
+          "src/main/resources/data/itacraft/worldgen/biome/drammen.json"
         ]
       }
     },
@@ -1277,9 +1277,9 @@
       "registry_name": "communism",
       "metadata": {
         "files": [
+          "src/main/resources/assets/itacraft/models/item/communism.json",
           "src/main/java/net/mcreator/itacraft/item/CommunismItem.java",
-          "src/main/resources/assets/itacraft/items/communism.json",
-          "src/main/resources/assets/itacraft/models/item/communism.json"
+          "src/main/resources/assets/itacraft/items/communism.json"
         ]
       }
     },
@@ -1443,9 +1443,9 @@
       "registry_name": "firestaff",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/itacraft/item/FirestaffItem.java",
+          "src/main/resources/assets/itacraft/models/item/firestaff.json",
           "src/main/resources/assets/itacraft/items/firestaff.json",
-          "src/main/resources/assets/itacraft/models/item/firestaff.json"
+          "src/main/java/net/mcreator/itacraft/item/FirestaffItem.java"
         ]
       },
       "path": "~/MatveySaker"
@@ -1458,8 +1458,8 @@
       "registry_name": "recharge_projectile",
       "metadata": {
         "files": [
-          "src/main/resources/data/itacraft/advancement/recipes/recharge_projectile.json",
-          "src/main/resources/data/itacraft/recipe/recharge_projectile.json"
+          "src/main/resources/data/itacraft/recipe/recharge_projectile.json",
+          "src/main/resources/data/itacraft/advancement/recipes/recharge_projectile.json"
         ]
       },
       "path": "~/MatveySaker"
@@ -1529,8 +1529,8 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/itacraft/models/item/tom_nal.json",
-          "src/main/java/net/mcreator/itacraft/item/TomNalItem.java",
-          "src/main/resources/assets/itacraft/items/tom_nal.json"
+          "src/main/resources/assets/itacraft/items/tom_nal.json",
+          "src/main/java/net/mcreator/itacraft/item/TomNalItem.java"
         ]
       }
     },
@@ -1560,9 +1560,9 @@
       "registry_name": "nal_med_noe_rart_i",
       "metadata": {
         "files": [
-          "src/main/resources/assets/itacraft/models/item/nal_med_noe_rart_i.json",
+          "src/main/resources/assets/itacraft/items/nal_med_noe_rart_i.json",
           "src/main/java/net/mcreator/itacraft/item/NalMedNoeRartIItem.java",
-          "src/main/resources/assets/itacraft/items/nal_med_noe_rart_i.json"
+          "src/main/resources/assets/itacraft/models/item/nal_med_noe_rart_i.json"
         ]
       }
     },
@@ -1575,8 +1575,8 @@
       "metadata": {
         "files": [
           "src/main/resources/data/itacraft/worldgen/structure_set/crackhouse.json",
-          "src/main/resources/data/itacraft/worldgen/template_pool/crackhouse.json",
-          "src/main/resources/data/itacraft/worldgen/structure/crackhouse.json"
+          "src/main/resources/data/itacraft/worldgen/structure/crackhouse.json",
+          "src/main/resources/data/itacraft/worldgen/template_pool/crackhouse.json"
         ]
       }
     },
@@ -1600,8 +1600,82 @@
       "registry_name": "nal_recipe",
       "metadata": {
         "files": [
-          "src/main/resources/data/itacraft/advancement/recipes/nal_recipe.json",
-          "src/main/resources/data/itacraft/recipe/nal_recipe.json"
+          "src/main/resources/data/itacraft/recipe/nal_recipe.json",
+          "src/main/resources/data/itacraft/advancement/recipes/nal_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "CornerOverlay",
+      "type": "overlay",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "corner_overlay",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/itacraft/client/screens/CornerOverlayOverlay.java"
+        ]
+      }
+    },
+    {
+      "name": "AndreasDisplayCondition",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "andreas_display_condition",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/itacraft/procedures/AndreasDisplayConditionProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "Radiation",
+      "type": "particle",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "radiation",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/itacraft/particles/radiation.json",
+          "src/main/java/net/mcreator/itacraft/client/particle/RadiationParticle.java"
+        ]
+      }
+    },
+    {
+      "name": "RadiationPoisoningOnEffectActiveTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "radiation_poisoning_on_effect_active_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/itacraft/procedures/RadiationPoisoningOnEffectActiveTickProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "RadiationPoisoning",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "radiation_poisoning",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/itacraft/potion/RadiationPoisoningMobEffect.java"
         ]
       }
     }
@@ -1823,38 +1897,46 @@
       "item.minecraft.tipped_arrow.effect.russia_potion": "Arrow of Russia",
       "item.minecraft.lingering_potion.effect.russia_potion": "Lingering Potion of Russia",
       "item.minecraft.splash_potion.effect.russia_potion": "Splash Potion of Russia",
-      "item.itacraft.communism": "Communism"
+      "item.itacraft.communism": "Communism",
+      "item.itacraft.firestaff": "Firestaff",
+      "painting.itacraft.max_burgers.title": "Max Burgers",
+      "painting.itacraft.max_burgers.author": "Richard Bergfors",
+      "item.itacraft.tom_nal": "Tom Nål",
+      "item.itacraft.nal_med_noe_rart_i.description_0": "Hva er det oppi her mon tro?",
+      "item.itacraft.nal_med_noe_rart_i": "Nål med noe rart i",
+      "effect.itacraft.radiation_poisoning": "Radiation Poisoning"
     }
   },
   "metadata": {
     "files": [
       "src/main/java/net/mcreator/itacraft/init/ItacraftModBiomes.java",
       "src/main/java/net/mcreator/itacraft/mixin/NoiseGeneratorSettingsMixin.java",
-      "src/main/java/net/mcreator/itacraft/init/ItacraftModFluidTypes.java",
       "src/main/java/net/mcreator/itacraft/init/ItacraftModFluids.java",
+      "src/main/java/net/mcreator/itacraft/init/ItacraftModFluidTypes.java",
       "src/main/java/net/mcreator/itacraft/network/MenuStateUpdateMessage.java",
-      "src/main/java/net/mcreator/itacraft/init/ItacraftModScreens.java",
       "src/main/java/net/mcreator/itacraft/init/ItacraftModMenus.java",
+      "src/main/java/net/mcreator/itacraft/init/ItacraftModScreens.java",
       "src/main/java/net/mcreator/itacraft/init/ItacraftModKeyMappings.java",
-      "src/main/java/net/mcreator/itacraft/init/ItacraftModParticleTypes.java",
+      "src/main/resources/data/minecraft/tags/painting_variant/placeable.json",
       "src/main/java/net/mcreator/itacraft/init/ItacraftModParticles.java",
+      "src/main/java/net/mcreator/itacraft/init/ItacraftModParticleTypes.java",
       "src/main/java/net/mcreator/itacraft/init/ItacraftModMobEffects.java",
       "src/main/java/net/mcreator/itacraft/init/ItacraftModPotions.java",
       "src/main/java/net/mcreator/itacraft/init/ItacraftModTrades.java",
       "src/main/java/net/mcreator/itacraft/init/ItacraftModBlocks.java",
       "src/main/java/net/mcreator/itacraft/init/ItacraftModBlockEntities.java",
       "src/main/java/net/mcreator/itacraft/init/ItacraftModItems.java",
-      "src/main/java/net/mcreator/itacraft/init/ItacraftModEntities.java",
       "src/main/java/net/mcreator/itacraft/init/ItacraftModEntityRenderers.java",
-      "src/main/java/net/mcreator/itacraft/ItacraftMod.java",
-      "src/main/java/net/mcreator/itacraft/init/ItacraftModSounds.java",
-      "src/main/java/net/mcreator/itacraft/network/ItacraftModVariables.java",
-      "src/main/resources/itacraft.mixins.json",
+      "src/main/java/net/mcreator/itacraft/init/ItacraftModEntities.java",
       "src/main/resources/META-INF/neoforge.mods.toml",
-      "src/main/resources/pack.mcmeta",
       "src/main/resources/assets/itacraft/sounds.json",
+      "src/main/java/net/mcreator/itacraft/init/ItacraftModSounds.java",
+      "src/main/resources/itacraft.mixins.json",
+      "src/main/java/net/mcreator/itacraft/ItacraftMod.java",
+      "src/main/java/net/mcreator/itacraft/network/ItacraftModVariables.java",
       "src/main/resources/META-INF/accesstransformer.cfg",
       "src/main/java/net/mcreator/itacraft/init/ItacraftModModels.java",
+      "src/main/resources/pack.mcmeta",
       "src/main/java/net/mcreator/itacraft/init/ItacraftModTabs.java"
     ]
   },
