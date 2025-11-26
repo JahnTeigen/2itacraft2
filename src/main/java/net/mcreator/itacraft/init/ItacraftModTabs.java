@@ -55,8 +55,10 @@ public class ItacraftModTabs {
 			tabData.accept(ItacraftModItems.TI_ORE.get());
 			tabData.accept(ItacraftModItems.HAWK_PHONE.get());
 			tabData.accept(ItacraftModItems.COMMUNISM.get());
+			tabData.accept(ItacraftModItems.TOM_NAL.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS) {
 			tabData.accept(ItacraftModItems.HEROIN.get());
+			tabData.accept(ItacraftModItems.NAL_MED_NOE_RART_I.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
 			tabData.accept(ItacraftModBlocks.BLOCK_OF_BYGG_54.get().asItem());
 		} else if (tabData.getTabKey() == CreativeModeTabs.INGREDIENTS) {

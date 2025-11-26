@@ -1,8 +1,6 @@
 package net.mcreator.itacraft.procedures;
 
-import net.minecraft.world.level.LevelAccessor;
-import net.minecraft.server.level.ServerLevel;
-import net.minecraft.core.particles.ParticleTypes;
+import net.neoforged.bus.api.Event;
 
 public class FireballWhileProjectileFlyingTickProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {

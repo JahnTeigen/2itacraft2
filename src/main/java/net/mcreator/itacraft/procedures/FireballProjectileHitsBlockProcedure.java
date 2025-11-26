@@ -1,7 +1,6 @@
 package net.mcreator.itacraft.procedures;
 
-import net.minecraft.world.level.LevelAccessor;
-import net.minecraft.world.level.Level;
+import net.neoforged.bus.api.Event;
 
 public class FireballProjectileHitsBlockProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {

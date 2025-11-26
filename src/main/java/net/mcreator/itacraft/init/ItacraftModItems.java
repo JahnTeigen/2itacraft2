@@ -66,6 +66,8 @@ public class ItacraftModItems {
 	public static final DeferredItem<Item> VIPPSMINIBANK;
 	public static final DeferredItem<Item> COMMUNISM;
 	public static final DeferredItem<Item> FIRESTAFF;
+	public static final DeferredItem<Item> TOM_NAL;
+	public static final DeferredItem<Item> NAL_MED_NOE_RART_I;
 	static {
 		GEIR_HAOY_SPAWN_EGG = register("geir_haoy_spawn_egg", properties -> new SpawnEggItem(ItacraftModEntities.GEIR_HAOY.get(), properties));
 		KOG_STOCK = register("kog_stock", KOGStockItem::new);
@@ -105,6 +107,8 @@ public class ItacraftModItems {
 		VIPPSMINIBANK = block(ItacraftModBlocks.VIPPSMINIBANK);
 		COMMUNISM = register("communism", CommunismItem::new);
 		FIRESTAFF = register("firestaff", FirestaffItem::new);
+		TOM_NAL = register("tom_nal", TomNalItem::new);
+		NAL_MED_NOE_RART_I = register("nal_med_noe_rart_i", NalMedNoeRartIItem::new);
 	}
 
 	// Start of user code block custom items
