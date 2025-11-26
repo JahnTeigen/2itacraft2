@@ -1,5 +1,26 @@
 package net.mcreator.itacraft.client.fluid;
 
+import org.joml.Vector4f;
+
+import net.neoforged.neoforge.client.extensions.common.RegisterClientExtensionsEvent;
+import net.neoforged.neoforge.client.extensions.common.IClientFluidTypeExtensions;
+import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.api.distmarker.Dist;
+
+import net.minecraft.world.level.Level;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.client.renderer.fog.environment.FogEnvironment;
+import net.minecraft.client.renderer.fog.FogData;
+import net.minecraft.client.multiplayer.ClientLevel;
+import net.minecraft.client.Minecraft;
+import net.minecraft.client.Camera;
+
+import net.mcreator.itacraft.init.ItacraftModFluidTypes;
+
+import javax.annotation.Nullable;
+
 @EventBusSubscriber(Dist.CLIENT)
 public class OilFluidExtension {
 	@SubscribeEvent
