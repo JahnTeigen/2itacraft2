@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
+    "itacraft:russia_block",
     "itacraft:andreas"
   ]
 }

@@ -1080,6 +1080,78 @@
           "src/main/java/net/mcreator/itacraft/client/gui/VippsMiniBankGUIScreen.java"
         ]
       }
+    },
+    {
+      "name": "Russiaparticles",
+      "type": "particle",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "russiaparticles",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/itacraft/particles/russiaparticles.json",
+          "src/main/java/net/mcreator/itacraft/client/particle/RussiaparticlesParticle.java"
+        ]
+      }
+    },
+    {
+      "name": "DeportablePotionEffectOnEffectActiveTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "deportable_potion_effect_on_effect_active_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/itacraft/procedures/DeportablePotionEffectOnEffectActiveTickProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "DeportablePotionEffect",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "deportable_potion_effect",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/itacraft/potion/DeportablePotionEffectMobEffect.java"
+        ]
+      }
+    },
+    {
+      "name": "RussiaBlock",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "russia_block",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/itacraft/items/russia_block.json",
+          "src/main/resources/assets/itacraft/models/block/russia_block.json",
+          "src/main/resources/assets/itacraft/models/item/russia_block.json",
+          "src/main/java/net/mcreator/itacraft/block/RussiaBlockBlock.java",
+          "src/main/resources/data/itacraft/loot_table/blocks/russia_block.json",
+          "src/main/resources/assets/itacraft/blockstates/russia_block.json"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -1113,6 +1185,7 @@
       "CUSTOM:KOGStock"
     ],
     "BLOCKS:minecraft:mineable/hoe": [
+      "~CUSTOM:RussiaBlock",
       "~CUSTOM:Andreas"
     ],
     "ITEMS:minecraft:piglin_loved": [
@@ -1158,6 +1231,9 @@
     ],
     "BLOCKS:minecraft:needs_iron_tool": [
       "~CUSTOM:HPWorkstation"
+    ],
+    "BLOCKS:minecraft:needs_diamond_tool": [
+      "~CUSTOM:RussiaBlock"
     ]
   },
   "tab_element_order": {},
@@ -1235,7 +1311,9 @@
       "gui.itacraft.vipps_mini_bank_gui.label_hawkphone": "Hawk Phone",
       "gui.itacraft.vipps_mini_bank_gui.label_vipps_minibank": "Vipps Minibank",
       "gui.itacraft.vipps_mini_bank_gui.button_overfor": "Overfør",
-      "gui.itacraft.vipps_mini_bank_gui.label_kontanter": "Kontanter"
+      "gui.itacraft.vipps_mini_bank_gui.label_kontanter": "Kontanter",
+      "effect.itacraft.deportable_potion_effect": "Deportable Potion Effect",
+      "item.itacraft.russia_block": "Russia Block"
     }
   },
   "metadata": {
@@ -1246,6 +1324,9 @@
       "src/main/java/net/mcreator/itacraft/init/ItacraftModScreens.java",
       "src/main/java/net/mcreator/itacraft/init/ItacraftModMenus.java",
       "src/main/java/net/mcreator/itacraft/init/ItacraftModKeyMappings.java",
+      "src/main/java/net/mcreator/itacraft/init/ItacraftModParticleTypes.java",
+      "src/main/java/net/mcreator/itacraft/init/ItacraftModParticles.java",
+      "src/main/java/net/mcreator/itacraft/init/ItacraftModMobEffects.java",
       "src/main/java/net/mcreator/itacraft/init/ItacraftModTrades.java",
       "src/main/java/net/mcreator/itacraft/init/ItacraftModBlocks.java",
       "src/main/java/net/mcreator/itacraft/init/ItacraftModItems.java",
