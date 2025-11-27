@@ -1873,6 +1873,38 @@
       ],
       "category": "ui",
       "subtitle": "speaking russian"
+    },
+    {
+      "name": "geiger",
+      "files": [
+        "sfx_-_6_minutes_of_random_geiger_counter_sounds_-_low_to_extreme_tuberipper.cc"
+      ],
+      "category": "ambient",
+      "subtitle": "\u003cradiation\u003e"
+    },
+    {
+      "name": "facility_alarm",
+      "files": [
+        "nuclear_facility_alarm_sound_effect_tuberipper.cc"
+      ],
+      "category": "ambient",
+      "subtitle": "\u003calarm\u003e"
+    },
+    {
+      "name": "facility_alarm2",
+      "files": [
+        "black_mesa_industrial_alarm_sound_effect_tuberipper.cc"
+      ],
+      "category": "ambient",
+      "subtitle": ""
+    },
+    {
+      "name": "ambient_ominous",
+      "files": [
+        "lemmino_-_aloft"
+      ],
+      "category": "music",
+      "subtitle": ""
     }
   ],
   "tag_elements": {
@@ -2056,7 +2088,11 @@
       "item.itacraft.giftig_gugge": "Giftig Gugge",
       "advancements.spiste_gugge.descr": "Spiste giftig gugge..... hvorfor????",
       "advancements.spiste_gugge.title": "Spiste Gugge",
-      "effect.itacraft.radiation_poisoning": "Radiation Poisoning"
+      "effect.itacraft.radiation_poisoning": "Radiation Poisoning",
+      "subtitles.geiger": "\u003cradiation\u003e",
+      "subtitles.facility_alarm": "\u003calarm\u003e",
+      "subtitles.facility_alarm2": "",
+      "subtitles.ambient_ominous": ""
     }
   },
   "metadata": {
