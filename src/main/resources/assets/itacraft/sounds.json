@@ -41,5 +41,39 @@
         "stream": false
       }
     ]
+  },
+  "facility_alarm2": {
+    "sounds": [
+      {
+        "name": "itacraft:black_mesa_industrial_alarm_sound_effect_tuberipper.cc",
+        "stream": false
+      }
+    ]
+  },
+  "ambient_ominous": {
+    "sounds": [
+      {
+        "name": "itacraft:lemmino_-_aloft",
+        "stream": true
+      }
+    ]
+  },
+  "facility_alarm": {
+    "subtitle": "subtitles.facility_alarm",
+    "sounds": [
+      {
+        "name": "itacraft:nuclear_facility_alarm_sound_effect_tuberipper.cc",
+        "stream": false
+      }
+    ]
+  },
+  "geiger": {
+    "subtitle": "subtitles.geiger",
+    "sounds": [
+      {
+        "name": "itacraft:sfx_-_6_minutes_of_random_geiger_counter_sounds_-_low_to_extreme_tuberipper.cc",
+        "stream": false
+      }
+    ]
   }
 }

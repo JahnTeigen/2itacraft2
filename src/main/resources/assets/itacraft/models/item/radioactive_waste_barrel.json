@@ -1,0 +1,7 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "itacraft:item/barrel_item_texturefrnt"
+  },
+  "render_type": "translucent"
+}

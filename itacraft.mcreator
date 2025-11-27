@@ -1069,7 +1069,7 @@
       "name": "HawkPhone",
       "type": "tool",
       "compiles": true,
-      "locked_code": true,
+      "locked_code": false,
       "registry_name": "hawk_phone",
       "metadata": {
         "files": [
@@ -1825,6 +1825,20 @@
       "path": "~/Procedures"
     },
     {
+      "name": "OpenHawkPhone",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "open_hawk_phone",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/mcreator/itacraft/procedures/OpenHawkPhoneProcedure.java"
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
       "name": "HawkPhoneGUIHomeScreen",
       "type": "gui",
       "compiles": true,
@@ -1839,15 +1853,42 @@
       }
     },
     {
-      "name": "OpenHawkPhone",
+      "name": "OpenVippsAppGUIProcedure",
       "type": "procedure",
       "compiles": true,
       "locked_code": true,
-      "registry_name": "open_hawk_phone",
+      "registry_name": "open_vipps_app_gui_procedure",
       "metadata": {
         "dependencies": [],
         "files": [
-          "src/main/java/net/mcreator/itacraft/procedures/OpenHawkPhoneProcedure.java"
+          "src/main/java/net/mcreator/itacraft/procedures/OpenVippsAppGUIProcedureProcedure.java"
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "VippsAppGui",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "vipps_app_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/itacraft/world/inventory/VippsAppGuiMenu.java",
+          "src/main/java/net/mcreator/itacraft/client/gui/VippsAppGuiScreen.java"
+        ]
+      }
+    },
+    {
+      "name": "GetPhoneMoneyDisplay",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "get_phone_money_display",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/mcreator/itacraft/procedures/GetPhoneMoneyDisplayProcedure.java"
         ]
       },
       "path": "~/Procedures"
@@ -1867,45 +1908,37 @@
       "path": "~/Procedures"
     },
     {
-      "name": "VippsAppGui",
+      "name": "RadioactiveWasteBarrel",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "radioactive_waste_barrel",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/itacraft/items/radioactive_waste_barrel.json",
+          "src/main/resources/data/itacraft/loot_table/blocks/radioactive_waste_barrel.json",
+          "src/main/resources/assets/itacraft/models/item/radioactive_waste_barrel.json",
+          "src/main/java/net/mcreator/itacraft/block/entity/RadioactiveWasteBarrelBlockEntity.java",
+          "src/main/resources/assets/itacraft/blockstates/radioactive_waste_barrel.json",
+          "src/main/java/net/mcreator/itacraft/block/RadioactiveWasteBarrelBlock.java",
+          "src/main/resources/assets/itacraft/models/block/radioactive_waste_barrel.json"
+        ]
+      },
+      "path": "~/MatveySaker"
+    },
+    {
+      "name": "RadioActiveBarrelGUI",
       "type": "gui",
       "compiles": true,
-      "locked_code": true,
-      "registry_name": "vipps_app_gui",
+      "locked_code": false,
+      "registry_name": "radio_active_barrel_gui",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/itacraft/world/inventory/VippsAppGuiMenu.java",
-          "src/main/java/net/mcreator/itacraft/client/gui/VippsAppGuiScreen.java"
-        ]
-      }
-    },
-    {
-      "name": "OpenVippsAppGUIProcedure",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": true,
-      "registry_name": "open_vipps_app_gui_procedure",
-      "metadata": {
-        "dependencies": [],
-        "files": [
-          "src/main/java/net/mcreator/itacraft/procedures/OpenVippsAppGUIProcedureProcedure.java"
+          "src/main/java/net/mcreator/itacraft/client/gui/RadioActiveBarrelGUIScreen.java",
+          "src/main/java/net/mcreator/itacraft/world/inventory/RadioActiveBarrelGUIMenu.java"
         ]
       },
-      "path": "~/Procedures"
-    },
-    {
-      "name": "GetPhoneMoneyDisplay",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": true,
-      "registry_name": "get_phone_money_display",
-      "metadata": {
-        "dependencies": [],
-        "files": [
-          "src/main/java/net/mcreator/itacraft/procedures/GetPhoneMoneyDisplayProcedure.java"
-        ]
-      },
-      "path": "~/Procedures"
+      "path": "~/MatveySaker"
     }
   ],
   "variable_elements": [
@@ -1956,6 +1989,38 @@
       ],
       "category": "ui",
       "subtitle": "speaking russian"
+    },
+    {
+      "name": "facility_alarm2",
+      "files": [
+        "black_mesa_industrial_alarm_sound_effect_tuberipper.cc"
+      ],
+      "category": "ambient",
+      "subtitle": ""
+    },
+    {
+      "name": "ambient_ominous",
+      "files": [
+        "lemmino_-_aloft"
+      ],
+      "category": "music",
+      "subtitle": ""
+    },
+    {
+      "name": "facility_alarm",
+      "files": [
+        "nuclear_facility_alarm_sound_effect_tuberipper.cc"
+      ],
+      "category": "ambient",
+      "subtitle": "\u003calarm\u003e"
+    },
+    {
+      "name": "geiger",
+      "files": [
+        "sfx_-_6_minutes_of_random_geiger_counter_sounds_-_low_to_extreme_tuberipper.cc"
+      ],
+      "category": "ambient",
+      "subtitle": "\u003cradiation\u003e"
     }
   ],
   "tag_elements": {
@@ -1985,6 +2050,7 @@
     ],
     "ITEMS:minecraft:pickaxes": [
       "~CUSTOM:Communism",
+      "~CUSTOM:HawkPhone",
       "~CUSTOM:ModularPliers"
     ],
     "ITEMS:minecraft:axes": [
@@ -2110,7 +2176,7 @@
       "item.itacraft.hawk_phone": "Hawk Phone",
       "gui.itacraft.vipps_mini_bank_gui.label_hawkphone": "Hawk Phone",
       "gui.itacraft.vipps_mini_bank_gui.label_vipps_minibank": "Vipps Minibank",
-      "gui.itacraft.vipps_mini_bank_gui.button_overfor": "Overfør / Ta ut",
+      "gui.itacraft.vipps_mini_bank_gui.button_overfor": "Overfør",
       "gui.itacraft.vipps_mini_bank_gui.label_kontanter": "Kontanter",
       "subtitles.china_tts_1": "speaking chinese",
       "item.itacraft.hp_monitor": "HP Monitor",
@@ -2141,14 +2207,18 @@
       "effect.itacraft.radiation_poisoning": "Radiation Poisoning",
       "gui.itacraft.hawk_phone_gui_home_screen.button_0": "o",
       "gui.itacraft.hawk_phone_gui_home_screen.label_vipps": "vipps",
-      "gui.itacraft.hawk_phone_gui_home_screen.label_vy": "vy",
-      "gui.itacraft.hawk_phone_gui_home_screen.label_hawkphone": "Hawk Phone PRO",
-      "gui.itacraft.vipps_app_gui.label_vipps_bro_test": "vipps bro test",
-      "gui.itacraft.hawk_phone_gui_home_screen.button_vy": "vy",
-      "gui.itacraft.hawk_phone_gui_home_screen.button_vipps": "Vipps",
       "gui.itacraft.vipps_app_gui.label_real_vipps": "Real Vipps",
+      "gui.itacraft.hawk_phone_gui_home_screen.label_vy": "vy",
+      "gui.itacraft.hawk_phone_gui_home_screen.button_vy": "vy",
       "gui.itacraft.vipps_app_gui.label_kontonummer": "Kontonummer: *********..",
-      "gui.itacraft.vipps_app_gui.button_o": "o"
+      "gui.itacraft.vipps_app_gui.button_o": "o",
+      "gui.itacraft.hawk_phone_gui_home_screen.button_vipps": "Vipps",
+      "gui.itacraft.vipps_app_gui.label_vipps_bro_test": "vipps bro test",
+      "gui.itacraft.hawk_phone_gui_home_screen.label_hawkphone": "Hawk Phone PRO",
+      "subtitles.facility_alarm": "\u003calarm\u003e",
+      "subtitles.ambient_ominous": "",
+      "subtitles.facility_alarm2": "",
+      "subtitles.geiger": "\u003cradiation\u003e"
     }
   },
   "metadata": {

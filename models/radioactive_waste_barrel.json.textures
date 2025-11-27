@@ -1,0 +1,11 @@
+{
+  "mappings": {
+    "default": {
+      "name": "default",
+      "map": {
+        "0": "barrel_metal_rings",
+        "1": "barrel_body_texture"
+      }
+    }
+  }
+}
