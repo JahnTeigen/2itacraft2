@@ -102,5 +102,7 @@
   "subtitles.geiger": "\u003cradiation\u003e",
   "subtitles.facility_alarm": "\u003calarm\u003e",
   "subtitles.facility_alarm2": "",
-  "subtitles.ambient_ominous": ""
+  "subtitles.ambient_ominous": "",
+  "item.itacraft.radioactive_waste_barrel": "Radioactive Waste Barrel",
+  "gui.itacraft.radio_active_barrel_gui.label_radioactive_waste_barrel": "Radioactive Waste Barrel"
 }

@@ -17,12 +17,15 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.core.registries.BuiltInRegistries;
 
 import net.mcreator.itacraft.block.entity.VippsminibankBlockEntity;
+import net.mcreator.itacraft.block.entity.RadioactiveWasteBarrelBlockEntity;
 import net.mcreator.itacraft.ItacraftMod;
 
 @EventBusSubscriber
 public class ItacraftModBlockEntities {
 	public static final DeferredRegister<BlockEntityType<?>> REGISTRY = DeferredRegister.create(BuiltInRegistries.BLOCK_ENTITY_TYPE, ItacraftMod.MODID);
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<VippsminibankBlockEntity>> VIPPSMINIBANK = register("vippsminibank", ItacraftModBlocks.VIPPSMINIBANK, VippsminibankBlockEntity::new);
+	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<RadioactiveWasteBarrelBlockEntity>> RADIOACTIVE_WASTE_BARREL = register("radioactive_waste_barrel", ItacraftModBlocks.RADIOACTIVE_WASTE_BARREL,
+			RadioactiveWasteBarrelBlockEntity::new);
 
 	// Start of user code block custom block entities
 	// End of user code block custom block entities
@@ -33,5 +36,6 @@ public class ItacraftModBlockEntities {
 	@SubscribeEvent
 	public static void registerCapabilities(RegisterCapabilitiesEvent event) {
 		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, VIPPSMINIBANK.get(), SidedInvWrapper::new);
+		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, RADIOACTIVE_WASTE_BARREL.get(), SidedInvWrapper::new);
 	}
 }

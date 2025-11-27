@@ -69,6 +69,7 @@ public class ItacraftModItems {
 	public static final DeferredItem<Item> TOM_NAL;
 	public static final DeferredItem<Item> NAL_MED_NOE_RART_I;
 	public static final DeferredItem<Item> GIFTIG_GUGGE;
+	public static final DeferredItem<Item> RADIOACTIVE_WASTE_BARREL;
 	static {
 		GEIR_HAOY_SPAWN_EGG = register("geir_haoy_spawn_egg", properties -> new SpawnEggItem(ItacraftModEntities.GEIR_HAOY.get(), properties));
 		KOG_STOCK = register("kog_stock", KOGStockItem::new);
@@ -111,6 +112,7 @@ public class ItacraftModItems {
 		TOM_NAL = register("tom_nal", TomNalItem::new);
 		NAL_MED_NOE_RART_I = register("nal_med_noe_rart_i", NalMedNoeRartIItem::new);
 		GIFTIG_GUGGE = register("giftig_gugge", GiftigGuggeItem::new);
+		RADIOACTIVE_WASTE_BARREL = block(ItacraftModBlocks.RADIOACTIVE_WASTE_BARREL, new Item.Properties().stacksTo(1).rarity(Rarity.UNCOMMON).fireResistant());
 	}
 
 	// Start of user code block custom items

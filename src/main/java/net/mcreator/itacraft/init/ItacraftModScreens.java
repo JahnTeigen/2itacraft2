@@ -9,6 +9,7 @@ import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.api.distmarker.Dist;
 
 import net.mcreator.itacraft.client.gui.VippsMiniBankGUIScreen;
+import net.mcreator.itacraft.client.gui.RadioActiveBarrelGUIScreen;
 import net.mcreator.itacraft.client.gui.PatchTableGUIScreen;
 import net.mcreator.itacraft.client.gui.OsloBorsScreen;
 import net.mcreator.itacraft.client.gui.NSMRequestInterfaceScreen;
@@ -21,6 +22,7 @@ public class ItacraftModScreens {
 		event.register(ItacraftModMenus.NSM_REQUEST_INTERFACE.get(), NSMRequestInterfaceScreen::new);
 		event.register(ItacraftModMenus.PATCH_TABLE_GUI.get(), PatchTableGUIScreen::new);
 		event.register(ItacraftModMenus.VIPPS_MINI_BANK_GUI.get(), VippsMiniBankGUIScreen::new);
+		event.register(ItacraftModMenus.RADIO_ACTIVE_BARREL_GUI.get(), RadioActiveBarrelGUIScreen::new);
 	}
 
 	public interface ScreenAccessor {

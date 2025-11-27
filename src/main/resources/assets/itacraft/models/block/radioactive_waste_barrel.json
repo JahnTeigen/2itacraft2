@@ -1,0 +1,10 @@
+{
+  "parent": "itacraft:custom/radioactive_waste_barrel",
+  "textures": {
+    "all": "itacraft:block/barrel_item_texturefrnt",
+    "particle": "itacraft:block/barrel_item_texturefrnt",
+    "0": "itacraft:block/barrel_metal_rings",
+    "1": "itacraft:block/barrel_body_texture"
+  },
+  "render_type": "solid"
+}
