@@ -1069,7 +1069,7 @@
       "name": "HawkPhone",
       "type": "tool",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "hawk_phone",
       "metadata": {
         "files": [
@@ -2050,7 +2050,6 @@
     ],
     "ITEMS:minecraft:pickaxes": [
       "~CUSTOM:Communism",
-      "~CUSTOM:HawkPhone",
       "~CUSTOM:ModularPliers"
     ],
     "ITEMS:minecraft:axes": [
@@ -2176,7 +2175,7 @@
       "item.itacraft.hawk_phone": "Hawk Phone",
       "gui.itacraft.vipps_mini_bank_gui.label_hawkphone": "Hawk Phone",
       "gui.itacraft.vipps_mini_bank_gui.label_vipps_minibank": "Vipps Minibank",
-      "gui.itacraft.vipps_mini_bank_gui.button_overfor": "Overfør",
+      "gui.itacraft.vipps_mini_bank_gui.button_overfor": "Overfør / Ta ut",
       "gui.itacraft.vipps_mini_bank_gui.label_kontanter": "Kontanter",
       "subtitles.china_tts_1": "speaking chinese",
       "item.itacraft.hp_monitor": "HP Monitor",
@@ -2218,7 +2217,9 @@
       "subtitles.facility_alarm": "\u003calarm\u003e",
       "subtitles.ambient_ominous": "",
       "subtitles.facility_alarm2": "",
-      "subtitles.geiger": "\u003cradiation\u003e"
+      "subtitles.geiger": "\u003cradiation\u003e",
+      "item.itacraft.radioactive_waste_barrel": "Radioactive Waste Barrel",
+      "gui.itacraft.radio_active_barrel_gui.label_radioactive_waste_barrel": "Radioactive Waste Barrel"
     }
   },
   "metadata": {
