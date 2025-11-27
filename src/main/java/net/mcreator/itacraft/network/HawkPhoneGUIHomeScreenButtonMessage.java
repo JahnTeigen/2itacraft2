@@ -15,25 +15,26 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.network.RegistryFriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
-import net.mcreator.itacraft.procedures.VippsMiniBankProcedureProcedure;
+import net.mcreator.itacraft.procedures.OpenVippsAppGUIProcedureProcedure;
+import net.mcreator.itacraft.procedures.CloseHawkPhoneGUIProcedure;
 import net.mcreator.itacraft.ItacraftMod;
 
 @EventBusSubscriber
-public record VippsMiniBankGUIButtonMessage(int buttonID, int x, int y, int z) implements CustomPacketPayload {
+public record HawkPhoneGUIHomeScreenButtonMessage(int buttonID, int x, int y, int z) implements CustomPacketPayload {
 
-	public static final Type<VippsMiniBankGUIButtonMessage> TYPE = new Type<>(ResourceLocation.fromNamespaceAndPath(ItacraftMod.MODID, "vipps_mini_bank_gui_buttons"));
-	public static final StreamCodec<RegistryFriendlyByteBuf, VippsMiniBankGUIButtonMessage> STREAM_CODEC = StreamCodec.of((RegistryFriendlyByteBuf buffer, VippsMiniBankGUIButtonMessage message) -> {
+	public static final Type<HawkPhoneGUIHomeScreenButtonMessage> TYPE = new Type<>(ResourceLocation.fromNamespaceAndPath(ItacraftMod.MODID, "hawk_phone_gui_home_screen_buttons"));
+	public static final StreamCodec<RegistryFriendlyByteBuf, HawkPhoneGUIHomeScreenButtonMessage> STREAM_CODEC = StreamCodec.of((RegistryFriendlyByteBuf buffer, HawkPhoneGUIHomeScreenButtonMessage message) -> {
 		buffer.writeInt(message.buttonID);
 		buffer.writeInt(message.x);
 		buffer.writeInt(message.y);
 		buffer.writeInt(message.z);
-	}, (RegistryFriendlyByteBuf buffer) -> new VippsMiniBankGUIButtonMessage(buffer.readInt(), buffer.readInt(), buffer.readInt(), buffer.readInt()));
+	}, (RegistryFriendlyByteBuf buffer) -> new HawkPhoneGUIHomeScreenButtonMessage(buffer.readInt(), buffer.readInt(), buffer.readInt(), buffer.readInt()));
 	@Override
-	public Type<VippsMiniBankGUIButtonMessage> type() {
+	public Type<HawkPhoneGUIHomeScreenButtonMessage> type() {
 		return TYPE;
 	}
 
-	public static void handleData(final VippsMiniBankGUIButtonMessage message, final IPayloadContext context) {
+	public static void handleData(final HawkPhoneGUIHomeScreenButtonMessage message, final IPayloadContext context) {
 		if (context.flow() == PacketFlow.SERVERBOUND) {
 			context.enqueueWork(() -> handleButtonAction(context.player(), message.buttonID, message.x, message.y, message.z)).exceptionally(e -> {
 				context.connection().disconnect(Component.literal(e.getMessage()));
@@ -49,12 +50,16 @@ public record VippsMiniBankGUIButtonMessage(int buttonID, int x, int y, int z) i
 			return;
 		if (buttonID == 0) {
 
-			VippsMiniBankProcedureProcedure.execute(entity);
+			CloseHawkPhoneGUIProcedure.execute(entity);
+		}
+		if (buttonID == 1) {
+
+			OpenVippsAppGUIProcedureProcedure.execute(entity);
 		}
 	}
 
 	@SubscribeEvent
 	public static void registerMessage(FMLCommonSetupEvent event) {
-		ItacraftMod.addNetworkMessage(VippsMiniBankGUIButtonMessage.TYPE, VippsMiniBankGUIButtonMessage.STREAM_CODEC, VippsMiniBankGUIButtonMessage::handleData);
+		ItacraftMod.addNetworkMessage(HawkPhoneGUIHomeScreenButtonMessage.TYPE, HawkPhoneGUIHomeScreenButtonMessage.STREAM_CODEC, HawkPhoneGUIHomeScreenButtonMessage::handleData);
 	}
 }

@@ -70,7 +70,7 @@
   "item.itacraft.hawk_phone": "Hawk Phone",
   "gui.itacraft.vipps_mini_bank_gui.label_hawkphone": "Hawk Phone",
   "gui.itacraft.vipps_mini_bank_gui.label_vipps_minibank": "Vipps Minibank",
-  "gui.itacraft.vipps_mini_bank_gui.button_overfor": "Overfør",
+  "gui.itacraft.vipps_mini_bank_gui.button_overfor": "Overfør / Ta ut",
   "gui.itacraft.vipps_mini_bank_gui.label_kontanter": "Kontanter",
   "subtitles.china_tts_1": "speaking chinese",
   "item.itacraft.hp_monitor": "HP Monitor",
@@ -98,5 +98,15 @@
   "item.itacraft.giftig_gugge": "Giftig Gugge",
   "advancements.spiste_gugge.descr": "Spiste giftig gugge..... hvorfor????",
   "advancements.spiste_gugge.title": "Spiste Gugge",
-  "effect.itacraft.radiation_poisoning": "Radiation Poisoning"
+  "effect.itacraft.radiation_poisoning": "Radiation Poisoning",
+  "gui.itacraft.hawk_phone_gui_home_screen.button_0": "o",
+  "gui.itacraft.hawk_phone_gui_home_screen.label_vipps": "vipps",
+  "gui.itacraft.hawk_phone_gui_home_screen.label_vy": "vy",
+  "gui.itacraft.hawk_phone_gui_home_screen.label_hawkphone": "Hawk Phone PRO",
+  "gui.itacraft.vipps_app_gui.label_vipps_bro_test": "vipps bro test",
+  "gui.itacraft.hawk_phone_gui_home_screen.button_vy": "vy",
+  "gui.itacraft.hawk_phone_gui_home_screen.button_vipps": "Vipps",
+  "gui.itacraft.vipps_app_gui.label_real_vipps": "Real Vipps",
+  "gui.itacraft.vipps_app_gui.label_kontonummer": "Kontonummer: *********..",
+  "gui.itacraft.vipps_app_gui.button_o": "o"
 }
