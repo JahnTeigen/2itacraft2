@@ -10,11 +10,7 @@ import net.neoforged.api.distmarker.Dist;
 
 import net.minecraft.client.renderer.entity.ThrownItemRenderer;
 
-import net.mcreator.itacraft.client.renderer.TonyHaynesRenderer;
-import net.mcreator.itacraft.client.renderer.JudeRenderer;
-import net.mcreator.itacraft.client.renderer.GudrunRenderer;
-import net.mcreator.itacraft.client.renderer.GeirHaoyRenderer;
-import net.mcreator.itacraft.client.renderer.GamerGirlRenderer;
+import net.mcreator.itacraft.client.renderer.*;
 
 @EventBusSubscriber(Dist.CLIENT)
 public class ItacraftModEntityRenderers {
@@ -26,5 +22,6 @@ public class ItacraftModEntityRenderers {
 		event.registerEntityRenderer(ItacraftModEntities.GAMER_GIRL.get(), GamerGirlRenderer::new);
 		event.registerEntityRenderer(ItacraftModEntities.TONY_HAYNES.get(), TonyHaynesRenderer::new);
 		event.registerEntityRenderer(ItacraftModEntities.FIREBALL.get(), ThrownItemRenderer::new);
+		event.registerEntityRenderer(ItacraftModEntities.MONICA.get(), MonicaRenderer::new);
 	}
 }

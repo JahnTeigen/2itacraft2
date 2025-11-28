@@ -1,5 +1,13 @@
 package net.mcreator.itacraft.client.renderer;
 
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.client.renderer.entity.state.LivingEntityRenderState;
+import net.minecraft.client.renderer.entity.MobRenderer;
+import net.minecraft.client.renderer.entity.EntityRendererProvider;
+
+import net.mcreator.itacraft.entity.JudeEntity;
+import net.mcreator.itacraft.client.model.ModelJude;
+
 public class JudeRenderer extends MobRenderer<JudeEntity, LivingEntityRenderState, ModelJude> {
 	private JudeEntity entity = null;
 

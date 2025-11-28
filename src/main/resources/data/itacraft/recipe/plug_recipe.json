@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aba",
+    "aaa"
+  ],
+  "key": {
+    "a": "itacraft:transparent_plastic",
+    "b": "minecraft:copper_ingot"
+  },
+  "result": {
+    "id": "itacraft:rj_45_type_plug",
+    "count": 1
+  }
+}

@@ -98,5 +98,11 @@
   "death.attack.forgiftet": "%1$s gjorde noe han ikke skulle.",
   "item.itacraft.giftig_gugge": "Giftig Gugge",
   "advancements.spiste_gugge.descr": "Spiste giftig gugge..... hvorfor????",
-  "advancements.spiste_gugge.title": "Spiste Gugge"
+  "advancements.spiste_gugge.title": "Spiste Gugge",
+  "item.itacraft.radioactive_waste_barrel": "Radioactive Waste Barrel",
+  "gui.itacraft.radio_active_barrel_gui.label_radioactive_waste_barrel": "Radioactive Waste Barrel",
+  "item.itacraft.marijuana": "Marijuana",
+  "item.itacraft.monica_spawn_egg": "Monica Spawn Egg",
+  "entity.itacraft.monica": "Monica",
+  "item.itacraft.transparent_plastic": "Transparent Plastic"
 }

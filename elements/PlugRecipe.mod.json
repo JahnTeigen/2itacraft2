@@ -1,0 +1,53 @@
+{
+  "_fv": 79,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "unlockingItems": [
+      {
+        "value": "Items.COPPER_INGOT"
+      }
+    ],
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:TransparentPlastic"
+      },
+      {
+        "value": "CUSTOM:TransparentPlastic"
+      },
+      {
+        "value": "CUSTOM:TransparentPlastic"
+      },
+      {
+        "value": "CUSTOM:TransparentPlastic"
+      },
+      {
+        "value": "Items.COPPER_INGOT"
+      },
+      {
+        "value": "CUSTOM:TransparentPlastic"
+      },
+      {
+        "value": "CUSTOM:TransparentPlastic"
+      },
+      {
+        "value": "CUSTOM:TransparentPlastic"
+      },
+      {
+        "value": "CUSTOM:TransparentPlastic"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:RJ45TypePlug"
+    },
+    "name": "plug_recipe",
+    "namespace": "mod"
+  }
+}
