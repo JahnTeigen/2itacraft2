@@ -3,30 +3,30 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "cum_item",
+    "texture": "pregnant",
     "customModelName": "Normal",
     "guiTexture": "",
     "customProperties": {},
     "states": [],
     "animations": [],
-    "name": "Cum",
+    "name": "Fetus",
     "rarity": "COMMON",
     "creativeTabs": [],
-    "stackSize": 1,
+    "stackSize": 64,
     "enchantability": 0,
-    "useDuration": 1,
+    "useDuration": 0,
     "toolType": 1.0,
     "damageCount": 0,
     "recipeRemainder": {
       "value": ""
     },
     "destroyAnyBlock": false,
-    "immuneToFire": true,
+    "immuneToFire": false,
     "isPiglinCurrency": false,
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false,
-    "enableMeleeDamage": true,
-    "damageVsEntity": 0.67,
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
     "specialInformation": {
       "fixedValue": []
     },
@@ -35,9 +35,6 @@
     },
     "inventorySize": 9,
     "inventoryStackSize": 99,
-    "onFinishUsingItem": {
-      "name": "CumitemPlayerFinishesUsingItem"
-    },
     "enableRanged": false,
     "shootConstantly": false,
     "rangedItemChargesPower": false,
@@ -46,14 +43,14 @@
     },
     "projectileDisableAmmoCheck": false,
     "isFood": true,
-    "nutritionalValue": 0,
-    "saturation": 0.0,
+    "nutritionalValue": 10,
+    "saturation": 1.0,
     "eatResultItem": {
       "value": ""
     },
     "isMeat": false,
-    "isAlwaysEdible": true,
-    "animation": "drink",
+    "isAlwaysEdible": false,
+    "animation": "none",
     "isMusicDisc": false,
     "musicDiscMusic": {
       "value": ""
