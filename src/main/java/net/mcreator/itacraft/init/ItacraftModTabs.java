@@ -35,6 +35,7 @@ public class ItacraftModTabs {
 			tabData.accept(ItacraftModItems.TONY_HAYNES_SPAWN_EGG.get());
 			tabData.accept(ItacraftModItems.MONICA_SPAWN_EGG.get());
 			tabData.accept(ItacraftModItems.VIPPS_RANER_SPAWN_EGG.get());
+			tabData.accept(ItacraftModItems.SKATTEMAN_SPAWN_EGG.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
 			tabData.accept(ItacraftModBlocks.ANDREAS.get().asItem());
 			tabData.accept(ItacraftModItems.FEMTI_KRONER.get());

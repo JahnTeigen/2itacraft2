@@ -2483,8 +2483,7 @@
         "files": [
           "src/main/java/net/mcreator/itacraft/command/MasterbateCommand.java"
         ]
-      },
-      "path": "~/MatveySaker"
+      }
     },
     {
       "name": "Cumitem",
@@ -2521,6 +2520,19 @@
       "path": "~/MatveySaker"
     },
     {
+      "name": "Pregnant",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pregnant",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/itacraft/potion/PregnantMobEffect.java"
+        ]
+      },
+      "path": "~/MatveySaker"
+    },
+    {
       "name": "PregnantEffectExpires",
       "type": "procedure",
       "compiles": true,
@@ -2547,34 +2559,6 @@
         ],
         "files": [
           "src/main/java/net/mcreator/itacraft/procedures/PregnantEffectExpiresProcedure.java"
-        ]
-      },
-      "path": "~/MatveySaker"
-    },
-    {
-      "name": "Pregnant",
-      "type": "potioneffect",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "pregnant",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/itacraft/potion/PregnantMobEffect.java"
-        ]
-      },
-      "path": "~/MatveySaker"
-    },
-    {
-      "name": "Fetus",
-      "type": "item",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "fetus",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/itacraft/models/item/fetus.json",
-          "src/main/java/net/mcreator/itacraft/item/FetusItem.java",
-          "src/main/resources/assets/itacraft/items/fetus.json"
         ]
       },
       "path": "~/MatveySaker"
@@ -2610,6 +2594,21 @@
         ],
         "files": [
           "src/main/java/net/mcreator/itacraft/procedures/AbortionProcedureProcedure.java"
+        ]
+      },
+      "path": "~/MatveySaker"
+    },
+    {
+      "name": "Fetus",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fetus",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/itacraft/models/item/fetus.json",
+          "src/main/java/net/mcreator/itacraft/item/FetusItem.java",
+          "src/main/resources/assets/itacraft/items/fetus.json"
         ]
       },
       "path": "~/MatveySaker"
@@ -2661,6 +2660,85 @@
         ]
       },
       "path": "~/MatveySaker"
+    },
+    {
+      "name": "Skatteman",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "skatteman",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/itacraft/entity/SkattemanEntity.java",
+          "src/main/resources/assets/itacraft/models/item/skatteman_spawn_egg.json",
+          "src/main/resources/assets/itacraft/items/skatteman_spawn_egg.json",
+          "src/main/java/net/mcreator/itacraft/client/renderer/SkattemanRenderer.java"
+        ]
+      }
+    },
+    {
+      "name": "OnDoorRightClicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "on_door_right_clicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/itacraft/procedures/OnDoorRightClickedProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "DoorPlacedByPlayer",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "door_placed_by_player",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/itacraft/procedures/DoorPlacedByPlayerProcedure.java"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -3005,17 +3083,9 @@
       "gui.itacraft.hawk_phone_gui_home_screen.label_hawkphone": "Hawk Phone PRO",
       "key.itacraft.poop_shortcut": "Poop Shortcut",
       "item.itacraft.besj": "Besj",
-      "death.attack.prolaps.item": "%1$s fikk prolaps av %2$s med %3$s (Hvordan??)",
-      "death.attack.prolaps.player": "%1$s prolapset imens han stakk fra %2$s",
-      "death.attack.prolaps": "%1$s fikk prolaps",
       "entity.itacraft.vipps_raner": "Vipps Raner",
       "item.itacraft.vipps_raner_spawn_egg": "Vipps Raner Spawn Egg",
-      "subtitles.cum1": "\u003ccum\u003e",
-      "subtitles.cum2": "\u003ccum\u003e",
-      "subtitles.fuckin": "\u003cfuckin\u003e",
-      "item.itacraft.cum": "Cum",
-      "effect.itacraft.pregnant": "Pregnant",
-      "item.itacraft.fetus": "Fetus"
+      "item.itacraft.cum": "Cum"
     }
   },
   "metadata": {

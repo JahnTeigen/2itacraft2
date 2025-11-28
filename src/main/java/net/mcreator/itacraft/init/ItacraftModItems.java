@@ -81,6 +81,7 @@ public class ItacraftModItems {
 	public static final DeferredItem<Item> VIPPS_RANER_SPAWN_EGG;
 	public static final DeferredItem<Item> CUM;
 	public static final DeferredItem<Item> FETUS;
+	public static final DeferredItem<Item> SKATTEMAN_SPAWN_EGG;
 	static {
 		GEIR_HAOY_SPAWN_EGG = register("geir_haoy_spawn_egg", properties -> new SpawnEggItem(ItacraftModEntities.GEIR_HAOY.get(), properties));
 		KOG_STOCK = register("kog_stock", KOGStockItem::new);
@@ -135,6 +136,7 @@ public class ItacraftModItems {
 		VIPPS_RANER_SPAWN_EGG = register("vipps_raner_spawn_egg", properties -> new SpawnEggItem(ItacraftModEntities.VIPPS_RANER.get(), properties));
 		CUM = register("cum", CumitemItem::new);
 		FETUS = register("fetus", FetusItem::new);
+		SKATTEMAN_SPAWN_EGG = register("skatteman_spawn_egg", properties -> new SpawnEggItem(ItacraftModEntities.SKATTEMAN.get(), properties));
 	}
 
 	// Start of user code block custom items
