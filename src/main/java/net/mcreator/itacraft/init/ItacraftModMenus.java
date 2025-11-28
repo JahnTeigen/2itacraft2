@@ -16,7 +16,11 @@ import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.client.Minecraft;
 
-import net.mcreator.itacraft.world.inventory.*;
+import net.mcreator.itacraft.world.inventory.VippsMiniBankGUIMenu;
+import net.mcreator.itacraft.world.inventory.RadioActiveBarrelGUIMenu;
+import net.mcreator.itacraft.world.inventory.PatchTableGUIMenu;
+import net.mcreator.itacraft.world.inventory.OsloBorsMenu;
+import net.mcreator.itacraft.world.inventory.NSMRequestInterfaceMenu;
 import net.mcreator.itacraft.network.MenuStateUpdateMessage;
 import net.mcreator.itacraft.ItacraftMod;
 
@@ -28,8 +32,6 @@ public class ItacraftModMenus {
 	public static final DeferredHolder<MenuType<?>, MenuType<NSMRequestInterfaceMenu>> NSM_REQUEST_INTERFACE = REGISTRY.register("nsm_request_interface", () -> IMenuTypeExtension.create(NSMRequestInterfaceMenu::new));
 	public static final DeferredHolder<MenuType<?>, MenuType<PatchTableGUIMenu>> PATCH_TABLE_GUI = REGISTRY.register("patch_table_gui", () -> IMenuTypeExtension.create(PatchTableGUIMenu::new));
 	public static final DeferredHolder<MenuType<?>, MenuType<VippsMiniBankGUIMenu>> VIPPS_MINI_BANK_GUI = REGISTRY.register("vipps_mini_bank_gui", () -> IMenuTypeExtension.create(VippsMiniBankGUIMenu::new));
-	public static final DeferredHolder<MenuType<?>, MenuType<HawkPhoneGUIHomeScreenMenu>> HAWK_PHONE_GUI_HOME_SCREEN = REGISTRY.register("hawk_phone_gui_home_screen", () -> IMenuTypeExtension.create(HawkPhoneGUIHomeScreenMenu::new));
-	public static final DeferredHolder<MenuType<?>, MenuType<VippsAppGuiMenu>> VIPPS_APP_GUI = REGISTRY.register("vipps_app_gui", () -> IMenuTypeExtension.create(VippsAppGuiMenu::new));
 	public static final DeferredHolder<MenuType<?>, MenuType<RadioActiveBarrelGUIMenu>> RADIO_ACTIVE_BARREL_GUI = REGISTRY.register("radio_active_barrel_gui", () -> IMenuTypeExtension.create(RadioActiveBarrelGUIMenu::new));
 
 	public interface MenuAccessor {
