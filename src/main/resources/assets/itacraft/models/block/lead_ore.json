@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "itacraft:block/lead_ore",
+    "up": "itacraft:block/lead_ore",
+    "north": "itacraft:block/lead_ore",
+    "east": "itacraft:block/lead_ore",
+    "south": "itacraft:block/lead_ore",
+    "west": "itacraft:block/lead_ore",
+    "particle": "itacraft:block/lead_ore"
+  },
+  "render_type": "solid"
+}

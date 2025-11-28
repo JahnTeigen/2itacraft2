@@ -77,6 +77,11 @@ public class ItacraftModTabs {
 			tabData.accept(ItacraftModBlocks.VIPPSMINIBANK.get().asItem());
 		} else if (tabData.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
 			tabData.accept(ItacraftModBlocks.MARIJUANA.get().asItem());
+			tabData.accept(ItacraftModItems.LEAD.get());
+			tabData.accept(ItacraftModBlocks.LEAD_ORE.get().asItem());
+		} else if (tabData.getTabKey() == CreativeModeTabs.COMBAT) {
+			tabData.accept(ItacraftModItems.LEAD_ARMOR_CHESTPLATE.get());
+			tabData.accept(ItacraftModItems.LEAD_ARMOR_LEGGINGS.get());
 		}
 	}
 }

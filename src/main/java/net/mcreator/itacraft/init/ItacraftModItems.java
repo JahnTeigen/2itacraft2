@@ -73,6 +73,10 @@ public class ItacraftModItems {
 	public static final DeferredItem<Item> TRANSPARENT_PLASTIC;
 	public static final DeferredItem<Item> MARIJUANA;
 	public static final DeferredItem<Item> MONICA_SPAWN_EGG;
+	public static final DeferredItem<Item> LEAD_ARMOR_CHESTPLATE;
+	public static final DeferredItem<Item> LEAD_ARMOR_LEGGINGS;
+	public static final DeferredItem<Item> LEAD;
+	public static final DeferredItem<Item> LEAD_ORE;
 	static {
 		GEIR_HAOY_SPAWN_EGG = register("geir_haoy_spawn_egg", properties -> new SpawnEggItem(ItacraftModEntities.GEIR_HAOY.get(), properties));
 		KOG_STOCK = register("kog_stock", KOGStockItem::new);
@@ -119,6 +123,10 @@ public class ItacraftModItems {
 		TRANSPARENT_PLASTIC = register("transparent_plastic", TransparentPlasticItem::new);
 		MARIJUANA = block(ItacraftModBlocks.MARIJUANA);
 		MONICA_SPAWN_EGG = register("monica_spawn_egg", properties -> new SpawnEggItem(ItacraftModEntities.MONICA.get(), properties));
+		LEAD_ARMOR_CHESTPLATE = register("lead_armor_chestplate", LeadArmorItem.Chestplate::new);
+		LEAD_ARMOR_LEGGINGS = register("lead_armor_leggings", LeadArmorItem.Leggings::new);
+		LEAD = register("lead", LeadItem::new);
+		LEAD_ORE = block(ItacraftModBlocks.LEAD_ORE, new Item.Properties().fireResistant());
 	}
 
 	// Start of user code block custom items

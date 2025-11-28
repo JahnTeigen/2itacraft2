@@ -101,12 +101,6 @@
   "advancements.spiste_gugge.title": "Spiste Gugge",
   "item.itacraft.radioactive_waste_barrel": "Radioactive Waste Barrel",
   "gui.itacraft.radio_active_barrel_gui.label_radioactive_waste_barrel": "Radioactive Waste Barrel",
-  "item.itacraft.marijuana": "Marijuana",
-  "item.itacraft.monica_spawn_egg": "Monica Spawn Egg",
-  "entity.itacraft.monica": "Monica",
-  "item.itacraft.transparent_plastic": "Transparent Plastic",
   "advancements.vippser.descr": "Gratulerer du er som alle andre og bruker vipps. litt sen?",
-  "advancements.vippser.title": "Vippser",
-  "advancements.drammen_achievement.descr": "Bare å snu med en gang",
-  "advancements.drammen_achievement.title": "Velkommen til Drammen"
+  "advancements.vippser.title": "Vippser"
 }
