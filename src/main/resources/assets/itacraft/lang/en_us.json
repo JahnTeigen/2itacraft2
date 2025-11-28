@@ -131,5 +131,7 @@
   "subtitles.cum1": "\u003ccum\u003e",
   "subtitles.cum2": "\u003ccum\u003e",
   "subtitles.fuckin": "\u003cfuckin\u003e",
-  "item.itacraft.cum": "Cum"
+  "item.itacraft.cum": "Cum",
+  "effect.itacraft.pregnant": "Pregnant",
+  "item.itacraft.fetus": "Fetus"
 }

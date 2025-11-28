@@ -2483,7 +2483,8 @@
         "files": [
           "src/main/java/net/mcreator/itacraft/command/MasterbateCommand.java"
         ]
-      }
+      },
+      "path": "~/MatveySaker"
     },
     {
       "name": "Cumitem",
@@ -2496,6 +2497,167 @@
           "src/main/resources/assets/itacraft/items/cum.json",
           "src/main/java/net/mcreator/itacraft/item/CumitemItem.java",
           "src/main/resources/assets/itacraft/models/item/cum.json"
+        ]
+      },
+      "path": "~/MatveySaker"
+    },
+    {
+      "name": "PregnantOnEffectActiveTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pregnant_on_effect_active_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/itacraft/procedures/PregnantOnEffectActiveTickProcedure.java"
+        ]
+      },
+      "path": "~/MatveySaker"
+    },
+    {
+      "name": "PregnantEffectExpires",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pregnant_effect_expires",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/itacraft/procedures/PregnantEffectExpiresProcedure.java"
+        ]
+      },
+      "path": "~/MatveySaker"
+    },
+    {
+      "name": "Pregnant",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pregnant",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/itacraft/potion/PregnantMobEffect.java"
+        ]
+      },
+      "path": "~/MatveySaker"
+    },
+    {
+      "name": "Fetus",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fetus",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/itacraft/models/item/fetus.json",
+          "src/main/java/net/mcreator/itacraft/item/FetusItem.java",
+          "src/main/resources/assets/itacraft/items/fetus.json"
+        ]
+      },
+      "path": "~/MatveySaker"
+    },
+    {
+      "name": "AbortionProcedure",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "abortion_procedure",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/itacraft/procedures/AbortionProcedureProcedure.java"
+        ]
+      },
+      "path": "~/MatveySaker"
+    },
+    {
+      "name": "Abortion",
+      "type": "command",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "abortion",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/itacraft/command/AbortionCommand.java"
+        ]
+      },
+      "path": "~/MatveySaker"
+    },
+    {
+      "name": "CumitemPlayerFinishesUsingItem",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cumitem_player_finishes_using_item",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/itacraft/procedures/CumitemPlayerFinishesUsingItemProcedure.java"
         ]
       },
       "path": "~/MatveySaker"
@@ -2851,7 +3013,9 @@
       "subtitles.cum1": "\u003ccum\u003e",
       "subtitles.cum2": "\u003ccum\u003e",
       "subtitles.fuckin": "\u003cfuckin\u003e",
-      "item.itacraft.cum": "Cum"
+      "item.itacraft.cum": "Cum",
+      "effect.itacraft.pregnant": "Pregnant",
+      "item.itacraft.fetus": "Fetus"
     }
   },
   "metadata": {
