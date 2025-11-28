@@ -120,5 +120,11 @@
   "gui.itacraft.hawk_phone_gui_home_screen.button_vy": "vy",
   "gui.itacraft.hawk_phone_gui_home_screen.button_vipps": "Vipps",
   "gui.itacraft.hawk_phone_gui_home_screen.label_hawkphone": "Hawk Phone PRO",
-  "subtitles.caca": ""
+  "subtitles.caca": "",
+  "entity.itacraft.vipps_raner": "Vipps Raner",
+  "item.itacraft.vipps_raner_spawn_egg": "Vipps Raner Spawn Egg",
+  "key.itacraft.poop_shortcut": "Poop Shortcut",
+  "item.itacraft.besj": "Besj",
+  "item.itacraft.skatteman_spawn_egg": "Skatteman Spawn Egg",
+  "entity.itacraft.skatteman": "Skatteman"
 }
