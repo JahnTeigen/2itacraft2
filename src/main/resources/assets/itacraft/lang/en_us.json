@@ -126,5 +126,9 @@
   "key.itacraft.poop_shortcut": "Poop Shortcut",
   "item.itacraft.besj": "Besj",
   "item.itacraft.skatteman_spawn_egg": "Skatteman Spawn Egg",
-  "entity.itacraft.skatteman": "Skatteman"
+  "entity.itacraft.skatteman": "Skatteman",
+  "item.itacraft.cum": "Cum",
+  "death.attack.prolaps.item": "%1$s fikk prolaps av %2$s med %3$s (Hvordan??)",
+  "death.attack.prolaps.player": "%1$s prolapset imens han stakk fra %2$s",
+  "death.attack.prolaps": "%1$s fikk prolaps"
 }

@@ -1,29 +1,46 @@
 package net.mcreator.itacraft.entity;
 
-import net.minecraft.nbt.Tag;
-import net.minecraft.network.syncher.EntityDataAccessor;
+import net.neoforged.neoforge.fluids.FluidType;
+import net.neoforged.neoforge.event.entity.RegisterSpawnPlacementsEvent;
+import net.neoforged.neoforge.common.NeoForgeMod;
+
+import net.minecraft.world.level.Level;
+import net.minecraft.world.level.Explosion;
+import net.minecraft.world.entity.projectile.AbstractThrownPotion;
+import net.minecraft.world.entity.projectile.AbstractArrow;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.ai.goal.RandomLookAroundGoal;
+import net.minecraft.world.entity.ai.goal.FloatGoal;
+import net.minecraft.world.entity.ai.attributes.Attributes;
+import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
+import net.minecraft.world.entity.PathfinderMob;
+import net.minecraft.world.entity.Mob;
+import net.minecraft.world.entity.EntityType;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.world.entity.AreaEffectCloud;
+import net.minecraft.world.damagesource.DamageTypes;
+import net.minecraft.world.damagesource.DamageSource;
+import net.minecraft.sounds.SoundEvent;
+import net.minecraft.server.level.ServerLevel;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.network.chat.Component;
+import net.minecraft.core.registries.BuiltInRegistries;
 
 public class SkattemanEntity extends PathfinderMob {
-
 	public SkattemanEntity(EntityType<SkattemanEntity> type, Level world) {
 		super(type, world);
 		xpReward = 0;
 		setNoAi(false);
-
 		setCustomName(Component.literal("skatteetaten"));
 		setCustomNameVisible(true);
-
 		setPersistenceRequired();
-
 	}
 
 	@Override
 	protected void registerGoals() {
 		super.registerGoals();
-
 		this.goalSelector.addGoal(1, new RandomLookAroundGoal(this));
 		this.goalSelector.addGoal(2, new FloatGoal(this));
-
 	}
 
 	@Override
@@ -107,10 +124,7 @@ public class SkattemanEntity extends PathfinderMob {
 		builder = builder.add(Attributes.ARMOR, 0);
 		builder = builder.add(Attributes.ATTACK_DAMAGE, 0);
 		builder = builder.add(Attributes.FOLLOW_RANGE, 16);
-
 		builder = builder.add(Attributes.STEP_HEIGHT, 0.6);
-
 		return builder;
 	}
-
 }
