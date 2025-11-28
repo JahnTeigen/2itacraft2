@@ -31,7 +31,7 @@ public class LeadArmorChestplateTickEventProcedure {
 		if (entity == null)
 			return;
 		if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.CHEST) : ItemStack.EMPTY).getItem() == ItacraftModItems.LEAD_ARMOR_CHESTPLATE.get()) {
-			if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY).getItem() == ItacraftModItems.LEAD_ARMOR_LEGGINGS.get()) {
+			if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.LEGS) : ItemStack.EMPTY).getItem() == ItacraftModItems.LEAD_ARMOR_LEGGINGS.get()) {
 				if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 					_entity.addEffect(new MobEffectInstance(ItacraftModMobEffects.RADIATIONRESISTANCE, 20, 1, false, false));
 			}
