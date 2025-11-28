@@ -177,6 +177,9 @@
           "name": "button_assemble",
           "text": "Assemble",
           "isUndecorated": false,
+          "onClick": {
+            "name": "AssembleCable"
+          },
           "width": 67,
           "height": 20,
           "x": 136,

@@ -26,6 +26,7 @@ public class ItacraftModBlocks {
 	public static final DeferredBlock<Block> VIPPSMINIBANK;
 	public static final DeferredBlock<Block> RADIOACTIVE_WASTE_BARREL;
 	public static final DeferredBlock<Block> LEAD_ORE;
+	public static final DeferredBlock<Block> MARIJUANA;
 	static {
 		ANDREAS = register("andreas", AndreasBlock::new);
 		KONGSBERG_GRUPPEN_PORTAL = register("kongsberg_gruppen_portal", KongsbergGruppenPortalBlock::new);
@@ -37,6 +38,7 @@ public class ItacraftModBlocks {
 		VIPPSMINIBANK = register("vippsminibank", VippsminibankBlock::new);
 		RADIOACTIVE_WASTE_BARREL = register("radioactive_waste_barrel", RadioactiveWasteBarrelBlock::new);
 		LEAD_ORE = register("lead_ore", LeadOreBlock::new);
+		MARIJUANA = register("marijuana", MarijuanaBlock::new);
 	}
 
 	// Start of user code block custom blocks

@@ -48,6 +48,10 @@ public class ItacraftModEntities {
 					.sized(0.6f, 1.8f));
 	public static final DeferredHolder<EntityType<?>, EntityType<FireballEntity>> FIREBALL = register("fireball",
 			EntityType.Builder.<FireballEntity>of(FireballEntity::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final DeferredHolder<EntityType<?>, EntityType<MonicaEntity>> MONICA = register("monica",
+			EntityType.Builder.<MonicaEntity>of(MonicaEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
+
+					.sized(0.6f, 1.8f));
 
 	// Start of user code block custom entities
 	// End of user code block custom entities
@@ -68,6 +72,7 @@ public class ItacraftModEntities {
 		GudrunEntity.init(event);
 		GamerGirlEntity.init(event);
 		TonyHaynesEntity.init(event);
+		MonicaEntity.init(event);
 	}
 
 	@SubscribeEvent
@@ -77,5 +82,6 @@ public class ItacraftModEntities {
 		event.put(BODIL.get(), GudrunEntity.createAttributes().build());
 		event.put(GAMER_GIRL.get(), GamerGirlEntity.createAttributes().build());
 		event.put(TONY_HAYNES.get(), TonyHaynesEntity.createAttributes().build());
+		event.put(MONICA.get(), MonicaEntity.createAttributes().build());
 	}
 }

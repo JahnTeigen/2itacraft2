@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a ",
+    " b"
+  ],
+  "key": {
+    "a": "itacraft:white_colored_plastic",
+    "b": "minecraft:water_bucket"
+  },
+  "result": {
+    "id": "itacraft:transparent_plastic",
+    "count": 1
+  }
+}

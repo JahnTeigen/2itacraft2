@@ -705,9 +705,9 @@
       "registry_name": "rj_45_type_ethernet_cable",
       "metadata": {
         "files": [
-          "src/main/resources/assets/itacraft/items/rj_45_type_ethernet_cable.json",
+          "src/main/resources/assets/itacraft/models/item/rj_45_type_ethernet_cable.json",
           "src/main/java/net/mcreator/itacraft/item/RJ45TypeEthernetCableItem.java",
-          "src/main/resources/assets/itacraft/models/item/rj_45_type_ethernet_cable.json"
+          "src/main/resources/assets/itacraft/items/rj_45_type_ethernet_cable.json"
         ]
       }
     },
@@ -852,9 +852,9 @@
       "registry_name": "white_colored_plastic",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/itacraft/item/WhiteColoredPlasticItem.java",
           "src/main/resources/assets/itacraft/models/item/white_colored_plastic.json",
-          "src/main/resources/assets/itacraft/items/white_colored_plastic.json"
+          "src/main/resources/assets/itacraft/items/white_colored_plastic.json",
+          "src/main/java/net/mcreator/itacraft/item/WhiteColoredPlasticItem.java"
         ]
       }
     },
@@ -937,9 +937,9 @@
       "registry_name": "tjue_kroner",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/itacraft/item/TjueKronerItem.java",
           "src/main/resources/assets/itacraft/items/tjue_kroner.json",
-          "src/main/resources/assets/itacraft/models/item/tjue_kroner.json"
+          "src/main/resources/assets/itacraft/models/item/tjue_kroner.json",
+          "src/main/java/net/mcreator/itacraft/item/TjueKronerItem.java"
         ]
       }
     },
@@ -965,9 +965,9 @@
       "registry_name": "hundre_kroner",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/itacraft/item/HundreKronerItem.java",
           "src/main/resources/assets/itacraft/items/hundre_kroner.json",
-          "src/main/resources/assets/itacraft/models/item/hundre_kroner.json"
+          "src/main/resources/assets/itacraft/models/item/hundre_kroner.json",
+          "src/main/java/net/mcreator/itacraft/item/HundreKronerItem.java"
         ]
       }
     },
@@ -1047,8 +1047,8 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/itacraft/item/TiOreItem.java",
-          "src/main/resources/assets/itacraft/models/item/ti_ore.json",
-          "src/main/resources/assets/itacraft/items/ti_ore.json"
+          "src/main/resources/assets/itacraft/items/ti_ore.json",
+          "src/main/resources/assets/itacraft/models/item/ti_ore.json"
         ]
       }
     },
@@ -1068,7 +1068,7 @@
     {
       "name": "HawkPhone",
       "type": "tool",
-      "compiles": false,
+      "compiles": true,
       "locked_code": true,
       "registry_name": "hawk_phone",
       "metadata": {
@@ -1480,8 +1480,8 @@
       "registry_name": "recharge_projectile",
       "metadata": {
         "files": [
-          "src/main/resources/data/itacraft/advancement/recipes/recharge_projectile.json",
-          "src/main/resources/data/itacraft/recipe/recharge_projectile.json"
+          "src/main/resources/data/itacraft/recipe/recharge_projectile.json",
+          "src/main/resources/data/itacraft/advancement/recipes/recharge_projectile.json"
         ]
       },
       "path": "~/MatveySaker"
@@ -1551,8 +1551,8 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/itacraft/models/item/tom_nal.json",
-          "src/main/java/net/mcreator/itacraft/item/TomNalItem.java",
-          "src/main/resources/assets/itacraft/items/tom_nal.json"
+          "src/main/resources/assets/itacraft/items/tom_nal.json",
+          "src/main/java/net/mcreator/itacraft/item/TomNalItem.java"
         ]
       }
     },
@@ -1948,44 +1948,27 @@
       "registry_name": "vipps_bank",
       "metadata": {
         "files": [
-          "src/main/resources/data/itacraft/worldgen/structure_set/vipps_bank.json",
           "src/main/resources/data/itacraft/worldgen/structure/vipps_bank.json",
-          "src/main/resources/data/itacraft/worldgen/template_pool/vipps_bank.json"
+          "src/main/resources/data/itacraft/worldgen/template_pool/vipps_bank.json",
+          "src/main/resources/data/itacraft/worldgen/structure_set/vipps_bank.json"
         ]
       }
     },
     {
-      "name": "LeadOre",
-      "type": "block",
+      "name": "LeadArmorLeggingsTickEvent",
+      "type": "procedure",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "lead_ore",
+      "registry_name": "lead_armor_leggings_tick_event",
       "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
         "files": [
-          "src/main/resources/assets/itacraft/blockstates/lead_ore.json",
-          "src/main/resources/data/itacraft/loot_table/blocks/lead_ore.json",
-          "src/main/resources/assets/itacraft/items/lead_ore.json",
-          "src/main/resources/assets/itacraft/models/item/lead_ore.json",
-          "src/main/resources/assets/itacraft/models/block/lead_ore.json",
-          "src/main/resources/data/itacraft/worldgen/placed_feature/lead_ore.json",
-          "src/main/resources/data/itacraft/worldgen/configured_feature/lead_ore.json",
-          "src/main/resources/data/itacraft/neoforge/biome_modifier/lead_ore_biome_modifier.json",
-          "src/main/java/net/mcreator/itacraft/block/LeadOreBlock.java"
-        ]
-      },
-      "path": "~/MatveySaker"
-    },
-    {
-      "name": "Lead",
-      "type": "item",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "lead",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/itacraft/items/lead.json",
-          "src/main/java/net/mcreator/itacraft/item/LeadItem.java",
-          "src/main/resources/assets/itacraft/models/item/lead.json"
+          "src/main/java/net/mcreator/itacraft/procedures/LeadArmorLeggingsTickEventProcedure.java"
         ]
       },
       "path": "~/MatveySaker"
@@ -2012,6 +1995,34 @@
       "path": "~/MatveySaker"
     },
     {
+      "name": "Radiationresistance",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "radiationresistance",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/itacraft/potion/RadiationresistanceMobEffect.java"
+        ]
+      },
+      "path": "~/MatveySaker"
+    },
+    {
+      "name": "Lead",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lead",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/itacraft/items/lead.json",
+          "src/main/java/net/mcreator/itacraft/item/LeadItem.java",
+          "src/main/resources/assets/itacraft/models/item/lead.json"
+        ]
+      },
+      "path": "~/MatveySaker"
+    },
+    {
       "name": "RadiationresistanceActiveTickCondition",
       "type": "procedure",
       "compiles": true,
@@ -2026,19 +2037,6 @@
         ],
         "files": [
           "src/main/java/net/mcreator/itacraft/procedures/RadiationresistanceActiveTickConditionProcedure.java"
-        ]
-      },
-      "path": "~/MatveySaker"
-    },
-    {
-      "name": "Radiationresistance",
-      "type": "potioneffect",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "radiationresistance",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/itacraft/potion/RadiationresistanceMobEffect.java"
         ]
       },
       "path": "~/MatveySaker"
@@ -2063,23 +2061,136 @@
       "path": "~/MatveySaker"
     },
     {
-      "name": "LeadArmorLeggingsTickEvent",
-      "type": "procedure",
+      "name": "LeadOre",
+      "type": "block",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "lead_armor_leggings_tick_event",
+      "registry_name": "lead_ore",
       "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ],
         "files": [
-          "src/main/java/net/mcreator/itacraft/procedures/LeadArmorLeggingsTickEventProcedure.java"
+          "src/main/resources/assets/itacraft/blockstates/lead_ore.json",
+          "src/main/resources/data/itacraft/loot_table/blocks/lead_ore.json",
+          "src/main/resources/assets/itacraft/items/lead_ore.json",
+          "src/main/resources/assets/itacraft/models/item/lead_ore.json",
+          "src/main/resources/assets/itacraft/models/block/lead_ore.json",
+          "src/main/resources/data/itacraft/worldgen/placed_feature/lead_ore.json",
+          "src/main/resources/data/itacraft/worldgen/configured_feature/lead_ore.json",
+          "src/main/resources/data/itacraft/neoforge/biome_modifier/lead_ore_biome_modifier.json",
+          "src/main/java/net/mcreator/itacraft/block/LeadOreBlock.java"
         ]
       },
       "path": "~/MatveySaker"
+    },
+    {
+      "name": "TransparentPlastic",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "transparent_plastic",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/itacraft/models/item/transparent_plastic.json",
+          "src/main/java/net/mcreator/itacraft/item/TransparentPlasticItem.java",
+          "src/main/resources/assets/itacraft/items/transparent_plastic.json"
+        ]
+      }
+    },
+    {
+      "name": "PlugRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "plug_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/itacraft/advancement/recipes/plug_recipe.json",
+          "src/main/resources/data/itacraft/recipe/plug_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "Marijuana",
+      "type": "plant",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "marijuana",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/itacraft/blockstates/marijuana.json",
+          "src/main/java/net/mcreator/itacraft/block/MarijuanaBlock.java",
+          "src/main/resources/assets/itacraft/items/marijuana.json",
+          "src/main/resources/data/itacraft/loot_table/blocks/marijuana.json",
+          "src/main/resources/assets/itacraft/models/item/marijuana.json",
+          "src/main/resources/assets/itacraft/models/block/marijuana.json"
+        ]
+      }
+    },
+    {
+      "name": "NavDrammen",
+      "type": "structure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nav_drammen",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/itacraft/worldgen/structure/nav_drammen.json",
+          "src/main/resources/data/itacraft/worldgen/template_pool/nav_drammen.json",
+          "src/main/resources/data/itacraft/worldgen/structure_set/nav_drammen.json"
+        ]
+      }
+    },
+    {
+      "name": "TransparentPlasticRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "transparent_plastic_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/itacraft/advancement/recipes/transparent_plastic_recipe.json",
+          "src/main/resources/data/itacraft/recipe/transparent_plastic_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "HawkPhoneRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hawk_phone_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/itacraft/recipe/hawk_phone_recipe.json",
+          "src/main/resources/data/itacraft/advancement/recipes/hawk_phone_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "Vippser",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "vippser",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/itacraft/advancement/vippser.json"
+        ]
+      }
+    },
+    {
+      "name": "Monica",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "monica",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/itacraft/models/item/monica_spawn_egg.json",
+          "src/main/resources/assets/itacraft/items/monica_spawn_egg.json",
+          "src/main/java/net/mcreator/itacraft/client/renderer/MonicaRenderer.java",
+          "src/main/java/net/mcreator/itacraft/entity/MonicaEntity.java"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -2356,27 +2467,8 @@
       "advancements.spiste_gugge.descr": "Spiste giftig gugge..... hvorfor????",
       "advancements.spiste_gugge.title": "Spiste Gugge",
       "effect.itacraft.radiation_poisoning": "Radiation Poisoning",
-      "gui.itacraft.hawk_phone_gui_home_screen.button_0": "o",
-      "gui.itacraft.hawk_phone_gui_home_screen.label_vipps": "vipps",
-      "gui.itacraft.vipps_app_gui.label_real_vipps": "Real Vipps",
-      "gui.itacraft.hawk_phone_gui_home_screen.label_vy": "vy",
-      "gui.itacraft.hawk_phone_gui_home_screen.button_vy": "vy",
-      "gui.itacraft.vipps_app_gui.label_kontonummer": "Kontonummer: *********..",
-      "gui.itacraft.vipps_app_gui.button_o": "o",
-      "gui.itacraft.hawk_phone_gui_home_screen.button_vipps": "Vipps",
-      "gui.itacraft.vipps_app_gui.label_vipps_bro_test": "vipps bro test",
-      "gui.itacraft.hawk_phone_gui_home_screen.label_hawkphone": "Hawk Phone PRO",
-      "subtitles.facility_alarm": "\u003calarm\u003e",
-      "subtitles.ambient_ominous": "",
-      "subtitles.facility_alarm2": "",
-      "subtitles.geiger": "\u003cradiation\u003e",
       "item.itacraft.radioactive_waste_barrel": "Radioactive Waste Barrel",
-      "gui.itacraft.radio_active_barrel_gui.label_radioactive_waste_barrel": "Radioactive Waste Barrel",
-      "item.itacraft.lead_ore": "Lead Ore",
-      "item.itacraft.lead": "Lump of Lead",
-      "item.itacraft.lead_armor_chestplate": "Lead Chest Protector",
-      "item.itacraft.lead_armor_leggings": "Lead Leg Protector",
-      "effect.itacraft.radiationresistance": "Radiationresistance"
+      "gui.itacraft.radio_active_barrel_gui.label_radioactive_waste_barrel": "Radioactive Waste Barrel"
     }
   },
   "metadata": {
@@ -2385,9 +2477,9 @@
       "src/main/java/net/mcreator/itacraft/mixin/NoiseGeneratorSettingsMixin.java",
       "src/main/java/net/mcreator/itacraft/init/ItacraftModFluidTypes.java",
       "src/main/java/net/mcreator/itacraft/init/ItacraftModFluids.java",
+      "src/main/java/net/mcreator/itacraft/init/ItacraftModMenus.java",
       "src/main/java/net/mcreator/itacraft/network/MenuStateUpdateMessage.java",
       "src/main/java/net/mcreator/itacraft/init/ItacraftModScreens.java",
-      "src/main/java/net/mcreator/itacraft/init/ItacraftModMenus.java",
       "src/main/java/net/mcreator/itacraft/init/ItacraftModKeyMappings.java",
       "src/main/resources/data/minecraft/tags/painting_variant/placeable.json",
       "src/main/java/net/mcreator/itacraft/init/ItacraftModParticleTypes.java",
@@ -2400,16 +2492,16 @@
       "src/main/java/net/mcreator/itacraft/init/ItacraftModItems.java",
       "src/main/java/net/mcreator/itacraft/init/ItacraftModEntities.java",
       "src/main/java/net/mcreator/itacraft/init/ItacraftModEntityRenderers.java",
-      "src/main/java/net/mcreator/itacraft/ItacraftMod.java",
-      "src/main/java/net/mcreator/itacraft/init/ItacraftModSounds.java",
-      "src/main/java/net/mcreator/itacraft/network/ItacraftModVariables.java",
-      "src/main/resources/itacraft.mixins.json",
-      "src/main/resources/META-INF/neoforge.mods.toml",
-      "src/main/resources/pack.mcmeta",
       "src/main/resources/assets/itacraft/sounds.json",
+      "src/main/resources/itacraft.mixins.json",
       "src/main/resources/META-INF/accesstransformer.cfg",
-      "src/main/java/net/mcreator/itacraft/init/ItacraftModModels.java",
-      "src/main/java/net/mcreator/itacraft/init/ItacraftModTabs.java"
+      "src/main/java/net/mcreator/itacraft/network/ItacraftModVariables.java",
+      "src/main/java/net/mcreator/itacraft/ItacraftMod.java",
+      "src/main/resources/META-INF/neoforge.mods.toml",
+      "src/main/java/net/mcreator/itacraft/init/ItacraftModSounds.java",
+      "src/main/java/net/mcreator/itacraft/init/ItacraftModTabs.java",
+      "src/main/resources/pack.mcmeta",
+      "src/main/java/net/mcreator/itacraft/init/ItacraftModModels.java"
     ]
   },
   "foldersRoot": {

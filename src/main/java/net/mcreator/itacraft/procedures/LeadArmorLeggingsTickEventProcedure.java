@@ -1,10 +1,6 @@
 package net.mcreator.itacraft.procedures;
 
-import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.entity.Entity;
-import net.minecraft.world.effect.MobEffectInstance;
-
-import net.mcreator.itacraft.init.ItacraftModMobEffects;
+import net.neoforged.bus.api.Event;
 
 public class LeadArmorLeggingsTickEventProcedure {
 	public static void execute(Entity entity) {
@@ -12,7 +8,7 @@ public class LeadArmorLeggingsTickEventProcedure {
 			return;
 		while (true) {
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-				_entity.addEffect(new MobEffectInstance(ItacraftModMobEffects.RADIATIONRESISTANCE, 60, 1));
+				_entity.addEffect(new MobEffectInstance(ItacraftModMobEffects.DELETED_MOD_ELEMENT, 60, 1));
 		}
 	}
 }

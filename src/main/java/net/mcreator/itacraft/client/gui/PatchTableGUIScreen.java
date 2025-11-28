@@ -1,5 +1,7 @@
 package net.mcreator.itacraft.client.gui;
 
+import net.neoforged.neoforge.client.network.ClientPacketDistributor;
+
 import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.player.Inventory;
@@ -11,6 +13,7 @@ import net.minecraft.client.gui.components.Button;
 import net.minecraft.client.gui.GuiGraphics;
 
 import net.mcreator.itacraft.world.inventory.PatchTableGUIMenu;
+import net.mcreator.itacraft.network.PatchTableGUIButtonMessage;
 import net.mcreator.itacraft.init.ItacraftModScreens;
 
 public class PatchTableGUIScreen extends AbstractContainerScreen<PatchTableGUIMenu> implements ItacraftModScreens.ScreenAccessor {
@@ -72,6 +75,12 @@ public class PatchTableGUIScreen extends AbstractContainerScreen<PatchTableGUIMe
 	public void init() {
 		super.init();
 		button_assemble = Button.builder(Component.translatable("gui.itacraft.patch_table_gui.button_assemble"), e -> {
+			int x = PatchTableGUIScreen.this.x;
+			int y = PatchTableGUIScreen.this.y;
+			if (true) {
+				ClientPacketDistributor.sendToServer(new PatchTableGUIButtonMessage(0, x, y, z));
+				PatchTableGUIButtonMessage.handleButtonAction(entity, 0, x, y, z);
+			}
 		}).bounds(this.leftPos + 72, this.topPos + 71, 67, 20).build();
 		this.addRenderableWidget(button_assemble);
 	}

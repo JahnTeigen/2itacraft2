@@ -70,10 +70,13 @@ public class ItacraftModItems {
 	public static final DeferredItem<Item> NAL_MED_NOE_RART_I;
 	public static final DeferredItem<Item> GIFTIG_GUGGE;
 	public static final DeferredItem<Item> RADIOACTIVE_WASTE_BARREL;
-	public static final DeferredItem<Item> LEAD_ORE;
-	public static final DeferredItem<Item> LEAD;
 	public static final DeferredItem<Item> LEAD_ARMOR_CHESTPLATE;
 	public static final DeferredItem<Item> LEAD_ARMOR_LEGGINGS;
+	public static final DeferredItem<Item> LEAD;
+	public static final DeferredItem<Item> LEAD_ORE;
+	public static final DeferredItem<Item> TRANSPARENT_PLASTIC;
+	public static final DeferredItem<Item> MARIJUANA;
+	public static final DeferredItem<Item> MONICA_SPAWN_EGG;
 	static {
 		GEIR_HAOY_SPAWN_EGG = register("geir_haoy_spawn_egg", properties -> new SpawnEggItem(ItacraftModEntities.GEIR_HAOY.get(), properties));
 		KOG_STOCK = register("kog_stock", KOGStockItem::new);
@@ -117,10 +120,13 @@ public class ItacraftModItems {
 		NAL_MED_NOE_RART_I = register("nal_med_noe_rart_i", NalMedNoeRartIItem::new);
 		GIFTIG_GUGGE = register("giftig_gugge", GiftigGuggeItem::new);
 		RADIOACTIVE_WASTE_BARREL = block(ItacraftModBlocks.RADIOACTIVE_WASTE_BARREL, new Item.Properties().stacksTo(1).rarity(Rarity.UNCOMMON).fireResistant());
-		LEAD_ORE = block(ItacraftModBlocks.LEAD_ORE, new Item.Properties().fireResistant());
-		LEAD = register("lead", LeadItem::new);
 		LEAD_ARMOR_CHESTPLATE = register("lead_armor_chestplate", LeadArmorItem.Chestplate::new);
 		LEAD_ARMOR_LEGGINGS = register("lead_armor_leggings", LeadArmorItem.Leggings::new);
+		LEAD = register("lead", LeadItem::new);
+		LEAD_ORE = block(ItacraftModBlocks.LEAD_ORE, new Item.Properties().fireResistant());
+		TRANSPARENT_PLASTIC = register("transparent_plastic", TransparentPlasticItem::new);
+		MARIJUANA = block(ItacraftModBlocks.MARIJUANA);
+		MONICA_SPAWN_EGG = register("monica_spawn_egg", properties -> new SpawnEggItem(ItacraftModEntities.MONICA.get(), properties));
 	}
 
 	// Start of user code block custom items

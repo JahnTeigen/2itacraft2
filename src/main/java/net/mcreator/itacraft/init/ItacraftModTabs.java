@@ -33,6 +33,7 @@ public class ItacraftModTabs {
 			tabData.accept(ItacraftModItems.BODIL_SPAWN_EGG.get());
 			tabData.accept(ItacraftModItems.GAMER_GIRL_SPAWN_EGG.get());
 			tabData.accept(ItacraftModItems.TONY_HAYNES_SPAWN_EGG.get());
+			tabData.accept(ItacraftModItems.MONICA_SPAWN_EGG.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
 			tabData.accept(ItacraftModBlocks.ANDREAS.get().asItem());
 			tabData.accept(ItacraftModItems.FEMTI_KRONER.get());
@@ -65,6 +66,7 @@ public class ItacraftModTabs {
 			tabData.accept(ItacraftModItems.PLASTIC.get());
 			tabData.accept(ItacraftModItems.WHITE_COLORED_PLASTIC.get());
 			tabData.accept(ItacraftModItems.RED_COLORED_PLASTIC.get());
+			tabData.accept(ItacraftModItems.TRANSPARENT_PLASTIC.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.OP_BLOCKS) {
 			if (tabData.hasPermissions()) {
 				tabData.accept(ItacraftModBlocks.RUSSIA_BLOCK.get().asItem());
@@ -73,12 +75,13 @@ public class ItacraftModTabs {
 			tabData.accept(ItacraftModBlocks.RUSSIA_BLOCK.get().asItem());
 		} else if (tabData.getTabKey() == CreativeModeTabs.REDSTONE_BLOCKS) {
 			tabData.accept(ItacraftModBlocks.VIPPSMINIBANK.get().asItem());
-		} else if (tabData.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
-			tabData.accept(ItacraftModBlocks.LEAD_ORE.get().asItem());
-			tabData.accept(ItacraftModItems.LEAD.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.COMBAT) {
 			tabData.accept(ItacraftModItems.LEAD_ARMOR_CHESTPLATE.get());
 			tabData.accept(ItacraftModItems.LEAD_ARMOR_LEGGINGS.get());
+		} else if (tabData.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
+			tabData.accept(ItacraftModItems.LEAD.get());
+			tabData.accept(ItacraftModBlocks.LEAD_ORE.get().asItem());
+			tabData.accept(ItacraftModBlocks.MARIJUANA.get().asItem());
 		}
 	}
 }
