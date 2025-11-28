@@ -1,0 +1,12 @@
+{
+  "_fv": 79,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "B",
+    "keyBindingName": "Poop Shortcut",
+    "keyBindingCategoryKey": "misc",
+    "onKeyPressed": {
+      "name": "PoopShortcutOnKeyPressed"
+    }
+  }
+}

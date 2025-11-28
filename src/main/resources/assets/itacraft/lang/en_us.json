@@ -116,10 +116,9 @@
   "gui.itacraft.vipps_app_gui.label_kontonummer": "Kontonummer: *********..",
   "advancements.drammen_achievement.descr": "Bare å snu med en gang",
   "advancements.drammen_achievement.title": "Velkommen til Drammen",
-  "entity.itacraft.vipps_raner": "Vipps Raner",
-  "item.itacraft.vipps_raner_spawn_egg": "Vipps Raner Spawn Egg",
   "gui.itacraft.hawk_phone_gui_home_screen.button_0": "o",
   "gui.itacraft.hawk_phone_gui_home_screen.button_vy": "vy",
   "gui.itacraft.hawk_phone_gui_home_screen.button_vipps": "Vipps",
-  "gui.itacraft.hawk_phone_gui_home_screen.label_hawkphone": "Hawk Phone PRO"
+  "gui.itacraft.hawk_phone_gui_home_screen.label_hawkphone": "Hawk Phone PRO",
+  "subtitles.caca": ""
 }

@@ -79,6 +79,7 @@ public class ItacraftModTabs {
 		} else if (tabData.getTabKey() == CreativeModeTabs.COMBAT) {
 			tabData.accept(ItacraftModItems.LEAD_ARMOR_CHESTPLATE.get());
 			tabData.accept(ItacraftModItems.LEAD_ARMOR_LEGGINGS.get());
+			tabData.accept(ItacraftModItems.BESJ.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
 			tabData.accept(ItacraftModItems.LEAD.get());
 			tabData.accept(ItacraftModBlocks.LEAD_ORE.get().asItem());

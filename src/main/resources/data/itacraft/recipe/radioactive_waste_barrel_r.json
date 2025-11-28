@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "bcb",
+    "aba"
+  ],
+  "key": {
+    "a": "minecraft:iron_block",
+    "b": "itacraft:lead",
+    "c": "minecraft:chest"
+  },
+  "result": {
+    "id": "itacraft:radioactive_waste_barrel",
+    "count": 1
+  }
+}
