@@ -1,0 +1,39 @@
+{
+  "display": {
+    "icon": {
+      "id": "itacraft:vippsminibank"
+    },
+    "title": {
+      "translate": "advancements.vippser.title"
+    },
+    "description": {
+      "translate": "advancements.vippser.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "vippser_0": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "itacraft:hawk_phone"
+            ],
+            "count": {
+              "min": 1,
+              "max": 1
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 2
+  },
+  "parent": "itacraft:spiste_gugge"
+}

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "electrics",
+  "category": "redstone",
+  "pattern": [
+    "aba",
+    "bcb",
+    "aba"
+  ],
+  "key": {
+    "a": "itacraft:patch_cable",
+    "b": "minecraft:copper_ingot",
+    "c": "minecraft:glass"
+  },
+  "result": {
+    "id": "itacraft:hawk_phone",
+    "count": 1
+  }
+}

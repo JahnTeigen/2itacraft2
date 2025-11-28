@@ -1,13 +1,5 @@
 package net.mcreator.itacraft.client.renderer;
 
-import net.minecraft.resources.ResourceLocation;
-import net.minecraft.client.renderer.entity.state.LivingEntityRenderState;
-import net.minecraft.client.renderer.entity.MobRenderer;
-import net.minecraft.client.renderer.entity.EntityRendererProvider;
-
-import net.mcreator.itacraft.entity.MonicaEntity;
-import net.mcreator.itacraft.client.model.ModelBodil;
-
 public class MonicaRenderer extends MobRenderer<MonicaEntity, LivingEntityRenderState, ModelBodil> {
 	private MonicaEntity entity = null;
 

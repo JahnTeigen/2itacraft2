@@ -52,7 +52,7 @@ public class RadioactiveWasteBarrelBlock extends Block implements EntityBlock {
 
 	@Override
 	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
-		return Shapes.or(box(-7, 0, -7, 7, 28, 7), box(-8, 1, -8, 8, 3, 8), box(-8, 25, -8, 8, 27, 8), box(-8, 14, -8, 8, 15, 8));
+		return Shapes.or(box(-7, 0, -7, 7, 28, 7), box(-8, 1, -8, 8, 3, 8), box(-8, 25, -8, 8, 27, 8), box(-8, 14, -8, 8, 15, 8), box(0, 0, 0, 16, 28, 16));
 	}
 
 	@Override
