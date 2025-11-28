@@ -23,5 +23,4 @@ public class ItacraftModSounds {
 	public static final DeferredHolder<SoundEvent, SoundEvent> AMBIENT_OMINOUS = REGISTRY.register("ambient_ominous", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("itacraft", "ambient_ominous")));
 	public static final DeferredHolder<SoundEvent, SoundEvent> FACILITY_ALARM = REGISTRY.register("facility_alarm", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("itacraft", "facility_alarm")));
 	public static final DeferredHolder<SoundEvent, SoundEvent> GEIGER = REGISTRY.register("geiger", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("itacraft", "geiger")));
-	public static final DeferredHolder<SoundEvent, SoundEvent> CACA = REGISTRY.register("caca", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("itacraft", "caca")));
 }
