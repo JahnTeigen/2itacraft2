@@ -1,5 +1,28 @@
 package net.mcreator.itacraft.item;
 
+import net.neoforged.neoforge.event.ModifyDefaultComponentsEvent;
+import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.bus.api.SubscribeEvent;
+
+import net.minecraft.world.level.Level;
+import net.minecraft.world.item.component.UseRemainder;
+import net.minecraft.world.item.component.TooltipDisplay;
+import net.minecraft.world.item.component.Consumables;
+import net.minecraft.world.item.TooltipFlag;
+import net.minecraft.world.item.Rarity;
+import net.minecraft.world.item.ItemUseAnimation;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.food.FoodProperties;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.network.chat.Component;
+import net.minecraft.core.component.DataComponents;
+
+import net.mcreator.itacraft.procedures.NalMedNoeRartIOnPlayerStoppedUsingProcedure;
+import net.mcreator.itacraft.init.ItacraftModItems;
+
+import java.util.function.Consumer;
+
 @EventBusSubscriber
 public class NalMedNoeRartIItem extends Item {
 	public NalMedNoeRartIItem(Item.Properties properties) {

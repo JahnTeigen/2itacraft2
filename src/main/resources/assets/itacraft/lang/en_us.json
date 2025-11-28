@@ -122,5 +122,10 @@
   "gui.itacraft.hawk_phone_gui_home_screen.button_vipps": "Vipps",
   "gui.itacraft.hawk_phone_gui_home_screen.label_hawkphone": "Hawk Phone PRO",
   "key.itacraft.poop_shortcut": "Poop Shortcut",
-  "item.itacraft.besj": "Besj"
+  "item.itacraft.besj": "Besj",
+  "death.attack.prolaps.item": "%1$s fikk prolaps av %2$s med %3$s (Hvordan??)",
+  "death.attack.prolaps.player": "%1$s prolapset imens han stakk fra %2$s",
+  "death.attack.prolaps": "%1$s fikk prolaps",
+  "entity.itacraft.vipps_raner": "Vipps Raner",
+  "item.itacraft.vipps_raner_spawn_egg": "Vipps Raner Spawn Egg"
 }

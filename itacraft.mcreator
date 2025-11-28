@@ -706,9 +706,9 @@
       "registry_name": "rj_45_type_ethernet_cable",
       "metadata": {
         "files": [
-          "src/main/resources/assets/itacraft/models/item/rj_45_type_ethernet_cable.json",
+          "src/main/resources/assets/itacraft/items/rj_45_type_ethernet_cable.json",
           "src/main/java/net/mcreator/itacraft/item/RJ45TypeEthernetCableItem.java",
-          "src/main/resources/assets/itacraft/items/rj_45_type_ethernet_cable.json"
+          "src/main/resources/assets/itacraft/models/item/rj_45_type_ethernet_cable.json"
         ]
       }
     },
@@ -854,9 +854,9 @@
       "registry_name": "white_colored_plastic",
       "metadata": {
         "files": [
+          "src/main/java/net/mcreator/itacraft/item/WhiteColoredPlasticItem.java",
           "src/main/resources/assets/itacraft/models/item/white_colored_plastic.json",
-          "src/main/resources/assets/itacraft/items/white_colored_plastic.json",
-          "src/main/java/net/mcreator/itacraft/item/WhiteColoredPlasticItem.java"
+          "src/main/resources/assets/itacraft/items/white_colored_plastic.json"
         ]
       }
     },
@@ -939,9 +939,9 @@
       "registry_name": "tjue_kroner",
       "metadata": {
         "files": [
+          "src/main/java/net/mcreator/itacraft/item/TjueKronerItem.java",
           "src/main/resources/assets/itacraft/items/tjue_kroner.json",
-          "src/main/resources/assets/itacraft/models/item/tjue_kroner.json",
-          "src/main/java/net/mcreator/itacraft/item/TjueKronerItem.java"
+          "src/main/resources/assets/itacraft/models/item/tjue_kroner.json"
         ]
       }
     },
@@ -967,9 +967,9 @@
       "registry_name": "hundre_kroner",
       "metadata": {
         "files": [
+          "src/main/java/net/mcreator/itacraft/item/HundreKronerItem.java",
           "src/main/resources/assets/itacraft/items/hundre_kroner.json",
-          "src/main/resources/assets/itacraft/models/item/hundre_kroner.json",
-          "src/main/java/net/mcreator/itacraft/item/HundreKronerItem.java"
+          "src/main/resources/assets/itacraft/models/item/hundre_kroner.json"
         ]
       }
     },
@@ -1049,8 +1049,8 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/itacraft/item/TiOreItem.java",
-          "src/main/resources/assets/itacraft/items/ti_ore.json",
-          "src/main/resources/assets/itacraft/models/item/ti_ore.json"
+          "src/main/resources/assets/itacraft/models/item/ti_ore.json",
+          "src/main/resources/assets/itacraft/items/ti_ore.json"
         ]
       }
     },
@@ -1120,8 +1120,8 @@
       "registry_name": "russiaparticles",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/itacraft/client/particle/RussiaparticlesParticle.java",
-          "src/main/resources/assets/itacraft/particles/russiaparticles.json"
+          "src/main/resources/assets/itacraft/particles/russiaparticles.json",
+          "src/main/java/net/mcreator/itacraft/client/particle/RussiaparticlesParticle.java"
         ]
       },
       "path": "~/MatveySaker"
@@ -1482,8 +1482,8 @@
       "registry_name": "recharge_projectile",
       "metadata": {
         "files": [
-          "src/main/resources/data/itacraft/recipe/recharge_projectile.json",
-          "src/main/resources/data/itacraft/advancement/recipes/recharge_projectile.json"
+          "src/main/resources/data/itacraft/advancement/recipes/recharge_projectile.json",
+          "src/main/resources/data/itacraft/recipe/recharge_projectile.json"
         ]
       },
       "path": "~/MatveySaker"
@@ -1553,8 +1553,8 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/itacraft/models/item/tom_nal.json",
-          "src/main/resources/assets/itacraft/items/tom_nal.json",
-          "src/main/java/net/mcreator/itacraft/item/TomNalItem.java"
+          "src/main/java/net/mcreator/itacraft/item/TomNalItem.java",
+          "src/main/resources/assets/itacraft/items/tom_nal.json"
         ]
       }
     },
@@ -1950,9 +1950,9 @@
       "registry_name": "vipps_bank",
       "metadata": {
         "files": [
+          "src/main/resources/data/itacraft/worldgen/structure_set/vipps_bank.json",
           "src/main/resources/data/itacraft/worldgen/structure/vipps_bank.json",
-          "src/main/resources/data/itacraft/worldgen/template_pool/vipps_bank.json",
-          "src/main/resources/data/itacraft/worldgen/structure_set/vipps_bank.json"
+          "src/main/resources/data/itacraft/worldgen/template_pool/vipps_bank.json"
         ]
       }
     },
@@ -2072,9 +2072,9 @@
       "registry_name": "transparent_plastic",
       "metadata": {
         "files": [
-          "src/main/resources/assets/itacraft/items/transparent_plastic.json",
           "src/main/resources/assets/itacraft/models/item/transparent_plastic.json",
-          "src/main/java/net/mcreator/itacraft/item/TransparentPlasticItem.java"
+          "src/main/java/net/mcreator/itacraft/item/TransparentPlasticItem.java",
+          "src/main/resources/assets/itacraft/items/transparent_plastic.json"
         ]
       }
     },
@@ -2360,6 +2360,10 @@
       "metadata": {
         "dependencies": [
           {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
             "name": "itemstack",
             "type": "itemstack"
           }
@@ -2377,7 +2381,12 @@
       "locked_code": false,
       "registry_name": "pooptickhandler",
       "metadata": {
-        "dependencies": [],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
         "files": [
           "src/main/java/net/mcreator/itacraft/procedures/PooptickhandlerProcedure.java"
         ]
@@ -2749,7 +2758,12 @@
       "gui.itacraft.hawk_phone_gui_home_screen.button_vipps": "Vipps",
       "gui.itacraft.hawk_phone_gui_home_screen.label_hawkphone": "Hawk Phone PRO",
       "key.itacraft.poop_shortcut": "Poop Shortcut",
-      "item.itacraft.besj": "Besj"
+      "item.itacraft.besj": "Besj",
+      "death.attack.prolaps.item": "%1$s fikk prolaps av %2$s med %3$s (Hvordan??)",
+      "death.attack.prolaps.player": "%1$s prolapset imens han stakk fra %2$s",
+      "death.attack.prolaps": "%1$s fikk prolaps",
+      "entity.itacraft.vipps_raner": "Vipps Raner",
+      "item.itacraft.vipps_raner_spawn_egg": "Vipps Raner Spawn Egg"
     }
   },
   "metadata": {
