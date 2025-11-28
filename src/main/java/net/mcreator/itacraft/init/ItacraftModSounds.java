@@ -19,4 +19,8 @@ public class ItacraftModSounds {
 	public static final DeferredHolder<SoundEvent, SoundEvent> CHINA_TTS_1 = REGISTRY.register("china_tts_1", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("itacraft", "china_tts_1")));
 	public static final DeferredHolder<SoundEvent, SoundEvent> SUKABLYAT = REGISTRY.register("sukablyat", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("itacraft", "sukablyat")));
 	public static final DeferredHolder<SoundEvent, SoundEvent> RUSSIA_TTS_1 = REGISTRY.register("russia_tts_1", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("itacraft", "russia_tts_1")));
+	public static final DeferredHolder<SoundEvent, SoundEvent> FACILITY_ALARM2 = REGISTRY.register("facility_alarm2", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("itacraft", "facility_alarm2")));
+	public static final DeferredHolder<SoundEvent, SoundEvent> AMBIENT_OMINOUS = REGISTRY.register("ambient_ominous", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("itacraft", "ambient_ominous")));
+	public static final DeferredHolder<SoundEvent, SoundEvent> FACILITY_ALARM = REGISTRY.register("facility_alarm", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("itacraft", "facility_alarm")));
+	public static final DeferredHolder<SoundEvent, SoundEvent> GEIGER = REGISTRY.register("geiger", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("itacraft", "geiger")));
 }

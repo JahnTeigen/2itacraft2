@@ -35,7 +35,7 @@ public class VippsMiniBankGUIMenu extends AbstractContainerMenu implements Itacr
 	public final Map<String, Object> menuState = new HashMap<>() {
 		@Override
 		public Object put(String key, Object value) {
-			if (!this.containsKey(key) && this.size() >= 14)
+			if (!this.containsKey(key) && this.size() >= 13)
 				return null;
 			return super.put(key, value);
 		}
@@ -92,7 +92,7 @@ public class VippsMiniBankGUIMenu extends AbstractContainerMenu implements Itacr
 				}
 			}
 		}
-		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 42, 30) {
+		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 92, 33) {
 			private final int slot = 1;
 			private int x = VippsMiniBankGUIMenu.this.x;
 			private int y = VippsMiniBankGUIMenu.this.y;
@@ -102,7 +102,7 @@ public class VippsMiniBankGUIMenu extends AbstractContainerMenu implements Itacr
 				return stack.is(ItemTags.create(ResourceLocation.parse("itacraft:tag")));
 			}
 		}));
-		this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 156, 28) {
+		this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 187, 30) {
 			private final int slot = 2;
 			private int x = VippsMiniBankGUIMenu.this.x;
 			private int y = VippsMiniBankGUIMenu.this.y;

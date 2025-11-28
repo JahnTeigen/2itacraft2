@@ -10,6 +10,14 @@ import net.mcreator.itacraft.init.ItacraftModMenus;
 import net.mcreator.itacraft.init.ItacraftModItems;
 
 public class TaUTPengerProcedure {
+    
+    // ADD THIS NEW METHOD - MCreator calls this one
+    public static void execute() {
+        // Empty - does nothing because we need entity
+        // But now the code MCreator generates will compile without errors
+    }
+    
+    // YOUR EXISTING METHOD - the one that actually works
     public static void execute(Entity entity) {
         if (entity == null)
             return;
@@ -31,6 +39,8 @@ public class TaUTPengerProcedure {
         // Withdraw all money
         withdrawAllMoney(entity, phoneItem, currentMoney);
     }
+    
+    // ... rest of your code stays the same ...
     
     // WITHDRAW ALL MONEY FROM PHONE
     private static void withdrawAllMoney(Entity entity, ItemStack phoneItem, double amount) {
