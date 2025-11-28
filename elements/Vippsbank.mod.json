@@ -2,27 +2,18 @@
   "_fv": 79,
   "_type": "structure",
   "definition": {
-    "structure": "vippsbank",
+    "structure": "vippsbank2",
     "projection": "rigid",
     "ignoredBlocks": [
       {
         "value": "Blocks.STRUCTURE_BLOCK"
       }
     ],
-    "spacing": 31,
-    "separation": 30,
+    "spacing": 10,
+    "separation": 2,
     "restrictionBiomes": [
       {
-        "value": "plains"
-      },
-      {
-        "value": "desert"
-      },
-      {
-        "value": "birch_forest"
-      },
-      {
-        "value": "forest"
+        "value": "CUSTOM:Drammen"
       }
     ],
     "terrainAdaptation": "none",

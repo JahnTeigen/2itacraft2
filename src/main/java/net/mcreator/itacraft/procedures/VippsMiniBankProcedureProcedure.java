@@ -21,10 +21,90 @@ public class VippsMiniBankProcedureProcedure {
             return; // Exit if it's not a HawkPhone
         }
         
-        // DEPOSIT: If slot 1 has money items, deposit them into the phone
-        if (getAmountInGUISlot(entity, 1) > 0) {
+        // CHECK IF SLOT 1 IS EMPTY
+        if (getAmountInGUISlot(entity, 1) == 0) {
+            // WITHDRAW: Slot 1 is empty, withdraw money from phone (one stack at a time)
+            withdrawMoney(entity, phoneItem);
+        } else {
+            // DEPOSIT: If slot 1 has money items, deposit them into the phone
             depositMoney(entity, phoneItem);
         }
+    }
+    
+    // WITHDRAW MONEY FROM PHONE (ONE STACK AT A TIME)
+    private static void withdrawMoney(Entity entity, ItemStack phoneItem) {
+        double currentMoney = phoneItem.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("money").orElse(0.0);
+        
+        if (currentMoney <= 0) {
+            return; // No money to withdraw
+        }
+        
+        // Find the best denomination that fits
+        ItemStack cashStack = getBestDenominationStack(currentMoney);
+        
+        if (!cashStack.isEmpty()) {
+            double withdrawnValue = getMoneyValue(cashStack) * cashStack.getCount();
+            double remainingMoney = currentMoney - withdrawnValue;
+            
+            if (entity instanceof Player _player && _player.containerMenu instanceof ItacraftModMenus.MenuAccessor _menu) {
+                // Place cash in slot 1
+                _menu.getSlots().get(1).set(cashStack);
+                
+                // Update phone's money (subtract what was withdrawn)
+                CustomData.update(DataComponents.CUSTOM_DATA, phoneItem, tag -> tag.putDouble("money", remainingMoney));
+            }
+        }
+    }
+    
+    // Get the best denomination stack (up to max stack size)
+    private static ItemStack getBestDenominationStack(double money) {
+        // Try each denomination from largest to smallest
+        if (money >= 1000) {
+            int count = Math.min(16, (int)(money / 1000)); // ETT_TUSEN max 16
+            return new ItemStack(ItacraftModItems.ETT_TUSEN_KRONER.get(), count);
+        }
+        if (money >= 500) {
+            int count = Math.min(64, (int)(money / 500));
+            return new ItemStack(ItacraftModItems.FEM_HUNDRE_KRONER.get(), count);
+        }
+        if (money >= 200) {
+            int count = Math.min(64, (int)(money / 200));
+            return new ItemStack(ItacraftModItems.TO_HUNDRE_KRONER.get(), count);
+        }
+        if (money >= 100) {
+            int count = Math.min(64, (int)(money / 100));
+            return new ItemStack(ItacraftModItems.HUNDRE_KRONER.get(), count);
+        }
+        if (money >= 50) {
+            int count = Math.min(64, (int)(money / 50));
+            return new ItemStack(ItacraftModItems.FEMTI_KRONER.get(), count);
+        }
+        if (money >= 20) {
+            int count = Math.min(64, (int)(money / 20));
+            return new ItemStack(ItacraftModItems.TJUE_KRONER.get(), count);
+        }
+        if (money >= 10) {
+            int count = Math.min(64, (int)(money / 10));
+            return new ItemStack(ItacraftModItems.TI_KRONER.get(), count);
+        }
+        if (money >= 5) {
+            int count = Math.min(64, (int)(money / 5));
+            return new ItemStack(ItacraftModItems.FEM_KRONER.get(), count);
+        }
+        if (money >= 1) {
+            int count = Math.min(64, (int)(money / 1));
+            return new ItemStack(ItacraftModItems.EN_KRONE.get(), count);
+        }
+        if (money >= 0.10) {
+            int count = Math.min(64, (int)(money / 0.10));
+            return new ItemStack(ItacraftModItems.TI_ORE.get(), count);
+        }
+        if (money >= 0.01) {
+            int count = Math.min(64, (int)(money / 0.01));
+            return new ItemStack(ItacraftModItems.ETT_ORE.get(), count);
+        }
+        
+        return ItemStack.EMPTY;
     }
     
     // DEPOSIT MONEY INTO PHONE

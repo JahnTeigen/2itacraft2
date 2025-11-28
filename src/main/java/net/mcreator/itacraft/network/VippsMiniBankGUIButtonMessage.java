@@ -54,7 +54,7 @@ public record VippsMiniBankGUIButtonMessage(int buttonID, int x, int y, int z) i
 		}
 		if (buttonID == 1) {
 
-			TaUTPengerProcedure.execute();
+			TaUTPengerProcedure.execute(entity);
 		}
 	}
 

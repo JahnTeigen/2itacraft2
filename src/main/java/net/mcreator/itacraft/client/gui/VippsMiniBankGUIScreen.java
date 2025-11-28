@@ -22,7 +22,6 @@ public class VippsMiniBankGUIScreen extends AbstractContainerScreen<VippsMiniBan
 	private final Player entity;
 	private boolean menuStateUpdateActive = false;
 	private Button button_overfor;
-	private Button button_hent_penger;
 
 	public VippsMiniBankGUIScreen(VippsMiniBankGUIMenu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
@@ -52,13 +51,13 @@ public class VippsMiniBankGUIScreen extends AbstractContainerScreen<VippsMiniBan
 	@Override
 	protected void renderBg(GuiGraphics guiGraphics, float partialTicks, int mouseX, int mouseY) {
 		guiGraphics.blit(RenderPipelines.GUI_TEXTURED, texture, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
-		guiGraphics.blit(RenderPipelines.GUI_TEXTURED, ResourceLocation.parse("itacraft:textures/screens/pil_opmvent.png"), this.leftPos + 141, this.topPos + 49, 0, 0, 32, 32, 32, 32);
-		guiGraphics.blit(RenderPipelines.GUI_TEXTURED, ResourceLocation.parse("itacraft:textures/screens/pil.png"), this.leftPos + 43, this.topPos + 51, 0, 0, 32, 32, 32, 32);
-		guiGraphics.blit(RenderPipelines.GUI_TEXTURED, ResourceLocation.parse("itacraft:textures/screens/rett_pil.png"), this.leftPos + 179, this.topPos + 21, 0, 0, 32, 32, 32, 32);
+		guiGraphics.blit(RenderPipelines.GUI_TEXTURED, ResourceLocation.parse("itacraft:textures/screens/pil_opmvent.png"), this.leftPos + 173, this.topPos + 50, 0, 0, 32, 32, 32, 32);
+		guiGraphics.blit(RenderPipelines.GUI_TEXTURED, ResourceLocation.parse("itacraft:textures/screens/pil.png"), this.leftPos + 93, this.topPos + 53, 0, 0, 32, 32, 32, 32);
 		guiGraphics.blit(RenderPipelines.GUI_TEXTURED, ResourceLocation.parse("itacraft:textures/screens/burh_ahahah_vipps.png"), this.leftPos + 271, this.topPos + 170, 0, 0, 20, 20, 20, 20);
 		guiGraphics.blit(RenderPipelines.GUI_TEXTURED, ResourceLocation.parse("itacraft:textures/screens/burh_ahahah_vipps.png"), this.leftPos + 272, this.topPos + 5, 0, 0, 20, 20, 20, 20);
 		guiGraphics.blit(RenderPipelines.GUI_TEXTURED, ResourceLocation.parse("itacraft:textures/screens/burh_ahahah_vipps.png"), this.leftPos + 7, this.topPos + 7, 0, 0, 20, 20, 20, 20);
 		guiGraphics.blit(RenderPipelines.GUI_TEXTURED, ResourceLocation.parse("itacraft:textures/screens/burh_ahahah_vipps.png"), this.leftPos + 7, this.topPos + 172, 0, 0, 20, 20, 20, 20);
+		guiGraphics.blit(RenderPipelines.GUI_TEXTURED, ResourceLocation.parse("itacraft:textures/screens/skev_ned.png"), this.leftPos + 148, this.topPos + 23, 0, 0, 32, 32, 32, 32);
 	}
 
 	@Override
@@ -72,8 +71,8 @@ public class VippsMiniBankGUIScreen extends AbstractContainerScreen<VippsMiniBan
 
 	@Override
 	protected void renderLabels(GuiGraphics guiGraphics, int mouseX, int mouseY) {
-		guiGraphics.drawString(this.font, Component.translatable("gui.itacraft.vipps_mini_bank_gui.label_kontanter"), 30, 15, -12829636, false);
-		guiGraphics.drawString(this.font, Component.translatable("gui.itacraft.vipps_mini_bank_gui.label_hawkphone"), 139, 13, -12829636, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.itacraft.vipps_mini_bank_gui.label_kontanter"), 80, 18, -12829636, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.itacraft.vipps_mini_bank_gui.label_hawkphone"), 172, 16, -12829636, false);
 		guiGraphics.drawString(this.font, Component.translatable("gui.itacraft.vipps_mini_bank_gui.label_vipps_minibank"), 117, 181, -42204, false);
 	}
 
@@ -87,16 +86,7 @@ public class VippsMiniBankGUIScreen extends AbstractContainerScreen<VippsMiniBan
 				ClientPacketDistributor.sendToServer(new VippsMiniBankGUIButtonMessage(0, x, y, z));
 				VippsMiniBankGUIButtonMessage.handleButtonAction(entity, 0, x, y, z);
 			}
-		}).bounds(this.leftPos + 77, this.topPos + 62, 61, 20).build();
+		}).bounds(this.leftPos + 123, this.topPos + 63, 61, 20).build();
 		this.addRenderableWidget(button_overfor);
-		button_hent_penger = Button.builder(Component.translatable("gui.itacraft.vipps_mini_bank_gui.button_hent_penger"), e -> {
-			int x = VippsMiniBankGUIScreen.this.x;
-			int y = VippsMiniBankGUIScreen.this.y;
-			if (true) {
-				ClientPacketDistributor.sendToServer(new VippsMiniBankGUIButtonMessage(1, x, y, z));
-				VippsMiniBankGUIButtonMessage.handleButtonAction(entity, 1, x, y, z);
-			}
-		}).bounds(this.leftPos + 212, this.topPos + 28, 82, 20).build();
-		this.addRenderableWidget(button_hent_penger);
 	}
 }
