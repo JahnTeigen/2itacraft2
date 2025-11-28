@@ -16,7 +16,6 @@ import net.minecraft.network.RegistryFriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.itacraft.procedures.VippsMiniBankProcedureProcedure;
-import net.mcreator.itacraft.procedures.TaUTPengerProcedure;
 import net.mcreator.itacraft.ItacraftMod;
 
 @EventBusSubscriber
@@ -51,10 +50,6 @@ public record VippsMiniBankGUIButtonMessage(int buttonID, int x, int y, int z) i
 		if (buttonID == 0) {
 
 			VippsMiniBankProcedureProcedure.execute(entity);
-		}
-		if (buttonID == 1) {
-
-			TaUTPengerProcedure.execute(entity);
 		}
 	}
 

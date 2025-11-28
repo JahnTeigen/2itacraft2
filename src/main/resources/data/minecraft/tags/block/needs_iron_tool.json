@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
+    "itacraft:lead_ore",
     "itacraft:hp_workstation",
     "itacraft:hp_monitor"
   ]

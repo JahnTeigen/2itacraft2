@@ -73,6 +73,12 @@ public class ItacraftModTabs {
 			tabData.accept(ItacraftModBlocks.RUSSIA_BLOCK.get().asItem());
 		} else if (tabData.getTabKey() == CreativeModeTabs.REDSTONE_BLOCKS) {
 			tabData.accept(ItacraftModBlocks.VIPPSMINIBANK.get().asItem());
+		} else if (tabData.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
+			tabData.accept(ItacraftModBlocks.LEAD_ORE.get().asItem());
+			tabData.accept(ItacraftModItems.LEAD.get());
+		} else if (tabData.getTabKey() == CreativeModeTabs.COMBAT) {
+			tabData.accept(ItacraftModItems.LEAD_ARMOR_CHESTPLATE.get());
+			tabData.accept(ItacraftModItems.LEAD_ARMOR_LEGGINGS.get());
 		}
 	}
 }
