@@ -75,5 +75,13 @@
         "stream": false
       }
     ]
+  },
+  "caca": {
+    "sounds": [
+      {
+        "name": "itacraft:fard",
+        "stream": false
+      }
+    ]
   }
 }
