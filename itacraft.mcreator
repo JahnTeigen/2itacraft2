@@ -24,8 +24,8 @@
       "registry_name": "kog_stock",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/itacraft/item/KOGStockItem.java",
           "src/main/resources/assets/itacraft/models/item/kog_stock.json",
+          "src/main/java/net/mcreator/itacraft/item/KOGStockItem.java",
           "src/main/resources/assets/itacraft/items/kog_stock.json"
         ]
       }
@@ -53,9 +53,9 @@
       "registry_name": "oslo_bors",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/itacraft/network/OsloBorsButtonMessage.java",
           "src/main/java/net/mcreator/itacraft/client/gui/OsloBorsScreen.java",
-          "src/main/java/net/mcreator/itacraft/world/inventory/OsloBorsMenu.java"
+          "src/main/java/net/mcreator/itacraft/world/inventory/OsloBorsMenu.java",
+          "src/main/java/net/mcreator/itacraft/network/OsloBorsButtonMessage.java"
         ]
       }
     },
@@ -367,9 +367,9 @@
       "registry_name": "nsm_request_interface",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/itacraft/world/inventory/NSMRequestInterfaceMenu.java",
           "src/main/java/net/mcreator/itacraft/client/gui/NSMRequestInterfaceScreen.java",
-          "src/main/java/net/mcreator/itacraft/network/NSMRequestInterfaceButtonMessage.java"
+          "src/main/java/net/mcreator/itacraft/network/NSMRequestInterfaceButtonMessage.java",
+          "src/main/java/net/mcreator/itacraft/world/inventory/NSMRequestInterfaceMenu.java"
         ]
       }
     },
@@ -466,9 +466,9 @@
       "registry_name": "nsm",
       "metadata": {
         "files": [
-          "src/main/resources/data/itacraft/worldgen/structure_set/nsm.json",
           "src/main/resources/data/itacraft/worldgen/template_pool/nsm.json",
-          "src/main/resources/data/itacraft/worldgen/structure/nsm.json"
+          "src/main/resources/data/itacraft/worldgen/structure/nsm.json",
+          "src/main/resources/data/itacraft/worldgen/structure_set/nsm.json"
         ]
       }
     },
@@ -912,8 +912,8 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/itacraft/items/fem_kroner.json",
-          "src/main/resources/assets/itacraft/models/item/fem_kroner.json",
-          "src/main/java/net/mcreator/itacraft/item/FemKronerItem.java"
+          "src/main/java/net/mcreator/itacraft/item/FemKronerItem.java",
+          "src/main/resources/assets/itacraft/models/item/fem_kroner.json"
         ]
       }
     },
@@ -926,8 +926,8 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/itacraft/item/TiKronerItem.java",
-          "src/main/resources/assets/itacraft/models/item/ti_kroner.json",
-          "src/main/resources/assets/itacraft/items/ti_kroner.json"
+          "src/main/resources/assets/itacraft/items/ti_kroner.json",
+          "src/main/resources/assets/itacraft/models/item/ti_kroner.json"
         ]
       }
     },
@@ -994,8 +994,8 @@
       "registry_name": "fem_hundre_kroner_recipe",
       "metadata": {
         "files": [
-          "src/main/resources/data/itacraft/recipe/fem_hundre_kroner_recipe.json",
-          "src/main/resources/data/itacraft/advancement/recipes/fem_hundre_kroner_recipe.json"
+          "src/main/resources/data/itacraft/advancement/recipes/fem_hundre_kroner_recipe.json",
+          "src/main/resources/data/itacraft/recipe/fem_hundre_kroner_recipe.json"
         ]
       }
     },
@@ -1021,8 +1021,8 @@
       "registry_name": "red_colored_plastic_recipe",
       "metadata": {
         "files": [
-          "src/main/resources/data/itacraft/recipe/red_colored_plastic_recipe.json",
-          "src/main/resources/data/itacraft/advancement/recipes/red_colored_plastic_recipe.json"
+          "src/main/resources/data/itacraft/advancement/recipes/red_colored_plastic_recipe.json",
+          "src/main/resources/data/itacraft/recipe/red_colored_plastic_recipe.json"
         ]
       }
     },
@@ -1035,8 +1035,8 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/itacraft/models/item/ett_ore.json",
-          "src/main/resources/assets/itacraft/items/ett_ore.json",
-          "src/main/java/net/mcreator/itacraft/item/EttOreItem.java"
+          "src/main/java/net/mcreator/itacraft/item/EttOreItem.java",
+          "src/main/resources/assets/itacraft/items/ett_ore.json"
         ]
       }
     },
@@ -1674,9 +1674,9 @@
       "registry_name": "giftig_gugge",
       "metadata": {
         "files": [
+          "src/main/resources/assets/itacraft/models/item/giftig_gugge.json",
           "src/main/java/net/mcreator/itacraft/item/GiftigGuggeItem.java",
-          "src/main/resources/assets/itacraft/items/giftig_gugge.json",
-          "src/main/resources/assets/itacraft/models/item/giftig_gugge.json"
+          "src/main/resources/assets/itacraft/items/giftig_gugge.json"
         ]
       },
       "path": "~/MatveySaker"
@@ -1789,8 +1789,8 @@
       "registry_name": "radiation",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/itacraft/client/particle/RadiationParticle.java",
-          "src/main/resources/assets/itacraft/particles/radiation.json"
+          "src/main/resources/assets/itacraft/particles/radiation.json",
+          "src/main/java/net/mcreator/itacraft/client/particle/RadiationParticle.java"
         ]
       }
     },
@@ -1936,8 +1936,8 @@
       "registry_name": "radio_active_barrel_gui",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/itacraft/client/gui/RadioActiveBarrelGUIScreen.java",
-          "src/main/java/net/mcreator/itacraft/world/inventory/RadioActiveBarrelGUIMenu.java"
+          "src/main/java/net/mcreator/itacraft/world/inventory/RadioActiveBarrelGUIMenu.java",
+          "src/main/java/net/mcreator/itacraft/client/gui/RadioActiveBarrelGUIScreen.java"
         ]
       },
       "path": "~/MatveySaker"
@@ -2116,9 +2116,9 @@
       "registry_name": "nav_drammen",
       "metadata": {
         "files": [
-          "src/main/resources/data/itacraft/worldgen/structure_set/nav_drammen.json",
           "src/main/resources/data/itacraft/worldgen/structure/nav_drammen.json",
-          "src/main/resources/data/itacraft/worldgen/template_pool/nav_drammen.json"
+          "src/main/resources/data/itacraft/worldgen/template_pool/nav_drammen.json",
+          "src/main/resources/data/itacraft/worldgen/structure_set/nav_drammen.json"
         ]
       }
     },
@@ -2168,8 +2168,8 @@
       "registry_name": "monica",
       "metadata": {
         "files": [
-          "src/main/resources/assets/itacraft/items/monica_spawn_egg.json",
           "src/main/resources/assets/itacraft/models/item/monica_spawn_egg.json",
+          "src/main/resources/assets/itacraft/items/monica_spawn_egg.json",
           "src/main/java/net/mcreator/itacraft/client/renderer/MonicaRenderer.java",
           "src/main/java/net/mcreator/itacraft/entity/MonicaEntity.java"
         ]
@@ -2345,6 +2345,10 @@
       "metadata": {
         "dependencies": [
           {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
             "name": "x",
             "type": "number"
           },
@@ -2382,32 +2386,17 @@
       "path": "~/MatveySaker"
     },
     {
-      "name": "DoorPlacedByPlayer",
-      "type": "procedure",
+      "name": "Skatteman",
+      "type": "livingentity",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "door_placed_by_player",
+      "registry_name": "skatteman",
       "metadata": {
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ],
         "files": [
-          "src/main/java/net/mcreator/itacraft/procedures/DoorPlacedByPlayerProcedure.java"
+          "src/main/java/net/mcreator/itacraft/client/renderer/SkattemanRenderer.java",
+          "src/main/java/net/mcreator/itacraft/entity/SkattemanEntity.java",
+          "src/main/resources/assets/itacraft/items/skatteman_spawn_egg.json",
+          "src/main/resources/assets/itacraft/models/item/skatteman_spawn_egg.json"
         ]
       }
     },
@@ -2446,17 +2435,136 @@
       }
     },
     {
-      "name": "Skatteman",
-      "type": "livingentity",
+      "name": "DoorPlacedByPlayer",
+      "type": "procedure",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "skatteman",
+      "registry_name": "door_placed_by_player",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/itacraft/procedures/DoorPlacedByPlayerProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "OnPlayerEats",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "on_player_eats",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/itacraft/procedures/OnPlayerEatsProcedure.java"
+        ]
+      },
+      "path": "~/Procedures/PoopLogic"
+    },
+    {
+      "name": "Cumitem",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cum",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/itacraft/client/renderer/SkattemanRenderer.java",
-          "src/main/java/net/mcreator/itacraft/entity/SkattemanEntity.java",
-          "src/main/resources/assets/itacraft/items/skatteman_spawn_egg.json",
-          "src/main/resources/assets/itacraft/models/item/skatteman_spawn_egg.json"
+          "src/main/resources/assets/itacraft/items/cum.json",
+          "src/main/resources/assets/itacraft/models/item/cum.json",
+          "src/main/java/net/mcreator/itacraft/item/CumitemItem.java"
+        ]
+      },
+      "path": "~/MatveySaker"
+    },
+    {
+      "name": "Pooptickhandler",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pooptickhandler",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/mcreator/itacraft/procedures/PooptickhandlerProcedure.java"
+        ]
+      },
+      "path": "~/Procedures/PoopLogic"
+    },
+    {
+      "name": "Cum",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cum",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/itacraft/procedures/CumProcedure.java"
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "Prolaps",
+      "type": "damagetype",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "prolaps",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/itacraft/damage_type/prolaps.json"
+        ]
+      },
+      "path": "~/MatveySaker"
+    },
+    {
+      "name": "Masterbate",
+      "type": "command",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "masterbate",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/itacraft/command/MasterbateCommand.java"
         ]
       }
     }
@@ -2467,6 +2575,18 @@
       "type": "number",
       "scope": "map",
       "value": "0"
+    },
+    {
+      "name": "poopAmount",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "20.0"
+    },
+    {
+      "name": "poopCooldown",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "6000.0"
     }
   ],
   "sound_elements": [
@@ -2549,6 +2669,30 @@
       ],
       "category": "neutral",
       "subtitle": ""
+    },
+    {
+      "name": "fuckin",
+      "files": [
+        "penetration3"
+      ],
+      "category": "player",
+      "subtitle": "\u003cfuckin\u003e"
+    },
+    {
+      "name": "cum1",
+      "files": [
+        "creampie1"
+      ],
+      "category": "player",
+      "subtitle": "\u003ccum\u003e"
+    },
+    {
+      "name": "cum2",
+      "files": [
+        "creampie2"
+      ],
+      "category": "player",
+      "subtitle": "\u003ccum\u003e"
     }
   ],
   "tag_elements": {
@@ -2779,9 +2923,9 @@
       "src/main/java/net/mcreator/itacraft/mixin/NoiseGeneratorSettingsMixin.java",
       "src/main/java/net/mcreator/itacraft/init/ItacraftModFluidTypes.java",
       "src/main/java/net/mcreator/itacraft/init/ItacraftModFluids.java",
-      "src/main/java/net/mcreator/itacraft/init/ItacraftModMenus.java",
       "src/main/java/net/mcreator/itacraft/network/MenuStateUpdateMessage.java",
       "src/main/java/net/mcreator/itacraft/init/ItacraftModScreens.java",
+      "src/main/java/net/mcreator/itacraft/init/ItacraftModMenus.java",
       "src/main/java/net/mcreator/itacraft/init/ItacraftModKeyMappings.java",
       "src/main/resources/data/minecraft/tags/painting_variant/placeable.json",
       "src/main/java/net/mcreator/itacraft/init/ItacraftModParticleTypes.java",
@@ -2794,16 +2938,16 @@
       "src/main/java/net/mcreator/itacraft/init/ItacraftModItems.java",
       "src/main/java/net/mcreator/itacraft/init/ItacraftModEntities.java",
       "src/main/java/net/mcreator/itacraft/init/ItacraftModEntityRenderers.java",
-      "src/main/resources/assets/itacraft/sounds.json",
-      "src/main/resources/itacraft.mixins.json",
-      "src/main/resources/META-INF/accesstransformer.cfg",
-      "src/main/java/net/mcreator/itacraft/network/ItacraftModVariables.java",
       "src/main/java/net/mcreator/itacraft/ItacraftMod.java",
-      "src/main/resources/META-INF/neoforge.mods.toml",
       "src/main/java/net/mcreator/itacraft/init/ItacraftModSounds.java",
-      "src/main/java/net/mcreator/itacraft/init/ItacraftModTabs.java",
+      "src/main/java/net/mcreator/itacraft/network/ItacraftModVariables.java",
+      "src/main/resources/itacraft.mixins.json",
+      "src/main/resources/META-INF/neoforge.mods.toml",
       "src/main/resources/pack.mcmeta",
-      "src/main/java/net/mcreator/itacraft/init/ItacraftModModels.java"
+      "src/main/resources/assets/itacraft/sounds.json",
+      "src/main/resources/META-INF/accesstransformer.cfg",
+      "src/main/java/net/mcreator/itacraft/init/ItacraftModModels.java",
+      "src/main/java/net/mcreator/itacraft/init/ItacraftModTabs.java"
     ]
   },
   "foldersRoot": {
@@ -2811,7 +2955,12 @@
     "children": [
       {
         "name": "Procedures",
-        "children": []
+        "children": [
+          {
+            "name": "PoopLogic",
+            "children": []
+          }
+        ]
       },
       {
         "name": "MatveySaker",

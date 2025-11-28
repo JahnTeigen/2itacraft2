@@ -83,5 +83,32 @@
         "stream": false
       }
     ]
+  },
+  "fuckin": {
+    "subtitle": "subtitles.fuckin",
+    "sounds": [
+      {
+        "name": "itacraft:penetration3",
+        "stream": false
+      }
+    ]
+  },
+  "cum1": {
+    "subtitle": "subtitles.cum1",
+    "sounds": [
+      {
+        "name": "itacraft:creampie1",
+        "stream": false
+      }
+    ]
+  },
+  "cum2": {
+    "subtitle": "subtitles.cum2",
+    "sounds": [
+      {
+        "name": "itacraft:creampie2",
+        "stream": false
+      }
+    ]
   }
 }
