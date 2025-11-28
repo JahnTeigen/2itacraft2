@@ -1939,6 +1939,20 @@
         ]
       },
       "path": "~/MatveySaker"
+    },
+    {
+      "name": "VippsBank",
+      "type": "structure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "vipps_bank",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/itacraft/worldgen/structure/vipps_bank.json",
+          "src/main/resources/data/itacraft/worldgen/template_pool/vipps_bank.json",
+          "src/main/resources/data/itacraft/worldgen/structure_set/vipps_bank.json"
+        ]
+      }
     }
   ],
   "variable_elements": [
