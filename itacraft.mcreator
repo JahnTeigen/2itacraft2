@@ -2541,6 +2541,10 @@
       "metadata": {
         "dependencies": [
           {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
             "name": "x",
             "type": "number"
           },
@@ -2960,6 +2964,9 @@
     ],
     "ITEMS:itacraft:lead_armor_repair_items": [
       "~CUSTOM:Lead"
+    ],
+    "ITEMS:minecraft:meat": [
+      "~CUSTOM:Fetus"
     ]
   },
   "tab_element_order": {},

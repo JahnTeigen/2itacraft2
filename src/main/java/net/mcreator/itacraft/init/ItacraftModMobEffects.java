@@ -47,7 +47,7 @@ public class ItacraftModMobEffects {
 
 	private static void expireEffects(Entity entity, MobEffectInstance effectInstance) {
 		if (effectInstance.getEffect().is(PREGNANT)) {
-			PregnantEffectExpiresProcedure.execute(entity.level(), entity.getX(), entity.getY(), entity.getZ());
+			PregnantEffectExpiresProcedure.execute(entity.level(), entity.getX(), entity.getY(), entity.getZ(), entity);
 		}
 	}
 }
