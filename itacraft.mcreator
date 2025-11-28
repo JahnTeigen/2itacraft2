@@ -2541,6 +2541,10 @@
       "metadata": {
         "dependencies": [
           {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
             "name": "x",
             "type": "number"
           },
@@ -2759,6 +2763,12 @@
       "type": "number",
       "scope": "player_persistent",
       "value": "6000.0"
+    },
+    {
+      "name": "abort_state",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0.0"
     }
   ],
   "sound_elements": [
@@ -3085,7 +3095,14 @@
       "item.itacraft.besj": "Besj",
       "entity.itacraft.vipps_raner": "Vipps Raner",
       "item.itacraft.vipps_raner_spawn_egg": "Vipps Raner Spawn Egg",
-      "item.itacraft.cum": "Cum"
+      "item.itacraft.cum": "Cum",
+      "death.attack.prolaps.item": "%1$s fikk prolaps av %2$s med %3$s (Hvordan??)",
+      "death.attack.prolaps.player": "%1$s prolapset imens han stakk fra %2$s",
+      "death.attack.prolaps": "%1$s fikk prolaps",
+      "effect.itacraft.pregnant": "Pregnant",
+      "item.itacraft.fetus": "Fetus",
+      "item.itacraft.skatteman_spawn_egg": "Skatteman Spawn Egg",
+      "entity.itacraft.skatteman": "Skatteman"
     }
   },
   "metadata": {
