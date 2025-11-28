@@ -2205,6 +2205,34 @@
         ]
       },
       "path": "~/MatveySaker"
+    },
+    {
+      "name": "LeadArmourRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lead_armour_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/itacraft/recipe/lead_armour_chestplate_recipe.json",
+          "src/main/resources/data/itacraft/advancement/recipes/lead_armour_recipe.json"
+        ]
+      },
+      "path": "~/MatveySaker"
+    },
+    {
+      "name": "LeadArmourRecipe2",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lead_armour_recipe_2",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/itacraft/recipe/lead_armour_leggings_recipe.json",
+          "src/main/resources/data/itacraft/advancement/recipes/lead_armour_recipe_2.json"
+        ]
+      },
+      "path": "~/MatveySaker"
     }
   ],
   "variable_elements": [
