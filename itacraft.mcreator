@@ -2281,7 +2281,7 @@
           "src/main/java/net/mcreator/itacraft/procedures/PoopShortcutOnKeyPressedProcedure.java"
         ]
       },
-      "path": "~/Procedures"
+      "path": "~/Procedures/PoopLogic"
     },
     {
       "name": "PoopShortcut",

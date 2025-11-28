@@ -28,7 +28,7 @@ public class PooptickhandlerProcedure {
 		if (entity.getData(ItacraftModVariables.PLAYER_VARIABLES).poopAmount < 100) {
 			{
 				ItacraftModVariables.PlayerVariables _vars = entity.getData(ItacraftModVariables.PLAYER_VARIABLES);
-				_vars.poopAmount = entity.getData(ItacraftModVariables.PLAYER_VARIABLES).poopAmount + 0.003;
+				_vars.poopAmount = entity.getData(ItacraftModVariables.PLAYER_VARIABLES).poopAmount + 0.03;
 				_vars.markSyncDirty();
 			}
 		}
