@@ -127,5 +127,9 @@
   "death.attack.prolaps.player": "%1$s prolapset imens han stakk fra %2$s",
   "death.attack.prolaps": "%1$s fikk prolaps",
   "entity.itacraft.vipps_raner": "Vipps Raner",
-  "item.itacraft.vipps_raner_spawn_egg": "Vipps Raner Spawn Egg"
+  "item.itacraft.vipps_raner_spawn_egg": "Vipps Raner Spawn Egg",
+  "subtitles.cum1": "\u003ccum\u003e",
+  "subtitles.cum2": "\u003ccum\u003e",
+  "subtitles.fuckin": "\u003cfuckin\u003e",
+  "item.itacraft.cum": "Cum"
 }

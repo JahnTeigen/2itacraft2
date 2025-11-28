@@ -2293,7 +2293,8 @@
         "files": [
           "src/main/java/net/mcreator/itacraft/network/PoopShortcutMessage.java"
         ]
-      }
+      },
+      "path": "~/Procedures/PoopLogic"
     },
     {
       "name": "RadioactiveWasteBarrelRecipe",
@@ -2440,6 +2441,64 @@
         ]
       },
       "path": "~/Procedures"
+    },
+    {
+      "name": "Cum",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cum",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/itacraft/procedures/CumProcedure.java"
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "Masterbate",
+      "type": "command",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "masterbate",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/itacraft/command/MasterbateCommand.java"
+        ]
+      }
+    },
+    {
+      "name": "Cumitem",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cum",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/itacraft/items/cum.json",
+          "src/main/java/net/mcreator/itacraft/item/CumitemItem.java",
+          "src/main/resources/assets/itacraft/models/item/cum.json"
+        ]
+      },
+      "path": "~/MatveySaker"
     }
   ],
   "variable_elements": [
@@ -2542,6 +2601,30 @@
       ],
       "category": "neutral",
       "subtitle": ""
+    },
+    {
+      "name": "cum1",
+      "files": [
+        "creampie1"
+      ],
+      "category": "player",
+      "subtitle": "\u003ccum\u003e"
+    },
+    {
+      "name": "cum2",
+      "files": [
+        "creampie2"
+      ],
+      "category": "player",
+      "subtitle": "\u003ccum\u003e"
+    },
+    {
+      "name": "fuckin",
+      "files": [
+        "penetration3"
+      ],
+      "category": "player",
+      "subtitle": "\u003cfuckin\u003e"
     }
   ],
   "tag_elements": {
@@ -2764,7 +2847,11 @@
       "death.attack.prolaps.player": "%1$s prolapset imens han stakk fra %2$s",
       "death.attack.prolaps": "%1$s fikk prolaps",
       "entity.itacraft.vipps_raner": "Vipps Raner",
-      "item.itacraft.vipps_raner_spawn_egg": "Vipps Raner Spawn Egg"
+      "item.itacraft.vipps_raner_spawn_egg": "Vipps Raner Spawn Egg",
+      "subtitles.cum1": "\u003ccum\u003e",
+      "subtitles.cum2": "\u003ccum\u003e",
+      "subtitles.fuckin": "\u003cfuckin\u003e",
+      "item.itacraft.cum": "Cum"
     }
   },
   "metadata": {
