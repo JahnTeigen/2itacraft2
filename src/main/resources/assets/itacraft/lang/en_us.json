@@ -100,5 +100,18 @@
   "advancements.spiste_gugge.title": "Spiste Gugge",
   "effect.itacraft.radiation_poisoning": "Radiation Poisoning",
   "item.itacraft.radioactive_waste_barrel": "Radioactive Waste Barrel",
-  "gui.itacraft.radio_active_barrel_gui.label_radioactive_waste_barrel": "Radioactive Waste Barrel"
+  "gui.itacraft.radio_active_barrel_gui.label_radioactive_waste_barrel": "Radioactive Waste Barrel",
+  "item.itacraft.lead_armor_chestplate": "Lead Chest Protector",
+  "item.itacraft.lead_armor_leggings": "Lead Leg Protector",
+  "effect.itacraft.radiationresistance": "Radiationresistance",
+  "item.itacraft.lead": "Lump of Lead",
+  "item.itacraft.lead_ore": "Lead Ore",
+  "item.itacraft.transparent_plastic": "Transparent Plastic",
+  "item.itacraft.marijuana": "Marijuana",
+  "advancements.vippser.descr": "Gratulerer du er som alle andre og bruker vipps. litt sen?",
+  "advancements.vippser.title": "Vippser",
+  "item.itacraft.monica_spawn_egg": "Monica Spawn Egg",
+  "entity.itacraft.monica": "Monica",
+  "gui.itacraft.vipps_app_gui.label_real_vipps": "Real Vipps",
+  "gui.itacraft.vipps_app_gui.label_kontonummer": "Kontonummer: *********.."
 }
