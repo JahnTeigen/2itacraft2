@@ -2025,25 +2025,6 @@
       "path": "~/MatveySaker"
     },
     {
-      "name": "RadiationresistanceActiveTickCondition",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "radiationresistance_active_tick_condition",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ],
-        "files": [
-          "src/main/java/net/mcreator/itacraft/procedures/RadiationresistanceActiveTickConditionProcedure.java"
-        ]
-      },
-      "path": "~/MatveySaker"
-    },
-    {
       "name": "LeadArmorChestplateTickEvent",
       "type": "procedure",
       "compiles": true,
@@ -2205,6 +2186,25 @@
           "src/main/resources/data/itacraft/advancement/drammen_achievement.json"
         ]
       }
+    },
+    {
+      "name": "RadiationresistanceOnEffectActiveTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "radiationresistance_on_effect_active_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/itacraft/procedures/RadiationresistanceOnEffectActiveTickProcedure.java"
+        ]
+      },
+      "path": "~/MatveySaker"
     }
   ],
   "variable_elements": [

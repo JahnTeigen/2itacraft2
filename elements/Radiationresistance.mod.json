@@ -16,6 +16,9 @@
     "renderStatusInInventory": true,
     "renderStatusInHUD": true,
     "isCuredbyHoney": false,
-    "modifiers": []
+    "modifiers": [],
+    "onActiveTick": {
+      "name": "RadiationresistanceOnEffectActiveTick"
+    }
   }
 }
