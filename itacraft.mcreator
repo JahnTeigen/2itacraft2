@@ -1953,6 +1953,31 @@
           "src/main/resources/data/itacraft/worldgen/structure_set/vipps_bank.json"
         ]
       }
+    },
+    {
+      "name": "HawkPhoneRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hawk_phone_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/itacraft/recipe/hawk_phone_recipe.json",
+          "src/main/resources/data/itacraft/advancement/recipes/hawk_phone_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "Vippser",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "vippser",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/itacraft/advancement/vippser.json"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -2233,7 +2258,9 @@
       "subtitles.facility_alarm2": "",
       "subtitles.geiger": "\u003cradiation\u003e",
       "item.itacraft.radioactive_waste_barrel": "Radioactive Waste Barrel",
-      "gui.itacraft.radio_active_barrel_gui.label_radioactive_waste_barrel": "Radioactive Waste Barrel"
+      "gui.itacraft.radio_active_barrel_gui.label_radioactive_waste_barrel": "Radioactive Waste Barrel",
+      "advancements.vippser.descr": "Gratulerer du er som alle andre og bruker vipps. litt sen?",
+      "advancements.vippser.title": "Vippser"
     }
   },
   "metadata": {

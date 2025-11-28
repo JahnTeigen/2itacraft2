@@ -114,5 +114,7 @@
   "subtitles.facility_alarm2": "",
   "subtitles.geiger": "\u003cradiation\u003e",
   "item.itacraft.radioactive_waste_barrel": "Radioactive Waste Barrel",
-  "gui.itacraft.radio_active_barrel_gui.label_radioactive_waste_barrel": "Radioactive Waste Barrel"
+  "gui.itacraft.radio_active_barrel_gui.label_radioactive_waste_barrel": "Radioactive Waste Barrel",
+  "advancements.vippser.descr": "Gratulerer du er som alle andre og bruker vipps. litt sen?",
+  "advancements.vippser.title": "Vippser"
 }
