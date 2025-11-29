@@ -1,6 +1,15 @@
 package net.mcreator.itacraft.procedures;
 
+import net.neoforged.neoforge.event.tick.PlayerTickEvent;
+import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.bus.api.Event;
+
+import net.minecraft.world.entity.Entity;
+
+import net.mcreator.itacraft.network.ItacraftModVariables;
+
+import javax.annotation.Nullable;
 
 @EventBusSubscriber
 public class PooptickhandlerProcedure {

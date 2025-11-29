@@ -24,8 +24,8 @@
       "registry_name": "kog_stock",
       "metadata": {
         "files": [
-          "src/main/resources/assets/itacraft/models/item/kog_stock.json",
           "src/main/java/net/mcreator/itacraft/item/KOGStockItem.java",
+          "src/main/resources/assets/itacraft/models/item/kog_stock.json",
           "src/main/resources/assets/itacraft/items/kog_stock.json"
         ]
       }
@@ -53,9 +53,9 @@
       "registry_name": "oslo_bors",
       "metadata": {
         "files": [
+          "src/main/java/net/mcreator/itacraft/network/OsloBorsButtonMessage.java",
           "src/main/java/net/mcreator/itacraft/client/gui/OsloBorsScreen.java",
-          "src/main/java/net/mcreator/itacraft/world/inventory/OsloBorsMenu.java",
-          "src/main/java/net/mcreator/itacraft/network/OsloBorsButtonMessage.java"
+          "src/main/java/net/mcreator/itacraft/world/inventory/OsloBorsMenu.java"
         ]
       }
     },
@@ -367,9 +367,9 @@
       "registry_name": "nsm_request_interface",
       "metadata": {
         "files": [
+          "src/main/java/net/mcreator/itacraft/world/inventory/NSMRequestInterfaceMenu.java",
           "src/main/java/net/mcreator/itacraft/client/gui/NSMRequestInterfaceScreen.java",
-          "src/main/java/net/mcreator/itacraft/network/NSMRequestInterfaceButtonMessage.java",
-          "src/main/java/net/mcreator/itacraft/world/inventory/NSMRequestInterfaceMenu.java"
+          "src/main/java/net/mcreator/itacraft/network/NSMRequestInterfaceButtonMessage.java"
         ]
       }
     },
@@ -466,9 +466,9 @@
       "registry_name": "nsm",
       "metadata": {
         "files": [
+          "src/main/resources/data/itacraft/worldgen/structure_set/nsm.json",
           "src/main/resources/data/itacraft/worldgen/template_pool/nsm.json",
-          "src/main/resources/data/itacraft/worldgen/structure/nsm.json",
-          "src/main/resources/data/itacraft/worldgen/structure_set/nsm.json"
+          "src/main/resources/data/itacraft/worldgen/structure/nsm.json"
         ]
       }
     },
@@ -912,8 +912,8 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/itacraft/items/fem_kroner.json",
-          "src/main/java/net/mcreator/itacraft/item/FemKronerItem.java",
-          "src/main/resources/assets/itacraft/models/item/fem_kroner.json"
+          "src/main/resources/assets/itacraft/models/item/fem_kroner.json",
+          "src/main/java/net/mcreator/itacraft/item/FemKronerItem.java"
         ]
       }
     },
@@ -926,8 +926,8 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/itacraft/item/TiKronerItem.java",
-          "src/main/resources/assets/itacraft/items/ti_kroner.json",
-          "src/main/resources/assets/itacraft/models/item/ti_kroner.json"
+          "src/main/resources/assets/itacraft/models/item/ti_kroner.json",
+          "src/main/resources/assets/itacraft/items/ti_kroner.json"
         ]
       }
     },
@@ -994,8 +994,8 @@
       "registry_name": "fem_hundre_kroner_recipe",
       "metadata": {
         "files": [
-          "src/main/resources/data/itacraft/advancement/recipes/fem_hundre_kroner_recipe.json",
-          "src/main/resources/data/itacraft/recipe/fem_hundre_kroner_recipe.json"
+          "src/main/resources/data/itacraft/recipe/fem_hundre_kroner_recipe.json",
+          "src/main/resources/data/itacraft/advancement/recipes/fem_hundre_kroner_recipe.json"
         ]
       }
     },
@@ -1021,8 +1021,8 @@
       "registry_name": "red_colored_plastic_recipe",
       "metadata": {
         "files": [
-          "src/main/resources/data/itacraft/advancement/recipes/red_colored_plastic_recipe.json",
-          "src/main/resources/data/itacraft/recipe/red_colored_plastic_recipe.json"
+          "src/main/resources/data/itacraft/recipe/red_colored_plastic_recipe.json",
+          "src/main/resources/data/itacraft/advancement/recipes/red_colored_plastic_recipe.json"
         ]
       }
     },
@@ -1035,8 +1035,8 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/itacraft/models/item/ett_ore.json",
-          "src/main/java/net/mcreator/itacraft/item/EttOreItem.java",
-          "src/main/resources/assets/itacraft/items/ett_ore.json"
+          "src/main/resources/assets/itacraft/items/ett_ore.json",
+          "src/main/java/net/mcreator/itacraft/item/EttOreItem.java"
         ]
       }
     },
@@ -1674,9 +1674,9 @@
       "registry_name": "giftig_gugge",
       "metadata": {
         "files": [
-          "src/main/resources/assets/itacraft/models/item/giftig_gugge.json",
           "src/main/java/net/mcreator/itacraft/item/GiftigGuggeItem.java",
-          "src/main/resources/assets/itacraft/items/giftig_gugge.json"
+          "src/main/resources/assets/itacraft/items/giftig_gugge.json",
+          "src/main/resources/assets/itacraft/models/item/giftig_gugge.json"
         ]
       },
       "path": "~/MatveySaker"
@@ -1789,8 +1789,8 @@
       "registry_name": "radiation",
       "metadata": {
         "files": [
-          "src/main/resources/assets/itacraft/particles/radiation.json",
-          "src/main/java/net/mcreator/itacraft/client/particle/RadiationParticle.java"
+          "src/main/java/net/mcreator/itacraft/client/particle/RadiationParticle.java",
+          "src/main/resources/assets/itacraft/particles/radiation.json"
         ]
       }
     },
@@ -1936,8 +1936,8 @@
       "registry_name": "radio_active_barrel_gui",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/itacraft/world/inventory/RadioActiveBarrelGUIMenu.java",
-          "src/main/java/net/mcreator/itacraft/client/gui/RadioActiveBarrelGUIScreen.java"
+          "src/main/java/net/mcreator/itacraft/client/gui/RadioActiveBarrelGUIScreen.java",
+          "src/main/java/net/mcreator/itacraft/world/inventory/RadioActiveBarrelGUIMenu.java"
         ]
       },
       "path": "~/MatveySaker"
@@ -2116,9 +2116,9 @@
       "registry_name": "nav_drammen",
       "metadata": {
         "files": [
+          "src/main/resources/data/itacraft/worldgen/structure_set/nav_drammen.json",
           "src/main/resources/data/itacraft/worldgen/structure/nav_drammen.json",
-          "src/main/resources/data/itacraft/worldgen/template_pool/nav_drammen.json",
-          "src/main/resources/data/itacraft/worldgen/structure_set/nav_drammen.json"
+          "src/main/resources/data/itacraft/worldgen/template_pool/nav_drammen.json"
         ]
       }
     },
@@ -2168,8 +2168,8 @@
       "registry_name": "monica",
       "metadata": {
         "files": [
-          "src/main/resources/assets/itacraft/models/item/monica_spawn_egg.json",
           "src/main/resources/assets/itacraft/items/monica_spawn_egg.json",
+          "src/main/resources/assets/itacraft/models/item/monica_spawn_egg.json",
           "src/main/java/net/mcreator/itacraft/client/renderer/MonicaRenderer.java",
           "src/main/java/net/mcreator/itacraft/entity/MonicaEntity.java"
         ]
@@ -3088,7 +3088,9 @@
       "item.itacraft.cum": "Cum",
       "death.attack.prolaps.item": "%1$s fikk prolaps av %2$s med %3$s (Hvordan??)",
       "death.attack.prolaps.player": "%1$s prolapset imens han stakk fra %2$s",
-      "death.attack.prolaps": "%1$s fikk prolaps"
+      "death.attack.prolaps": "%1$s fikk prolaps",
+      "effect.itacraft.pregnant": "Pregnant",
+      "item.itacraft.fetus": "Fetus"
     }
   },
   "metadata": {
@@ -3097,9 +3099,9 @@
       "src/main/java/net/mcreator/itacraft/mixin/NoiseGeneratorSettingsMixin.java",
       "src/main/java/net/mcreator/itacraft/init/ItacraftModFluidTypes.java",
       "src/main/java/net/mcreator/itacraft/init/ItacraftModFluids.java",
+      "src/main/java/net/mcreator/itacraft/init/ItacraftModMenus.java",
       "src/main/java/net/mcreator/itacraft/network/MenuStateUpdateMessage.java",
       "src/main/java/net/mcreator/itacraft/init/ItacraftModScreens.java",
-      "src/main/java/net/mcreator/itacraft/init/ItacraftModMenus.java",
       "src/main/java/net/mcreator/itacraft/init/ItacraftModKeyMappings.java",
       "src/main/resources/data/minecraft/tags/painting_variant/placeable.json",
       "src/main/java/net/mcreator/itacraft/init/ItacraftModParticleTypes.java",
@@ -3112,16 +3114,16 @@
       "src/main/java/net/mcreator/itacraft/init/ItacraftModItems.java",
       "src/main/java/net/mcreator/itacraft/init/ItacraftModEntities.java",
       "src/main/java/net/mcreator/itacraft/init/ItacraftModEntityRenderers.java",
-      "src/main/java/net/mcreator/itacraft/ItacraftMod.java",
-      "src/main/java/net/mcreator/itacraft/init/ItacraftModSounds.java",
-      "src/main/java/net/mcreator/itacraft/network/ItacraftModVariables.java",
-      "src/main/resources/itacraft.mixins.json",
-      "src/main/resources/META-INF/neoforge.mods.toml",
-      "src/main/resources/pack.mcmeta",
       "src/main/resources/assets/itacraft/sounds.json",
+      "src/main/resources/itacraft.mixins.json",
       "src/main/resources/META-INF/accesstransformer.cfg",
-      "src/main/java/net/mcreator/itacraft/init/ItacraftModModels.java",
-      "src/main/java/net/mcreator/itacraft/init/ItacraftModTabs.java"
+      "src/main/java/net/mcreator/itacraft/network/ItacraftModVariables.java",
+      "src/main/java/net/mcreator/itacraft/ItacraftMod.java",
+      "src/main/resources/META-INF/neoforge.mods.toml",
+      "src/main/java/net/mcreator/itacraft/init/ItacraftModSounds.java",
+      "src/main/java/net/mcreator/itacraft/init/ItacraftModTabs.java",
+      "src/main/resources/pack.mcmeta",
+      "src/main/java/net/mcreator/itacraft/init/ItacraftModModels.java"
     ]
   },
   "foldersRoot": {

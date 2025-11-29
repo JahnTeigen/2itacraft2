@@ -1,6 +1,17 @@
 package net.mcreator.itacraft.procedures;
 
+import net.neoforged.neoforge.event.entity.living.LivingEntityUseItemEvent;
+import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.bus.api.Event;
+
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.core.component.DataComponents;
+
+import net.mcreator.itacraft.network.ItacraftModVariables;
+
+import javax.annotation.Nullable;
 
 @EventBusSubscriber
 public class OnPlayerEatsProcedure {
