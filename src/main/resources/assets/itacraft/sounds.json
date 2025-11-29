@@ -134,5 +134,32 @@
         "stream": false
       }
     ]
+  },
+  "entombed-deftones": {
+    "subtitle": "subtitles.entombed-deftones",
+    "sounds": [
+      {
+        "name": "itacraft:entombed",
+        "stream": true
+      }
+    ]
+  },
+  "we-are-charlie-kirk": {
+    "subtitle": "subtitles.we-are-charlie-kirk",
+    "sounds": [
+      {
+        "name": "itacraft:we_are_charlie_kirk",
+        "stream": true
+      }
+    ]
+  },
+  "jarvis...explode-his-balls-plz": {
+    "subtitle": "subtitles.jarvis...explode-his-balls-plz",
+    "sounds": [
+      {
+        "name": "itacraft:the_clash___should_i_stay_or_should_i_go__official_audio_",
+        "stream": false
+      }
+    ]
   }
 }

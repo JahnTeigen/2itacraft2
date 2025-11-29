@@ -1,0 +1,8 @@
+{
+  "comparator_output": 0,
+  "description": {
+    "translate": "item.itacraft.deftones_cd.desc"
+  },
+  "length_in_seconds": 5,
+  "sound_event": "itacraft:entombed-deftones"
+}

@@ -93,6 +93,9 @@ public class ItacraftModItems {
 	public static final DeferredItem<Item> RADIATED_CUM;
 	public static final DeferredItem<Item> CONDOME;
 	public static final DeferredItem<Item> DILDO;
+	public static final DeferredItem<Item> IRON_MAN_CD;
+	public static final DeferredItem<Item> DEFTONES_CD;
+	public static final DeferredItem<Item> CHARLIE_KIRK_CD;
 	static {
 		GEIR_HAOY_SPAWN_EGG = register("geir_haoy_spawn_egg", properties -> new SpawnEggItem(ItacraftModEntities.GEIR_HAOY.get(), properties));
 		KOG_STOCK = register("kog_stock", KOGStockItem::new);
@@ -159,6 +162,9 @@ public class ItacraftModItems {
 		RADIATED_CUM = register("radiated_cum", RadiatedCumItem::new);
 		CONDOME = register("condome", CondomeItem::new);
 		DILDO = register("dildo", DildoItem::new);
+		IRON_MAN_CD = register("iron_man_cd", IronManCDItem::new);
+		DEFTONES_CD = register("deftones_cd", DeftonesCDItem::new);
+		CHARLIE_KIRK_CD = register("charlie_kirk_cd", CharlieKirkCDItem::new);
 	}
 
 	// Start of user code block custom items
