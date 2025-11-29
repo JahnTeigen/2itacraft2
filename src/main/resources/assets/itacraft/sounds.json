@@ -110,5 +110,21 @@
         "stream": false
       }
     ]
+  },
+  "retardliving": {
+    "sounds": [
+      {
+        "name": "itacraft:retardliving",
+        "stream": false
+      }
+    ]
+  },
+  "retarddod": {
+    "sounds": [
+      {
+        "name": "itacraft:retarddod",
+        "stream": false
+      }
+    ]
   }
 }

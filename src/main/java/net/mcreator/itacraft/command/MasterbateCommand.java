@@ -31,7 +31,7 @@ public class MasterbateCommand {
 					if (entity != null)
 						direction = entity.getDirection();
 
-					CumProcedure.execute(world, x, y, z);
+					CumProcedure.execute(world, x, y, z, entity);
 					return 0;
 				}));
 	}

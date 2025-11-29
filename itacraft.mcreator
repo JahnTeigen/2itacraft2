@@ -3083,6 +3083,87 @@
         ]
       },
       "path": "~/Fredrik"
+    },
+    {
+      "name": "SkatteetatenBruh",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "skatteetaten_bruh",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/itacraft/procedures/SkatteetatenBruhProcedure.java"
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "RetardedGamerGirl",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "retarded_gamer_girl",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/itacraft/client/renderer/RetardedGamerGirlRenderer.java",
+          "src/main/resources/assets/itacraft/models/item/retarded_gamer_girl_spawn_egg.json",
+          "src/main/resources/data/itacraft/neoforge/biome_modifier/retarded_gamer_girl_biome_modifier.json",
+          "src/main/resources/assets/itacraft/items/retarded_gamer_girl_spawn_egg.json",
+          "src/main/java/net/mcreator/itacraft/entity/RetardedGamerGirlEntity.java"
+        ]
+      }
+    },
+    {
+      "name": "RadiatedCumPlayerFinishesUsingItem",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "radiated_cum_player_finishes_using_item",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/itacraft/procedures/RadiatedCumPlayerFinishesUsingItemProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "SkatteetatenGui",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "skatteetaten_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/itacraft/client/gui/SkatteetatenGuiScreen.java",
+          "src/main/java/net/mcreator/itacraft/network/SkatteetatenGuiButtonMessage.java",
+          "src/main/java/net/mcreator/itacraft/world/inventory/SkatteetatenGuiMenu.java"
+        ]
+      }
+    },
+    {
+      "name": "RadiatedCum",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "radiated_cum",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/itacraft/models/item/radiated_cum.json",
+          "src/main/java/net/mcreator/itacraft/item/RadiatedCumItem.java",
+          "src/main/resources/assets/itacraft/items/radiated_cum.json"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -3221,6 +3302,22 @@
       ],
       "category": "player",
       "subtitle": "\u003ccum\u003e"
+    },
+    {
+      "name": "retardliving",
+      "files": [
+        "retardliving"
+      ],
+      "category": "player",
+      "subtitle": ""
+    },
+    {
+      "name": "retarddod",
+      "files": [
+        "retarddod"
+      ],
+      "category": "player",
+      "subtitle": ""
     }
   ],
   "tag_elements": {
@@ -3313,6 +3410,9 @@
     ],
     "ITEMS:minecraft:meat": [
       "~CUSTOM:Fetus"
+    ],
+    "ENTITIES:minecraft:illager": [
+      "~CUSTOM:RetardedGamerGirl"
     ]
   },
   "tab_element_order": {},

@@ -60,6 +60,10 @@ public class ItacraftModEntities {
 			EntityType.Builder.<SkattemanEntity>of(SkattemanEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune()
 
 					.sized(0.6f, 1.8f));
+	public static final DeferredHolder<EntityType<?>, EntityType<RetardedGamerGirlEntity>> RETARDED_GAMER_GIRL = register("retarded_gamer_girl",
+			EntityType.Builder.<RetardedGamerGirlEntity>of(RetardedGamerGirlEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
+
+					.ridingOffset(-0.6f).sized(0.6f, 1.8f));
 
 	// Start of user code block custom entities
 	// End of user code block custom entities
@@ -71,6 +75,7 @@ public class ItacraftModEntities {
 	public static void registerCapabilities(RegisterCapabilitiesEvent event) {
 		event.registerEntity(Capabilities.ItemHandler.ENTITY, JUDE.get(), (living, context) -> living.getCombinedInventory());
 		event.registerEntity(Capabilities.ItemHandler.ENTITY, BODIL.get(), (living, context) -> living.getCombinedInventory());
+		event.registerEntity(Capabilities.ItemHandler.ENTITY, SKATTEMAN.get(), (living, context) -> living.getCombinedInventory());
 	}
 
 	@SubscribeEvent
@@ -83,6 +88,7 @@ public class ItacraftModEntities {
 		MonicaEntity.init(event);
 		VippsRanerEntity.init(event);
 		SkattemanEntity.init(event);
+		RetardedGamerGirlEntity.init(event);
 	}
 
 	@SubscribeEvent
@@ -95,5 +101,6 @@ public class ItacraftModEntities {
 		event.put(MONICA.get(), MonicaEntity.createAttributes().build());
 		event.put(VIPPS_RANER.get(), VippsRanerEntity.createAttributes().build());
 		event.put(SKATTEMAN.get(), SkattemanEntity.createAttributes().build());
+		event.put(RETARDED_GAMER_GIRL.get(), RetardedGamerGirlEntity.createAttributes().build());
 	}
 }
