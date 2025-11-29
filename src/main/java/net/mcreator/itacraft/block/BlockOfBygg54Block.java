@@ -1,6 +1,9 @@
 package net.mcreator.itacraft.block;
 
-import net.minecraft.world.level.block.state.BlockBehaviour.Properties;
+import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.Block;
 
 public class BlockOfBygg54Block extends Block {
 	public BlockOfBygg54Block(BlockBehaviour.Properties properties) {

@@ -256,8 +256,8 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/itacraft/item/FemHundreKronerItem.java",
-          "src/main/resources/assets/itacraft/models/item/fem_hundre_kroner.json",
-          "src/main/resources/assets/itacraft/items/fem_hundre_kroner.json"
+          "src/main/resources/assets/itacraft/items/fem_hundre_kroner.json",
+          "src/main/resources/assets/itacraft/models/item/fem_hundre_kroner.json"
         ]
       }
     },
@@ -381,10 +381,10 @@
       "registry_name": "bodil",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/itacraft/client/renderer/GudrunRenderer.java",
-          "src/main/resources/assets/itacraft/items/bodil_spawn_egg.json",
           "src/main/resources/assets/itacraft/models/item/bodil_spawn_egg.json",
-          "src/main/java/net/mcreator/itacraft/entity/GudrunEntity.java"
+          "src/main/resources/assets/itacraft/items/bodil_spawn_egg.json",
+          "src/main/java/net/mcreator/itacraft/entity/GudrunEntity.java",
+          "src/main/java/net/mcreator/itacraft/client/renderer/GudrunRenderer.java"
         ]
       }
     },
@@ -480,8 +480,8 @@
       "registry_name": "tusenlapp_recipe",
       "metadata": {
         "files": [
-          "src/main/resources/data/itacraft/advancement/recipes/tusenlapp_recipe.json",
-          "src/main/resources/data/itacraft/recipe/tusenlapp_recipe.json"
+          "src/main/resources/data/itacraft/recipe/tusenlapp_recipe.json",
+          "src/main/resources/data/itacraft/advancement/recipes/tusenlapp_recipe.json"
         ]
       }
     },
@@ -665,8 +665,8 @@
       "registry_name": "patch_cable_recipe",
       "metadata": {
         "files": [
-          "src/main/resources/data/itacraft/recipe/patch_cable_recipe.json",
-          "src/main/resources/data/itacraft/advancement/recipes/patch_cable_recipe.json"
+          "src/main/resources/data/itacraft/advancement/recipes/patch_cable_recipe.json",
+          "src/main/resources/data/itacraft/recipe/patch_cable_recipe.json"
         ]
       }
     },
@@ -678,9 +678,9 @@
       "registry_name": "rj_45_type_plug",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/itacraft/item/RJ45TypePlugItem.java",
+          "src/main/resources/assets/itacraft/items/rj_45_type_plug.json",
           "src/main/resources/assets/itacraft/models/item/rj_45_type_plug.json",
-          "src/main/resources/assets/itacraft/items/rj_45_type_plug.json"
+          "src/main/java/net/mcreator/itacraft/item/RJ45TypePlugItem.java"
         ]
       }
     },
@@ -692,8 +692,8 @@
       "registry_name": "modular_pliers",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/itacraft/item/ModularPliersItem.java",
           "src/main/resources/assets/itacraft/items/modular_pliers.json",
+          "src/main/java/net/mcreator/itacraft/item/ModularPliersItem.java",
           "src/main/resources/assets/itacraft/models/item/modular_pliers.json"
         ]
       }
@@ -720,9 +720,9 @@
       "registry_name": "patch_table_gui",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/itacraft/client/gui/PatchTableGUIScreen.java",
+          "src/main/java/net/mcreator/itacraft/world/inventory/PatchTableGUIMenu.java",
           "src/main/java/net/mcreator/itacraft/network/PatchTableGUIButtonMessage.java",
-          "src/main/java/net/mcreator/itacraft/world/inventory/PatchTableGUIMenu.java"
+          "src/main/java/net/mcreator/itacraft/client/gui/PatchTableGUIScreen.java"
         ]
       }
     },
@@ -758,8 +758,8 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/itacraft/models/item/foiled_rj_45_type_ethernet_cable.json",
-          "src/main/resources/assets/itacraft/items/foiled_rj_45_type_ethernet_cable.json",
-          "src/main/java/net/mcreator/itacraft/item/FoiledRJ45TypeEthernetCableItem.java"
+          "src/main/java/net/mcreator/itacraft/item/FoiledRJ45TypeEthernetCableItem.java",
+          "src/main/resources/assets/itacraft/items/foiled_rj_45_type_ethernet_cable.json"
         ]
       }
     },
@@ -841,8 +841,8 @@
       "registry_name": "wire_recipe",
       "metadata": {
         "files": [
-          "src/main/resources/data/itacraft/recipe/wire_recipe.json",
-          "src/main/resources/data/itacraft/advancement/recipes/wire_recipe.json"
+          "src/main/resources/data/itacraft/advancement/recipes/wire_recipe.json",
+          "src/main/resources/data/itacraft/recipe/wire_recipe.json"
         ]
       }
     },
@@ -981,8 +981,8 @@
       "registry_name": "to_hundre_kroner_recipe",
       "metadata": {
         "files": [
-          "src/main/resources/data/itacraft/advancement/recipes/to_hundre_kroner_recipe.json",
-          "src/main/resources/data/itacraft/recipe/to_hundre_kroner_recipe.json"
+          "src/main/resources/data/itacraft/recipe/to_hundre_kroner_recipe.json",
+          "src/main/resources/data/itacraft/advancement/recipes/to_hundre_kroner_recipe.json"
         ]
       }
     },
@@ -1606,8 +1606,8 @@
       "registry_name": "nal_recipe",
       "metadata": {
         "files": [
-          "src/main/resources/data/itacraft/advancement/recipes/nal_recipe.json",
-          "src/main/resources/data/itacraft/recipe/nal_recipe.json"
+          "src/main/resources/data/itacraft/recipe/nal_recipe.json",
+          "src/main/resources/data/itacraft/advancement/recipes/nal_recipe.json"
         ]
       }
     },
@@ -2053,8 +2053,8 @@
       "registry_name": "plug_recipe",
       "metadata": {
         "files": [
-          "src/main/resources/data/itacraft/advancement/recipes/plug_recipe.json",
-          "src/main/resources/data/itacraft/recipe/plug_recipe.json"
+          "src/main/resources/data/itacraft/recipe/plug_recipe.json",
+          "src/main/resources/data/itacraft/advancement/recipes/plug_recipe.json"
         ]
       }
     },
@@ -2097,8 +2097,8 @@
       "registry_name": "transparent_plastic_recipe",
       "metadata": {
         "files": [
-          "src/main/resources/data/itacraft/advancement/recipes/transparent_plastic_recipe.json",
-          "src/main/resources/data/itacraft/recipe/transparent_plastic_recipe.json"
+          "src/main/resources/data/itacraft/recipe/transparent_plastic_recipe.json",
+          "src/main/resources/data/itacraft/advancement/recipes/transparent_plastic_recipe.json"
         ]
       }
     },
@@ -2110,8 +2110,8 @@
       "registry_name": "hawk_phone_recipe",
       "metadata": {
         "files": [
-          "src/main/resources/data/itacraft/recipe/hawk_phone_recipe.json",
-          "src/main/resources/data/itacraft/advancement/recipes/hawk_phone_recipe.json"
+          "src/main/resources/data/itacraft/advancement/recipes/hawk_phone_recipe.json",
+          "src/main/resources/data/itacraft/recipe/hawk_phone_recipe.json"
         ]
       }
     },
@@ -2697,8 +2697,8 @@
       "registry_name": "hdmi_cable_recipe",
       "metadata": {
         "files": [
-          "src/main/resources/data/itacraft/advancement/recipes/hdmi_cable_recipe.json",
-          "src/main/resources/data/itacraft/recipe/hdmi_cable_recipe.json"
+          "src/main/resources/data/itacraft/recipe/hdmi_cable_recipe.json",
+          "src/main/resources/data/itacraft/advancement/recipes/hdmi_cable_recipe.json"
         ]
       },
       "path": "~/Fredrik"
@@ -2725,8 +2725,8 @@
       "registry_name": "hdmi_plug_recipe",
       "metadata": {
         "files": [
-          "src/main/resources/data/itacraft/advancement/recipes/hdmi_plug_recipe.json",
-          "src/main/resources/data/itacraft/recipe/hdmi_plug_recipe.json"
+          "src/main/resources/data/itacraft/recipe/hdmi_plug_recipe.json",
+          "src/main/resources/data/itacraft/advancement/recipes/hdmi_plug_recipe.json"
         ]
       },
       "path": "~/Fredrik"
@@ -3165,13 +3165,13 @@
   },
   "metadata": {
     "files": [
-      "src/main/java/net/mcreator/itacraft/init/ItacraftModBiomes.java",
       "src/main/java/net/mcreator/itacraft/mixin/NoiseGeneratorSettingsMixin.java",
+      "src/main/java/net/mcreator/itacraft/init/ItacraftModBiomes.java",
       "src/main/java/net/mcreator/itacraft/init/ItacraftModFluidTypes.java",
       "src/main/java/net/mcreator/itacraft/init/ItacraftModFluids.java",
-      "src/main/java/net/mcreator/itacraft/network/MenuStateUpdateMessage.java",
-      "src/main/java/net/mcreator/itacraft/init/ItacraftModScreens.java",
       "src/main/java/net/mcreator/itacraft/init/ItacraftModMenus.java",
+      "src/main/java/net/mcreator/itacraft/init/ItacraftModScreens.java",
+      "src/main/java/net/mcreator/itacraft/network/MenuStateUpdateMessage.java",
       "src/main/java/net/mcreator/itacraft/init/ItacraftModKeyMappings.java",
       "src/main/resources/data/minecraft/tags/painting_variant/placeable.json",
       "src/main/java/net/mcreator/itacraft/init/ItacraftModParticleTypes.java",
@@ -3182,18 +3182,18 @@
       "src/main/java/net/mcreator/itacraft/init/ItacraftModBlocks.java",
       "src/main/java/net/mcreator/itacraft/init/ItacraftModBlockEntities.java",
       "src/main/java/net/mcreator/itacraft/init/ItacraftModItems.java",
-      "src/main/java/net/mcreator/itacraft/init/ItacraftModEntities.java",
       "src/main/java/net/mcreator/itacraft/init/ItacraftModEntityRenderers.java",
-      "src/main/java/net/mcreator/itacraft/ItacraftMod.java",
-      "src/main/java/net/mcreator/itacraft/init/ItacraftModSounds.java",
-      "src/main/java/net/mcreator/itacraft/network/ItacraftModVariables.java",
-      "src/main/resources/itacraft.mixins.json",
-      "src/main/resources/META-INF/neoforge.mods.toml",
+      "src/main/java/net/mcreator/itacraft/init/ItacraftModEntities.java",
       "src/main/resources/pack.mcmeta",
-      "src/main/resources/assets/itacraft/sounds.json",
       "src/main/resources/META-INF/accesstransformer.cfg",
       "src/main/java/net/mcreator/itacraft/init/ItacraftModModels.java",
-      "src/main/java/net/mcreator/itacraft/init/ItacraftModTabs.java"
+      "src/main/java/net/mcreator/itacraft/init/ItacraftModTabs.java",
+      "src/main/java/net/mcreator/itacraft/network/ItacraftModVariables.java",
+      "src/main/java/net/mcreator/itacraft/ItacraftMod.java",
+      "src/main/resources/assets/itacraft/sounds.json",
+      "src/main/resources/itacraft.mixins.json",
+      "src/main/resources/META-INF/neoforge.mods.toml",
+      "src/main/java/net/mcreator/itacraft/init/ItacraftModSounds.java"
     ]
   },
   "foldersRoot": {

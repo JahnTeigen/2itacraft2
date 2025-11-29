@@ -1,17 +1,33 @@
 package net.mcreator.itacraft.network;
 
+import net.neoforged.neoforge.network.handling.IPayloadContext;
+import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
+import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.bus.api.SubscribeEvent;
+
+import net.minecraft.world.level.Level;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.network.protocol.common.custom.CustomPacketPayload;
+import net.minecraft.network.protocol.PacketFlow;
+import net.minecraft.network.codec.StreamCodec;
+import net.minecraft.network.chat.Component;
+import net.minecraft.network.RegistryFriendlyByteBuf;
+import net.minecraft.core.BlockPos;
+
+import net.mcreator.itacraft.procedures.UpdateAuraProcedure;
+import net.mcreator.itacraft.ItacraftMod;
+
 @EventBusSubscriber
 public record OsloBorsButtonMessage(int buttonID, int x, int y, int z) implements CustomPacketPayload {
 
 	public static final Type<OsloBorsButtonMessage> TYPE = new Type<>(ResourceLocation.fromNamespaceAndPath(ItacraftMod.MODID, "oslo_bors_buttons"));
-
 	public static final StreamCodec<RegistryFriendlyByteBuf, OsloBorsButtonMessage> STREAM_CODEC = StreamCodec.of((RegistryFriendlyByteBuf buffer, OsloBorsButtonMessage message) -> {
 		buffer.writeInt(message.buttonID);
 		buffer.writeInt(message.x);
 		buffer.writeInt(message.y);
 		buffer.writeInt(message.z);
 	}, (RegistryFriendlyByteBuf buffer) -> new OsloBorsButtonMessage(buffer.readInt(), buffer.readInt(), buffer.readInt(), buffer.readInt()));
-
 	@Override
 	public Type<OsloBorsButtonMessage> type() {
 		return TYPE;
@@ -28,11 +44,9 @@ public record OsloBorsButtonMessage(int buttonID, int x, int y, int z) implement
 
 	public static void handleButtonAction(Player entity, int buttonID, int x, int y, int z) {
 		Level world = entity.level();
-
 		// security measure to prevent arbitrary chunk generation
 		if (!world.hasChunkAt(new BlockPos(x, y, z)))
 			return;
-
 		if (buttonID == 0) {
 
 			UpdateAuraProcedure.execute(world, x, y, z, entity);
@@ -43,5 +57,4 @@ public record OsloBorsButtonMessage(int buttonID, int x, int y, int z) implement
 	public static void registerMessage(FMLCommonSetupEvent event) {
 		ItacraftMod.addNetworkMessage(OsloBorsButtonMessage.TYPE, OsloBorsButtonMessage.STREAM_CODEC, OsloBorsButtonMessage::handleData);
 	}
-
 }
