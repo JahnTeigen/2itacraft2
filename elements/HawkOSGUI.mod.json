@@ -1,0 +1,45 @@
+{
+  "_fv": 79,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 304,
+    "height": 181,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": false,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "hawkos_gui_background.png",
+          "use1Xscale": false,
+          "x": 62,
+          "y": 30,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_onoff",
+          "text": "On/Off",
+          "isUndecorated": true,
+          "width": 56,
+          "height": 20,
+          "x": 66,
+          "y": 193,
+          "locked": false
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

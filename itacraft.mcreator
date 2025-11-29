@@ -2483,8 +2483,7 @@
         "files": [
           "src/main/java/net/mcreator/itacraft/command/MasterbateCommand.java"
         ]
-      },
-      "path": "~/MatveySaker"
+      }
     },
     {
       "name": "Cumitem",
@@ -2713,8 +2712,7 @@
         "files": [
           "src/main/java/net/mcreator/itacraft/procedures/OnDoorRightClickedProcedure.java"
         ]
-      },
-      "path": "~/Procedures"
+      }
     },
     {
       "name": "DoorPlacedByPlayer",
@@ -2744,8 +2742,79 @@
         "files": [
           "src/main/java/net/mcreator/itacraft/procedures/DoorPlacedByPlayerProcedure.java"
         ]
+      }
+    },
+    {
+      "name": "HDMICableRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hdmi_cable_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/itacraft/advancement/recipes/hdmi_cable_recipe.json",
+          "src/main/resources/data/itacraft/recipe/hdmi_cable_recipe.json"
+        ]
       },
-      "path": "~/Procedures"
+      "path": "~/Fredrik"
+    },
+    {
+      "name": "HawkOSGUI",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hawk_osgui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/itacraft/world/inventory/HawkOSGUIMenu.java",
+          "src/main/java/net/mcreator/itacraft/client/gui/HawkOSGUIScreen.java"
+        ]
+      },
+      "path": "~/Fredrik"
+    },
+    {
+      "name": "HDMIPlugRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hdmi_plug_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/itacraft/advancement/recipes/hdmi_plug_recipe.json",
+          "src/main/resources/data/itacraft/recipe/hdmi_plug_recipe.json"
+        ]
+      },
+      "path": "~/Fredrik"
+    },
+    {
+      "name": "HDMIPlug",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hdmi_plug",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/itacraft/item/HDMIPlugItem.java",
+          "src/main/resources/assets/itacraft/items/hdmi_plug.json",
+          "src/main/resources/assets/itacraft/models/item/hdmi_plug.json"
+        ]
+      },
+      "path": "~/Fredrik"
+    },
+    {
+      "name": "HDMICable",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hdmi_cable",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/itacraft/item/HDMICableItem.java",
+          "src/main/resources/assets/itacraft/models/item/hdmi_cable.json",
+          "src/main/resources/assets/itacraft/items/hdmi_cable.json"
+        ]
+      },
+      "path": "~/Fredrik"
     }
   ],
   "variable_elements": [
@@ -3148,6 +3217,10 @@
     "name": "~",
     "children": [
       {
+        "name": "Matvey",
+        "children": []
+      },
+      {
         "name": "Procedures",
         "children": [
           {
@@ -3157,7 +3230,7 @@
         ]
       },
       {
-        "name": "MatveySaker",
+        "name": "Fredrik",
         "children": []
       }
     ]
