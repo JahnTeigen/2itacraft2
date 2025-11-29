@@ -29,4 +29,5 @@ public class ItacraftModSounds {
 	public static final DeferredHolder<SoundEvent, SoundEvent> FUCKIN = REGISTRY.register("fuckin", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("itacraft", "fuckin")));
 	public static final DeferredHolder<SoundEvent, SoundEvent> RETARDLIVING = REGISTRY.register("retardliving", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("itacraft", "retardliving")));
 	public static final DeferredHolder<SoundEvent, SoundEvent> RETARDDOD = REGISTRY.register("retarddod", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("itacraft", "retarddod")));
+	public static final DeferredHolder<SoundEvent, SoundEvent> CONDOME_APPLICATION = REGISTRY.register("condome_application", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("itacraft", "condome_application")));
 }

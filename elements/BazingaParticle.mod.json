@@ -1,0 +1,24 @@
+{
+  "_fv": 79,
+  "_type": "particle",
+  "definition": {
+    "texture": "awooga",
+    "animate": false,
+    "frameDuration": 1,
+    "width": 0.2,
+    "height": 0.2,
+    "scale": {
+      "fixedValue": 3.5
+    },
+    "speedFactor": 1.5,
+    "gravity": 0.0,
+    "maxAge": 7,
+    "maxAgeDiff": 0,
+    "angularVelocity": 0.19999999999999998,
+    "angularAcceleration": 0.09999999999999999,
+    "canCollide": true,
+    "alwaysShow": false,
+    "emissiveRendering": false,
+    "renderType": "OPAQUE"
+  }
+}

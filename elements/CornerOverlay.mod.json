@@ -7,6 +7,40 @@
       {
         "type": "image",
         "data": {
+          "image": "condome.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "CondomeDisplayCondition"
+          },
+          "anchorPoint": "TOP_LEFT",
+          "x": 6,
+          "y": 6,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_condome_equipped",
+          "text": {
+            "fixedValue": "CONDOME EQUIPPED"
+          },
+          "color": {
+            "value": -10092340,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "CondomeDisplayCondition"
+          },
+          "anchorPoint": "TOP_LEFT",
+          "x": 26,
+          "y": 10,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
           "image": "nrk_minecraft.png",
           "use1Xscale": false,
           "anchorPoint": "TOP_RIGHT",
