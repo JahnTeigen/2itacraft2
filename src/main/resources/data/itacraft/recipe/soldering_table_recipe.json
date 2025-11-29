@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "aca",
+    "aaa"
+  ],
+  "key": {
+    "a": "minecraft:iron_block",
+    "b": "minecraft:iron_trapdoor",
+    "c": "minecraft:blaze_powder"
+  },
+  "result": {
+    "id": "itacraft:soldering_table",
+    "count": 1
+  }
+}

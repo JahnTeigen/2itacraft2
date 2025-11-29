@@ -237,7 +237,7 @@
           "src/main/resources/data/itacraft/advancement/recipes/andreas_recipe.json"
         ]
       },
-      "path": "~/Fredrik"
+      "path": "~/Recipes"
     },
     {
       "name": "FemtiKroner",
@@ -500,7 +500,7 @@
           "src/main/resources/data/itacraft/recipe/tusenlapp_recipe.json"
         ]
       },
-      "path": "~/Fredrik"
+      "path": "~/Recipes"
     },
     {
       "name": "FemhundrelappRecipe",
@@ -514,7 +514,7 @@
           "src/main/resources/data/itacraft/recipe/femhundrelapp_recipe.json"
         ]
       },
-      "path": "~/Fredrik"
+      "path": "~/Recipes"
     },
     {
       "name": "HeroinPlayerFinishesUsingItem",
@@ -696,7 +696,7 @@
           "src/main/resources/data/itacraft/advancement/recipes/patch_cable_recipe.json"
         ]
       },
-      "path": "~/Fredrik"
+      "path": "~/Recipes"
     },
     {
       "name": "RJ45TypePlug",
@@ -869,7 +869,7 @@
           "src/main/resources/data/itacraft/recipe/plastic_recipe.json"
         ]
       },
-      "path": "~/Fredrik"
+      "path": "~/Recipes"
     },
     {
       "name": "WireRecipe",
@@ -883,7 +883,7 @@
           "src/main/resources/data/itacraft/recipe/wire_recipe.json"
         ]
       },
-      "path": "~/Fredrik"
+      "path": "~/Recipes"
     },
     {
       "name": "WhiteColoredPlastic",
@@ -911,7 +911,7 @@
           "src/main/resources/data/itacraft/recipe/white_colored_plastic_recipe.json"
         ]
       },
-      "path": "~/Fredrik"
+      "path": "~/Recipes"
     },
     {
       "name": "HPWorkstation",
@@ -1033,7 +1033,7 @@
           "src/main/resources/data/itacraft/advancement/recipes/to_hundre_kroner_recipe.json"
         ]
       },
-      "path": "~/Fredrik"
+      "path": "~/Recipes"
     },
     {
       "name": "FemHundreKronerRecipe",
@@ -1047,7 +1047,7 @@
           "src/main/resources/data/itacraft/recipe/fem_hundre_kroner_recipe.json"
         ]
       },
-      "path": "~/Fredrik"
+      "path": "~/Recipes"
     },
     {
       "name": "RedColoredPlastic",
@@ -1076,7 +1076,7 @@
           "src/main/resources/data/itacraft/recipe/red_colored_plastic_recipe.json"
         ]
       },
-      "path": "~/Fredrik"
+      "path": "~/Recipes"
     },
     {
       "name": "EttOre",
@@ -1120,7 +1120,7 @@
           "src/main/resources/data/itacraft/advancement/recipes/modular_pliers_recipe.json"
         ]
       },
-      "path": "~/Fredrik"
+      "path": "~/Recipes"
     },
     {
       "name": "HawkPhone",
@@ -1680,7 +1680,7 @@
           "src/main/java/net/mcreator/itacraft/recipe/brewing/HeroinRecipeBrewingRecipe.java"
         ]
       },
-      "path": "~/Fredrik"
+      "path": "~/Recipes"
     },
     {
       "name": "NalRecipe",
@@ -1694,7 +1694,7 @@
           "src/main/resources/data/itacraft/advancement/recipes/nal_recipe.json"
         ]
       },
-      "path": "~/Fredrik"
+      "path": "~/Recipes"
     },
     {
       "name": "Forgiftet",
@@ -2160,7 +2160,7 @@
           "src/main/resources/data/itacraft/recipe/plug_recipe.json"
         ]
       },
-      "path": "~/Fredrik"
+      "path": "~/Recipes"
     },
     {
       "name": "Marijuana",
@@ -2207,7 +2207,7 @@
           "src/main/resources/data/itacraft/recipe/transparent_plastic_recipe.json"
         ]
       },
-      "path": "~/Fredrik"
+      "path": "~/Recipes"
     },
     {
       "name": "HawkPhoneRecipe",
@@ -2220,7 +2220,8 @@
           "src/main/resources/data/itacraft/recipe/hawk_phone_recipe.json",
           "src/main/resources/data/itacraft/advancement/recipes/hawk_phone_recipe.json"
         ]
-      }
+      },
+      "path": "~/Recipes"
     },
     {
       "name": "Vippser",
@@ -2386,7 +2387,7 @@
           "src/main/resources/data/itacraft/recipe/hdmi_cable_recipe.json"
         ]
       },
-      "path": "~/Fredrik"
+      "path": "~/Recipes"
     },
     {
       "name": "HawkOSGUI",
@@ -2895,6 +2896,194 @@
           "src/main/java/net/mcreator/itacraft/command/MasterbateCommand.java"
         ]
       }
+    },
+    {
+      "name": "Microplastic",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "microplastic",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/itacraft/item/MicroplasticItem.java",
+          "src/main/resources/assets/itacraft/models/item/microplastic.json",
+          "src/main/resources/assets/itacraft/items/microplastic.json"
+        ]
+      }
+    },
+    {
+      "name": "MicroplasticRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "microplastic_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/itacraft/advancement/recipes/microplastic_recipe.json",
+          "src/main/resources/data/itacraft/recipe/microplastic_recipe.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "CircuitBoard",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "circuit_board",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/itacraft/items/circuit_board.json",
+          "src/main/java/net/mcreator/itacraft/item/CircuitBoardItem.java",
+          "src/main/resources/assets/itacraft/models/item/circuit_board.json"
+        ]
+      },
+      "path": "~/Fredrik"
+    },
+    {
+      "name": "Electronics",
+      "type": "tab",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "electronics",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Fredrik"
+    },
+    {
+      "name": "SolderingTable",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "soldering_table",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/itacraft/loot_table/blocks/soldering_table.json",
+          "src/main/java/net/mcreator/itacraft/block/SolderingTableBlock.java",
+          "src/main/resources/assets/itacraft/models/block/soldering_table.json",
+          "src/main/resources/assets/itacraft/blockstates/soldering_table.json",
+          "src/main/resources/assets/itacraft/items/soldering_table.json",
+          "src/main/resources/assets/itacraft/models/item/soldering_table.json"
+        ]
+      },
+      "path": "~/Fredrik"
+    },
+    {
+      "name": "SolderingTableRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "soldering_table_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/itacraft/advancement/recipes/soldering_table_recipe.json",
+          "src/main/resources/data/itacraft/recipe/soldering_table_recipe.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "SolderingTableGUI",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "soldering_table_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/itacraft/world/inventory/SolderingTableGUIMenu.java",
+          "src/main/java/net/mcreator/itacraft/network/SolderingTableGUIButtonMessage.java",
+          "src/main/java/net/mcreator/itacraft/client/gui/SolderingTableGUIScreen.java"
+        ]
+      },
+      "path": "~/Fredrik"
+    },
+    {
+      "name": "SolderProcedure",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "solder_procedure",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/itacraft/procedures/SolderProcedureProcedure.java"
+        ]
+      },
+      "path": "~/Fredrik"
+    },
+    {
+      "name": "SolderingProgressValueProvider",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "soldering_progress_value_provider",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/mcreator/itacraft/procedures/SolderingProgressValueProviderProcedure.java"
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "PlasticCircuitBoardMold",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "plastic_circuit_board_mold",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/itacraft/items/plastic_circuit_board_mold.json",
+          "src/main/java/net/mcreator/itacraft/item/PlasticCircuitBoardMoldItem.java",
+          "src/main/resources/assets/itacraft/models/item/plastic_circuit_board_mold.json"
+        ]
+      },
+      "path": "~/Fredrik"
+    },
+    {
+      "name": "NalMedCum",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nal_med_cum",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/itacraft/item/NalMedCumItem.java",
+          "src/main/resources/assets/itacraft/models/item/nal_med_cum.json",
+          "src/main/resources/assets/itacraft/items/nal_med_cum.json"
+        ]
+      },
+      "path": "~/Fredrik"
+    },
+    {
+      "name": "CumNalRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cum_nal_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/itacraft/recipe/cum_nal_recipe.json",
+          "src/main/resources/data/itacraft/advancement/recipes/cum_nal_recipe.json"
+        ]
+      },
+      "path": "~/Fredrik"
     }
   ],
   "variable_elements": [
@@ -2921,6 +3110,12 @@
       "type": "number",
       "scope": "player_persistent",
       "value": "6000.0"
+    },
+    {
+      "name": "solderingProgress",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
     }
   ],
   "sound_elements": [
@@ -3119,6 +3314,9 @@
     ],
     "ITEMS:minecraft:meat": [
       "~CUSTOM:Fetus"
+    ],
+    "ITEMS:minecraft:molds": [
+      "CUSTOM:PlasticCircuitBoardMold"
     ]
   },
   "tab_element_order": {},
@@ -3260,7 +3458,14 @@
       "item.itacraft.skatteman_spawn_egg": "Skatteman Spawn Egg",
       "entity.itacraft.skatteman": "Skatteman",
       "item.itacraft.cum": "Cum",
-      "item.itacraft.fetus": "Fetus"
+      "item.itacraft.fetus": "Fetus",
+      "item.itacraft.microplastic": "Microplastic",
+      "item.itacraft.circuit_board": "Circuit Board",
+      "item_group.itacraft.electronics": "Electronics",
+      "item.itacraft.soldering_table": "Soldering Table",
+      "gui.itacraft.soldering_table_gui.button_solder": "Solder",
+      "item.itacraft.plastic_circuit_board_mold": "Plastic Circuit Board Mold",
+      "item.itacraft.nal_med_cum": "Nål med Cum"
     }
   },
   "metadata": {
@@ -3314,6 +3519,10 @@
       },
       {
         "name": "Fredrik",
+        "children": []
+      },
+      {
+        "name": "Recipes",
         "children": []
       }
     ]
