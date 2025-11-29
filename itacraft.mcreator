@@ -3036,7 +3036,6 @@
           "src/main/java/net/mcreator/itacraft/entity/SkatteetatenEntity.java",
           "src/main/java/net/mcreator/itacraft/client/renderer/SkatteetatenRenderer.java",
           "src/main/resources/assets/itacraft/items/skatteetaten_spawn_egg.json",
-          "src/main/resources/data/itacraft/neoforge/biome_modifier/skatteetaten_biome_modifier.json",
           "src/main/resources/assets/itacraft/models/item/skatteetaten_spawn_egg.json"
         ]
       }
@@ -3324,6 +3323,19 @@
         ]
       },
       "path": "~/Fredrik"
+    },
+    {
+      "name": "SkatteetatenOnEntityTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "skatteetaten_on_entity_tick",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/mcreator/itacraft/procedures/SkatteetatenOnEntityTickProcedure.java"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -3755,7 +3767,13 @@
       "painting.itacraft.coolpainting.author": "ikke matvey",
       "painting.itacraft.coolpainting.title": "family",
       "item.itacraft.dildo": "Dildo",
-      "key.itacraft.equip_condome_shortcut": "Equip Condome Shortcut"
+      "key.itacraft.equip_condome_shortcut": "Equip Condome Shortcut",
+      "gui.itacraft.skatteetaten_gui.label_du_ma_ha_mer_en_1500_kr": "* Du må ha mer en 1500 kr",
+      "gui.itacraft.skatteetaten_gui.label_tar_jeg_alt_du_eier": "tar jeg alt du eier",
+      "gui.itacraft.skatteetaten_gui.label_empty": ":)",
+      "gui.itacraft.skatteetaten_gui.label_jeg_tar_50": "* Jeg tar 50%",
+      "gui.itacraft.skatteetaten_gui.label_loper_du_vekk": "* løper du vekk",
+      "gui.itacraft.skatteetaten_gui.label_regler": "regler:"
     }
   },
   "metadata": {

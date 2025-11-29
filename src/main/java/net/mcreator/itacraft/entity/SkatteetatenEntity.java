@@ -9,7 +9,6 @@ import net.neoforged.neoforge.common.NeoForgeMod;
 
 import net.minecraft.world.level.storage.ValueOutput;
 import net.minecraft.world.level.storage.ValueInput;
-import net.minecraft.world.level.levelgen.Heightmap;
 import net.minecraft.world.level.ServerLevelAccessor;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.Explosion;
@@ -21,7 +20,6 @@ import net.minecraft.world.entity.projectile.AbstractThrownPotion;
 import net.minecraft.world.entity.projectile.AbstractArrow;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.player.Inventory;
-import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.entity.ai.goal.target.HurtByTargetGoal;
 import net.minecraft.world.entity.ai.goal.RandomStrollGoal;
 import net.minecraft.world.entity.ai.goal.RandomLookAroundGoal;
@@ -36,7 +34,6 @@ import net.minecraft.world.MenuProvider;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.DifficultyInstance;
-import net.minecraft.world.Difficulty;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.server.level.ServerLevel;
@@ -47,7 +44,7 @@ import net.minecraft.core.registries.BuiltInRegistries;
 
 import net.mcreator.itacraft.world.inventory.SkatteetatenGuiMenu;
 import net.mcreator.itacraft.procedures.SkattemanOnInitialEntitySpawnProcedure;
-import net.mcreator.itacraft.init.ItacraftModEntities;
+import net.mcreator.itacraft.procedures.SkatteetatenOnEntityTickProcedure;
 
 import javax.annotation.Nullable;
 
@@ -60,6 +57,7 @@ public class SkatteetatenEntity extends PathfinderMob {
 		setNoAi(false);
 		setCustomName(Component.literal("Skatteetaten"));
 		setCustomNameVisible(true);
+		setPersistenceRequired();
 	}
 
 	@Override
@@ -75,6 +73,11 @@ public class SkatteetatenEntity extends PathfinderMob {
 		this.targetSelector.addGoal(3, new HurtByTargetGoal(this));
 		this.goalSelector.addGoal(4, new RandomLookAroundGoal(this));
 		this.goalSelector.addGoal(5, new FloatGoal(this));
+	}
+
+	@Override
+	public boolean removeWhenFarAway(double distanceToClosestPlayer) {
+		return false;
 	}
 
 	@Override
@@ -125,9 +128,9 @@ public class SkatteetatenEntity extends PathfinderMob {
 
 	@Override
 	public SpawnGroupData finalizeSpawn(ServerLevelAccessor world, DifficultyInstance difficulty, EntitySpawnReason reason, @Nullable SpawnGroupData livingdata) {
-	    SpawnGroupData retval = super.finalizeSpawn(world, difficulty, reason, livingdata);
-	    SkattemanOnInitialEntitySpawnProcedure.execute(world, this.getX(), this.getY(), this.getZ(), this);
-	    return retval;
+		SpawnGroupData retval = super.finalizeSpawn(world, difficulty, reason, livingdata);
+		SkattemanOnInitialEntitySpawnProcedure.execute(world, getX(), getY(), getZ(), this);
+		return retval;
 	}
 
 	private final ItemStackHandler inventory = new ItemStackHandler(2);
@@ -189,10 +192,13 @@ public class SkatteetatenEntity extends PathfinderMob {
 		return retval;
 	}
 
+	@Override
+	public void baseTick() {
+		super.baseTick();
+		SkatteetatenOnEntityTickProcedure.execute(level(), this);
+	}
+
 	public static void init(RegisterSpawnPlacementsEvent event) {
-		event.register(ItacraftModEntities.SKATTEETATEN.get(), SpawnPlacementTypes.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
-				(entityType, world, reason, pos, random) -> (world.getDifficulty() != Difficulty.PEACEFUL && Monster.isDarkEnoughToSpawn(world, pos, random) && Mob.checkMobSpawnRules(entityType, world, reason, pos, random)),
-				RegisterSpawnPlacementsEvent.Operation.REPLACE);
 	}
 
 	public static AttributeSupplier.Builder createAttributes() {

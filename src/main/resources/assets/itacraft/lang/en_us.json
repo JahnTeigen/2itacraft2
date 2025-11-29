@@ -161,5 +161,11 @@
   "painting.itacraft.coolpainting.author": "ikke matvey",
   "painting.itacraft.coolpainting.title": "family",
   "item.itacraft.dildo": "Dildo",
-  "key.itacraft.equip_condome_shortcut": "Equip Condome Shortcut"
+  "key.itacraft.equip_condome_shortcut": "Equip Condome Shortcut",
+  "gui.itacraft.skatteetaten_gui.label_du_ma_ha_mer_en_1500_kr": "* Du må ha mer en 1500 kr",
+  "gui.itacraft.skatteetaten_gui.label_tar_jeg_alt_du_eier": "tar jeg alt du eier",
+  "gui.itacraft.skatteetaten_gui.label_empty": ":)",
+  "gui.itacraft.skatteetaten_gui.label_jeg_tar_50": "* Jeg tar 50%",
+  "gui.itacraft.skatteetaten_gui.label_loper_du_vekk": "* løper du vekk",
+  "gui.itacraft.skatteetaten_gui.label_regler": "regler:"
 }
