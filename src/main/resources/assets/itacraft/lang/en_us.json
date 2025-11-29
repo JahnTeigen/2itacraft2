@@ -132,5 +132,10 @@
   "death.attack.prolaps.player": "%1$s prolapset imens han stakk fra %2$s",
   "death.attack.prolaps": "%1$s fikk prolaps",
   "effect.itacraft.pregnant": "Pregnant",
-  "item.itacraft.fetus": "Fetus"
+  "item.itacraft.fetus": "Fetus",
+  "gui.itacraft.hawk_osgui.button_onoff": "On/Off",
+  "item.itacraft.hdmi_plug": "HDMI Plug",
+  "item.itacraft.hdmi_cable": "HDMI Cable",
+  "gui.itacraft.skatteetaten_gui.button_betal_skatt": "betal skatt",
+  "gui.itacraft.skatteetaten_gui.label_jeg_tar_bare_vipps": "jeg tar bare vipps"
 }

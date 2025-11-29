@@ -15,25 +15,25 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.network.RegistryFriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
-import net.mcreator.itacraft.procedures.GetPOBProcedure;
+import net.mcreator.itacraft.procedures.SkatteetatenBruhProcedure;
 import net.mcreator.itacraft.ItacraftMod;
 
 @EventBusSubscriber
-public record NSMRequestInterfaceButtonMessage(int buttonID, int x, int y, int z) implements CustomPacketPayload {
+public record SkatteetatenGuiButtonMessage(int buttonID, int x, int y, int z) implements CustomPacketPayload {
 
-	public static final Type<NSMRequestInterfaceButtonMessage> TYPE = new Type<>(ResourceLocation.fromNamespaceAndPath(ItacraftMod.MODID, "nsm_request_interface_buttons"));
-	public static final StreamCodec<RegistryFriendlyByteBuf, NSMRequestInterfaceButtonMessage> STREAM_CODEC = StreamCodec.of((RegistryFriendlyByteBuf buffer, NSMRequestInterfaceButtonMessage message) -> {
+	public static final Type<SkatteetatenGuiButtonMessage> TYPE = new Type<>(ResourceLocation.fromNamespaceAndPath(ItacraftMod.MODID, "skatteetaten_gui_buttons"));
+	public static final StreamCodec<RegistryFriendlyByteBuf, SkatteetatenGuiButtonMessage> STREAM_CODEC = StreamCodec.of((RegistryFriendlyByteBuf buffer, SkatteetatenGuiButtonMessage message) -> {
 		buffer.writeInt(message.buttonID);
 		buffer.writeInt(message.x);
 		buffer.writeInt(message.y);
 		buffer.writeInt(message.z);
-	}, (RegistryFriendlyByteBuf buffer) -> new NSMRequestInterfaceButtonMessage(buffer.readInt(), buffer.readInt(), buffer.readInt(), buffer.readInt()));
+	}, (RegistryFriendlyByteBuf buffer) -> new SkatteetatenGuiButtonMessage(buffer.readInt(), buffer.readInt(), buffer.readInt(), buffer.readInt()));
 	@Override
-	public Type<NSMRequestInterfaceButtonMessage> type() {
+	public Type<SkatteetatenGuiButtonMessage> type() {
 		return TYPE;
 	}
 
-	public static void handleData(final NSMRequestInterfaceButtonMessage message, final IPayloadContext context) {
+	public static void handleData(final SkatteetatenGuiButtonMessage message, final IPayloadContext context) {
 		if (context.flow() == PacketFlow.SERVERBOUND) {
 			context.enqueueWork(() -> handleButtonAction(context.player(), message.buttonID, message.x, message.y, message.z)).exceptionally(e -> {
 				context.connection().disconnect(Component.literal(e.getMessage()));
@@ -49,12 +49,12 @@ public record NSMRequestInterfaceButtonMessage(int buttonID, int x, int y, int z
 			return;
 		if (buttonID == 0) {
 
-			GetPOBProcedure.execute(world, x, y, z, entity);
+			SkatteetatenBruhProcedure.execute(entity);
 		}
 	}
 
 	@SubscribeEvent
 	public static void registerMessage(FMLCommonSetupEvent event) {
-		ItacraftMod.addNetworkMessage(NSMRequestInterfaceButtonMessage.TYPE, NSMRequestInterfaceButtonMessage.STREAM_CODEC, NSMRequestInterfaceButtonMessage::handleData);
+		ItacraftMod.addNetworkMessage(SkatteetatenGuiButtonMessage.TYPE, SkatteetatenGuiButtonMessage.STREAM_CODEC, SkatteetatenGuiButtonMessage::handleData);
 	}
 }

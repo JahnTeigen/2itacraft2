@@ -22,17 +22,18 @@ import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.itacraft.init.ItacraftModMenus;
+import net.mcreator.itacraft.init.ItacraftModItems;
 
 import java.util.function.Supplier;
 import java.util.Map;
 import java.util.HashMap;
 import java.util.Collections;
 
-public class NSMRequestInterfaceMenu extends AbstractContainerMenu implements ItacraftModMenus.MenuAccessor {
+public class SkatteetatenGuiMenu extends AbstractContainerMenu implements ItacraftModMenus.MenuAccessor {
 	public final Map<String, Object> menuState = new HashMap<>() {
 		@Override
 		public Object put(String key, Object value) {
-			if (!this.containsKey(key) && this.size() >= 6)
+			if (!this.containsKey(key) && this.size() >= 3)
 				return null;
 			return super.put(key, value);
 		}
@@ -48,11 +49,11 @@ public class NSMRequestInterfaceMenu extends AbstractContainerMenu implements It
 	private Entity boundEntity = null;
 	private BlockEntity boundBlockEntity = null;
 
-	public NSMRequestInterfaceMenu(int id, Inventory inv, FriendlyByteBuf extraData) {
-		super(ItacraftModMenus.NSM_REQUEST_INTERFACE.get(), id);
+	public SkatteetatenGuiMenu(int id, Inventory inv, FriendlyByteBuf extraData) {
+		super(ItacraftModMenus.SKATTEETATEN_GUI.get(), id);
 		this.entity = inv.player;
 		this.world = inv.player.level();
-		this.internal = new ItemStackHandler(1);
+		this.internal = new ItemStackHandler(2);
 		BlockPos pos = null;
 		if (extraData != null) {
 			pos = extraData.readBlockPos();
@@ -89,21 +90,21 @@ public class NSMRequestInterfaceMenu extends AbstractContainerMenu implements It
 				}
 			}
 		}
-		this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 200, 49) {
-			private final int slot = 0;
-			private int x = NSMRequestInterfaceMenu.this.x;
-			private int y = NSMRequestInterfaceMenu.this.y;
+		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 81, 26) {
+			private final int slot = 1;
+			private int x = SkatteetatenGuiMenu.this.x;
+			private int y = SkatteetatenGuiMenu.this.y;
 
 			@Override
 			public boolean mayPlace(ItemStack stack) {
-				return false;
+				return ItacraftModItems.HAWK_PHONE.get() == stack.getItem();
 			}
 		}));
 		for (int si = 0; si < 3; ++si)
 			for (int sj = 0; sj < 9; ++sj)
-				this.addSlot(new Slot(inv, sj + (si + 1) * 9, 48 + 8 + sj * 18, 8 + 84 + si * 18));
+				this.addSlot(new Slot(inv, sj + (si + 1) * 9, 0 + 8 + sj * 18, 0 + 84 + si * 18));
 		for (int si = 0; si < 9; ++si)
-			this.addSlot(new Slot(inv, si, 48 + 8 + si * 18, 8 + 142));
+			this.addSlot(new Slot(inv, si, 0 + 8 + si * 18, 0 + 142));
 	}
 
 	@Override

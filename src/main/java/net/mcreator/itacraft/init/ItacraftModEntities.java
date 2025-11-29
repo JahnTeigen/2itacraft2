@@ -71,6 +71,7 @@ public class ItacraftModEntities {
 	public static void registerCapabilities(RegisterCapabilitiesEvent event) {
 		event.registerEntity(Capabilities.ItemHandler.ENTITY, JUDE.get(), (living, context) -> living.getCombinedInventory());
 		event.registerEntity(Capabilities.ItemHandler.ENTITY, BODIL.get(), (living, context) -> living.getCombinedInventory());
+		event.registerEntity(Capabilities.ItemHandler.ENTITY, SKATTEMAN.get(), (living, context) -> living.getCombinedInventory());
 	}
 
 	@SubscribeEvent
