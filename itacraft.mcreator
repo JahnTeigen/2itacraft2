@@ -1753,8 +1753,8 @@
     {
       "name": "CornerOverlay",
       "type": "overlay",
-      "compiles": true,
-      "locked_code": false,
+      "compiles": false,
+      "locked_code": true,
       "registry_name": "corner_overlay",
       "metadata": {
         "files": [
@@ -2694,10 +2694,6 @@
       "metadata": {
         "dependencies": [
           {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
             "name": "x",
             "type": "number"
           },
@@ -3229,6 +3225,10 @@
       "metadata": {
         "dependencies": [
           {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
             "name": "world",
             "type": "world"
           }
@@ -3296,6 +3296,20 @@
         ]
       },
       "path": "~/Fredrik"
+    },
+    {
+      "name": "GuggeCraft5",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gugge_craft_5",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/itacraft/recipe/gugge_craft_5.json",
+          "src/main/resources/data/itacraft/advancement/recipes/gugge_craft_5.json"
+        ]
+      },
+      "path": "~/Matvey"
     }
   ],
   "variable_elements": [
@@ -3725,7 +3739,11 @@
       "painting.itacraft.painting_3.title": "feet3",
       "painting.itacraft.painting_3.author": "ikke matvey",
       "painting.itacraft.painting_1.author": "ikke matvey",
-      "painting.itacraft.painting_1.title": "feet1"
+      "painting.itacraft.painting_1.title": "feet1",
+      "gui.itacraft.corner_overlay.label_condome_equipped": "CONDOME EQUIPPED",
+      "item.itacraft.dildo": "Dildo",
+      "item.itacraft.condome": "Condome",
+      "key.itacraft.equip_condome_shortcut": "Equip Condome Shortcut"
     }
   },
   "metadata": {

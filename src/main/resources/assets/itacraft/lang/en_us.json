@@ -159,5 +159,9 @@
   "painting.itacraft.painting_3.title": "feet3",
   "painting.itacraft.painting_3.author": "ikke matvey",
   "painting.itacraft.painting_1.author": "ikke matvey",
-  "painting.itacraft.painting_1.title": "feet1"
+  "painting.itacraft.painting_1.title": "feet1",
+  "gui.itacraft.corner_overlay.label_condome_equipped": "CONDOME EQUIPPED",
+  "item.itacraft.dildo": "Dildo",
+  "item.itacraft.condome": "Condome",
+  "key.itacraft.equip_condome_shortcut": "Equip Condome Shortcut"
 }

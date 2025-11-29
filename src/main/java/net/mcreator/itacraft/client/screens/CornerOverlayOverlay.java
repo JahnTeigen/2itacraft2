@@ -36,7 +36,7 @@ public class CornerOverlayOverlay {
 			z = entity.getZ();
 		}
 		if (true) {
-			if (CondomeDisplayConditionProcedure.execute(world, entity)) {
+			if (CondomeDisplayConditionProcedure.execute(entity, world)) {
 				event.getGuiGraphics().blit(RenderPipelines.GUI_TEXTURED, ResourceLocation.parse("itacraft:textures/screens/condome.png"), 6, 6, 0, 0, 16, 16, 16, 16);
 			}
 			event.getGuiGraphics().blit(RenderPipelines.GUI_TEXTURED, ResourceLocation.parse("itacraft:textures/screens/nrk_minecraft.png"), w - 59, 5, 0, 0, 54, 32, 54, 32);
@@ -44,7 +44,7 @@ public class CornerOverlayOverlay {
 			if (AndreasDisplayConditionProcedure.execute(entity)) {
 				event.getGuiGraphics().blit(RenderPipelines.GUI_TEXTURED, ResourceLocation.parse("itacraft:textures/screens/andreas_vanna_ut.png"), w / 2 + -245, h / 2 + -237, 0, 0, 517, 442, 517, 442);
 			}
-			if (CondomeDisplayConditionProcedure.execute(world, entity))
+			if (CondomeDisplayConditionProcedure.execute(entity, world))
 				event.getGuiGraphics().drawString(Minecraft.getInstance().font, Component.translatable("gui.itacraft.corner_overlay.label_condome_equipped"), 26, 10, -10092340, false);
 		}
 	}
