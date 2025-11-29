@@ -2483,7 +2483,8 @@
         "files": [
           "src/main/java/net/mcreator/itacraft/command/MasterbateCommand.java"
         ]
-      }
+      },
+      "path": "~/MatveySaker"
     },
     {
       "name": "Cumitem",
@@ -2712,7 +2713,8 @@
         "files": [
           "src/main/java/net/mcreator/itacraft/procedures/OnDoorRightClickedProcedure.java"
         ]
-      }
+      },
+      "path": "~/Procedures"
     },
     {
       "name": "DoorPlacedByPlayer",
@@ -2742,7 +2744,8 @@
         "files": [
           "src/main/java/net/mcreator/itacraft/procedures/DoorPlacedByPlayerProcedure.java"
         ]
-      }
+      },
+      "path": "~/Procedures"
     }
   ],
   "variable_elements": [
