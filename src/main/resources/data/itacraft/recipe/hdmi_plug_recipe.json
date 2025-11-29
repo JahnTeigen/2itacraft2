@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "ccc",
+    " c "
+  ],
+  "key": {
+    "a": "minecraft:iron_ingot",
+    "b": "minecraft:gold_nugget",
+    "c": "itacraft:plastic"
+  },
+  "result": {
+    "id": "itacraft:deleted_mod_element",
+    "count": 1
+  }
+}

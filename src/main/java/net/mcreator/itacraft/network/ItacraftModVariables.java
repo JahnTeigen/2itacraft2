@@ -81,6 +81,7 @@ public class ItacraftModVariables {
 		PlayerVariables clone = new PlayerVariables();
 		clone.poopAmount = original.poopAmount;
 		clone.poopCooldown = original.poopCooldown;
+		clone.abort_state = original.abort_state;
 		if (!event.isWasDeath()) {
 		}
 		event.getEntity().setData(PLAYER_VARIABLES, clone);
@@ -234,17 +235,20 @@ public class ItacraftModVariables {
 		boolean _syncDirty = false;
 		public double poopAmount = 20.0;
 		public double poopCooldown = 6000.0;
+		public double abort_state = 0.0;
 
 		@Override
 		public void serialize(ValueOutput output) {
 			output.putDouble("poopAmount", poopAmount);
 			output.putDouble("poopCooldown", poopCooldown);
+			output.putDouble("abort_state", abort_state);
 		}
 
 		@Override
 		public void deserialize(ValueInput input) {
 			poopAmount = input.getDoubleOr("poopAmount", 0);
 			poopCooldown = input.getDoubleOr("poopCooldown", 0);
+			abort_state = input.getDoubleOr("abort_state", 0);
 		}
 
 		public void markSyncDirty() {

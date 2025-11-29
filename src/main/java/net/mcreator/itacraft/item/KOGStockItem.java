@@ -1,31 +1,5 @@
 package net.mcreator.itacraft.item;
 
-import net.minecraft.world.item.component.TooltipDisplay;
-import net.minecraft.world.item.component.ItemAttributeModifiers;
-import net.minecraft.world.item.TooltipFlag;
-import net.minecraft.world.item.Rarity;
-import net.minecraft.world.item.ItemUseAnimation;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.entity.ai.attributes.Attributes;
-import net.minecraft.world.entity.ai.attributes.AttributeModifier;
-import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.entity.EquipmentSlotGroup;
-import net.minecraft.world.entity.Entity;
-import net.minecraft.network.chat.Component;
-import net.minecraft.client.renderer.item.properties.numeric.RangeSelectItemModelProperty;
-import net.minecraft.client.multiplayer.ClientLevel;
-
-import net.mcreator.itacraft.procedures.StockValueGeneratorProcedure;
-import net.mcreator.itacraft.procedures.KOGStockPropertyValueProviderProcedure;
-import net.mcreator.itacraft.ItacraftMod;
-
-import javax.annotation.Nullable;
-
-import java.util.function.Consumer;
-
-import com.mojang.serialization.MapCodec;
-
 public class KOGStockItem extends Item {
 	public KOGStockItem(Item.Properties properties) {
 		super(properties.rarity(Rarity.UNCOMMON).stacksTo(1).fireResistant()

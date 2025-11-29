@@ -31,6 +31,7 @@ public class ItacraftModMenus {
 	public static final DeferredHolder<MenuType<?>, MenuType<HawkPhoneGUIHomeScreenMenu>> HAWK_PHONE_GUI_HOME_SCREEN = REGISTRY.register("hawk_phone_gui_home_screen", () -> IMenuTypeExtension.create(HawkPhoneGUIHomeScreenMenu::new));
 	public static final DeferredHolder<MenuType<?>, MenuType<VippsAppGuiMenu>> VIPPS_APP_GUI = REGISTRY.register("vipps_app_gui", () -> IMenuTypeExtension.create(VippsAppGuiMenu::new));
 	public static final DeferredHolder<MenuType<?>, MenuType<RadioActiveBarrelGUIMenu>> RADIO_ACTIVE_BARREL_GUI = REGISTRY.register("radio_active_barrel_gui", () -> IMenuTypeExtension.create(RadioActiveBarrelGUIMenu::new));
+	public static final DeferredHolder<MenuType<?>, MenuType<HawkOSGUIMenu>> HAWK_OSGUI = REGISTRY.register("hawk_osgui", () -> IMenuTypeExtension.create(HawkOSGUIMenu::new));
 
 	public interface MenuAccessor {
 		Map<String, Object> getMenuState();

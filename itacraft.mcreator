@@ -2737,6 +2737,78 @@
         ]
       },
       "path": "~/MatveySaker"
+    },
+    {
+      "name": "HDMICableRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hdmi_cable_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/itacraft/advancement/recipes/hdmi_cable_recipe.json",
+          "src/main/resources/data/itacraft/recipe/hdmi_cable_recipe.json"
+        ]
+      },
+      "path": "~/Fredrik"
+    },
+    {
+      "name": "HawkOSGUI",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hawk_osgui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/itacraft/world/inventory/HawkOSGUIMenu.java",
+          "src/main/java/net/mcreator/itacraft/client/gui/HawkOSGUIScreen.java"
+        ]
+      },
+      "path": "~/Fredrik"
+    },
+    {
+      "name": "HDMIPlugRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hdmi_plug_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/itacraft/advancement/recipes/hdmi_plug_recipe.json",
+          "src/main/resources/data/itacraft/recipe/hdmi_plug_recipe.json"
+        ]
+      },
+      "path": "~/Fredrik"
+    },
+    {
+      "name": "HDMIPlug",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hdmi_plug",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/itacraft/items/hdmi_plug.json",
+          "src/main/java/net/mcreator/itacraft/item/HDMIPlugItem.java",
+          "src/main/resources/assets/itacraft/models/item/hdmi_plug.json"
+        ]
+      },
+      "path": "~/Fredrik"
+    },
+    {
+      "name": "HDMICable",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hdmi_cable",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/itacraft/models/item/hdmi_cable.json",
+          "src/main/resources/assets/itacraft/items/hdmi_cable.json",
+          "src/main/java/net/mcreator/itacraft/item/HDMICableItem.java"
+        ]
+      },
+      "path": "~/Fredrik"
     }
   ],
   "variable_elements": [
@@ -2757,6 +2829,12 @@
       "type": "number",
       "scope": "player_persistent",
       "value": "6000.0"
+    },
+    {
+      "name": "abort_state",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0.0"
     }
   ],
   "sound_elements": [
@@ -2952,6 +3030,9 @@
     ],
     "ITEMS:itacraft:lead_armor_repair_items": [
       "~CUSTOM:Lead"
+    ],
+    "ITEMS:minecraft:meat": [
+      "~CUSTOM:Fetus"
     ]
   },
   "tab_element_order": {},
@@ -3099,9 +3180,9 @@
       "src/main/java/net/mcreator/itacraft/mixin/NoiseGeneratorSettingsMixin.java",
       "src/main/java/net/mcreator/itacraft/init/ItacraftModFluidTypes.java",
       "src/main/java/net/mcreator/itacraft/init/ItacraftModFluids.java",
-      "src/main/java/net/mcreator/itacraft/init/ItacraftModMenus.java",
       "src/main/java/net/mcreator/itacraft/network/MenuStateUpdateMessage.java",
       "src/main/java/net/mcreator/itacraft/init/ItacraftModScreens.java",
+      "src/main/java/net/mcreator/itacraft/init/ItacraftModMenus.java",
       "src/main/java/net/mcreator/itacraft/init/ItacraftModKeyMappings.java",
       "src/main/resources/data/minecraft/tags/painting_variant/placeable.json",
       "src/main/java/net/mcreator/itacraft/init/ItacraftModParticleTypes.java",
@@ -3114,21 +3195,25 @@
       "src/main/java/net/mcreator/itacraft/init/ItacraftModItems.java",
       "src/main/java/net/mcreator/itacraft/init/ItacraftModEntities.java",
       "src/main/java/net/mcreator/itacraft/init/ItacraftModEntityRenderers.java",
-      "src/main/resources/assets/itacraft/sounds.json",
-      "src/main/resources/itacraft.mixins.json",
-      "src/main/resources/META-INF/accesstransformer.cfg",
-      "src/main/java/net/mcreator/itacraft/network/ItacraftModVariables.java",
       "src/main/java/net/mcreator/itacraft/ItacraftMod.java",
-      "src/main/resources/META-INF/neoforge.mods.toml",
       "src/main/java/net/mcreator/itacraft/init/ItacraftModSounds.java",
-      "src/main/java/net/mcreator/itacraft/init/ItacraftModTabs.java",
+      "src/main/java/net/mcreator/itacraft/network/ItacraftModVariables.java",
+      "src/main/resources/itacraft.mixins.json",
+      "src/main/resources/META-INF/neoforge.mods.toml",
       "src/main/resources/pack.mcmeta",
-      "src/main/java/net/mcreator/itacraft/init/ItacraftModModels.java"
+      "src/main/resources/assets/itacraft/sounds.json",
+      "src/main/resources/META-INF/accesstransformer.cfg",
+      "src/main/java/net/mcreator/itacraft/init/ItacraftModModels.java",
+      "src/main/java/net/mcreator/itacraft/init/ItacraftModTabs.java"
     ]
   },
   "foldersRoot": {
     "name": "~",
     "children": [
+      {
+        "name": "Matvey",
+        "children": []
+      },
       {
         "name": "Procedures",
         "children": [
@@ -3139,7 +3224,7 @@
         ]
       },
       {
-        "name": "MatveySaker",
+        "name": "Fredrik",
         "children": []
       }
     ]

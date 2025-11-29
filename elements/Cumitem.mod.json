@@ -14,7 +14,7 @@
     "creativeTabs": [],
     "stackSize": 1,
     "enchantability": 0,
-    "useDuration": 1,
+    "useDuration": 5,
     "toolType": 1.0,
     "damageCount": 0,
     "recipeRemainder": {
@@ -46,7 +46,7 @@
     },
     "projectileDisableAmmoCheck": false,
     "isFood": true,
-    "nutritionalValue": 0,
+    "nutritionalValue": 1,
     "saturation": 0.0,
     "eatResultItem": {
       "value": ""

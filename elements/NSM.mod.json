@@ -10,7 +10,7 @@
       }
     ],
     "spacing": 5,
-    "separation": 2,
+    "separation": 3,
     "restrictionBiomes": [
       {
         "value": "plains"

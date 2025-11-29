@@ -10,11 +10,11 @@
     "states": [],
     "animations": [],
     "name": "Fetus",
-    "rarity": "COMMON",
+    "rarity": "RARE",
     "creativeTabs": [],
-    "stackSize": 64,
+    "stackSize": 1,
     "enchantability": 0,
-    "useDuration": 0,
+    "useDuration": 10,
     "toolType": 1.0,
     "damageCount": 0,
     "recipeRemainder": {
@@ -43,14 +43,14 @@
     },
     "projectileDisableAmmoCheck": false,
     "isFood": true,
-    "nutritionalValue": 10,
-    "saturation": 1.0,
+    "nutritionalValue": 8,
+    "saturation": 0.5,
     "eatResultItem": {
       "value": ""
     },
-    "isMeat": false,
+    "isMeat": true,
     "isAlwaysEdible": false,
-    "animation": "none",
+    "animation": "eat",
     "isMusicDisc": false,
     "musicDiscMusic": {
       "value": ""
