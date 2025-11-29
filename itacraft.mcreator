@@ -3087,6 +3087,18 @@
           "src/main/java/net/mcreator/itacraft/procedures/RadiatedCumPlayerFinishesUsingItemProcedure.java"
         ]
       }
+    },
+    {
+      "name": "Ehhhh",
+      "type": "painting",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ehhhh",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/itacraft/painting_variant/ehhhh.json"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -3491,7 +3503,9 @@
       "subtitles.retarddod": "",
       "entity.itacraft.retarded_gamer_girl": "Retarded Gamer Girl",
       "item.itacraft.retarded_gamer_girl_spawn_egg": "Retarded Gamer Girl Spawn Egg",
-      "item.itacraft.radiated_cum": "Radiated Cum"
+      "item.itacraft.radiated_cum": "Radiated Cum",
+      "painting.itacraft.ehhhh.author": "Ådne",
+      "painting.itacraft.ehhhh.title": "The gay furry"
     }
   },
   "metadata": {
