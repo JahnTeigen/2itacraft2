@@ -142,5 +142,15 @@
   "item.itacraft.plastic_circuit_board_mold": "Plastic Circuit Board Mold",
   "item.itacraft.circuit_board": "Circuit Board",
   "item.itacraft.microplastic": "Microplastic",
-  "gui.itacraft.soldering_table_gui.button_solder": "Solder"
+  "gui.itacraft.soldering_table_gui.button_solder": "Solder",
+  "entity.itacraft.retarded_gamer_girl": "Retarded Gamer Girl",
+  "item.itacraft.retarded_gamer_girl_spawn_egg": "Retarded Gamer Girl Spawn Egg",
+  "gui.itacraft.skatteetaten_gui.button_betal_skatt": "betal skatt",
+  "gui.itacraft.skatteetaten_gui.label_jeg_tar_bare_vipps": "jeg tar bare vipps",
+  "item.itacraft.radiated_cum": "Radiated Cum",
+  "item.itacraft.dildo": "Dildo",
+  "item.itacraft.condome": "Condome",
+  "gui.itacraft.corner_overlay.label_condome_equipped": "CONDOME EQUIPPED",
+  "key.itacraft.equip_condome_shortcut": "Equip Condome Shortcut",
+  "subtitles.condome_application": ""
 }

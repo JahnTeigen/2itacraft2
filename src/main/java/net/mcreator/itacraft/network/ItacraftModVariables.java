@@ -83,6 +83,7 @@ public class ItacraftModVariables {
 		clone.abort_state = original.abort_state;
 		clone.poopCooldown = original.poopCooldown;
 		if (!event.isWasDeath()) {
+			clone.isCondomeEquipped = original.isCondomeEquipped;
 		}
 		event.getEntity().setData(PLAYER_VARIABLES, clone);
 	}
@@ -163,7 +164,7 @@ public class ItacraftModVariables {
 		}, instance -> instance.save(new CompoundTag(), ctx.levelOrThrow().registryAccess())));
 		boolean _syncDirty = false;
 		public double aura = 0;
-		public double solderingProgress = 0;
+		public double solderingProgress = 0.0;
 
 		public void read(CompoundTag nbt, HolderLookup.Provider lookupProvider) {
 			aura = nbt.getDoubleOr("aura", 0);
@@ -239,12 +240,14 @@ public class ItacraftModVariables {
 		public double poopAmount = 20.0;
 		public double abort_state = 0.0;
 		public double poopCooldown = 6000.0;
+		public boolean isCondomeEquipped = false;
 
 		@Override
 		public void serialize(ValueOutput output) {
 			output.putDouble("poopAmount", poopAmount);
 			output.putDouble("abort_state", abort_state);
 			output.putDouble("poopCooldown", poopCooldown);
+			output.putBoolean("isCondomeEquipped", isCondomeEquipped);
 		}
 
 		@Override
@@ -252,6 +255,7 @@ public class ItacraftModVariables {
 			poopAmount = input.getDoubleOr("poopAmount", 0);
 			abort_state = input.getDoubleOr("abort_state", 0);
 			poopCooldown = input.getDoubleOr("poopCooldown", 0);
+			isCondomeEquipped = input.getBooleanOr("isCondomeEquipped", false);
 		}
 
 		public void markSyncDirty() {
