@@ -77,6 +77,9 @@ public class ItacraftModItems {
 	public static final DeferredItem<Item> TRANSPARENT_PLASTIC;
 	public static final DeferredItem<Item> MARIJUANA;
 	public static final DeferredItem<Item> MONICA_SPAWN_EGG;
+	public static final DeferredItem<Item> BESJ;
+	public static final DeferredItem<Item> HDMI_CABLE;
+	public static final DeferredItem<Item> HDMI_PLUG;
 	static {
 		GEIR_HAOY_SPAWN_EGG = register("geir_haoy_spawn_egg", properties -> new SpawnEggItem(ItacraftModEntities.GEIR_HAOY.get(), properties));
 		KOG_STOCK = register("kog_stock", KOGStockItem::new);
@@ -127,6 +130,9 @@ public class ItacraftModItems {
 		TRANSPARENT_PLASTIC = register("transparent_plastic", TransparentPlasticItem::new);
 		MARIJUANA = block(ItacraftModBlocks.MARIJUANA);
 		MONICA_SPAWN_EGG = register("monica_spawn_egg", properties -> new SpawnEggItem(ItacraftModEntities.MONICA.get(), properties));
+		BESJ = register("besj", BesjItem::new);
+		HDMI_CABLE = register("hdmi_cable", HDMICableItem::new);
+		HDMI_PLUG = register("hdmi_plug", HDMIPlugItem::new);
 	}
 
 	// Start of user code block custom items

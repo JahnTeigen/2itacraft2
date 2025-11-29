@@ -21,6 +21,7 @@ public class ItacraftModScreens {
 		event.register(ItacraftModMenus.HAWK_PHONE_GUI_HOME_SCREEN.get(), HawkPhoneGUIHomeScreenScreen::new);
 		event.register(ItacraftModMenus.VIPPS_APP_GUI.get(), VippsAppGuiScreen::new);
 		event.register(ItacraftModMenus.RADIO_ACTIVE_BARREL_GUI.get(), RadioActiveBarrelGUIScreen::new);
+		event.register(ItacraftModMenus.HAWK_OSGUI.get(), HawkOSGUIScreen::new);
 	}
 
 	public interface ScreenAccessor {

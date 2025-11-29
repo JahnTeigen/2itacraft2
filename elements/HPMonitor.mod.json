@@ -120,7 +120,8 @@
       "fixedValue": 7.0
     },
     "hasInventory": false,
-    "openGUIOnRightClick": false,
+    "guiBoundTo": "HawkOSGUI",
+    "openGUIOnRightClick": true,
     "inventorySize": 9,
     "inventoryStackSize": 99,
     "inventoryDropWhenDestroyed": true,

@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "bcb",
+    "bcb"
+  ],
+  "key": {
+    "a": "itacraft:hdmi_plug",
+    "b": "itacraft:plastic",
+    "c": "minecraft:copper_ingot"
+  },
+  "result": {
+    "id": "itacraft:hdmi_cable",
+    "count": 2
+  }
+}

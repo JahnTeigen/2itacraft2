@@ -2289,6 +2289,73 @@
           "src/main/java/net/mcreator/itacraft/network/PoopShortcutMessage.java"
         ]
       }
+    },
+    {
+      "name": "HawkOSGUI",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hawk_osgui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/itacraft/world/inventory/HawkOSGUIMenu.java",
+          "src/main/java/net/mcreator/itacraft/client/gui/HawkOSGUIScreen.java"
+        ]
+      }
+    },
+    {
+      "name": "HDMICable",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hdmi_cable",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/itacraft/item/HDMICableItem.java",
+          "src/main/resources/assets/itacraft/items/hdmi_cable.json",
+          "src/main/resources/assets/itacraft/models/item/hdmi_cable.json"
+        ]
+      }
+    },
+    {
+      "name": "HDMIPlug",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hdmi_plug",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/itacraft/item/HDMIPlugItem.java",
+          "src/main/resources/assets/itacraft/items/hdmi_plug.json",
+          "src/main/resources/assets/itacraft/models/item/hdmi_plug.json"
+        ]
+      }
+    },
+    {
+      "name": "HDMIPlugRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hdmi_plug_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/itacraft/recipe/hdmi_plug_recipe.json",
+          "src/main/resources/data/itacraft/advancement/recipes/hdmi_plug_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "HDMICableRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hdmi_cable_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/itacraft/advancement/recipes/hdmi_cable_recipe.json",
+          "src/main/resources/data/itacraft/recipe/hdmi_cable_recipe.json"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -2592,7 +2659,10 @@
       "advancements.drammen_achievement.title": "Velkommen til Drammen",
       "item.itacraft.besj": "Besj",
       "subtitles.caca": "",
-      "key.itacraft.poop_shortcut": "Poop Shortcut"
+      "key.itacraft.poop_shortcut": "Poop Shortcut",
+      "gui.itacraft.hawk_osgui.button_onoff": "On/Off",
+      "item.itacraft.hdmi_cable": "HDMI Cable",
+      "item.itacraft.hdmi_plug": "HDMI Plug"
     }
   },
   "metadata": {
