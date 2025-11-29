@@ -1,6 +1,10 @@
 package net.mcreator.itacraft.procedures;
 
-import net.neoforged.bus.api.Event;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.Entity;
+
+import net.mcreator.itacraft.init.ItacraftModItems;
 
 public class VippsRanerPlayerCollidesWithThisEntityProcedure {
 	public static void execute(Entity entity) {

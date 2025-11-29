@@ -122,5 +122,18 @@
   "gui.itacraft.hawk_phone_gui_home_screen.button_0": "o",
   "gui.itacraft.hawk_phone_gui_home_screen.button_vy": "vy",
   "gui.itacraft.hawk_phone_gui_home_screen.button_vipps": "Vipps",
-  "gui.itacraft.hawk_phone_gui_home_screen.label_hawkphone": "Hawk Phone PRO"
+  "gui.itacraft.hawk_phone_gui_home_screen.label_hawkphone": "Hawk Phone PRO",
+  "gui.itacraft.hawk_osgui.button_onoff": "On/Off",
+  "item.itacraft.hdmi_plug": "HDMI Plug",
+  "item.itacraft.hdmi_cable": "HDMI Cable",
+  "effect.itacraft.pregnant": "Pregnant",
+  "entity.itacraft.vipps_raner": "Vipps Raner",
+  "item.itacraft.vipps_raner_spawn_egg": "Vipps Raner Spawn Egg",
+  "death.attack.prolaps.item": "%1$s fikk prolaps av %2$s med %3$s (Hvordan??)",
+  "death.attack.prolaps.player": "%1$s prolapset imens han stakk fra %2$s",
+  "death.attack.prolaps": "%1$s fikk prolaps",
+  "item.itacraft.skatteman_spawn_egg": "Skatteman Spawn Egg",
+  "entity.itacraft.skatteman": "Skatteman",
+  "item.itacraft.cum": "Cum",
+  "item.itacraft.fetus": "Fetus"
 }
