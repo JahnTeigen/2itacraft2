@@ -1,10 +1,6 @@
 package net.mcreator.itacraft.procedures;
 
-import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.entity.Entity;
-import net.minecraft.world.effect.MobEffectInstance;
-
-import net.mcreator.itacraft.init.ItacraftModMobEffects;
+import net.neoforged.bus.api.Event;
 
 public class RadiatedCumPlayerFinishesUsingItemProcedure {
 	public static void execute(Entity entity) {
