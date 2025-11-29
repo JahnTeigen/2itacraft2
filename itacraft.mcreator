@@ -1674,9 +1674,9 @@
       "registry_name": "giftig_gugge",
       "metadata": {
         "files": [
+          "src/main/resources/assets/itacraft/items/giftig_gugge.json",
           "src/main/resources/assets/itacraft/models/item/giftig_gugge.json",
-          "src/main/java/net/mcreator/itacraft/item/GiftigGuggeItem.java",
-          "src/main/resources/assets/itacraft/items/giftig_gugge.json"
+          "src/main/java/net/mcreator/itacraft/item/GiftigGuggeItem.java"
         ]
       },
       "path": "~/Matvey"
@@ -2143,8 +2143,8 @@
       "registry_name": "hawk_phone_recipe",
       "metadata": {
         "files": [
-          "src/main/resources/data/itacraft/recipe/hawk_phone_recipe.json",
-          "src/main/resources/data/itacraft/advancement/recipes/hawk_phone_recipe.json"
+          "src/main/resources/data/itacraft/advancement/recipes/hawk_phone_recipe.json",
+          "src/main/resources/data/itacraft/recipe/hawk_phone_recipe.json"
         ]
       }
     },
@@ -2304,8 +2304,8 @@
       "registry_name": "radioactive_waste_barrel_recipe",
       "metadata": {
         "files": [
-          "src/main/resources/data/itacraft/recipe/radioactive_waste_barrel_r.json",
-          "src/main/resources/data/itacraft/advancement/recipes/radioactive_waste_barrel_recipe.json"
+          "src/main/resources/data/itacraft/advancement/recipes/radioactive_waste_barrel_recipe.json",
+          "src/main/resources/data/itacraft/recipe/radioactive_waste_barrel_r.json"
         ]
       },
       "path": "~/Matvey"
@@ -2450,6 +2450,10 @@
       "registry_name": "cum",
       "metadata": {
         "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
           {
             "name": "x",
             "type": "number"
@@ -2736,8 +2740,8 @@
       "registry_name": "hdmi_cable_recipe",
       "metadata": {
         "files": [
-          "src/main/resources/data/itacraft/advancement/recipes/hdmi_cable_recipe.json",
-          "src/main/resources/data/itacraft/recipe/hdmi_cable_recipe.json"
+          "src/main/resources/data/itacraft/recipe/hdmi_cable_recipe.json",
+          "src/main/resources/data/itacraft/advancement/recipes/hdmi_cable_recipe.json"
         ]
       },
       "path": "~/Fredrik"
@@ -2779,8 +2783,8 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/itacraft/item/HDMIPlugItem.java",
-          "src/main/resources/assets/itacraft/items/hdmi_plug.json",
-          "src/main/resources/assets/itacraft/models/item/hdmi_plug.json"
+          "src/main/resources/assets/itacraft/models/item/hdmi_plug.json",
+          "src/main/resources/assets/itacraft/items/hdmi_plug.json"
         ]
       },
       "path": "~/Fredrik"
@@ -3025,7 +3029,7 @@
       "name": "Skatteetaten",
       "type": "livingentity",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "skatteetaten",
       "metadata": {
         "files": [
@@ -3250,6 +3254,10 @@
       "registry_name": "condome_display_condition",
       "metadata": {
         "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
           {
             "name": "world",
             "type": "world"
@@ -3730,18 +3738,35 @@
       "item.itacraft.microplastic": "Microplastic",
       "gui.itacraft.soldering_table_gui.button_solder": "Solder",
       "item.itacraft.skatteetaten_spawn_egg": "Skatteetaten Spawn Egg",
-      "entity.itacraft.skatteetaten": "Skatteetaten"
+      "entity.itacraft.skatteetaten": "Skatteetaten",
+      "gui.itacraft.corner_overlay.label_condome_equipped": "CONDOME EQUIPPED",
+      "painting.itacraft.painting_1.author": "ikke matvey",
+      "painting.itacraft.painting_1.title": "feet1",
+      "entity.itacraft.retarded_gamer_girl": "Retarded Gamer Girl",
+      "item.itacraft.retarded_gamer_girl_spawn_egg": "Retarded Gamer Girl Spawn Egg",
+      "painting.itacraft.painting_2.author": "ikke matvey",
+      "painting.itacraft.painting_2.title": "feet2",
+      "painting.itacraft.painting_3.title": "feet3",
+      "painting.itacraft.painting_3.author": "ikke matvey",
+      "item.itacraft.radiated_cum": "Radiated Cum",
+      "item.itacraft.condome": "Condome",
+      "painting.itacraft.ehhhh.author": "Ådne",
+      "painting.itacraft.ehhhh.title": "The gay furry",
+      "painting.itacraft.coolpainting.author": "ikke matvey",
+      "painting.itacraft.coolpainting.title": "family",
+      "item.itacraft.dildo": "Dildo",
+      "key.itacraft.equip_condome_shortcut": "Equip Condome Shortcut"
     }
   },
   "metadata": {
     "files": [
-      "src/main/java/net/mcreator/itacraft/init/ItacraftModBiomes.java",
       "src/main/java/net/mcreator/itacraft/mixin/NoiseGeneratorSettingsMixin.java",
+      "src/main/java/net/mcreator/itacraft/init/ItacraftModBiomes.java",
       "src/main/java/net/mcreator/itacraft/init/ItacraftModFluidTypes.java",
       "src/main/java/net/mcreator/itacraft/init/ItacraftModFluids.java",
-      "src/main/java/net/mcreator/itacraft/network/MenuStateUpdateMessage.java",
-      "src/main/java/net/mcreator/itacraft/init/ItacraftModScreens.java",
       "src/main/java/net/mcreator/itacraft/init/ItacraftModMenus.java",
+      "src/main/java/net/mcreator/itacraft/init/ItacraftModScreens.java",
+      "src/main/java/net/mcreator/itacraft/network/MenuStateUpdateMessage.java",
       "src/main/java/net/mcreator/itacraft/init/ItacraftModKeyMappings.java",
       "src/main/resources/data/minecraft/tags/painting_variant/placeable.json",
       "src/main/java/net/mcreator/itacraft/init/ItacraftModParticleTypes.java",
@@ -3752,18 +3777,18 @@
       "src/main/java/net/mcreator/itacraft/init/ItacraftModBlocks.java",
       "src/main/java/net/mcreator/itacraft/init/ItacraftModBlockEntities.java",
       "src/main/java/net/mcreator/itacraft/init/ItacraftModItems.java",
-      "src/main/java/net/mcreator/itacraft/init/ItacraftModEntities.java",
       "src/main/java/net/mcreator/itacraft/init/ItacraftModEntityRenderers.java",
-      "src/main/java/net/mcreator/itacraft/ItacraftMod.java",
-      "src/main/java/net/mcreator/itacraft/init/ItacraftModSounds.java",
-      "src/main/java/net/mcreator/itacraft/network/ItacraftModVariables.java",
-      "src/main/resources/itacraft.mixins.json",
-      "src/main/resources/META-INF/neoforge.mods.toml",
+      "src/main/java/net/mcreator/itacraft/init/ItacraftModEntities.java",
       "src/main/resources/pack.mcmeta",
-      "src/main/resources/assets/itacraft/sounds.json",
       "src/main/resources/META-INF/accesstransformer.cfg",
       "src/main/java/net/mcreator/itacraft/init/ItacraftModModels.java",
-      "src/main/java/net/mcreator/itacraft/init/ItacraftModTabs.java"
+      "src/main/java/net/mcreator/itacraft/init/ItacraftModTabs.java",
+      "src/main/java/net/mcreator/itacraft/network/ItacraftModVariables.java",
+      "src/main/java/net/mcreator/itacraft/ItacraftMod.java",
+      "src/main/resources/assets/itacraft/sounds.json",
+      "src/main/resources/itacraft.mixins.json",
+      "src/main/resources/META-INF/neoforge.mods.toml",
+      "src/main/java/net/mcreator/itacraft/init/ItacraftModSounds.java"
     ]
   },
   "foldersRoot": {
