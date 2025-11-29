@@ -33,6 +33,7 @@ public class ItacraftModMenus {
 	public static final DeferredHolder<MenuType<?>, MenuType<RadioActiveBarrelGUIMenu>> RADIO_ACTIVE_BARREL_GUI = REGISTRY.register("radio_active_barrel_gui", () -> IMenuTypeExtension.create(RadioActiveBarrelGUIMenu::new));
 	public static final DeferredHolder<MenuType<?>, MenuType<HawkOSGUIMenu>> HAWK_OSGUI = REGISTRY.register("hawk_osgui", () -> IMenuTypeExtension.create(HawkOSGUIMenu::new));
 	public static final DeferredHolder<MenuType<?>, MenuType<SkatteetatenGuiMenu>> SKATTEETATEN_GUI = REGISTRY.register("skatteetaten_gui", () -> IMenuTypeExtension.create(SkatteetatenGuiMenu::new));
+	public static final DeferredHolder<MenuType<?>, MenuType<SolderingTableGUIMenu>> SOLDERING_TABLE_GUI = REGISTRY.register("soldering_table_gui", () -> IMenuTypeExtension.create(SolderingTableGUIMenu::new));
 
 	public interface MenuAccessor {
 		Map<String, Object> getMenuState();

@@ -1123,7 +1123,8 @@
           "src/main/java/net/mcreator/itacraft/client/particle/RussiaparticlesParticle.java",
           "src/main/resources/assets/itacraft/particles/russiaparticles.json"
         ]
-      }
+      },
+      "path": "~/Matvey"
     },
     {
       "name": "RussiaBlock",
@@ -1140,7 +1141,8 @@
           "src/main/resources/assets/itacraft/blockstates/russia_block.json",
           "src/main/resources/assets/itacraft/models/block/russia_block.json"
         ]
-      }
+      },
+      "path": "~/Matvey"
     },
     {
       "name": "DeportablePotionEffect",
@@ -1152,7 +1154,8 @@
         "files": [
           "src/main/java/net/mcreator/itacraft/potion/DeportablePotionEffectMobEffect.java"
         ]
-      }
+      },
+      "path": "~/Matvey"
     },
     {
       "name": "RussiaBlockOnBlockRightclicked",
@@ -1186,7 +1189,8 @@
         "files": [
           "src/main/java/net/mcreator/itacraft/procedures/RussiaBlockOnBlockRightclickedProcedure.java"
         ]
-      }
+      },
+      "path": "~/Matvey"
     },
     {
       "name": "DeportablePotionEffectOnEffectActiveTick",
@@ -1220,7 +1224,8 @@
         "files": [
           "src/main/java/net/mcreator/itacraft/procedures/DeportablePotionEffectOnEffectActiveTickProcedure.java"
         ]
-      }
+      },
+      "path": "~/Matvey"
     },
     {
       "name": "Vippsminibank",
@@ -1281,7 +1286,8 @@
       "registry_name": "russia_potion",
       "metadata": {
         "files": []
-      }
+      },
+      "path": "~/Matvey"
     },
     {
       "name": "Communism",
@@ -1295,7 +1301,8 @@
           "src/main/resources/assets/itacraft/models/item/communism.json",
           "src/main/java/net/mcreator/itacraft/item/CommunismItem.java"
         ]
-      }
+      },
+      "path": "~/Matvey"
     },
     {
       "name": "RussiaBlockRecipe",
@@ -1307,7 +1314,8 @@
         "files": [
           "src/main/resources/data/itacraft/recipe/russia_block_recipe.json"
         ]
-      }
+      },
+      "path": "~/Matvey"
     },
     {
       "name": "RussiaPotionRecipe",
@@ -1319,7 +1327,8 @@
         "files": [
           "src/main/java/net/mcreator/itacraft/recipe/brewing/RussiaPotionRecipeBrewingRecipe.java"
         ]
-      }
+      },
+      "path": "~/Matvey"
     },
     {
       "name": "CommunismRecipe",
@@ -1331,7 +1340,8 @@
         "files": [
           "src/main/resources/data/itacraft/recipe/communism_recipe.json"
         ]
-      }
+      },
+      "path": "~/Matvey"
     },
     {
       "name": "FirestaffRightclickedOnBlock",
@@ -1357,7 +1367,8 @@
         "files": [
           "src/main/java/net/mcreator/itacraft/procedures/FirestaffRightclickedOnBlockProcedure.java"
         ]
-      }
+      },
+      "path": "~/Matvey"
     },
     {
       "name": "FireballProjectileHitsPlayer",
@@ -1370,7 +1381,8 @@
         "files": [
           "src/main/java/net/mcreator/itacraft/procedures/FireballProjectileHitsPlayerProcedure.java"
         ]
-      }
+      },
+      "path": "~/Matvey"
     },
     {
       "name": "FireballProjectileHitsBlock",
@@ -1400,7 +1412,8 @@
         "files": [
           "src/main/java/net/mcreator/itacraft/procedures/FireballProjectileHitsBlockProcedure.java"
         ]
-      }
+      },
+      "path": "~/Matvey"
     },
     {
       "name": "Fireball",
@@ -1412,7 +1425,8 @@
         "files": [
           "src/main/java/net/mcreator/itacraft/entity/FireballEntity.java"
         ]
-      }
+      },
+      "path": "~/Matvey"
     },
     {
       "name": "FireballWhileProjectileFlyingTick",
@@ -1442,7 +1456,8 @@
         "files": [
           "src/main/java/net/mcreator/itacraft/procedures/FireballWhileProjectileFlyingTickProcedure.java"
         ]
-      }
+      },
+      "path": "~/Matvey"
     },
     {
       "name": "Firestaff",
@@ -1456,7 +1471,8 @@
           "src/main/java/net/mcreator/itacraft/item/FirestaffItem.java",
           "src/main/resources/assets/itacraft/models/item/firestaff.json"
         ]
-      }
+      },
+      "path": "~/Matvey"
     },
     {
       "name": "RechargeProjectile",
@@ -1469,7 +1485,8 @@
           "src/main/resources/data/itacraft/recipe/recharge_projectile.json",
           "src/main/resources/data/itacraft/advancement/recipes/recharge_projectile.json"
         ]
-      }
+      },
+      "path": "~/Matvey"
     },
     {
       "name": "FireballProjectileHitsLivingEntity",
@@ -1499,7 +1516,8 @@
         "files": [
           "src/main/java/net/mcreator/itacraft/procedures/FireballProjectileHitsLivingEntityProcedure.java"
         ]
-      }
+      },
+      "path": "~/Matvey"
     },
     {
       "name": "FirestaffRecipe",
@@ -1511,7 +1529,8 @@
         "files": [
           "src/main/resources/data/itacraft/recipe/firestaff_recipe.json"
         ]
-      }
+      },
+      "path": "~/Matvey"
     },
     {
       "name": "MaxBurgers",
@@ -1621,7 +1640,8 @@
         "files": [
           "src/main/resources/data/itacraft/damage_type/forgiftet.json"
         ]
-      }
+      },
+      "path": "~/Matvey"
     },
     {
       "name": "GiftigGuggePlayerFinishesUsingItem",
@@ -1643,7 +1663,8 @@
         "files": [
           "src/main/java/net/mcreator/itacraft/procedures/GiftigGuggePlayerFinishesUsingItemProcedure.java"
         ]
-      }
+      },
+      "path": "~/Matvey"
     },
     {
       "name": "GiftigGugge",
@@ -1653,11 +1674,12 @@
       "registry_name": "giftig_gugge",
       "metadata": {
         "files": [
-          "src/main/resources/assets/itacraft/items/giftig_gugge.json",
           "src/main/resources/assets/itacraft/models/item/giftig_gugge.json",
-          "src/main/java/net/mcreator/itacraft/item/GiftigGuggeItem.java"
+          "src/main/java/net/mcreator/itacraft/item/GiftigGuggeItem.java",
+          "src/main/resources/assets/itacraft/items/giftig_gugge.json"
         ]
-      }
+      },
+      "path": "~/Matvey"
     },
     {
       "name": "SpisteGugge",
@@ -1669,7 +1691,8 @@
         "files": [
           "src/main/resources/data/itacraft/advancement/spiste_gugge.json"
         ]
-      }
+      },
+      "path": "~/Matvey"
     },
     {
       "name": "GiftigGuggeRightclicked",
@@ -1682,7 +1705,8 @@
         "files": [
           "src/main/java/net/mcreator/itacraft/procedures/GiftigGuggeRightclickedProcedure.java"
         ]
-      }
+      },
+      "path": "~/Matvey"
     },
     {
       "name": "GuggeCraft",
@@ -1695,7 +1719,8 @@
           "src/main/resources/data/itacraft/recipe/gugge_craft.json",
           "src/main/resources/data/itacraft/advancement/recipes/gugge_craft.json"
         ]
-      }
+      },
+      "path": "~/Matvey"
     },
     {
       "name": "TaUTPenger",
@@ -1900,7 +1925,8 @@
           "src/main/java/net/mcreator/itacraft/block/entity/RadioactiveWasteBarrelBlockEntity.java",
           "src/main/resources/data/itacraft/loot_table/blocks/radioactive_waste_barrel.json"
         ]
-      }
+      },
+      "path": "~/Matvey"
     },
     {
       "name": "RadioActiveBarrelGUI",
@@ -1913,7 +1939,8 @@
           "src/main/java/net/mcreator/itacraft/world/inventory/RadioActiveBarrelGUIMenu.java",
           "src/main/java/net/mcreator/itacraft/client/gui/RadioActiveBarrelGUIScreen.java"
         ]
-      }
+      },
+      "path": "~/Matvey"
     },
     {
       "name": "VippsBank",
@@ -1945,7 +1972,8 @@
         "files": [
           "src/main/java/net/mcreator/itacraft/procedures/LeadArmorLeggingsTickEventProcedure.java"
         ]
-      }
+      },
+      "path": "~/Matvey"
     },
     {
       "name": "LeadArmor",
@@ -1965,7 +1993,8 @@
           "src/main/resources/assets/itacraft/items/lead_armor_boots.json",
           "src/main/resources/assets/itacraft/items/lead_armor_helmet.json"
         ]
-      }
+      },
+      "path": "~/Matvey"
     },
     {
       "name": "Radiationresistance",
@@ -1977,7 +2006,8 @@
         "files": [
           "src/main/java/net/mcreator/itacraft/potion/RadiationresistanceMobEffect.java"
         ]
-      }
+      },
+      "path": "~/Matvey"
     },
     {
       "name": "Lead",
@@ -1991,7 +2021,8 @@
           "src/main/resources/assets/itacraft/models/item/lead.json",
           "src/main/resources/assets/itacraft/items/lead.json"
         ]
-      }
+      },
+      "path": "~/Matvey"
     },
     {
       "name": "LeadArmorChestplateTickEvent",
@@ -2009,7 +2040,8 @@
         "files": [
           "src/main/java/net/mcreator/itacraft/procedures/LeadArmorChestplateTickEventProcedure.java"
         ]
-      }
+      },
+      "path": "~/Matvey"
     },
     {
       "name": "LeadOre",
@@ -2029,7 +2061,8 @@
           "src/main/resources/data/itacraft/worldgen/configured_feature/lead_ore.json",
           "src/main/resources/assets/itacraft/items/lead_ore.json"
         ]
-      }
+      },
+      "path": "~/Matvey"
     },
     {
       "name": "TransparentPlastic",
@@ -2110,8 +2143,8 @@
       "registry_name": "hawk_phone_recipe",
       "metadata": {
         "files": [
-          "src/main/resources/data/itacraft/advancement/recipes/hawk_phone_recipe.json",
-          "src/main/resources/data/itacraft/recipe/hawk_phone_recipe.json"
+          "src/main/resources/data/itacraft/recipe/hawk_phone_recipe.json",
+          "src/main/resources/data/itacraft/advancement/recipes/hawk_phone_recipe.json"
         ]
       }
     },
@@ -2155,105 +2188,6 @@
       }
     },
     {
-      "name": "VippsRaner",
-      "type": "livingentity",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "vipps_raner",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/itacraft/items/vipps_raner_spawn_egg.json",
-          "src/main/resources/assets/itacraft/models/item/vipps_raner_spawn_egg.json",
-          "src/main/resources/data/itacraft/neoforge/biome_modifier/vipps_raner_biome_modifier.json",
-          "src/main/java/net/mcreator/itacraft/entity/VippsRanerEntity.java",
-          "src/main/java/net/mcreator/itacraft/client/renderer/VippsRanerRenderer.java"
-        ]
-      }
-    },
-    {
-      "name": "VippsRanerPlayerCollidesWithThisEntity",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "vipps_raner_player_collides_with_this_entity",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ],
-        "files": [
-          "src/main/java/net/mcreator/itacraft/procedures/VippsRanerPlayerCollidesWithThisEntityProcedure.java"
-        ]
-      }
-    },
-    {
-      "name": "PoopShortcut",
-      "type": "keybind",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "poop_shortcut",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/itacraft/network/PoopShortcutMessage.java"
-        ]
-      }
-    },
-    {
-      "name": "RadioactiveWasteBarrelRecipe",
-      "type": "recipe",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "radioactive_waste_barrel_recipe",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/itacraft/advancement/recipes/radioactive_waste_barrel_recipe.json",
-          "src/main/resources/data/itacraft/recipe/radioactive_waste_barrel_r.json"
-        ]
-      }
-    },
-    {
-      "name": "GuggeCraft3",
-      "type": "recipe",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "gugge_craft_3",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/itacraft/advancement/recipes/gugge_craft_3.json",
-          "src/main/resources/data/itacraft/recipe/gugge_craft_3.json"
-        ]
-      }
-    },
-    {
-      "name": "Besj",
-      "type": "item",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "besj",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/itacraft/item/BesjItem.java",
-          "src/main/resources/assets/itacraft/models/item/besj.json",
-          "src/main/resources/assets/itacraft/items/besj.json"
-        ]
-      }
-    },
-    {
-      "name": "GuggeCraft4",
-      "type": "recipe",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "gugge_craft_4",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/itacraft/advancement/recipes/gugge_craft_4.json",
-          "src/main/resources/data/itacraft/recipe/gugge_craft_4.json"
-        ]
-      }
-    },
-    {
       "name": "RadiationresistanceOnEffectActiveTick",
       "type": "procedure",
       "compiles": true,
@@ -2269,20 +2203,22 @@
         "files": [
           "src/main/java/net/mcreator/itacraft/procedures/RadiationresistanceOnEffectActiveTickProcedure.java"
         ]
-      }
+      },
+      "path": "~/Matvey"
     },
     {
-      "name": "GuggeCraft2",
+      "name": "LeadArmourRecipe",
       "type": "recipe",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "gugge_craft_2",
+      "registry_name": "lead_armour_recipe",
       "metadata": {
         "files": [
-          "src/main/resources/data/itacraft/advancement/recipes/gugge_craft_2.json",
-          "src/main/resources/data/itacraft/recipe/gugge_craft_2.json"
+          "src/main/resources/data/itacraft/recipe/lead_armour_chestplate_recipe.json",
+          "src/main/resources/data/itacraft/advancement/recipes/lead_armour_recipe.json"
         ]
-      }
+      },
+      "path": "~/Matvey"
     },
     {
       "name": "LeadArmourRecipe2",
@@ -2294,6 +2230,21 @@
         "files": [
           "src/main/resources/data/itacraft/recipe/lead_armour_leggings_recipe.json",
           "src/main/resources/data/itacraft/advancement/recipes/lead_armour_recipe_2.json"
+        ]
+      },
+      "path": "~/Matvey"
+    },
+    {
+      "name": "Besj",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "besj",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/itacraft/item/BesjItem.java",
+          "src/main/resources/assets/itacraft/models/item/besj.json",
+          "src/main/resources/assets/itacraft/items/besj.json"
         ]
       }
     },
@@ -2330,95 +2281,76 @@
           "src/main/java/net/mcreator/itacraft/procedures/PoopShortcutOnKeyPressedProcedure.java"
         ]
       },
-      "path": "~/Procedures"
+      "path": "~/Procedures/PoopLogic"
     },
     {
-      "name": "LeadArmourRecipe",
+      "name": "PoopShortcut",
+      "type": "keybind",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "poop_shortcut",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/itacraft/network/PoopShortcutMessage.java"
+        ]
+      },
+      "path": "~/Procedures/PoopLogic"
+    },
+    {
+      "name": "RadioactiveWasteBarrelRecipe",
       "type": "recipe",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "lead_armour_recipe",
+      "registry_name": "radioactive_waste_barrel_recipe",
       "metadata": {
         "files": [
-          "src/main/resources/data/itacraft/recipe/lead_armour_chestplate_recipe.json",
-          "src/main/resources/data/itacraft/advancement/recipes/lead_armour_recipe.json"
+          "src/main/resources/data/itacraft/recipe/radioactive_waste_barrel_r.json",
+          "src/main/resources/data/itacraft/advancement/recipes/radioactive_waste_barrel_recipe.json"
         ]
-      }
+      },
+      "path": "~/Matvey"
     },
     {
-      "name": "Skatteman",
-      "type": "livingentity",
+      "name": "GuggeCraft2",
+      "type": "recipe",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "skatteman",
+      "registry_name": "gugge_craft_2",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/itacraft/entity/SkattemanEntity.java",
-          "src/main/resources/assets/itacraft/items/skatteman_spawn_egg.json",
-          "src/main/resources/assets/itacraft/models/item/skatteman_spawn_egg.json",
-          "src/main/java/net/mcreator/itacraft/client/renderer/SkattemanRenderer.java"
+          "src/main/resources/data/itacraft/advancement/recipes/gugge_craft_2.json",
+          "src/main/resources/data/itacraft/recipe/gugge_craft_2.json"
         ]
-      }
+      },
+      "path": "~/Matvey"
     },
     {
-      "name": "OnDoorRightClicked",
-      "type": "procedure",
+      "name": "GuggeCraft3",
+      "type": "recipe",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "on_door_right_clicked",
+      "registry_name": "gugge_craft_3",
       "metadata": {
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ],
         "files": [
-          "src/main/java/net/mcreator/itacraft/procedures/OnDoorRightClickedProcedure.java"
+          "src/main/resources/data/itacraft/advancement/recipes/gugge_craft_3.json",
+          "src/main/resources/data/itacraft/recipe/gugge_craft_3.json"
         ]
-      }
+      },
+      "path": "~/Matvey"
     },
     {
-      "name": "DoorPlacedByPlayer",
-      "type": "procedure",
+      "name": "GuggeCraft4",
+      "type": "recipe",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "door_placed_by_player",
+      "registry_name": "gugge_craft_4",
       "metadata": {
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ],
         "files": [
-          "src/main/java/net/mcreator/itacraft/procedures/DoorPlacedByPlayerProcedure.java"
+          "src/main/resources/data/itacraft/advancement/recipes/gugge_craft_4.json",
+          "src/main/resources/data/itacraft/recipe/gugge_craft_4.json"
         ]
-      }
+      },
+      "path": "~/Matvey"
     },
     {
       "name": "OnPlayerEats",
@@ -2444,20 +2376,6 @@
       "path": "~/Procedures/PoopLogic"
     },
     {
-      "name": "Cumitem",
-      "type": "item",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "cum",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/itacraft/item/CumitemItem.java",
-          "src/main/resources/assets/itacraft/items/cum.json",
-          "src/main/resources/assets/itacraft/models/item/cum.json"
-        ]
-      }
-    },
-    {
       "name": "Pooptickhandler",
       "type": "procedure",
       "compiles": true,
@@ -2475,6 +2393,54 @@
         ]
       },
       "path": "~/Procedures/PoopLogic"
+    },
+    {
+      "name": "Prolaps",
+      "type": "damagetype",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "prolaps",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/itacraft/damage_type/prolaps.json"
+        ]
+      },
+      "path": "~/Matvey"
+    },
+    {
+      "name": "VippsRaner",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "vipps_raner",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/itacraft/items/vipps_raner_spawn_egg.json",
+          "src/main/resources/assets/itacraft/models/item/vipps_raner_spawn_egg.json",
+          "src/main/resources/data/itacraft/neoforge/biome_modifier/vipps_raner_biome_modifier.json",
+          "src/main/java/net/mcreator/itacraft/entity/VippsRanerEntity.java",
+          "src/main/java/net/mcreator/itacraft/client/renderer/VippsRanerRenderer.java"
+        ]
+      }
+    },
+    {
+      "name": "VippsRanerPlayerCollidesWithThisEntity",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "vipps_raner_player_collides_with_this_entity",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/itacraft/procedures/VippsRanerPlayerCollidesWithThisEntityProcedure.java"
+        ]
+      },
+      "path": "~/Procedures"
     },
     {
       "name": "Cum",
@@ -2508,18 +2474,6 @@
       "path": "~/Procedures"
     },
     {
-      "name": "Prolaps",
-      "type": "damagetype",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "prolaps",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/itacraft/damage_type/prolaps.json"
-        ]
-      }
-    },
-    {
       "name": "Masterbate",
       "type": "command",
       "compiles": true,
@@ -2529,7 +2483,23 @@
         "files": [
           "src/main/java/net/mcreator/itacraft/command/MasterbateCommand.java"
         ]
-      }
+      },
+      "path": "~/Matvey"
+    },
+    {
+      "name": "Cumitem",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cum",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/itacraft/item/CumitemItem.java",
+          "src/main/resources/assets/itacraft/items/cum.json",
+          "src/main/resources/assets/itacraft/models/item/cum.json"
+        ]
+      },
+      "path": "~/Matvey"
     },
     {
       "name": "PregnantOnEffectActiveTick",
@@ -2547,7 +2517,8 @@
         "files": [
           "src/main/java/net/mcreator/itacraft/procedures/PregnantOnEffectActiveTickProcedure.java"
         ]
-      }
+      },
+      "path": "~/Matvey"
     },
     {
       "name": "Pregnant",
@@ -2559,7 +2530,8 @@
         "files": [
           "src/main/java/net/mcreator/itacraft/potion/PregnantMobEffect.java"
         ]
-      }
+      },
+      "path": "~/Matvey"
     },
     {
       "name": "PregnantEffectExpires",
@@ -2593,7 +2565,8 @@
         "files": [
           "src/main/java/net/mcreator/itacraft/procedures/PregnantEffectExpiresProcedure.java"
         ]
-      }
+      },
+      "path": "~/Matvey"
     },
     {
       "name": "AbortionProcedure",
@@ -2627,7 +2600,8 @@
         "files": [
           "src/main/java/net/mcreator/itacraft/procedures/AbortionProcedureProcedure.java"
         ]
-      }
+      },
+      "path": "~/Matvey"
     },
     {
       "name": "Fetus",
@@ -2641,7 +2615,8 @@
           "src/main/resources/assets/itacraft/items/fetus.json",
           "src/main/resources/assets/itacraft/models/item/fetus.json"
         ]
-      }
+      },
+      "path": "~/Matvey"
     },
     {
       "name": "Abortion",
@@ -2653,7 +2628,8 @@
         "files": [
           "src/main/java/net/mcreator/itacraft/command/AbortionCommand.java"
         ]
-      }
+      },
+      "path": "~/Matvey"
     },
     {
       "name": "CumitemPlayerFinishesUsingItem",
@@ -2687,7 +2663,89 @@
         "files": [
           "src/main/java/net/mcreator/itacraft/procedures/CumitemPlayerFinishesUsingItemProcedure.java"
         ]
+      },
+      "path": "~/Matvey"
+    },
+    {
+      "name": "Skatteman",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "skatteman",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/itacraft/entity/SkattemanEntity.java",
+          "src/main/resources/assets/itacraft/items/skatteman_spawn_egg.json",
+          "src/main/resources/assets/itacraft/models/item/skatteman_spawn_egg.json",
+          "src/main/java/net/mcreator/itacraft/client/renderer/SkattemanRenderer.java"
+        ]
       }
+    },
+    {
+      "name": "OnDoorRightClicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "on_door_right_clicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/itacraft/procedures/OnDoorRightClickedProcedure.java"
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "DoorPlacedByPlayer",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "door_placed_by_player",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/itacraft/procedures/DoorPlacedByPlayerProcedure.java"
+        ]
+      },
+      "path": "~/Procedures"
     },
     {
       "name": "HDMICableRecipe",
@@ -2697,8 +2755,8 @@
       "registry_name": "hdmi_cable_recipe",
       "metadata": {
         "files": [
-          "src/main/resources/data/itacraft/recipe/hdmi_cable_recipe.json",
-          "src/main/resources/data/itacraft/advancement/recipes/hdmi_cable_recipe.json"
+          "src/main/resources/data/itacraft/advancement/recipes/hdmi_cable_recipe.json",
+          "src/main/resources/data/itacraft/recipe/hdmi_cable_recipe.json"
         ]
       },
       "path": "~/Fredrik"
@@ -2740,8 +2798,8 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/itacraft/item/HDMIPlugItem.java",
-          "src/main/resources/assets/itacraft/models/item/hdmi_plug.json",
-          "src/main/resources/assets/itacraft/items/hdmi_plug.json"
+          "src/main/resources/assets/itacraft/items/hdmi_plug.json",
+          "src/main/resources/assets/itacraft/models/item/hdmi_plug.json"
         ]
       },
       "path": "~/Fredrik"
@@ -2793,6 +2851,189 @@
           "src/main/java/net/mcreator/itacraft/world/inventory/SkatteetatenGuiMenu.java"
         ]
       }
+    },
+    {
+      "name": "SolderProcedure",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "solder_procedure",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/itacraft/procedures/SolderProcedureProcedure.java"
+        ]
+      },
+      "path": "~/Fredrik"
+    },
+    {
+      "name": "SolderingTable",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "soldering_table",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/itacraft/loot_table/blocks/soldering_table.json",
+          "src/main/resources/assets/itacraft/items/soldering_table.json",
+          "src/main/resources/assets/itacraft/blockstates/soldering_table.json",
+          "src/main/java/net/mcreator/itacraft/block/SolderingTableBlock.java",
+          "src/main/resources/assets/itacraft/models/item/soldering_table.json",
+          "src/main/resources/assets/itacraft/models/block/soldering_table.json"
+        ]
+      },
+      "path": "~/Fredrik"
+    },
+    {
+      "name": "SolderingTableRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "soldering_table_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/itacraft/recipe/soldering_table_recipe.json",
+          "src/main/resources/data/itacraft/advancement/recipes/soldering_table_recipe.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "NalMedCum",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nal_med_cum",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/itacraft/item/NalMedCumItem.java",
+          "src/main/resources/assets/itacraft/items/nal_med_cum.json",
+          "src/main/resources/assets/itacraft/models/item/nal_med_cum.json"
+        ]
+      },
+      "path": "~/Fredrik"
+    },
+    {
+      "name": "Electronics",
+      "type": "tab",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "electronics",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Fredrik"
+    },
+    {
+      "name": "PlasticCircuitBoardMold",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "plastic_circuit_board_mold",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/itacraft/models/item/plastic_circuit_board_mold.json",
+          "src/main/resources/assets/itacraft/items/plastic_circuit_board_mold.json",
+          "src/main/java/net/mcreator/itacraft/item/PlasticCircuitBoardMoldItem.java"
+        ]
+      },
+      "path": "~/Fredrik"
+    },
+    {
+      "name": "SolderingProgressValueProvider",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "soldering_progress_value_provider",
+      "metadata": {
+        "dependencies": [],
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/mcreator/itacraft/procedures/SolderingProgressValueProviderProcedure.java"
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "MicroplasticRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "microplastic_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/itacraft/recipe/microplastic_recipe.json",
+          "src/main/resources/data/itacraft/advancement/recipes/microplastic_recipe.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "CircuitBoard",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "circuit_board",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/itacraft/item/CircuitBoardItem.java",
+          "src/main/resources/assets/itacraft/items/circuit_board.json",
+          "src/main/resources/assets/itacraft/models/item/circuit_board.json"
+        ]
+      },
+      "path": "~/Fredrik"
+    },
+    {
+      "name": "Microplastic",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "microplastic",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/itacraft/models/item/microplastic.json",
+          "src/main/java/net/mcreator/itacraft/item/MicroplasticItem.java",
+          "src/main/resources/assets/itacraft/items/microplastic.json"
+        ]
+      }
+    },
+    {
+      "name": "SolderingTableGUI",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "soldering_table_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/itacraft/client/gui/SolderingTableGUIScreen.java",
+          "src/main/java/net/mcreator/itacraft/world/inventory/SolderingTableGUIMenu.java",
+          "src/main/java/net/mcreator/itacraft/network/SolderingTableGUIButtonMessage.java"
+        ]
+      },
+      "path": "~/Fredrik"
+    },
+    {
+      "name": "CumNalRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cum_nal_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/itacraft/advancement/recipes/cum_nal_recipe.json",
+          "src/main/resources/data/itacraft/recipe/cum_nal_recipe.json"
+        ]
+      },
+      "path": "~/Fredrik"
     }
   ],
   "variable_elements": [
@@ -2819,6 +3060,12 @@
       "type": "number",
       "scope": "player_persistent",
       "value": "0.0"
+    },
+    {
+      "name": "solderingProgress",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
     }
   ],
   "sound_elements": [
@@ -2903,14 +3150,6 @@
       "subtitle": ""
     },
     {
-      "name": "fuckin",
-      "files": [
-        "penetration3"
-      ],
-      "category": "player",
-      "subtitle": "\u003cfuckin\u003e"
-    },
-    {
       "name": "cum1",
       "files": [
         "creampie1"
@@ -2925,6 +3164,14 @@
       ],
       "category": "player",
       "subtitle": "\u003ccum\u003e"
+    },
+    {
+      "name": "fuckin",
+      "files": [
+        "penetration3"
+      ],
+      "category": "player",
+      "subtitle": "\u003cfuckin\u003e"
     }
   ],
   "tag_elements": {
@@ -3139,39 +3386,37 @@
       "gui.itacraft.vipps_app_gui.label_kontonummer": "Kontonummer: *********..",
       "advancements.drammen_achievement.descr": "Bare å snu med en gang",
       "advancements.drammen_achievement.title": "Velkommen til Drammen",
+      "subtitles.caca": "",
       "gui.itacraft.hawk_phone_gui_home_screen.button_0": "o",
       "gui.itacraft.hawk_phone_gui_home_screen.button_vy": "vy",
       "gui.itacraft.hawk_phone_gui_home_screen.button_vipps": "Vipps",
       "gui.itacraft.hawk_phone_gui_home_screen.label_hawkphone": "Hawk Phone PRO",
-      "subtitles.caca": "",
-      "entity.itacraft.vipps_raner": "Vipps Raner",
-      "item.itacraft.vipps_raner_spawn_egg": "Vipps Raner Spawn Egg",
       "key.itacraft.poop_shortcut": "Poop Shortcut",
       "item.itacraft.besj": "Besj",
-      "item.itacraft.skatteman_spawn_egg": "Skatteman Spawn Egg",
-      "entity.itacraft.skatteman": "Skatteman",
+      "entity.itacraft.vipps_raner": "Vipps Raner",
+      "item.itacraft.vipps_raner_spawn_egg": "Vipps Raner Spawn Egg",
       "item.itacraft.cum": "Cum",
       "death.attack.prolaps.item": "%1$s fikk prolaps av %2$s med %3$s (Hvordan??)",
       "death.attack.prolaps.player": "%1$s prolapset imens han stakk fra %2$s",
       "death.attack.prolaps": "%1$s fikk prolaps",
       "effect.itacraft.pregnant": "Pregnant",
       "item.itacraft.fetus": "Fetus",
+      "item.itacraft.skatteman_spawn_egg": "Skatteman Spawn Egg",
+      "entity.itacraft.skatteman": "Skatteman",
       "gui.itacraft.hawk_osgui.button_onoff": "On/Off",
       "item.itacraft.hdmi_plug": "HDMI Plug",
-      "item.itacraft.hdmi_cable": "HDMI Cable",
-      "gui.itacraft.skatteetaten_gui.button_betal_skatt": "betal skatt",
-      "gui.itacraft.skatteetaten_gui.label_jeg_tar_bare_vipps": "jeg tar bare vipps"
+      "item.itacraft.hdmi_cable": "HDMI Cable"
     }
   },
   "metadata": {
     "files": [
-      "src/main/java/net/mcreator/itacraft/mixin/NoiseGeneratorSettingsMixin.java",
       "src/main/java/net/mcreator/itacraft/init/ItacraftModBiomes.java",
+      "src/main/java/net/mcreator/itacraft/mixin/NoiseGeneratorSettingsMixin.java",
       "src/main/java/net/mcreator/itacraft/init/ItacraftModFluidTypes.java",
       "src/main/java/net/mcreator/itacraft/init/ItacraftModFluids.java",
-      "src/main/java/net/mcreator/itacraft/init/ItacraftModMenus.java",
-      "src/main/java/net/mcreator/itacraft/init/ItacraftModScreens.java",
       "src/main/java/net/mcreator/itacraft/network/MenuStateUpdateMessage.java",
+      "src/main/java/net/mcreator/itacraft/init/ItacraftModScreens.java",
+      "src/main/java/net/mcreator/itacraft/init/ItacraftModMenus.java",
       "src/main/java/net/mcreator/itacraft/init/ItacraftModKeyMappings.java",
       "src/main/resources/data/minecraft/tags/painting_variant/placeable.json",
       "src/main/java/net/mcreator/itacraft/init/ItacraftModParticleTypes.java",
@@ -3182,18 +3427,18 @@
       "src/main/java/net/mcreator/itacraft/init/ItacraftModBlocks.java",
       "src/main/java/net/mcreator/itacraft/init/ItacraftModBlockEntities.java",
       "src/main/java/net/mcreator/itacraft/init/ItacraftModItems.java",
-      "src/main/java/net/mcreator/itacraft/init/ItacraftModEntityRenderers.java",
       "src/main/java/net/mcreator/itacraft/init/ItacraftModEntities.java",
-      "src/main/resources/pack.mcmeta",
-      "src/main/resources/META-INF/accesstransformer.cfg",
-      "src/main/java/net/mcreator/itacraft/init/ItacraftModModels.java",
-      "src/main/java/net/mcreator/itacraft/init/ItacraftModTabs.java",
-      "src/main/java/net/mcreator/itacraft/network/ItacraftModVariables.java",
+      "src/main/java/net/mcreator/itacraft/init/ItacraftModEntityRenderers.java",
       "src/main/java/net/mcreator/itacraft/ItacraftMod.java",
-      "src/main/resources/assets/itacraft/sounds.json",
+      "src/main/java/net/mcreator/itacraft/init/ItacraftModSounds.java",
+      "src/main/java/net/mcreator/itacraft/network/ItacraftModVariables.java",
       "src/main/resources/itacraft.mixins.json",
       "src/main/resources/META-INF/neoforge.mods.toml",
-      "src/main/java/net/mcreator/itacraft/init/ItacraftModSounds.java"
+      "src/main/resources/pack.mcmeta",
+      "src/main/resources/assets/itacraft/sounds.json",
+      "src/main/resources/META-INF/accesstransformer.cfg",
+      "src/main/java/net/mcreator/itacraft/init/ItacraftModModels.java",
+      "src/main/java/net/mcreator/itacraft/init/ItacraftModTabs.java"
     ]
   },
   "foldersRoot": {
@@ -3211,6 +3456,10 @@
             "children": []
           }
         ]
+      },
+      {
+        "name": "Recipes",
+        "children": []
       },
       {
         "name": "Fredrik",

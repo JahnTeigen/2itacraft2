@@ -23,6 +23,7 @@ public class ItacraftModScreens {
 		event.register(ItacraftModMenus.RADIO_ACTIVE_BARREL_GUI.get(), RadioActiveBarrelGUIScreen::new);
 		event.register(ItacraftModMenus.HAWK_OSGUI.get(), HawkOSGUIScreen::new);
 		event.register(ItacraftModMenus.SKATTEETATEN_GUI.get(), SkatteetatenGuiScreen::new);
+		event.register(ItacraftModMenus.SOLDERING_TABLE_GUI.get(), SolderingTableGUIScreen::new);
 	}
 
 	public interface ScreenAccessor {

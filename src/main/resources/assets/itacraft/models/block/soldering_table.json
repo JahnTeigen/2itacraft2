@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "itacraft:block/soldering_table_side",
+    "up": "itacraft:block/soldering_table_top",
+    "north": "itacraft:block/soldering_table_side",
+    "east": "itacraft:block/soldering_table_side",
+    "south": "itacraft:block/soldering_table_side",
+    "west": "itacraft:block/soldering_table_side",
+    "particle": "itacraft:block/soldering_table_side"
+  },
+  "render_type": "solid"
+}

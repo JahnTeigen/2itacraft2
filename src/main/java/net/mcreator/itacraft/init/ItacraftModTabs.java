@@ -24,6 +24,12 @@ public class ItacraftModTabs {
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.itacraft.stocks")).icon(() -> new ItemStack(ItacraftModItems.KOG_STOCK.get())).displayItems((parameters, tabData) -> {
 				tabData.accept(ItacraftModItems.KOG_STOCK.get());
 			}).withSearchBar().build());
+	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> ELECTRONICS = REGISTRY.register("electronics",
+			() -> CreativeModeTab.builder().title(Component.translatable("item_group.itacraft.electronics")).icon(() -> new ItemStack(ItacraftModItems.CIRCUIT_BOARD.get())).displayItems((parameters, tabData) -> {
+				tabData.accept(ItacraftModBlocks.HP_WORKSTATION.get().asItem());
+				tabData.accept(ItacraftModBlocks.HP_MONITOR.get().asItem());
+				tabData.accept(ItacraftModItems.CIRCUIT_BOARD.get());
+			}).withSearchBar().withTabsBefore(STOCKS.getId()).build());
 
 	@SubscribeEvent
 	public static void buildTabContentsVanilla(BuildCreativeModeTabContentsEvent tabData) {
@@ -36,6 +42,7 @@ public class ItacraftModTabs {
 			tabData.accept(ItacraftModItems.MONICA_SPAWN_EGG.get());
 			tabData.accept(ItacraftModItems.VIPPS_RANER_SPAWN_EGG.get());
 			tabData.accept(ItacraftModItems.SKATTEMAN_SPAWN_EGG.get());
+			tabData.accept(ItacraftModItems.NAL_MED_CUM.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
 			tabData.accept(ItacraftModBlocks.ANDREAS.get().asItem());
 			tabData.accept(ItacraftModItems.FEMTI_KRONER.get());
@@ -62,6 +69,7 @@ public class ItacraftModTabs {
 		} else if (tabData.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS) {
 			tabData.accept(ItacraftModItems.HEROIN.get());
 			tabData.accept(ItacraftModItems.NAL_MED_NOE_RART_I.get());
+			tabData.accept(ItacraftModItems.MICROPLASTIC.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
 			tabData.accept(ItacraftModBlocks.BLOCK_OF_BYGG_54.get().asItem());
 		} else if (tabData.getTabKey() == CreativeModeTabs.INGREDIENTS) {
@@ -69,12 +77,14 @@ public class ItacraftModTabs {
 			tabData.accept(ItacraftModItems.WHITE_COLORED_PLASTIC.get());
 			tabData.accept(ItacraftModItems.RED_COLORED_PLASTIC.get());
 			tabData.accept(ItacraftModItems.TRANSPARENT_PLASTIC.get());
+			tabData.accept(ItacraftModItems.PLASTIC_CIRCUIT_BOARD_MOLD.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.OP_BLOCKS) {
 			if (tabData.hasPermissions()) {
 				tabData.accept(ItacraftModBlocks.RUSSIA_BLOCK.get().asItem());
 			}
 		} else if (tabData.getTabKey() == CreativeModeTabs.FUNCTIONAL_BLOCKS) {
 			tabData.accept(ItacraftModBlocks.RUSSIA_BLOCK.get().asItem());
+			tabData.accept(ItacraftModBlocks.SOLDERING_TABLE.get().asItem());
 		} else if (tabData.getTabKey() == CreativeModeTabs.REDSTONE_BLOCKS) {
 			tabData.accept(ItacraftModBlocks.VIPPSMINIBANK.get().asItem());
 		} else if (tabData.getTabKey() == CreativeModeTabs.COMBAT) {
