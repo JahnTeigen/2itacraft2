@@ -84,6 +84,13 @@ public class ItacraftModItems {
 	public static final DeferredItem<Item> SKATTEMAN_SPAWN_EGG;
 	public static final DeferredItem<Item> HDMI_PLUG;
 	public static final DeferredItem<Item> HDMI_CABLE;
+	public static final DeferredItem<Item> SOLDERING_TABLE;
+	public static final DeferredItem<Item> RETARDED_GAMER_GIRL_SPAWN_EGG;
+	public static final DeferredItem<Item> NAL_MED_CUM;
+	public static final DeferredItem<Item> PLASTIC_CIRCUIT_BOARD_MOLD;
+	public static final DeferredItem<Item> CIRCUIT_BOARD;
+	public static final DeferredItem<Item> MICROPLASTIC;
+	public static final DeferredItem<Item> RADIATED_CUM;
 	static {
 		GEIR_HAOY_SPAWN_EGG = register("geir_haoy_spawn_egg", properties -> new SpawnEggItem(ItacraftModEntities.GEIR_HAOY.get(), properties));
 		KOG_STOCK = register("kog_stock", KOGStockItem::new);
@@ -141,6 +148,13 @@ public class ItacraftModItems {
 		SKATTEMAN_SPAWN_EGG = register("skatteman_spawn_egg", properties -> new SpawnEggItem(ItacraftModEntities.SKATTEMAN.get(), properties));
 		HDMI_PLUG = register("hdmi_plug", HDMIPlugItem::new);
 		HDMI_CABLE = register("hdmi_cable", HDMICableItem::new);
+		SOLDERING_TABLE = block(ItacraftModBlocks.SOLDERING_TABLE, new Item.Properties().rarity(Rarity.UNCOMMON));
+		RETARDED_GAMER_GIRL_SPAWN_EGG = register("retarded_gamer_girl_spawn_egg", properties -> new SpawnEggItem(ItacraftModEntities.RETARDED_GAMER_GIRL.get(), properties));
+		NAL_MED_CUM = register("nal_med_cum", NalMedCumItem::new);
+		PLASTIC_CIRCUIT_BOARD_MOLD = register("plastic_circuit_board_mold", PlasticCircuitBoardMoldItem::new);
+		CIRCUIT_BOARD = register("circuit_board", CircuitBoardItem::new);
+		MICROPLASTIC = register("microplastic", MicroplasticItem::new);
+		RADIATED_CUM = register("radiated_cum", RadiatedCumItem::new);
 	}
 
 	// Start of user code block custom items

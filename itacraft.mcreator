@@ -2451,6 +2451,10 @@
       "metadata": {
         "dependencies": [
           {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
             "name": "x",
             "type": "number"
           },
@@ -2471,7 +2475,7 @@
           "src/main/java/net/mcreator/itacraft/procedures/CumProcedure.java"
         ]
       },
-      "path": "~/Matvey"
+      "path": "~/Procedures"
     },
     {
       "name": "Masterbate",
@@ -2833,6 +2837,282 @@
         ]
       },
       "path": "~/Matvey"
+    },
+    {
+      "name": "SkatteetatenBruh",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "skatteetaten_bruh",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/itacraft/procedures/SkatteetatenBruhProcedure.java"
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "SolderProcedure",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "solder_procedure",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/itacraft/procedures/SolderProcedureProcedure.java"
+        ]
+      },
+      "path": "~/Fredrik"
+    },
+    {
+      "name": "SolderingTable",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "soldering_table",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/itacraft/block/SolderingTableBlock.java",
+          "src/main/resources/data/itacraft/loot_table/blocks/soldering_table.json",
+          "src/main/resources/assets/itacraft/models/item/soldering_table.json",
+          "src/main/resources/assets/itacraft/models/block/soldering_table.json",
+          "src/main/resources/assets/itacraft/items/soldering_table.json",
+          "src/main/resources/assets/itacraft/blockstates/soldering_table.json"
+        ]
+      },
+      "path": "~/Fredrik"
+    },
+    {
+      "name": "RetardedGamerGirl",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "retarded_gamer_girl",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/itacraft/entity/RetardedGamerGirlEntity.java",
+          "src/main/resources/assets/itacraft/items/retarded_gamer_girl_spawn_egg.json",
+          "src/main/resources/data/itacraft/neoforge/biome_modifier/retarded_gamer_girl_biome_modifier.json",
+          "src/main/java/net/mcreator/itacraft/client/renderer/RetardedGamerGirlRenderer.java",
+          "src/main/resources/assets/itacraft/models/item/retarded_gamer_girl_spawn_egg.json"
+        ]
+      }
+    },
+    {
+      "name": "RadiatedCumPlayerFinishesUsingItem",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "radiated_cum_player_finishes_using_item",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/itacraft/procedures/RadiatedCumPlayerFinishesUsingItemProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "NalMedCum",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nal_med_cum",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/itacraft/items/nal_med_cum.json",
+          "src/main/java/net/mcreator/itacraft/item/NalMedCumItem.java",
+          "src/main/resources/assets/itacraft/models/item/nal_med_cum.json"
+        ]
+      },
+      "path": "~/Fredrik"
+    },
+    {
+      "name": "Electronics",
+      "type": "tab",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "electronics",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Fredrik"
+    },
+    {
+      "name": "PlasticCircuitBoardMold",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "plastic_circuit_board_mold",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/itacraft/models/item/plastic_circuit_board_mold.json",
+          "src/main/resources/assets/itacraft/items/plastic_circuit_board_mold.json",
+          "src/main/java/net/mcreator/itacraft/item/PlasticCircuitBoardMoldItem.java"
+        ]
+      },
+      "path": "~/Fredrik"
+    },
+    {
+      "name": "CircuitBoard",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "circuit_board",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/itacraft/models/item/circuit_board.json",
+          "src/main/resources/assets/itacraft/items/circuit_board.json",
+          "src/main/java/net/mcreator/itacraft/item/CircuitBoardItem.java"
+        ]
+      },
+      "path": "~/Fredrik"
+    },
+    {
+      "name": "Microplastic",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "microplastic",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/itacraft/models/item/microplastic.json",
+          "src/main/java/net/mcreator/itacraft/item/MicroplasticItem.java",
+          "src/main/resources/assets/itacraft/items/microplastic.json"
+        ]
+      }
+    },
+    {
+      "name": "CumNalRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cum_nal_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/itacraft/recipe/cum_nal_recipe.json",
+          "src/main/resources/data/itacraft/advancement/recipes/cum_nal_recipe.json"
+        ]
+      },
+      "path": "~/Fredrik"
+    },
+    {
+      "name": "RadiatedCum",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "radiated_cum",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/itacraft/models/item/radiated_cum.json",
+          "src/main/java/net/mcreator/itacraft/item/RadiatedCumItem.java",
+          "src/main/resources/assets/itacraft/items/radiated_cum.json"
+        ]
+      }
+    },
+    {
+      "name": "SolderingTableRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "soldering_table_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/itacraft/advancement/recipes/soldering_table_recipe.json",
+          "src/main/resources/data/itacraft/recipe/soldering_table_recipe.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "Ehhhh",
+      "type": "painting",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ehhhh",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/itacraft/painting_variant/ehhhh.json"
+        ]
+      }
+    },
+    {
+      "name": "SolderingProgressValueProvider",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "soldering_progress_value_provider",
+      "metadata": {
+        "dependencies": [],
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/mcreator/itacraft/procedures/SolderingProgressValueProviderProcedure.java"
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "SkatteetatenGui",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "skatteetaten_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/itacraft/client/gui/SkatteetatenGuiScreen.java",
+          "src/main/java/net/mcreator/itacraft/world/inventory/SkatteetatenGuiMenu.java",
+          "src/main/java/net/mcreator/itacraft/network/SkatteetatenGuiButtonMessage.java"
+        ]
+      }
+    },
+    {
+      "name": "MicroplasticRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "microplastic_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/itacraft/advancement/recipes/microplastic_recipe.json",
+          "src/main/resources/data/itacraft/recipe/microplastic_recipe.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "SolderingTableGUI",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "soldering_table_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/itacraft/client/gui/SolderingTableGUIScreen.java",
+          "src/main/java/net/mcreator/itacraft/world/inventory/SolderingTableGUIMenu.java",
+          "src/main/java/net/mcreator/itacraft/network/SolderingTableGUIButtonMessage.java"
+        ]
+      },
+      "path": "~/Fredrik"
     }
   ],
   "variable_elements": [
@@ -2859,6 +3139,12 @@
       "type": "number",
       "scope": "player_persistent",
       "value": "0.0"
+    },
+    {
+      "name": "solderingProgress",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
     }
   ],
   "sound_elements": [
@@ -2965,6 +3251,22 @@
       ],
       "category": "player",
       "subtitle": "\u003cfuckin\u003e"
+    },
+    {
+      "name": "retardliving",
+      "files": [
+        "retardliving"
+      ],
+      "category": "player",
+      "subtitle": ""
+    },
+    {
+      "name": "retarddod",
+      "files": [
+        "retarddod"
+      ],
+      "category": "player",
+      "subtitle": ""
     }
   ],
   "tag_elements": {
@@ -3057,6 +3359,9 @@
     ],
     "ITEMS:minecraft:meat": [
       "~CUSTOM:Fetus"
+    ],
+    "ENTITIES:minecraft:illager": [
+      "~CUSTOM:RetardedGamerGirl"
     ]
   },
   "tab_element_order": {},
@@ -3198,7 +3503,9 @@
       "entity.itacraft.skatteman": "Skatteman",
       "gui.itacraft.hawk_osgui.button_onoff": "On/Off",
       "item.itacraft.hdmi_plug": "HDMI Plug",
-      "item.itacraft.hdmi_cable": "HDMI Cable"
+      "item.itacraft.hdmi_cable": "HDMI Cable",
+      "subtitles.retarddod": "",
+      "subtitles.retardliving": ""
     }
   },
   "metadata": {
@@ -3249,6 +3556,10 @@
             "children": []
           }
         ]
+      },
+      {
+        "name": "Recipes",
+        "children": []
       },
       {
         "name": "Fredrik",

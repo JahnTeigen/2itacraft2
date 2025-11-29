@@ -20,6 +20,7 @@ other mod elements defined through MCreator's workspace system.
 - Fredrik P. - Jahn Teigen
 - Mathias H. - CyberHansen
 - Matvey G. - JahBoiMat
+- Ådne L. - AdneSkulderskade
 
 
 

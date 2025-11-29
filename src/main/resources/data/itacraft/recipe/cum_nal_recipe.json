@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a",
+    "b"
+  ],
+  "key": {
+    "a": "itacraft:cum",
+    "b": "itacraft:tom_nal"
+  },
+  "result": {
+    "id": "itacraft:nal_med_cum",
+    "count": 1
+  }
+}

@@ -135,5 +135,7 @@
   "entity.itacraft.skatteman": "Skatteman",
   "gui.itacraft.hawk_osgui.button_onoff": "On/Off",
   "item.itacraft.hdmi_plug": "HDMI Plug",
-  "item.itacraft.hdmi_cable": "HDMI Cable"
+  "item.itacraft.hdmi_cable": "HDMI Cable",
+  "subtitles.retarddod": "",
+  "subtitles.retardliving": ""
 }
