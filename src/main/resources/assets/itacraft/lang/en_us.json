@@ -163,12 +163,12 @@
   "item.itacraft.dildo": "Dildo",
   "key.itacraft.equip_condome_shortcut": "Equip Condome Shortcut",
   "subtitles.entombed-deftones": "\u003centombed\u003e",
-  "subtitles.we-are-charlie-kirk": "\u003ccharlie kirk\u003e",
   "subtitles.jarvis...explode-his-balls-plz": "\u003cjarvis\u003e",
-  "item.itacraft.iron_man_cd": "Iron Man CD",
-  "item.itacraft.iron_man_cd.desc": "Jarvis.. Show me this dudes balls on google please ,\u0027:)",
-  "item.itacraft.deftones_cd": "Deftones CD",
-  "item.itacraft.deftones_cd.desc": "Deftones: Entombed",
-  "item.itacraft.charlie_kirk_cd.desc": "WE ARE CHARLIE KIRK! WE CARRY THE FLAME!",
-  "item.itacraft.charlie_kirk_cd": "Charlie Kirk CD"
+  "subtitles.we-are-charlie-kirk": "\u003ccharlie kirk\u003e",
+  "gui.itacraft.skatteetaten_gui.label_du_ma_ha_mer_en_1500_kr": "* Du må ha mer en 1500 kr",
+  "gui.itacraft.skatteetaten_gui.label_tar_jeg_alt_du_eier": "tar jeg alt du eier",
+  "gui.itacraft.skatteetaten_gui.label_empty": ":)",
+  "gui.itacraft.skatteetaten_gui.label_jeg_tar_50": "* Jeg tar 50%",
+  "gui.itacraft.skatteetaten_gui.label_loper_du_vekk": "* løper du vekk",
+  "gui.itacraft.skatteetaten_gui.label_regler": "regler:"
 }

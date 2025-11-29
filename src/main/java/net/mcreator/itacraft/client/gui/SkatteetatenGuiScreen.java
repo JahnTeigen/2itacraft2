@@ -30,8 +30,8 @@ public class SkatteetatenGuiScreen extends AbstractContainerScreen<SkatteetatenG
 		this.y = container.y;
 		this.z = container.z;
 		this.entity = container.entity;
-		this.imageWidth = 176;
-		this.imageHeight = 166;
+		this.imageWidth = 250;
+		this.imageHeight = 200;
 	}
 
 	@Override
@@ -64,7 +64,13 @@ public class SkatteetatenGuiScreen extends AbstractContainerScreen<SkatteetatenG
 
 	@Override
 	protected void renderLabels(GuiGraphics guiGraphics, int mouseX, int mouseY) {
-		guiGraphics.drawString(this.font, Component.translatable("gui.itacraft.skatteetaten_gui.label_jeg_tar_bare_vipps"), 47, 8, -12829636, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.itacraft.skatteetaten_gui.label_jeg_tar_bare_vipps"), 10, 9, -12829636, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.itacraft.skatteetaten_gui.label_regler"), 117, 10, -12829636, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.itacraft.skatteetaten_gui.label_du_ma_ha_mer_en_1500_kr"), 117, 25, -12829636, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.itacraft.skatteetaten_gui.label_jeg_tar_50"), 117, 38, -12829636, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.itacraft.skatteetaten_gui.label_loper_du_vekk"), 117, 50, -12829636, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.itacraft.skatteetaten_gui.label_tar_jeg_alt_du_eier"), 127, 62, -12829636, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.itacraft.skatteetaten_gui.label_empty"), 230, 182, -12829636, false);
 	}
 
 	@Override
@@ -77,7 +83,7 @@ public class SkatteetatenGuiScreen extends AbstractContainerScreen<SkatteetatenG
 				ClientPacketDistributor.sendToServer(new SkatteetatenGuiButtonMessage(0, x, y, z));
 				SkatteetatenGuiButtonMessage.handleButtonAction(entity, 0, x, y, z);
 			}
-		}).bounds(this.leftPos + 47, this.topPos + 52, 82, 20).build();
+		}).bounds(this.leftPos + 14, this.topPos + 63, 82, 20).build();
 		this.addRenderableWidget(button_betal_skatt);
 	}
 }

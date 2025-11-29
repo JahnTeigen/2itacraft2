@@ -33,7 +33,7 @@ public class SkatteetatenGuiMenu extends AbstractContainerMenu implements Itacra
 	public final Map<String, Object> menuState = new HashMap<>() {
 		@Override
 		public Object put(String key, Object value) {
-			if (!this.containsKey(key) && this.size() >= 3)
+			if (!this.containsKey(key) && this.size() >= 9)
 				return null;
 			return super.put(key, value);
 		}
@@ -90,7 +90,7 @@ public class SkatteetatenGuiMenu extends AbstractContainerMenu implements Itacra
 				}
 			}
 		}
-		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 81, 26) {
+		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 43, 31) {
 			private final int slot = 1;
 			private int x = SkatteetatenGuiMenu.this.x;
 			private int y = SkatteetatenGuiMenu.this.y;
@@ -102,9 +102,9 @@ public class SkatteetatenGuiMenu extends AbstractContainerMenu implements Itacra
 		}));
 		for (int si = 0; si < 3; ++si)
 			for (int sj = 0; sj < 9; ++sj)
-				this.addSlot(new Slot(inv, sj + (si + 1) * 9, 0 + 8 + sj * 18, 0 + 84 + si * 18));
+				this.addSlot(new Slot(inv, sj + (si + 1) * 9, 37 + 8 + sj * 18, 17 + 84 + si * 18));
 		for (int si = 0; si < 9; ++si)
-			this.addSlot(new Slot(inv, si, 0 + 8 + si * 18, 0 + 142));
+			this.addSlot(new Slot(inv, si, 37 + 8 + si * 18, 17 + 142));
 	}
 
 	@Override
