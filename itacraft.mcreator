@@ -2291,6 +2291,19 @@
       }
     },
     {
+      "name": "HDMICableRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hdmi_cable_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/itacraft/advancement/recipes/hdmi_cable_recipe.json",
+          "src/main/resources/data/itacraft/recipe/hdmi_cable_recipe.json"
+        ]
+      }
+    },
+    {
       "name": "HawkOSGUI",
       "type": "gui",
       "compiles": true,
@@ -2304,16 +2317,15 @@
       }
     },
     {
-      "name": "HDMICable",
-      "type": "item",
+      "name": "HDMIPlugRecipe",
+      "type": "recipe",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "hdmi_cable",
+      "registry_name": "hdmi_plug_recipe",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/itacraft/item/HDMICableItem.java",
-          "src/main/resources/assets/itacraft/items/hdmi_cable.json",
-          "src/main/resources/assets/itacraft/models/item/hdmi_cable.json"
+          "src/main/resources/data/itacraft/recipe/hdmi_plug_recipe.json",
+          "src/main/resources/data/itacraft/advancement/recipes/hdmi_plug_recipe.json"
         ]
       }
     },
@@ -2332,28 +2344,451 @@
       }
     },
     {
-      "name": "HDMIPlugRecipe",
-      "type": "recipe",
+      "name": "HDMICable",
+      "type": "item",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "hdmi_plug_recipe",
+      "registry_name": "hdmi_cable",
       "metadata": {
         "files": [
-          "src/main/resources/data/itacraft/recipe/hdmi_plug_recipe.json",
-          "src/main/resources/data/itacraft/advancement/recipes/hdmi_plug_recipe.json"
+          "src/main/java/net/mcreator/itacraft/item/HDMICableItem.java",
+          "src/main/resources/assets/itacraft/items/hdmi_cable.json",
+          "src/main/resources/assets/itacraft/models/item/hdmi_cable.json"
         ]
       }
     },
     {
-      "name": "HDMICableRecipe",
+      "name": "PregnantOnEffectActiveTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pregnant_on_effect_active_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/itacraft/procedures/PregnantOnEffectActiveTickProcedure.java"
+        ]
+      },
+      "path": "~/MatveySaker"
+    },
+    {
+      "name": "Pregnant",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pregnant",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/itacraft/potion/PregnantMobEffect.java"
+        ]
+      },
+      "path": "~/MatveySaker"
+    },
+    {
+      "name": "VippsRaner",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "vipps_raner",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/itacraft/models/item/vipps_raner_spawn_egg.json",
+          "src/main/java/net/mcreator/itacraft/entity/VippsRanerEntity.java",
+          "src/main/java/net/mcreator/itacraft/client/renderer/VippsRanerRenderer.java",
+          "src/main/resources/assets/itacraft/items/vipps_raner_spawn_egg.json",
+          "src/main/resources/data/itacraft/neoforge/biome_modifier/vipps_raner_biome_modifier.json"
+        ]
+      }
+    },
+    {
+      "name": "AbortionProcedure",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "abortion_procedure",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/itacraft/procedures/AbortionProcedureProcedure.java"
+        ]
+      },
+      "path": "~/MatveySaker"
+    },
+    {
+      "name": "Pooptickhandler",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pooptickhandler",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/mcreator/itacraft/procedures/PooptickhandlerProcedure.java"
+        ]
+      },
+      "path": "~/Procedures/PoopLogic"
+    },
+    {
+      "name": "DoorPlacedByPlayer",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "door_placed_by_player",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/itacraft/procedures/DoorPlacedByPlayerProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "Prolaps",
+      "type": "damagetype",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "prolaps",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/itacraft/damage_type/prolaps.json"
+        ]
+      },
+      "path": "~/MatveySaker"
+    },
+    {
+      "name": "Abortion",
+      "type": "command",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "abortion",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/itacraft/command/AbortionCommand.java"
+        ]
+      },
+      "path": "~/MatveySaker"
+    },
+    {
+      "name": "CumitemPlayerFinishesUsingItem",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cumitem_player_finishes_using_item",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/itacraft/procedures/CumitemPlayerFinishesUsingItemProcedure.java"
+        ]
+      },
+      "path": "~/MatveySaker"
+    },
+    {
+      "name": "Skatteman",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "skatteman",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/itacraft/items/skatteman_spawn_egg.json",
+          "src/main/java/net/mcreator/itacraft/entity/SkattemanEntity.java",
+          "src/main/java/net/mcreator/itacraft/client/renderer/SkattemanRenderer.java",
+          "src/main/resources/assets/itacraft/models/item/skatteman_spawn_egg.json"
+        ]
+      }
+    },
+    {
+      "name": "RadioactiveWasteBarrelRecipe",
       "type": "recipe",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "hdmi_cable_recipe",
+      "registry_name": "radioactive_waste_barrel_recipe",
       "metadata": {
         "files": [
-          "src/main/resources/data/itacraft/advancement/recipes/hdmi_cable_recipe.json",
-          "src/main/resources/data/itacraft/recipe/hdmi_cable_recipe.json"
+          "src/main/resources/data/itacraft/recipe/radioactive_waste_barrel_r.json",
+          "src/main/resources/data/itacraft/advancement/recipes/radioactive_waste_barrel_recipe.json"
+        ]
+      },
+      "path": "~/MatveySaker"
+    },
+    {
+      "name": "GuggeCraft3",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gugge_craft_3",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/itacraft/advancement/recipes/gugge_craft_3.json",
+          "src/main/resources/data/itacraft/recipe/gugge_craft_3.json"
+        ]
+      },
+      "path": "~/MatveySaker"
+    },
+    {
+      "name": "PregnantEffectExpires",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pregnant_effect_expires",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/itacraft/procedures/PregnantEffectExpiresProcedure.java"
+        ]
+      },
+      "path": "~/MatveySaker"
+    },
+    {
+      "name": "GuggeCraft4",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gugge_craft_4",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/itacraft/advancement/recipes/gugge_craft_4.json",
+          "src/main/resources/data/itacraft/recipe/gugge_craft_4.json"
+        ]
+      },
+      "path": "~/MatveySaker"
+    },
+    {
+      "name": "OnPlayerEats",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "on_player_eats",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/itacraft/procedures/OnPlayerEatsProcedure.java"
+        ]
+      },
+      "path": "~/Procedures/PoopLogic"
+    },
+    {
+      "name": "GuggeCraft2",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gugge_craft_2",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/itacraft/advancement/recipes/gugge_craft_2.json",
+          "src/main/resources/data/itacraft/recipe/gugge_craft_2.json"
+        ]
+      },
+      "path": "~/MatveySaker"
+    },
+    {
+      "name": "Cumitem",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cum",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/itacraft/models/item/cum.json",
+          "src/main/java/net/mcreator/itacraft/item/CumitemItem.java",
+          "src/main/resources/assets/itacraft/items/cum.json"
+        ]
+      },
+      "path": "~/MatveySaker"
+    },
+    {
+      "name": "OnDoorRightClicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "on_door_right_clicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/itacraft/procedures/OnDoorRightClickedProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "Fetus",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fetus",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/itacraft/items/fetus.json",
+          "src/main/resources/assets/itacraft/models/item/fetus.json",
+          "src/main/java/net/mcreator/itacraft/item/FetusItem.java"
+        ]
+      },
+      "path": "~/MatveySaker"
+    },
+    {
+      "name": "Cum",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cum",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/itacraft/procedures/CumProcedure.java"
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "VippsRanerPlayerCollidesWithThisEntity",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "vipps_raner_player_collides_with_this_entity",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/itacraft/procedures/VippsRanerPlayerCollidesWithThisEntityProcedure.java"
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "Masterbate",
+      "type": "command",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "masterbate",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/itacraft/command/MasterbateCommand.java"
         ]
       }
     }
@@ -2364,6 +2799,24 @@
       "type": "number",
       "scope": "map",
       "value": "0"
+    },
+    {
+      "name": "poopAmount",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "20.0"
+    },
+    {
+      "name": "abort_state",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0.0"
+    },
+    {
+      "name": "poopCooldown",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "6000.0"
     }
   ],
   "sound_elements": [
@@ -2446,6 +2899,30 @@
       ],
       "category": "neutral",
       "subtitle": ""
+    },
+    {
+      "name": "fuckin",
+      "files": [
+        "penetration3"
+      ],
+      "category": "player",
+      "subtitle": "\u003cfuckin\u003e"
+    },
+    {
+      "name": "cum1",
+      "files": [
+        "creampie1"
+      ],
+      "category": "player",
+      "subtitle": "\u003ccum\u003e"
+    },
+    {
+      "name": "cum2",
+      "files": [
+        "creampie2"
+      ],
+      "category": "player",
+      "subtitle": "\u003ccum\u003e"
     }
   ],
   "tag_elements": {
@@ -2535,6 +3012,9 @@
     ],
     "ITEMS:itacraft:lead_armor_repair_items": [
       "~CUSTOM:Lead"
+    ],
+    "ITEMS:minecraft:meat": [
+      "~CUSTOM:Fetus"
     ]
   },
   "tab_element_order": {},
@@ -2660,9 +3140,10 @@
       "item.itacraft.besj": "Besj",
       "subtitles.caca": "",
       "key.itacraft.poop_shortcut": "Poop Shortcut",
-      "gui.itacraft.hawk_osgui.button_onoff": "On/Off",
-      "item.itacraft.hdmi_cable": "HDMI Cable",
-      "item.itacraft.hdmi_plug": "HDMI Plug"
+      "gui.itacraft.hawk_phone_gui_home_screen.button_0": "o",
+      "gui.itacraft.hawk_phone_gui_home_screen.button_vy": "vy",
+      "gui.itacraft.hawk_phone_gui_home_screen.button_vipps": "Vipps",
+      "gui.itacraft.hawk_phone_gui_home_screen.label_hawkphone": "Hawk Phone PRO"
     }
   },
   "metadata": {
@@ -2703,7 +3184,12 @@
     "children": [
       {
         "name": "Procedures",
-        "children": []
+        "children": [
+          {
+            "name": "PoopLogic",
+            "children": []
+          }
+        ]
       },
       {
         "name": "MatveySaker",

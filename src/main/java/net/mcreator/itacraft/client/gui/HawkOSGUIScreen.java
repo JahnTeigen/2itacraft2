@@ -1,19 +1,5 @@
 package net.mcreator.itacraft.client.gui;
 
-import net.minecraft.world.level.Level;
-import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.player.Inventory;
-import net.minecraft.resources.ResourceLocation;
-import net.minecraft.network.chat.Component;
-import net.minecraft.client.renderer.RenderPipelines;
-import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
-import net.minecraft.client.gui.components.PlainTextButton;
-import net.minecraft.client.gui.components.Button;
-import net.minecraft.client.gui.GuiGraphics;
-
-import net.mcreator.itacraft.world.inventory.HawkOSGUIMenu;
-import net.mcreator.itacraft.init.ItacraftModScreens;
-
 public class HawkOSGUIScreen extends AbstractContainerScreen<HawkOSGUIMenu> implements ItacraftModScreens.ScreenAccessor {
 	private final Level world;
 	private final int x, y, z;

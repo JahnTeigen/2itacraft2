@@ -1,0 +1,12 @@
+{
+  "_fv": 79,
+  "_type": "damagetype",
+  "definition": {
+    "exhaustion": 2.0,
+    "scaling": "never",
+    "effects": "thorns",
+    "normalDeathMessage": "%1$s fikk prolaps",
+    "itemDeathMessage": "%1$s fikk prolaps av %2$s med %3$s (Hvordan??)",
+    "playerDeathMessage": "%1$s prolapset imens han stakk fra %2$s"
+  }
+}

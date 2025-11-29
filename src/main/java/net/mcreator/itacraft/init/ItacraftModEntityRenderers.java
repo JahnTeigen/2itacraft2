@@ -23,5 +23,7 @@ public class ItacraftModEntityRenderers {
 		event.registerEntityRenderer(ItacraftModEntities.TONY_HAYNES.get(), TonyHaynesRenderer::new);
 		event.registerEntityRenderer(ItacraftModEntities.FIREBALL.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(ItacraftModEntities.MONICA.get(), MonicaRenderer::new);
+		event.registerEntityRenderer(ItacraftModEntities.VIPPS_RANER.get(), VippsRanerRenderer::new);
+		event.registerEntityRenderer(ItacraftModEntities.SKATTEMAN.get(), SkattemanRenderer::new);
 	}
 }

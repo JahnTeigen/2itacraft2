@@ -119,7 +119,8 @@
   "item.itacraft.besj": "Besj",
   "subtitles.caca": "",
   "key.itacraft.poop_shortcut": "Poop Shortcut",
-  "gui.itacraft.hawk_osgui.button_onoff": "On/Off",
-  "item.itacraft.hdmi_cable": "HDMI Cable",
-  "item.itacraft.hdmi_plug": "HDMI Plug"
+  "gui.itacraft.hawk_phone_gui_home_screen.button_0": "o",
+  "gui.itacraft.hawk_phone_gui_home_screen.button_vy": "vy",
+  "gui.itacraft.hawk_phone_gui_home_screen.button_vipps": "Vipps",
+  "gui.itacraft.hawk_phone_gui_home_screen.label_hawkphone": "Hawk Phone PRO"
 }

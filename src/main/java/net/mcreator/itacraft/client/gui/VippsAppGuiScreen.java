@@ -3,8 +3,11 @@ package net.mcreator.itacraft.client.gui;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.player.Inventory;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.component.CustomData;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
+import net.minecraft.core.component.DataComponents;
 import net.minecraft.client.renderer.RenderPipelines;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.client.gui.GuiGraphics;
@@ -62,6 +65,15 @@ public class VippsAppGuiScreen extends AbstractContainerScreen<VippsAppGuiMenu> 
 	protected void renderLabels(GuiGraphics guiGraphics, int mouseX, int mouseY) {
 		guiGraphics.drawString(this.font, Component.translatable("gui.itacraft.vipps_app_gui.label_real_vipps"), 34, 14, -12829636, false);
 		guiGraphics.drawString(this.font, Component.translatable("gui.itacraft.vipps_app_gui.label_kontonummer"), 11, 38, -12829636, false);
+		
+		// Get the phone from player's hand and display money
+		ItemStack phoneItem = this.entity.getMainHandItem();
+		double money = phoneItem.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY)
+			.copyTag()
+			.getDouble("money")
+			.orElse(0.0);
+		String moneyText = String.format("%.2f kr", money);
+		guiGraphics.drawString(this.font, Component.literal(moneyText), 11, 50, -12829636, false);
 	}
 
 	@Override

@@ -51,7 +51,7 @@ public record PoopShortcutMessage(int eventType, int pressedms) implements Custo
 			return;
 		if (type == 0) {
 
-			PoopShortcutOnKeyPressedProcedure.execute(world, x, y, z);
+			PoopShortcutOnKeyPressedProcedure.execute(world, x, y, z, entity);
 		}
 	}
 

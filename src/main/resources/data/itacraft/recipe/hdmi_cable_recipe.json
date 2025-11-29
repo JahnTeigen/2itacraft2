@@ -7,12 +7,12 @@
     "bcb"
   ],
   "key": {
-    "a": "itacraft:hdmi_plug",
+    "a": "itacraft:deleted_mod_element",
     "b": "itacraft:plastic",
     "c": "minecraft:copper_ingot"
   },
   "result": {
-    "id": "itacraft:hdmi_cable",
+    "id": "itacraft:deleted_mod_element",
     "count": 2
   }
 }

@@ -1,0 +1,18 @@
+{
+  "type": "neoforge:add_spawns",
+  "biomes": [
+    "itacraft:drammen",
+    "dark_forest",
+    "beach",
+    "birch_forest",
+    "badlands",
+    "plains",
+    "snowy_plains"
+  ],
+  "spawners": {
+    "type": "itacraft:vipps_raner",
+    "weight": 50,
+    "minCount": 4,
+    "maxCount": 4
+  }
+}

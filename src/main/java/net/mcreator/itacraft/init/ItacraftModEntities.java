@@ -52,6 +52,14 @@ public class ItacraftModEntities {
 			EntityType.Builder.<MonicaEntity>of(MonicaEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
 
 					.sized(0.6f, 1.8f));
+	public static final DeferredHolder<EntityType<?>, EntityType<VippsRanerEntity>> VIPPS_RANER = register("vipps_raner",
+			EntityType.Builder.<VippsRanerEntity>of(VippsRanerEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(100).setUpdateInterval(3)
+
+					.sized(0.6f, 1.8f));
+	public static final DeferredHolder<EntityType<?>, EntityType<SkattemanEntity>> SKATTEMAN = register("skatteman",
+			EntityType.Builder.<SkattemanEntity>of(SkattemanEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune()
+
+					.sized(0.6f, 1.8f));
 
 	// Start of user code block custom entities
 	// End of user code block custom entities
@@ -73,6 +81,8 @@ public class ItacraftModEntities {
 		GamerGirlEntity.init(event);
 		TonyHaynesEntity.init(event);
 		MonicaEntity.init(event);
+		VippsRanerEntity.init(event);
+		SkattemanEntity.init(event);
 	}
 
 	@SubscribeEvent
@@ -83,5 +93,7 @@ public class ItacraftModEntities {
 		event.put(GAMER_GIRL.get(), GamerGirlEntity.createAttributes().build());
 		event.put(TONY_HAYNES.get(), TonyHaynesEntity.createAttributes().build());
 		event.put(MONICA.get(), MonicaEntity.createAttributes().build());
+		event.put(VIPPS_RANER.get(), VippsRanerEntity.createAttributes().build());
+		event.put(SKATTEMAN.get(), SkattemanEntity.createAttributes().build());
 	}
 }
