@@ -1,0 +1,11 @@
+{
+  "asset_id": "itacraft:coolpainting",
+  "height": 2,
+  "width": 2,
+  "title": {
+    "translate": "painting.itacraft.coolpainting.title"
+  },
+  "author": {
+    "translate": "painting.itacraft.coolpainting.author"
+  }
+}

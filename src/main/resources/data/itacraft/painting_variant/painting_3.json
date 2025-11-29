@@ -1,0 +1,11 @@
+{
+  "asset_id": "itacraft:painting_3",
+  "height": 2,
+  "width": 3,
+  "title": {
+    "translate": "painting.itacraft.painting_3.title"
+  },
+  "author": {
+    "translate": "painting.itacraft.painting_3.author"
+  }
+}

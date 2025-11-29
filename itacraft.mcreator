@@ -2475,7 +2475,7 @@
           "src/main/java/net/mcreator/itacraft/procedures/CumProcedure.java"
         ]
       },
-      "path": "~/Procedures"
+      "path": "~/Matvey"
     },
     {
       "name": "Masterbate",
@@ -2693,10 +2693,6 @@
       "registry_name": "on_door_right_clicked",
       "metadata": {
         "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
           {
             "name": "x",
             "type": "number"
@@ -2930,7 +2926,8 @@
         "files": [
           "src/main/java/net/mcreator/itacraft/procedures/RadiatedCumPlayerFinishesUsingItemProcedure.java"
         ]
-      }
+      },
+      "path": "~/Procedures"
     },
     {
       "name": "NalMedCum",
@@ -3063,7 +3060,12 @@
       "locked_code": false,
       "registry_name": "soldering_progress_value_provider",
       "metadata": {
-        "dependencies": [],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
         "return_type": "number",
         "files": [
           "src/main/java/net/mcreator/itacraft/procedures/SolderingProgressValueProviderProcedure.java"
@@ -3113,6 +3115,58 @@
         ]
       },
       "path": "~/Fredrik"
+    },
+    {
+      "name": "Coolpainting",
+      "type": "painting",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "coolpainting",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/itacraft/painting_variant/coolpainting.json"
+        ]
+      },
+      "path": "~/Matvey"
+    },
+    {
+      "name": "Painting2",
+      "type": "painting",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "painting_2",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/itacraft/painting_variant/painting_2.json"
+        ]
+      },
+      "path": "~/Matvey"
+    },
+    {
+      "name": "Painting3",
+      "type": "painting",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "painting_3",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/itacraft/painting_variant/painting_3.json"
+        ]
+      },
+      "path": "~/Matvey"
+    },
+    {
+      "name": "Painting1",
+      "type": "painting",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "painting_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/itacraft/painting_variant/painting_1.json"
+        ]
+      },
+      "path": "~/Matvey"
     }
   ],
   "variable_elements": [
@@ -3505,7 +3559,29 @@
       "item.itacraft.hdmi_plug": "HDMI Plug",
       "item.itacraft.hdmi_cable": "HDMI Cable",
       "subtitles.retarddod": "",
-      "subtitles.retardliving": ""
+      "subtitles.retardliving": "",
+      "item.itacraft.soldering_table": "Soldering Table",
+      "entity.itacraft.retarded_gamer_girl": "Retarded Gamer Girl",
+      "item.itacraft.retarded_gamer_girl_spawn_egg": "Retarded Gamer Girl Spawn Egg",
+      "item.itacraft.nal_med_cum": "Nål med Cum",
+      "item_group.itacraft.electronics": "Electronics",
+      "item.itacraft.plastic_circuit_board_mold": "Plastic Circuit Board Mold",
+      "item.itacraft.circuit_board": "Circuit Board",
+      "item.itacraft.microplastic": "Microplastic",
+      "item.itacraft.radiated_cum": "Radiated Cum",
+      "painting.itacraft.ehhhh.author": "Ådne",
+      "painting.itacraft.ehhhh.title": "The gay furry",
+      "gui.itacraft.skatteetaten_gui.button_betal_skatt": "betal skatt",
+      "gui.itacraft.skatteetaten_gui.label_jeg_tar_bare_vipps": "jeg tar bare vipps",
+      "gui.itacraft.soldering_table_gui.button_solder": "Solder",
+      "painting.itacraft.coolpainting.author": "ikke matvey",
+      "painting.itacraft.coolpainting.title": "family",
+      "painting.itacraft.painting_2.author": "ikke matvey",
+      "painting.itacraft.painting_2.title": "feet2",
+      "painting.itacraft.painting_3.title": "feet3",
+      "painting.itacraft.painting_3.author": "ikke matvey",
+      "painting.itacraft.painting_1.author": "ikke matvey",
+      "painting.itacraft.painting_1.title": "feet1"
     }
   },
   "metadata": {
