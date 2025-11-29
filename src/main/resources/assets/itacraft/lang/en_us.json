@@ -131,9 +131,20 @@
   "death.attack.prolaps": "%1$s fikk prolaps",
   "effect.itacraft.pregnant": "Pregnant",
   "item.itacraft.fetus": "Fetus",
-  "item.itacraft.skatteman_spawn_egg": "Skatteman Spawn Egg",
-  "entity.itacraft.skatteman": "Skatteman",
   "gui.itacraft.hawk_osgui.button_onoff": "On/Off",
   "item.itacraft.hdmi_plug": "HDMI Plug",
-  "item.itacraft.hdmi_cable": "HDMI Cable"
+  "item.itacraft.hdmi_cable": "HDMI Cable",
+  "gui.itacraft.skatteetaten_gui.button_betal_skatt": "betal skatt",
+  "gui.itacraft.skatteetaten_gui.label_jeg_tar_bare_vipps": "jeg tar bare vipps",
+  "item.itacraft.soldering_table": "Soldering Table",
+  "item.itacraft.nal_med_cum": "Nål med Cum",
+  "item_group.itacraft.electronics": "Electronics",
+  "item.itacraft.plastic_circuit_board_mold": "Plastic Circuit Board Mold",
+  "item.itacraft.circuit_board": "Circuit Board",
+  "item.itacraft.microplastic": "Microplastic",
+  "gui.itacraft.soldering_table_gui.button_solder": "Solder",
+  "item.itacraft.skatteman_spawn_egg": "Skatteman Spawn Egg",
+  "entity.itacraft.skatteman": "Skatteman",
+  "item.itacraft.skatteetaten_spawn_egg": "Skatteetaten Spawn Egg",
+  "entity.itacraft.skatteetaten": "Skatteetaten"
 }

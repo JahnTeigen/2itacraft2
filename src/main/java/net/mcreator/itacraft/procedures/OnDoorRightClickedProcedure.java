@@ -33,7 +33,7 @@ public class OnDoorRightClickedProcedure {
 		if ((BuiltInRegistries.BLOCK.getKey((world.getBlockState(BlockPos.containing(x, y, z))).getBlock()).toString()).equals(BuiltInRegistries.BLOCK.getKey(Blocks.OAK_DOOR).toString())) {
 			if (world instanceof ServerLevel _level)
 				_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
-						"execute if entity @e[type=itacraft:skatteman,distance=..10] run kill @e[type=itacraft:skatteman]");
+						"execute if entity @e[type=itacraft:skatteetaten,distance=..10] run kill @e[type=itacraft:skatteetaten]");
 		}
 	}
 }

@@ -1,29 +1,67 @@
 package net.mcreator.itacraft.entity;
 
-import net.minecraft.nbt.Tag;
-import net.minecraft.network.syncher.EntityDataAccessor;
+import net.neoforged.neoforge.items.wrapper.EntityHandsInvWrapper;
+import net.neoforged.neoforge.items.wrapper.EntityArmorInvWrapper;
+import net.neoforged.neoforge.items.wrapper.CombinedInvWrapper;
+import net.neoforged.neoforge.items.ItemStackHandler;
+import net.neoforged.neoforge.fluids.FluidType;
+import net.neoforged.neoforge.event.entity.RegisterSpawnPlacementsEvent;
+import net.neoforged.neoforge.common.NeoForgeMod;
+
+import net.minecraft.world.level.storage.ValueOutput;
+import net.minecraft.world.level.storage.ValueInput;
+import net.minecraft.world.level.ServerLevelAccessor;
+import net.minecraft.world.level.Level;
+import net.minecraft.world.level.Explosion;
+import net.minecraft.world.item.enchantment.EnchantmentHelper;
+import net.minecraft.world.item.enchantment.EnchantmentEffectComponents;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.inventory.AbstractContainerMenu;
+import net.minecraft.world.entity.projectile.AbstractThrownPotion;
+import net.minecraft.world.entity.projectile.AbstractArrow;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.player.Inventory;
+import net.minecraft.world.entity.ai.goal.RandomLookAroundGoal;
+import net.minecraft.world.entity.ai.goal.FloatGoal;
+import net.minecraft.world.entity.ai.attributes.Attributes;
+import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
+import net.minecraft.world.entity.*;
+import net.minecraft.world.damagesource.DamageTypes;
+import net.minecraft.world.damagesource.DamageSource;
+import net.minecraft.world.MenuProvider;
+import net.minecraft.world.InteractionResult;
+import net.minecraft.world.InteractionHand;
+import net.minecraft.world.DifficultyInstance;
+import net.minecraft.sounds.SoundEvent;
+import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.server.level.ServerLevel;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.network.chat.Component;
+import net.minecraft.network.FriendlyByteBuf;
+import net.minecraft.core.registries.BuiltInRegistries;
+
+import net.mcreator.itacraft.world.inventory.SkatteetatenGuiMenu;
+import net.mcreator.itacraft.procedures.SkattemanOnInitialEntitySpawnProcedure;
+
+import javax.annotation.Nullable;
+
+import io.netty.buffer.Unpooled;
 
 public class SkattemanEntity extends PathfinderMob {
-
 	public SkattemanEntity(EntityType<SkattemanEntity> type, Level world) {
 		super(type, world);
 		xpReward = 0;
 		setNoAi(false);
-
 		setCustomName(Component.literal("skatteetaten"));
 		setCustomNameVisible(true);
-
 		setPersistenceRequired();
-
 	}
 
 	@Override
 	protected void registerGoals() {
 		super.registerGoals();
-
 		this.goalSelector.addGoal(1, new RandomLookAroundGoal(this));
 		this.goalSelector.addGoal(2, new FloatGoal(this));
-
 	}
 
 	@Override
@@ -77,8 +115,14 @@ public class SkattemanEntity extends PathfinderMob {
 		return true;
 	}
 
-	private final ItemStackHandler inventory = new ItemStackHandler(9);
+	@Override
+	public SpawnGroupData finalizeSpawn(ServerLevelAccessor world, DifficultyInstance difficulty, EntitySpawnReason reason, @Nullable SpawnGroupData livingdata) {
+		SpawnGroupData retval = super.finalizeSpawn(world, difficulty, reason, livingdata);
+		SkattemanOnInitialEntitySpawnProcedure.execute(world, this.getX(), this.getY(), this.getZ(), this);
+		return retval;
+	}
 
+	private final ItemStackHandler inventory = new ItemStackHandler(9);
 	private final CombinedInvWrapper combined = new CombinedInvWrapper(inventory, new EntityHandsInvWrapper(this), new EntityArmorInvWrapper(this));
 
 	public CombinedInvWrapper getCombinedInventory() {
@@ -112,10 +156,8 @@ public class SkattemanEntity extends PathfinderMob {
 	public InteractionResult mobInteract(Player sourceentity, InteractionHand hand) {
 		ItemStack itemstack = sourceentity.getItemInHand(hand);
 		InteractionResult retval = InteractionResult.SUCCESS;
-
 		if (sourceentity instanceof ServerPlayer serverPlayer) {
 			serverPlayer.openMenu(new MenuProvider() {
-
 				@Override
 				public Component getDisplayName() {
 					return Component.literal("Skatteman");
@@ -129,16 +171,13 @@ public class SkattemanEntity extends PathfinderMob {
 					packetBuffer.writeVarInt(SkattemanEntity.this.getId());
 					return new SkatteetatenGuiMenu(id, inventory, packetBuffer);
 				}
-
 			}, buf -> {
 				buf.writeBlockPos(sourceentity.blockPosition());
 				buf.writeByte(0);
 				buf.writeVarInt(this.getId());
 			});
 		}
-
 		super.mobInteract(sourceentity, hand);
-
 		return retval;
 	}
 
@@ -172,10 +211,7 @@ public class SkattemanEntity extends PathfinderMob {
 		builder = builder.add(Attributes.ARMOR, 0);
 		builder = builder.add(Attributes.ATTACK_DAMAGE, 0);
 		builder = builder.add(Attributes.FOLLOW_RANGE, 16);
-
 		builder = builder.add(Attributes.STEP_HEIGHT, 0.6);
-
 		return builder;
 	}
-
 }
