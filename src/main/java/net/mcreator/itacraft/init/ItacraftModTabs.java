@@ -43,6 +43,7 @@ public class ItacraftModTabs {
 			tabData.accept(ItacraftModItems.VIPPS_RANER_SPAWN_EGG.get());
 			tabData.accept(ItacraftModItems.SKATTEMAN_SPAWN_EGG.get());
 			tabData.accept(ItacraftModItems.NAL_MED_CUM.get());
+			tabData.accept(ItacraftModItems.RETARDED_GAMER_GIRL_SPAWN_EGG.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
 			tabData.accept(ItacraftModBlocks.ANDREAS.get().asItem());
 			tabData.accept(ItacraftModItems.FEMTI_KRONER.get());

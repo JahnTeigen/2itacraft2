@@ -89,6 +89,8 @@ public class ItacraftModItems {
 	public static final DeferredItem<Item> PLASTIC_CIRCUIT_BOARD_MOLD;
 	public static final DeferredItem<Item> CIRCUIT_BOARD;
 	public static final DeferredItem<Item> MICROPLASTIC;
+	public static final DeferredItem<Item> RETARDED_GAMER_GIRL_SPAWN_EGG;
+	public static final DeferredItem<Item> RADIATED_CUM;
 	static {
 		GEIR_HAOY_SPAWN_EGG = register("geir_haoy_spawn_egg", properties -> new SpawnEggItem(ItacraftModEntities.GEIR_HAOY.get(), properties));
 		KOG_STOCK = register("kog_stock", KOGStockItem::new);
@@ -151,6 +153,8 @@ public class ItacraftModItems {
 		PLASTIC_CIRCUIT_BOARD_MOLD = register("plastic_circuit_board_mold", PlasticCircuitBoardMoldItem::new);
 		CIRCUIT_BOARD = register("circuit_board", CircuitBoardItem::new);
 		MICROPLASTIC = register("microplastic", MicroplasticItem::new);
+		RETARDED_GAMER_GIRL_SPAWN_EGG = register("retarded_gamer_girl_spawn_egg", properties -> new SpawnEggItem(ItacraftModEntities.RETARDED_GAMER_GIRL.get(), properties));
+		RADIATED_CUM = register("radiated_cum", RadiatedCumItem::new);
 	}
 
 	// Start of user code block custom items
