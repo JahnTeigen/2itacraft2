@@ -135,12 +135,5 @@
   "item.itacraft.skatteman_spawn_egg": "Skatteman Spawn Egg",
   "entity.itacraft.skatteman": "Skatteman",
   "item.itacraft.cum": "Cum",
-  "item.itacraft.fetus": "Fetus",
-  "item.itacraft.microplastic": "Microplastic",
-  "item.itacraft.circuit_board": "Circuit Board",
-  "item_group.itacraft.electronics": "Electronics",
-  "item.itacraft.soldering_table": "Soldering Table",
-  "gui.itacraft.soldering_table_gui.button_solder": "Solder",
-  "item.itacraft.plastic_circuit_board_mold": "Plastic Circuit Board Mold",
-  "item.itacraft.nal_med_cum": "Nål med Cum"
+  "item.itacraft.fetus": "Fetus"
 }

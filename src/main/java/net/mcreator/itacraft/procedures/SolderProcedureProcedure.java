@@ -1,15 +1,6 @@
 package net.mcreator.itacraft.procedures;
 
-import net.minecraft.world.level.LevelAccessor;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.Entity;
-import net.minecraft.server.level.ServerLevel;
-import net.minecraft.network.chat.Component;
-
-import net.mcreator.itacraft.init.ItacraftModMenus;
-import net.mcreator.itacraft.init.ItacraftModItems;
-import net.mcreator.itacraft.ItacraftMod;
+import net.neoforged.bus.api.Event;
 
 public class SolderProcedureProcedure {
 	public static void execute(LevelAccessor world, Entity entity) {
@@ -34,7 +25,7 @@ public class SolderProcedureProcedure {
 				}
 				if (entity.getPersistentData().getDoubleOr("tagName", 0) == 8) {
 					if (entity instanceof Player _player && _player.containerMenu instanceof ItacraftModMenus.MenuAccessor _menu) {
-						ItemStack _setstack10 = new ItemStack(ItacraftModItems.CIRCUIT_BOARD.get()).copy();
+						ItemStack _setstack10 = new ItemStack(ItacraftModItems.DELETED_MOD_ELEMENT.get()).copy();
 						_setstack10.setCount(1);
 						_menu.getSlots().get(2).set(_setstack10);
 						_menu.getSlots().get(1).remove(1);
