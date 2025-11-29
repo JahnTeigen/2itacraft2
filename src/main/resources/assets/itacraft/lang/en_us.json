@@ -132,5 +132,8 @@
   "effect.itacraft.pregnant": "Pregnant",
   "item.itacraft.fetus": "Fetus",
   "item.itacraft.skatteman_spawn_egg": "Skatteman Spawn Egg",
-  "entity.itacraft.skatteman": "Skatteman"
+  "entity.itacraft.skatteman": "Skatteman",
+  "gui.itacraft.hawk_osgui.button_onoff": "On/Off",
+  "item.itacraft.hdmi_plug": "HDMI Plug",
+  "item.itacraft.hdmi_cable": "HDMI Cable"
 }
