@@ -143,8 +143,6 @@
   "item.itacraft.circuit_board": "Circuit Board",
   "item.itacraft.microplastic": "Microplastic",
   "gui.itacraft.soldering_table_gui.button_solder": "Solder",
-  "item.itacraft.skatteman_spawn_egg": "Skatteman Spawn Egg",
-  "entity.itacraft.skatteman": "Skatteman",
   "item.itacraft.skatteetaten_spawn_egg": "Skatteetaten Spawn Egg",
   "entity.itacraft.skatteetaten": "Skatteetaten"
 }

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a",
+    "a",
+    "a"
+  ],
+  "key": {
+    "a": "itacraft:red_colored_plastic"
+  },
+  "result": {
+    "id": "itacraft:deleted_mod_element",
+    "count": 1
+  }
+}

@@ -1674,9 +1674,9 @@
       "registry_name": "giftig_gugge",
       "metadata": {
         "files": [
-          "src/main/resources/assets/itacraft/items/giftig_gugge.json",
           "src/main/resources/assets/itacraft/models/item/giftig_gugge.json",
-          "src/main/java/net/mcreator/itacraft/item/GiftigGuggeItem.java"
+          "src/main/java/net/mcreator/itacraft/item/GiftigGuggeItem.java",
+          "src/main/resources/assets/itacraft/items/giftig_gugge.json"
         ]
       },
       "path": "~/Matvey"
@@ -2143,8 +2143,8 @@
       "registry_name": "hawk_phone_recipe",
       "metadata": {
         "files": [
-          "src/main/resources/data/itacraft/advancement/recipes/hawk_phone_recipe.json",
-          "src/main/resources/data/itacraft/recipe/hawk_phone_recipe.json"
+          "src/main/resources/data/itacraft/recipe/hawk_phone_recipe.json",
+          "src/main/resources/data/itacraft/advancement/recipes/hawk_phone_recipe.json"
         ]
       }
     },
@@ -2304,8 +2304,8 @@
       "registry_name": "radioactive_waste_barrel_recipe",
       "metadata": {
         "files": [
-          "src/main/resources/data/itacraft/advancement/recipes/radioactive_waste_barrel_recipe.json",
-          "src/main/resources/data/itacraft/recipe/radioactive_waste_barrel_r.json"
+          "src/main/resources/data/itacraft/recipe/radioactive_waste_barrel_r.json",
+          "src/main/resources/data/itacraft/advancement/recipes/radioactive_waste_barrel_recipe.json"
         ]
       },
       "path": "~/Matvey"
@@ -2736,8 +2736,8 @@
       "registry_name": "hdmi_cable_recipe",
       "metadata": {
         "files": [
-          "src/main/resources/data/itacraft/recipe/hdmi_cable_recipe.json",
-          "src/main/resources/data/itacraft/advancement/recipes/hdmi_cable_recipe.json"
+          "src/main/resources/data/itacraft/advancement/recipes/hdmi_cable_recipe.json",
+          "src/main/resources/data/itacraft/recipe/hdmi_cable_recipe.json"
         ]
       },
       "path": "~/Fredrik"
@@ -2779,8 +2779,8 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/itacraft/item/HDMIPlugItem.java",
-          "src/main/resources/assets/itacraft/models/item/hdmi_plug.json",
-          "src/main/resources/assets/itacraft/items/hdmi_plug.json"
+          "src/main/resources/assets/itacraft/items/hdmi_plug.json",
+          "src/main/resources/assets/itacraft/models/item/hdmi_plug.json"
         ]
       },
       "path": "~/Fredrik"
@@ -3022,19 +3022,6 @@
       "path": "~/Fredrik"
     },
     {
-      "name": "SkattemanOnInitialEntitySpawn",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": true,
-      "registry_name": "skatteman_on_initial_entity_spawn",
-      "metadata": {
-        "dependencies": [],
-        "files": [
-          "src/main/java/net/mcreator/itacraft/procedures/SkattemanOnInitialEntitySpawnProcedure.java"
-        ]
-      }
-    },
-    {
       "name": "Skatteetaten",
       "type": "livingentity",
       "compiles": true,
@@ -3049,6 +3036,286 @@
           "src/main/resources/assets/itacraft/models/item/skatteetaten_spawn_egg.json"
         ]
       }
+    },
+    {
+      "name": "SkattemanOnInitialEntitySpawn",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "skatteman_on_initial_entity_spawn",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/mcreator/itacraft/procedures/SkattemanOnInitialEntitySpawnProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "MatveyHus",
+      "type": "structure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "matvey_hus",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/itacraft/worldgen/structure/matvey_hus.json",
+          "src/main/resources/data/itacraft/worldgen/template_pool/matvey_hus.json",
+          "src/main/resources/data/itacraft/worldgen/structure_set/matvey_hus.json"
+        ]
+      },
+      "path": "~/Matvey"
+    },
+    {
+      "name": "Painting1",
+      "type": "painting",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "painting_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/itacraft/painting_variant/painting_1.json"
+        ]
+      },
+      "path": "~/Matvey"
+    },
+    {
+      "name": "RetardedGamerGirl",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "retarded_gamer_girl",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/itacraft/neoforge/biome_modifier/retarded_gamer_girl_biome_modifier.json",
+          "src/main/resources/assets/itacraft/models/item/retarded_gamer_girl_spawn_egg.json",
+          "src/main/resources/assets/itacraft/items/retarded_gamer_girl_spawn_egg.json",
+          "src/main/java/net/mcreator/itacraft/client/renderer/RetardedGamerGirlRenderer.java",
+          "src/main/java/net/mcreator/itacraft/entity/RetardedGamerGirlEntity.java"
+        ]
+      }
+    },
+    {
+      "name": "Painting2",
+      "type": "painting",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "painting_2",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/itacraft/painting_variant/painting_2.json"
+        ]
+      },
+      "path": "~/Matvey"
+    },
+    {
+      "name": "RadiatedCumPlayerFinishesUsingItem",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "radiated_cum_player_finishes_using_item",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/itacraft/procedures/RadiatedCumPlayerFinishesUsingItemProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "Painting3",
+      "type": "painting",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "painting_3",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/itacraft/painting_variant/painting_3.json"
+        ]
+      },
+      "path": "~/Matvey"
+    },
+    {
+      "name": "RadiatedCum",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "radiated_cum",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/itacraft/item/RadiatedCumItem.java",
+          "src/main/resources/assets/itacraft/items/radiated_cum.json",
+          "src/main/resources/assets/itacraft/models/item/radiated_cum.json"
+        ]
+      }
+    },
+    {
+      "name": "Condome",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "condome",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/itacraft/item/CondomeItem.java",
+          "src/main/resources/assets/itacraft/models/item/condome.json",
+          "src/main/resources/assets/itacraft/items/condome.json"
+        ]
+      },
+      "path": "~/Fredrik"
+    },
+    {
+      "name": "EquipCondomeShortcutOnKeyPressed",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "equip_condome_shortcut_on_key_pressed",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/itacraft/procedures/EquipCondomeShortcutOnKeyPressedProcedure.java"
+        ]
+      },
+      "path": "~/Fredrik"
+    },
+    {
+      "name": "DildoRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dildo_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/itacraft/recipe/dildo_recipe.json",
+          "src/main/resources/data/itacraft/advancement/recipes/dildo_recipe.json"
+        ]
+      },
+      "path": "~/Fredrik"
+    },
+    {
+      "name": "GuggeCraft5",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gugge_craft_5",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/itacraft/recipe/gugge_craft_5.json",
+          "src/main/resources/data/itacraft/advancement/recipes/gugge_craft_5.json"
+        ]
+      },
+      "path": "~/Matvey"
+    },
+    {
+      "name": "Ehhhh",
+      "type": "painting",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ehhhh",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/itacraft/painting_variant/ehhhh.json"
+        ]
+      }
+    },
+    {
+      "name": "CondomeDisplayCondition",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "condome_display_condition",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/itacraft/procedures/CondomeDisplayConditionProcedure.java"
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "Coolpainting",
+      "type": "painting",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "coolpainting",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/itacraft/painting_variant/coolpainting.json"
+        ]
+      },
+      "path": "~/Matvey"
+    },
+    {
+      "name": "Dildo",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dildo",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/itacraft/models/item/dildo.json",
+          "src/main/java/net/mcreator/itacraft/item/DildoItem.java",
+          "src/main/resources/assets/itacraft/items/dildo.json"
+        ]
+      },
+      "path": "~/Fredrik"
+    },
+    {
+      "name": "BazingaParticle",
+      "type": "particle",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bazinga_particle",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/itacraft/client/particle/BazingaParticleParticle.java",
+          "src/main/resources/assets/itacraft/particles/bazinga_particle.json"
+        ]
+      },
+      "path": "~/Fredrik"
+    },
+    {
+      "name": "EquipCondomeShortcut",
+      "type": "keybind",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "equip_condome_shortcut",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/itacraft/network/EquipCondomeShortcutMessage.java"
+        ]
+      },
+      "path": "~/Fredrik"
     }
   ],
   "variable_elements": [
@@ -3081,6 +3348,12 @@
       "type": "number",
       "scope": "map",
       "value": "0"
+    },
+    {
+      "name": "isCondomeEquipped",
+      "type": "logic",
+      "scope": "player_lifetime",
+      "value": "false"
     }
   ],
   "sound_elements": [
@@ -3187,6 +3460,30 @@
       ],
       "category": "player",
       "subtitle": "\u003cfuckin\u003e"
+    },
+    {
+      "name": "retardliving",
+      "files": [
+        "retardliving"
+      ],
+      "category": "player",
+      "subtitle": ""
+    },
+    {
+      "name": "condome_application",
+      "files": [
+        "condome_application_sfx"
+      ],
+      "category": "neutral",
+      "subtitle": ""
+    },
+    {
+      "name": "retarddod",
+      "files": [
+        "retarddod"
+      ],
+      "category": "player",
+      "subtitle": ""
     }
   ],
   "tag_elements": {
@@ -3222,6 +3519,7 @@
       "~CUSTOM:ModularPliers"
     ],
     "ITEMS:minecraft:swords": [
+      "~CUSTOM:Dildo",
       "~CUSTOM:ModularPliers"
     ],
     "ITEMS:itacraft:modular_pliers_repair_items": [
@@ -3279,6 +3577,9 @@
     ],
     "ITEMS:minecraft:meat": [
       "~CUSTOM:Fetus"
+    ],
+    "ENTITIES:minecraft:illager": [
+      "~CUSTOM:RetardedGamerGirl"
     ]
   },
   "tab_element_order": {},
@@ -3428,21 +3729,19 @@
       "item.itacraft.circuit_board": "Circuit Board",
       "item.itacraft.microplastic": "Microplastic",
       "gui.itacraft.soldering_table_gui.button_solder": "Solder",
-      "item.itacraft.skatteman_spawn_egg": "Skatteman Spawn Egg",
-      "entity.itacraft.skatteman": "Skatteman",
       "item.itacraft.skatteetaten_spawn_egg": "Skatteetaten Spawn Egg",
       "entity.itacraft.skatteetaten": "Skatteetaten"
     }
   },
   "metadata": {
     "files": [
-      "src/main/java/net/mcreator/itacraft/mixin/NoiseGeneratorSettingsMixin.java",
       "src/main/java/net/mcreator/itacraft/init/ItacraftModBiomes.java",
+      "src/main/java/net/mcreator/itacraft/mixin/NoiseGeneratorSettingsMixin.java",
       "src/main/java/net/mcreator/itacraft/init/ItacraftModFluidTypes.java",
       "src/main/java/net/mcreator/itacraft/init/ItacraftModFluids.java",
-      "src/main/java/net/mcreator/itacraft/init/ItacraftModMenus.java",
-      "src/main/java/net/mcreator/itacraft/init/ItacraftModScreens.java",
       "src/main/java/net/mcreator/itacraft/network/MenuStateUpdateMessage.java",
+      "src/main/java/net/mcreator/itacraft/init/ItacraftModScreens.java",
+      "src/main/java/net/mcreator/itacraft/init/ItacraftModMenus.java",
       "src/main/java/net/mcreator/itacraft/init/ItacraftModKeyMappings.java",
       "src/main/resources/data/minecraft/tags/painting_variant/placeable.json",
       "src/main/java/net/mcreator/itacraft/init/ItacraftModParticleTypes.java",
@@ -3453,18 +3752,18 @@
       "src/main/java/net/mcreator/itacraft/init/ItacraftModBlocks.java",
       "src/main/java/net/mcreator/itacraft/init/ItacraftModBlockEntities.java",
       "src/main/java/net/mcreator/itacraft/init/ItacraftModItems.java",
-      "src/main/java/net/mcreator/itacraft/init/ItacraftModEntityRenderers.java",
       "src/main/java/net/mcreator/itacraft/init/ItacraftModEntities.java",
-      "src/main/resources/pack.mcmeta",
-      "src/main/resources/META-INF/accesstransformer.cfg",
-      "src/main/java/net/mcreator/itacraft/init/ItacraftModModels.java",
-      "src/main/java/net/mcreator/itacraft/init/ItacraftModTabs.java",
-      "src/main/java/net/mcreator/itacraft/network/ItacraftModVariables.java",
+      "src/main/java/net/mcreator/itacraft/init/ItacraftModEntityRenderers.java",
       "src/main/java/net/mcreator/itacraft/ItacraftMod.java",
-      "src/main/resources/assets/itacraft/sounds.json",
+      "src/main/java/net/mcreator/itacraft/init/ItacraftModSounds.java",
+      "src/main/java/net/mcreator/itacraft/network/ItacraftModVariables.java",
       "src/main/resources/itacraft.mixins.json",
       "src/main/resources/META-INF/neoforge.mods.toml",
-      "src/main/java/net/mcreator/itacraft/init/ItacraftModSounds.java"
+      "src/main/resources/pack.mcmeta",
+      "src/main/resources/assets/itacraft/sounds.json",
+      "src/main/resources/META-INF/accesstransformer.cfg",
+      "src/main/java/net/mcreator/itacraft/init/ItacraftModModels.java",
+      "src/main/java/net/mcreator/itacraft/init/ItacraftModTabs.java"
     ]
   },
   "foldersRoot": {

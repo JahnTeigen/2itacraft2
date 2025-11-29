@@ -43,6 +43,7 @@ public class ItacraftModTabs {
 			tabData.accept(ItacraftModItems.VIPPS_RANER_SPAWN_EGG.get());
 			tabData.accept(ItacraftModItems.NAL_MED_CUM.get());
 			tabData.accept(ItacraftModItems.SKATTEETATEN_SPAWN_EGG.get());
+			tabData.accept(ItacraftModItems.RETARDED_GAMER_GIRL_SPAWN_EGG.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
 			tabData.accept(ItacraftModBlocks.ANDREAS.get().asItem());
 			tabData.accept(ItacraftModItems.FEMTI_KRONER.get());
@@ -66,6 +67,7 @@ public class ItacraftModTabs {
 			tabData.accept(ItacraftModItems.HAWK_PHONE.get());
 			tabData.accept(ItacraftModItems.COMMUNISM.get());
 			tabData.accept(ItacraftModItems.TOM_NAL.get());
+			tabData.accept(ItacraftModItems.DILDO.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS) {
 			tabData.accept(ItacraftModItems.HEROIN.get());
 			tabData.accept(ItacraftModItems.NAL_MED_NOE_RART_I.get());
@@ -91,6 +93,7 @@ public class ItacraftModTabs {
 			tabData.accept(ItacraftModItems.LEAD_ARMOR_CHESTPLATE.get());
 			tabData.accept(ItacraftModItems.LEAD_ARMOR_LEGGINGS.get());
 			tabData.accept(ItacraftModItems.BESJ.get());
+			tabData.accept(ItacraftModItems.CONDOME.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
 			tabData.accept(ItacraftModItems.LEAD.get());
 			tabData.accept(ItacraftModBlocks.LEAD_ORE.get().asItem());

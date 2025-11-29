@@ -1,0 +1,12 @@
+{
+  "_fv": 79,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "C",
+    "keyBindingName": "Equip Condome Shortcut",
+    "keyBindingCategoryKey": "misc",
+    "onKeyPressed": {
+      "name": "EquipCondomeShortcutOnKeyPressed"
+    }
+  }
+}

@@ -110,5 +110,29 @@
         "stream": false
       }
     ]
+  },
+  "retardliving": {
+    "sounds": [
+      {
+        "name": "itacraft:retardliving",
+        "stream": false
+      }
+    ]
+  },
+  "condome_application": {
+    "sounds": [
+      {
+        "name": "itacraft:condome_application_sfx",
+        "stream": false
+      }
+    ]
+  },
+  "retarddod": {
+    "sounds": [
+      {
+        "name": "itacraft:retarddod",
+        "stream": false
+      }
+    ]
   }
 }

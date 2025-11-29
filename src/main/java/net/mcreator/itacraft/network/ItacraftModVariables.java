@@ -83,6 +83,7 @@ public class ItacraftModVariables {
 		clone.poopCooldown = original.poopCooldown;
 		clone.abort_state = original.abort_state;
 		if (!event.isWasDeath()) {
+			clone.isCondomeEquipped = original.isCondomeEquipped;
 		}
 		event.getEntity().setData(PLAYER_VARIABLES, clone);
 	}
@@ -239,12 +240,14 @@ public class ItacraftModVariables {
 		public double poopAmount = 20.0;
 		public double poopCooldown = 6000.0;
 		public double abort_state = 0.0;
+		public boolean isCondomeEquipped = false;
 
 		@Override
 		public void serialize(ValueOutput output) {
 			output.putDouble("poopAmount", poopAmount);
 			output.putDouble("poopCooldown", poopCooldown);
 			output.putDouble("abort_state", abort_state);
+			output.putBoolean("isCondomeEquipped", isCondomeEquipped);
 		}
 
 		@Override
@@ -252,6 +255,7 @@ public class ItacraftModVariables {
 			poopAmount = input.getDoubleOr("poopAmount", 0);
 			poopCooldown = input.getDoubleOr("poopCooldown", 0);
 			abort_state = input.getDoubleOr("abort_state", 0);
+			isCondomeEquipped = input.getBooleanOr("isCondomeEquipped", false);
 		}
 
 		public void markSyncDirty() {

@@ -2,10 +2,10 @@
   "_fv": 79,
   "_type": "livingentity",
   "definition": {
-    "mobName": "Skatteman",
-    "mobLabel": "skatteetaten",
-    "mobModelName": "ModelGamerGirl",
-    "mobModelTexture": "2024_01_15_tax-collector-22260226.png",
+    "mobName": "Retarded Gamer Girl",
+    "mobLabel": "",
+    "mobModelName": "Biped",
+    "mobModelTexture": "retardedgamergirl.png",
     "transparentModelCondition": {
       "fixedValue": false
     },
@@ -36,7 +36,7 @@
       "value": -1,
       "falpha": 0.0
     },
-    "spawnEggTexture": "taxcol",
+    "spawnEggTexture": "",
     "creativeTabs": [
       {
         "value": "MISC"
@@ -63,12 +63,12 @@
     "equipmentBoots": {
       "value": ""
     },
-    "mobBehaviourType": "Creature",
-    "mobCreatureType": "UNDEFINED",
-    "attackStrength": 0,
+    "mobBehaviourType": "Mob",
+    "mobCreatureType": "ILLAGER",
+    "attackStrength": 3,
     "attackKnockback": 0.0,
     "knockbackResistance": 0.0,
-    "movementSpeed": 0.0,
+    "movementSpeed": 0.3,
     "stepHeight": 0.6,
     "armorBaseValue": 0.0,
     "trackingRange": 64,
@@ -77,43 +77,42 @@
     "xpAmount": 0,
     "waterMob": false,
     "breatheUnderwater": {
-      "fixedValue": true
-    },
-    "pushedByFluids": {
       "fixedValue": false
     },
+    "pushedByFluids": {
+      "fixedValue": true
+    },
     "flyingMob": false,
-    "guiBoundTo": "SkatteetatenGui",
     "inventorySize": 9,
     "inventoryStackSize": 99,
     "disableCollisions": false,
     "ridable": false,
     "canControlForward": false,
     "canControlStrafe": false,
-    "immuneToFire": true,
-    "immuneToArrows": true,
-    "immuneToFallDamage": true,
-    "immuneToCactus": true,
-    "immuneToDrowning": true,
-    "immuneToLightning": true,
-    "immuneToPotions": true,
-    "immuneToPlayer": true,
-    "immuneToExplosion": true,
-    "immuneToTrident": true,
-    "immuneToAnvil": true,
-    "immuneToWither": true,
-    "immuneToDragonBreath": true,
+    "immuneToFire": false,
+    "immuneToArrows": false,
+    "immuneToFallDamage": false,
+    "immuneToCactus": false,
+    "immuneToDrowning": false,
+    "immuneToLightning": false,
+    "immuneToPotions": false,
+    "immuneToPlayer": false,
+    "immuneToExplosion": false,
+    "immuneToTrident": false,
+    "immuneToAnvil": false,
+    "immuneToWither": false,
+    "immuneToDragonBreath": false,
     "mobDrop": {
       "value": ""
     },
     "livingSound": {
-      "value": ""
+      "value": "CUSTOM:retardliving"
     },
     "hurtSound": {
       "value": "entity.generic.hurt"
     },
     "deathSound": {
-      "value": "entity.generic.death"
+      "value": "CUSTOM:retarddod"
     },
     "stepSound": {
       "value": ""
@@ -122,12 +121,9 @@
       "value": ""
     },
     "entityDataEntries": [],
-    "onInitialSpawn": {
-      "name": "SkattemanOnInitialEntitySpawn"
-    },
     "hasAI": true,
     "aiBase": "(none)",
-    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"look_around\"><field name=\"condition\">null,null</field><next><block type=\"swim_in_water\"><field name=\"condition\">null,null</field></block></next></block></next></block></xml>",
+    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"wander\"><field name=\"speed\">1</field><field name=\"condition\">null,null</field><next><block type=\"attack_action\"><field name=\"callhelp\">FALSE</field><field name=\"condition\">null,null</field><next><block type=\"look_around\"><field name=\"condition\">null,null</field><next><block type=\"swim_in_water\"><field name=\"condition\">null,null</field></block></next></block></next></block></next></block></next></block></xml>",
     "breedable": false,
     "tameable": false,
     "breedTriggerItems": [],
@@ -138,10 +134,10 @@
     "rangedItemType": "Default item",
     "rangedAttackInterval": 20,
     "rangedAttackRadius": 10.0,
-    "spawnThisMob": false,
-    "doesDespawnWhenIdle": false,
+    "spawnThisMob": true,
+    "doesDespawnWhenIdle": true,
     "spawningProbability": 20,
-    "mobSpawningType": "monster",
+    "mobSpawningType": "creature",
     "minNumberOfMobsPerGroup": 4,
     "maxNumberOfMobsPerGroup": 4,
     "restrictionBiomes": [],

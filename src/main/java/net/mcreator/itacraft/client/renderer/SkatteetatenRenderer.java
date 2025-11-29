@@ -1,13 +1,5 @@
 package net.mcreator.itacraft.client.renderer;
 
-import net.minecraft.resources.ResourceLocation;
-import net.minecraft.client.renderer.entity.state.LivingEntityRenderState;
-import net.minecraft.client.renderer.entity.MobRenderer;
-import net.minecraft.client.renderer.entity.EntityRendererProvider;
-
-import net.mcreator.itacraft.entity.SkatteetatenEntity;
-import net.mcreator.itacraft.client.model.ModelGamerGirl;
-
 public class SkatteetatenRenderer extends MobRenderer<SkatteetatenEntity, LivingEntityRenderState, ModelGamerGirl> {
 	private SkatteetatenEntity entity = null;
 

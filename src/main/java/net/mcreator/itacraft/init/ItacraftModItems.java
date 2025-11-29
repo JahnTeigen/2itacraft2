@@ -89,6 +89,10 @@ public class ItacraftModItems {
 	public static final DeferredItem<Item> CIRCUIT_BOARD;
 	public static final DeferredItem<Item> MICROPLASTIC;
 	public static final DeferredItem<Item> SKATTEETATEN_SPAWN_EGG;
+	public static final DeferredItem<Item> RETARDED_GAMER_GIRL_SPAWN_EGG;
+	public static final DeferredItem<Item> RADIATED_CUM;
+	public static final DeferredItem<Item> CONDOME;
+	public static final DeferredItem<Item> DILDO;
 	static {
 		GEIR_HAOY_SPAWN_EGG = register("geir_haoy_spawn_egg", properties -> new SpawnEggItem(ItacraftModEntities.GEIR_HAOY.get(), properties));
 		KOG_STOCK = register("kog_stock", KOGStockItem::new);
@@ -151,6 +155,10 @@ public class ItacraftModItems {
 		CIRCUIT_BOARD = register("circuit_board", CircuitBoardItem::new);
 		MICROPLASTIC = register("microplastic", MicroplasticItem::new);
 		SKATTEETATEN_SPAWN_EGG = register("skatteetaten_spawn_egg", properties -> new SpawnEggItem(ItacraftModEntities.SKATTEETATEN.get(), properties));
+		RETARDED_GAMER_GIRL_SPAWN_EGG = register("retarded_gamer_girl_spawn_egg", properties -> new SpawnEggItem(ItacraftModEntities.RETARDED_GAMER_GIRL.get(), properties));
+		RADIATED_CUM = register("radiated_cum", RadiatedCumItem::new);
+		CONDOME = register("condome", CondomeItem::new);
+		DILDO = register("dildo", DildoItem::new);
 	}
 
 	// Start of user code block custom items

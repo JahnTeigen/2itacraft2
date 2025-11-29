@@ -17,6 +17,7 @@ import net.minecraft.client.KeyMapping;
 
 import net.mcreator.itacraft.network.SuicideKeyMessage;
 import net.mcreator.itacraft.network.PoopShortcutMessage;
+import net.mcreator.itacraft.network.EquipCondomeShortcutMessage;
 
 @EventBusSubscriber(Dist.CLIENT)
 public class ItacraftModKeyMappings {
@@ -46,11 +47,25 @@ public class ItacraftModKeyMappings {
 			isDownOld = isDown;
 		}
 	};
+	public static final KeyMapping EQUIP_CONDOME_SHORTCUT = new KeyMapping("key.itacraft.equip_condome_shortcut", GLFW.GLFW_KEY_C, "key.categories.misc") {
+		private boolean isDownOld = false;
+
+		@Override
+		public void setDown(boolean isDown) {
+			super.setDown(isDown);
+			if (isDownOld != isDown && isDown) {
+				ClientPacketDistributor.sendToServer(new EquipCondomeShortcutMessage(0, 0));
+				EquipCondomeShortcutMessage.pressAction(Minecraft.getInstance().player, 0, 0);
+			}
+			isDownOld = isDown;
+		}
+	};
 
 	@SubscribeEvent
 	public static void registerKeyMappings(RegisterKeyMappingsEvent event) {
 		event.register(SUICIDE_KEY);
 		event.register(POOP_SHORTCUT);
+		event.register(EQUIP_CONDOME_SHORTCUT);
 	}
 
 	@EventBusSubscriber(Dist.CLIENT)
@@ -60,6 +75,7 @@ public class ItacraftModKeyMappings {
 			if (Minecraft.getInstance().screen == null) {
 				SUICIDE_KEY.consumeClick();
 				POOP_SHORTCUT.consumeClick();
+				EQUIP_CONDOME_SHORTCUT.consumeClick();
 			}
 		}
 	}
