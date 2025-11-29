@@ -2471,7 +2471,7 @@
           "src/main/java/net/mcreator/itacraft/procedures/CumProcedure.java"
         ]
       },
-      "path": "~/Procedures"
+      "path": "~/Matvey"
     },
     {
       "name": "Masterbate",
@@ -2818,6 +2818,21 @@
         ]
       },
       "path": "~/Fredrik"
+    },
+    {
+      "name": "MatveyHus",
+      "type": "structure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "matvey_hus",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/itacraft/worldgen/structure_set/matvey_hus.json",
+          "src/main/resources/data/itacraft/worldgen/template_pool/matvey_hus.json",
+          "src/main/resources/data/itacraft/worldgen/structure/matvey_hus.json"
+        ]
+      },
+      "path": "~/Matvey"
     }
   ],
   "variable_elements": [

@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "itacraft:matvey_hus",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 5,
+    "separation": 2,
+    "salt": 1883949126
+  }
+}
