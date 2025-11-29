@@ -2793,6 +2793,10 @@
       "metadata": {
         "dependencies": [
           {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
             "name": "x",
             "type": "number"
           },
@@ -3166,74 +3170,6 @@
       }
     },
     {
-      "name": "Dildo",
-      "type": "tool",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "dildo",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/itacraft/item/DildoItem.java",
-          "src/main/resources/assets/itacraft/items/dildo.json",
-          "src/main/resources/assets/itacraft/models/item/dildo.json"
-        ]
-      },
-      "path": "~/Fredrik"
-    },
-    {
-      "name": "DildoRecipe",
-      "type": "recipe",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "dildo_recipe",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/itacraft/advancement/recipes/dildo_recipe.json",
-          "src/main/resources/data/itacraft/recipe/dildo_recipe.json"
-        ]
-      },
-      "path": "~/Fredrik"
-    },
-    {
-      "name": "Condome",
-      "type": "item",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "condome",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/itacraft/models/item/condome.json",
-          "src/main/java/net/mcreator/itacraft/item/CondomeItem.java",
-          "src/main/resources/assets/itacraft/items/condome.json"
-        ]
-      },
-      "path": "~/Fredrik"
-    },
-    {
-      "name": "CondomeDisplayCondition",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "condome_display_condition",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ],
-        "return_type": "logic",
-        "files": [
-          "src/main/java/net/mcreator/itacraft/procedures/CondomeDisplayConditionProcedure.java"
-        ]
-      },
-      "path": "~/Procedures"
-    },
-    {
       "name": "EquipCondomeShortcutOnKeyPressed",
       "type": "procedure",
       "compiles": true,
@@ -3269,14 +3205,65 @@
       "path": "~/Fredrik"
     },
     {
-      "name": "EquipCondomeShortcut",
-      "type": "keybind",
+      "name": "DildoRecipe",
+      "type": "recipe",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "equip_condome_shortcut",
+      "registry_name": "dildo_recipe",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/itacraft/network/EquipCondomeShortcutMessage.java"
+          "src/main/resources/data/itacraft/advancement/recipes/dildo_recipe.json",
+          "src/main/resources/data/itacraft/recipe/dildo_recipe.json"
+        ]
+      },
+      "path": "~/Fredrik"
+    },
+    {
+      "name": "CondomeDisplayCondition",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "condome_display_condition",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/itacraft/procedures/CondomeDisplayConditionProcedure.java"
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "Dildo",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dildo",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/itacraft/item/DildoItem.java",
+          "src/main/resources/assets/itacraft/items/dildo.json",
+          "src/main/resources/assets/itacraft/models/item/dildo.json"
+        ]
+      },
+      "path": "~/Fredrik"
+    },
+    {
+      "name": "Condome",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "condome",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/itacraft/models/item/condome.json",
+          "src/main/java/net/mcreator/itacraft/item/CondomeItem.java",
+          "src/main/resources/assets/itacraft/items/condome.json"
         ]
       },
       "path": "~/Fredrik"
@@ -3294,6 +3281,46 @@
         ]
       },
       "path": "~/Fredrik"
+    },
+    {
+      "name": "EquipCondomeShortcut",
+      "type": "keybind",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "equip_condome_shortcut",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/itacraft/network/EquipCondomeShortcutMessage.java"
+        ]
+      },
+      "path": "~/Fredrik"
+    },
+    {
+      "name": "MatveyHus",
+      "type": "structure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "matvey_hus",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/itacraft/worldgen/structure/matvey_hus.json",
+          "src/main/resources/data/itacraft/worldgen/template_pool/matvey_hus.json",
+          "src/main/resources/data/itacraft/worldgen/structure_set/matvey_hus.json"
+        ]
+      },
+      "path": "~/Matvey"
+    },
+    {
+      "name": "Ehhhh",
+      "type": "painting",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ehhhh",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/itacraft/painting_variant/ehhhh.json"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -3325,7 +3352,7 @@
       "name": "solderingProgress",
       "type": "number",
       "scope": "map",
-      "value": "0.0"
+      "value": "0"
     },
     {
       "name": "isCondomeEquipped",
@@ -3700,23 +3727,15 @@
       "entity.itacraft.skatteman": "Skatteman",
       "item.itacraft.cum": "Cum",
       "item.itacraft.fetus": "Fetus",
-      "item.itacraft.soldering_table": "Soldering Table",
-      "item.itacraft.nal_med_cum": "Nål med Cum",
-      "item_group.itacraft.electronics": "Electronics",
-      "item.itacraft.plastic_circuit_board_mold": "Plastic Circuit Board Mold",
-      "item.itacraft.circuit_board": "Circuit Board",
-      "item.itacraft.microplastic": "Microplastic",
-      "gui.itacraft.soldering_table_gui.button_solder": "Solder",
-      "entity.itacraft.retarded_gamer_girl": "Retarded Gamer Girl",
-      "item.itacraft.retarded_gamer_girl_spawn_egg": "Retarded Gamer Girl Spawn Egg",
       "gui.itacraft.skatteetaten_gui.button_betal_skatt": "betal skatt",
+      "entity.itacraft.retarded_gamer_girl": "Retarded Gamer Girl",
       "gui.itacraft.skatteetaten_gui.label_jeg_tar_bare_vipps": "jeg tar bare vipps",
       "item.itacraft.radiated_cum": "Radiated Cum",
-      "item.itacraft.dildo": "Dildo",
-      "item.itacraft.condome": "Condome",
+      "item.itacraft.retarded_gamer_girl_spawn_egg": "Retarded Gamer Girl Spawn Egg",
+      "subtitles.condome_application": "",
       "gui.itacraft.corner_overlay.label_condome_equipped": "CONDOME EQUIPPED",
-      "key.itacraft.equip_condome_shortcut": "Equip Condome Shortcut",
-      "subtitles.condome_application": ""
+      "subtitles.retarddod": "",
+      "subtitles.retardliving": ""
     }
   },
   "metadata": {
