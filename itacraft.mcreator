@@ -4173,6 +4173,20 @@
         ]
       },
       "path": "~/Fredrik"
+    },
+    {
+      "name": "KDAKort",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kda_kort",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/itacraft/items/kda_kort.json",
+          "src/main/java/net/mcreator/itacraft/item/KDAKortItem.java",
+          "src/main/resources/assets/itacraft/models/item/kda_kort.json"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -4731,7 +4745,8 @@
       "item.itacraft.stripped_ekte_gummitre_wood": "Stripped Ekte Gummitre Wood",
       "item.itacraft.ekte_gummitre_stairs": "Ekte Gummitre Stairs",
       "item.itacraft.salto_las": "Salto Las",
-      "item.itacraft.used_condome": "Used Condome"
+      "item.itacraft.used_condome": "Used Condome",
+      "item.itacraft.kda_kort": "KDA Kort"
     }
   },
   "metadata": {
