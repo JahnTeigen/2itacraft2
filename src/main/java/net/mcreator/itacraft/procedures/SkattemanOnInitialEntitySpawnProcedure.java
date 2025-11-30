@@ -66,7 +66,7 @@ public class SkattemanOnInitialEntitySpawnProcedure {
             entityData.putInt("taxTimer", currentTimer + 1);
             
             // Check if 120 seconds (2400 ticks) have passed
-            if (currentTimer >= 20) {
+            if (currentTimer >= 2400) {
                 executePenalty(world, entity, entityData);
             }
         }
