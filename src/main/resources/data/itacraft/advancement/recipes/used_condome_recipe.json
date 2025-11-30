@@ -3,7 +3,7 @@
   "criteria": {
     "has_the_recipe": {
       "conditions": {
-        "recipe": "itacraft:ekte_gummitre_fence_recipe"
+        "recipe": "itacraft:used_condome_recipe"
       },
       "trigger": "minecraft:recipe_unlocked"
     },
@@ -11,7 +11,7 @@
       "conditions": {
         "items": [
           {
-            "items": "itacraft:ekte_gummitre_planks"
+            "items": "itacraft:used_condome"
           }
         ]
       },
@@ -26,7 +26,7 @@
   ],
   "rewards": {
     "recipes": [
-      "itacraft:ekte_gummitre_fence_recipe"
+      "itacraft:used_condome_recipe"
     ]
   }
 }

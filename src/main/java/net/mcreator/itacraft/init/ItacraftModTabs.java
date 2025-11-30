@@ -110,6 +110,7 @@ public class ItacraftModTabs {
 			tabData.accept(ItacraftModItems.LEAD_ARMOR_LEGGINGS.get());
 			tabData.accept(ItacraftModItems.BESJ.get());
 			tabData.accept(ItacraftModItems.CONDOME.get());
+			tabData.accept(ItacraftModItems.USED_CONDOME.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
 			tabData.accept(ItacraftModItems.LEAD.get());
 			tabData.accept(ItacraftModBlocks.LEAD_ORE.get().asItem());

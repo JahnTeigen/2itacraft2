@@ -8,10 +8,10 @@
   ],
   "key": {
     "a": "minecraft:stick",
-    "b": "itacraft:deleted_mod_element"
+    "b": "itacraft:ekte_gummitre_planks"
   },
   "result": {
-    "id": "itacraft:deleted_mod_element",
+    "id": "itacraft:ekte_gummitre_fence_gate",
     "count": 1
   }
 }

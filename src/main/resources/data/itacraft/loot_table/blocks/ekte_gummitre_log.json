@@ -13,7 +13,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "itacraft:deleted_mod_element",
+          "name": "itacraft:ekte_gummitre_log",
           "weight": 100,
           "functions": [
             {
@@ -27,7 +27,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "itacraft:deleted_mod_element",
+          "name": "itacraft:rubber",
           "weight": 20,
           "functions": [
             {
