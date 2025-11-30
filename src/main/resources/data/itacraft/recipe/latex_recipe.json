@@ -3,8 +3,8 @@
   "category": "misc",
   "experience": 1,
   "cookingtime": 100,
-  "ingredient": "itacraft:deleted_mod_element",
+  "ingredient": "itacraft:rubber",
   "result": {
-    "id": "itacraft:deleted_mod_element"
+    "id": "itacraft:latex"
   }
 }

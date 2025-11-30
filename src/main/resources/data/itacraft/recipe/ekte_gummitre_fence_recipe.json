@@ -7,11 +7,11 @@
     "aba"
   ],
   "key": {
-    "a": "itacraft:deleted_mod_element",
+    "a": "itacraft:ekte_gummitre_planks",
     "b": "minecraft:stick"
   },
   "result": {
-    "id": "itacraft:deleted_mod_element",
+    "id": "itacraft:ekte_gummitre_fence",
     "count": 3
   }
 }
