@@ -1,5 +1,7 @@
 package net.mcreator.itacraft.procedures;
 
+import net.neoforged.neoforge.items.ItemHandlerHelper;
+
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.ItemStack;
@@ -33,6 +35,15 @@ public class EquipCondomeShortcutOnKeyPressedProcedure {
 					} else {
 						_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.getValue(ResourceLocation.parse("itacraft:condome_unequip")), SoundSource.NEUTRAL, 1, 1, false);
 					}
+				}
+				if (entity instanceof Player _player) {
+					ItemStack _stktoremove = new ItemStack(ItacraftModItems.CONDOME.get());
+					_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
+				}
+				if (entity instanceof Player _player) {
+					ItemStack _setstack = new ItemStack(ItacraftModItems.USED_CONDOME.get()).copy();
+					_setstack.setCount(1);
+					ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 				}
 			} else {
 				{

@@ -101,7 +101,10 @@
       "ForestGrass",
       "ForestFlowers",
       "ExtraGoldOre",
-      "TaigaRocks"
+      "TaigaRocks",
+      "TaigaLargeFerns",
+      "PlainsTallGrass",
+      "MeadowVegetation"
     ],
     "spawnStronghold": false,
     "spawnMineshaft": false,

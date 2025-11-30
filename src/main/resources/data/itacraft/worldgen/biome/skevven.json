@@ -69,7 +69,12 @@
     [
       "itacraft:skevven_tree",
       "minecraft:forest_flowers",
-      "minecraft:patch_grass_forest"
+      "minecraft:patch_large_fern",
+      "minecraft:patch_tall_grass",
+      "minecraft:patch_grass_forest",
+      "minecraft:patch_grass_plain",
+      "minecraft:flower_meadow",
+      "minecraft:trees_meadow"
     ],
     []
   ]
