@@ -4032,6 +4032,32 @@
         ]
       },
       "path": "~/Fredrik"
+    },
+    {
+      "name": "ByggFemtifire",
+      "type": "structure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bygg_femtifire",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/itacraft/worldgen/template_pool/bygg_femtifire.json",
+          "src/main/resources/data/itacraft/worldgen/structure_set/bygg_femtifire.json",
+          "src/main/resources/data/itacraft/worldgen/structure/bygg_femtifire.json"
+        ]
+      },
+      "path": "~/Fredrik"
+    },
+    {
+      "name": "Bygg54Trade",
+      "type": "villagertrade",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bygg_54_trade",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Fredrik"
     }
   ],
   "variable_elements": [

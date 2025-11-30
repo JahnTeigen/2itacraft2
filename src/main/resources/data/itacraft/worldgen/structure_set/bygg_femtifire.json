@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "itacraft:bygg_femtifire",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 18,
+    "separation": 9,
+    "salt": 1898194392
+  }
+}
