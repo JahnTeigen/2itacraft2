@@ -2,7 +2,7 @@
   "_fv": 79,
   "_type": "recipe",
   "definition": {
-    "recipeType": "Blasting",
+    "recipeType": "Campfire cooking",
     "recipeRetstackSize": 1,
     "group": "",
     "unlockingItems": [
@@ -11,14 +11,14 @@
       }
     ],
     "cookingBookCategory": "MISC",
-    "xpReward": 1.0,
+    "xpReward": 67.0,
     "cookingTime": 100,
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
-    "blastingInputStack": {
+    "campfireCookingInputStack": {
       "value": "CUSTOM:Plastic"
     },
-    "blastingReturnStack": {
+    "campfireCookingReturnStack": {
       "value": "CUSTOM:Microplastic"
     },
     "name": "microplastic_recipe",

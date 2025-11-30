@@ -1,0 +1,18 @@
+{
+  "replace": false,
+  "values": [
+    "itacraft:ekte_gummitre_planks",
+    "itacraft:stripped_ekte_gummitre_wood",
+    "itacraft:ekte_gummitre_fence",
+    "itacraft:ekte_gummitre_wood",
+    "itacraft:ekte_gummitre_door",
+    "itacraft:ekte_gummitre_log",
+    "itacraft:stripped_ekte_gummitre_log",
+    "itacraft:ekte_gummitre_pressure_plate",
+    "itacraft:ekte_gummitre_trapdoor",
+    "itacraft:ekte_gummitre_slab",
+    "itacraft:ekte_gummitre_stairs",
+    "itacraft:ekte_gummitre_fence_gate",
+    "itacraft:ekte_gummitre_button"
+  ]
+}

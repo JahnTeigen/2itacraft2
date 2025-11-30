@@ -1,0 +1,53 @@
+{
+  "_fv": 79,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 3,
+    "group": "bark",
+    "unlockingItems": [
+      {
+        "value": "CUSTOM:EkteGummitreLog"
+      }
+    ],
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "BUILDING",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:EkteGummitreLog"
+      },
+      {
+        "value": "CUSTOM:EkteGummitreLog"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:EkteGummitreLog"
+      },
+      {
+        "value": "CUSTOM:EkteGummitreLog"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:EkteGummitreWood"
+    },
+    "name": "ekte_gummitre_wood_recipe",
+    "namespace": "mod"
+  }
+}

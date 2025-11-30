@@ -18,6 +18,7 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.item.SpawnEggItem;
 import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.DoubleHighBlockItem;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.resources.ResourceLocation;
 
@@ -96,6 +97,23 @@ public class ItacraftModItems {
 	public static final DeferredItem<Item> DEFTONES_CD;
 	public static final DeferredItem<Item> SKATTEETATEN_SPAWN_EGG;
 	public static final DeferredItem<Item> IRON_MAN_CD;
+	public static final DeferredItem<Item> SECURITAS_KEYPAD;
+	public static final DeferredItem<Item> EKTE_GUMMITRE_LOG;
+	public static final DeferredItem<Item> EKTE_GUMMITRE_WOOD;
+	public static final DeferredItem<Item> STRIPPED_EKTE_GUMMITRE_LOG;
+	public static final DeferredItem<Item> STRIPPED_EKTE_GUMMITRE_WOOD;
+	public static final DeferredItem<Item> EKTE_GUMMITRE_PLANKS;
+	public static final DeferredItem<Item> EKTE_GUMMITRE_LEAVES;
+	public static final DeferredItem<Item> EKTE_GUMMITRE_STAIRS;
+	public static final DeferredItem<Item> EKTE_GUMMITRE_SLAB;
+	public static final DeferredItem<Item> EKTE_GUMMITRE_FENCE;
+	public static final DeferredItem<Item> EKTE_GUMMITRE_FENCE_GATE;
+	public static final DeferredItem<Item> EKTE_GUMMITRE_DOOR;
+	public static final DeferredItem<Item> EKTE_GUMMITRE_TRAPDOOR;
+	public static final DeferredItem<Item> EKTE_GUMMITRE_PRESSURE_PLATE;
+	public static final DeferredItem<Item> EKTE_GUMMITRE_BUTTON;
+	public static final DeferredItem<Item> RUBBER;
+	public static final DeferredItem<Item> LATEX;
 	static {
 		GEIR_HAOY_SPAWN_EGG = register("geir_haoy_spawn_egg", properties -> new SpawnEggItem(ItacraftModEntities.GEIR_HAOY.get(), properties));
 		KOG_STOCK = register("kog_stock", KOGStockItem::new);
@@ -165,6 +183,23 @@ public class ItacraftModItems {
 		DEFTONES_CD = register("deftones_cd", DeftonesCDItem::new);
 		SKATTEETATEN_SPAWN_EGG = register("skatteetaten_spawn_egg", properties -> new SpawnEggItem(ItacraftModEntities.SKATTEETATEN.get(), properties));
 		IRON_MAN_CD = register("iron_man_cd", IronManCDItem::new);
+		SECURITAS_KEYPAD = block(ItacraftModBlocks.SECURITAS_KEYPAD, new Item.Properties().stacksTo(1));
+		EKTE_GUMMITRE_LOG = block(ItacraftModBlocks.EKTE_GUMMITRE_LOG);
+		EKTE_GUMMITRE_WOOD = block(ItacraftModBlocks.EKTE_GUMMITRE_WOOD);
+		STRIPPED_EKTE_GUMMITRE_LOG = block(ItacraftModBlocks.STRIPPED_EKTE_GUMMITRE_LOG);
+		STRIPPED_EKTE_GUMMITRE_WOOD = block(ItacraftModBlocks.STRIPPED_EKTE_GUMMITRE_WOOD);
+		EKTE_GUMMITRE_PLANKS = block(ItacraftModBlocks.EKTE_GUMMITRE_PLANKS);
+		EKTE_GUMMITRE_LEAVES = block(ItacraftModBlocks.EKTE_GUMMITRE_LEAVES);
+		EKTE_GUMMITRE_STAIRS = block(ItacraftModBlocks.EKTE_GUMMITRE_STAIRS);
+		EKTE_GUMMITRE_SLAB = block(ItacraftModBlocks.EKTE_GUMMITRE_SLAB);
+		EKTE_GUMMITRE_FENCE = block(ItacraftModBlocks.EKTE_GUMMITRE_FENCE);
+		EKTE_GUMMITRE_FENCE_GATE = block(ItacraftModBlocks.EKTE_GUMMITRE_FENCE_GATE);
+		EKTE_GUMMITRE_DOOR = doubleBlock(ItacraftModBlocks.EKTE_GUMMITRE_DOOR);
+		EKTE_GUMMITRE_TRAPDOOR = block(ItacraftModBlocks.EKTE_GUMMITRE_TRAPDOOR);
+		EKTE_GUMMITRE_PRESSURE_PLATE = block(ItacraftModBlocks.EKTE_GUMMITRE_PRESSURE_PLATE);
+		EKTE_GUMMITRE_BUTTON = block(ItacraftModBlocks.EKTE_GUMMITRE_BUTTON);
+		RUBBER = register("rubber", RubberItem::new);
+		LATEX = register("latex", LatexItem::new);
 	}
 
 	// Start of user code block custom items
@@ -179,6 +214,14 @@ public class ItacraftModItems {
 
 	private static DeferredItem<Item> block(DeferredHolder<Block, Block> block, Item.Properties properties) {
 		return REGISTRY.registerItem(block.getId().getPath(), prop -> new BlockItem(block.get(), prop), properties);
+	}
+
+	private static DeferredItem<Item> doubleBlock(DeferredHolder<Block, Block> block) {
+		return doubleBlock(block, new Item.Properties());
+	}
+
+	private static DeferredItem<Item> doubleBlock(DeferredHolder<Block, Block> block, Item.Properties properties) {
+		return REGISTRY.registerItem(block.getId().getPath(), prop -> new DoubleHighBlockItem(block.get(), prop), properties);
 	}
 
 	@SubscribeEvent

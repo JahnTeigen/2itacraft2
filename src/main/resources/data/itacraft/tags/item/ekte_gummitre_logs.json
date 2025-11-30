@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "itacraft:stripped_ekte_gummitre_wood",
+    "itacraft:stripped_ekte_gummitre_log",
+    "itacraft:ekte_gummitre_wood",
+    "itacraft:ekte_gummitre_log"
+  ]
+}

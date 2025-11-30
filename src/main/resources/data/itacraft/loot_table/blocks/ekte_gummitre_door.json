@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "itacraft:blocks/ekte_gummitre_door",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "itacraft:ekte_gummitre_door",
+          "conditions": [
+            {
+              "block": "itacraft:ekte_gummitre_door",
+              "condition": "minecraft:block_state_property",
+              "properties": {
+                "half": "lower"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

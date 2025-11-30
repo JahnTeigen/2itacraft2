@@ -27,6 +27,13 @@ public class EquipCondomeShortcutOnKeyPressedProcedure {
 					_vars.isCondomeEquipped = false;
 					_vars.markSyncDirty();
 				}
+				if (world instanceof Level _level) {
+					if (!_level.isClientSide()) {
+						_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.getValue(ResourceLocation.parse("itacraft:condome_unequip")), SoundSource.NEUTRAL, 1, 1);
+					} else {
+						_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.getValue(ResourceLocation.parse("itacraft:condome_unequip")), SoundSource.NEUTRAL, 1, 1, false);
+					}
+				}
 			} else {
 				{
 					ItacraftModVariables.PlayerVariables _vars = entity.getData(ItacraftModVariables.PLAYER_VARIABLES);
@@ -42,11 +49,6 @@ public class EquipCondomeShortcutOnKeyPressedProcedure {
 				}
 				if (world instanceof ServerLevel _level)
 					_level.sendParticles((SimpleParticleType) (ItacraftModParticleTypes.BAZINGA_PARTICLE.get()), x, y, z, 5, 2, 2, 2, 1);
-			}
-			{
-				ItacraftModVariables.PlayerVariables _vars = entity.getData(ItacraftModVariables.PLAYER_VARIABLES);
-				_vars.isCondomeEquipped = false;
-				_vars.markSyncDirty();
 			}
 		}
 	}

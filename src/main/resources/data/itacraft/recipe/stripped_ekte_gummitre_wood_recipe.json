@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "bark",
+  "category": "building",
+  "pattern": [
+    "aa",
+    "aa"
+  ],
+  "key": {
+    "a": "itacraft:stripped_ekte_gummitre_log"
+  },
+  "result": {
+    "id": "itacraft:stripped_ekte_gummitre_wood",
+    "count": 3
+  }
+}

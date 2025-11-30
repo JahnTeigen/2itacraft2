@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "itacraft:block/ekte_gummitre_slab"
+    },
+    "type=top": {
+      "model": "itacraft:block/ekte_gummitre_slab_top"
+    },
+    "type=double": {
+      "model": "itacraft:block/ekte_gummitre_slab_full"
+    }
+  }
+}

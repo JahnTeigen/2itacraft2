@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "wooden_button",
+  "category": "redstone",
+  "ingredients": [
+    "itacraft:ekte_gummitre_planks"
+  ],
+  "result": {
+    "id": "itacraft:ekte_gummitre_button",
+    "count": 1
+  }
+}

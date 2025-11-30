@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aba",
+    "aaa"
+  ],
+  "key": {
+    "a": "itacraft:white_colored_plastic",
+    "b": "itacraft:circuit_board"
+  },
+  "result": {
+    "id": "itacraft:securitas_keypad",
+    "count": 1
+  }
+}

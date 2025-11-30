@@ -1,0 +1,8 @@
+{
+  "parent": "block/button_pressed",
+  "textures": {
+    "texture": "itacraft:block/ekte_gummitre_planks",
+    "particle": "itacraft:block/ekte_gummitre_planks"
+  },
+  "render_type": "solid"
+}
