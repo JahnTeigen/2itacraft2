@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "itacraft:block/salto_las"
+    },
+    "facing=east": {
+      "model": "itacraft:block/salto_las",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "itacraft:block/salto_las",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "itacraft:block/salto_las",
+      "y": 270
+    }
+  }
+}
