@@ -4,7 +4,6 @@ import net.neoforged.neoforge.items.wrapper.EntityHandsInvWrapper;
 import net.neoforged.neoforge.items.wrapper.EntityArmorInvWrapper;
 import net.neoforged.neoforge.items.wrapper.CombinedInvWrapper;
 import net.neoforged.neoforge.items.ItemStackHandler;
-import net.neoforged.neoforge.fluids.FluidType;
 import net.neoforged.neoforge.event.entity.RegisterSpawnPlacementsEvent;
 import net.neoforged.neoforge.common.NeoForgeMod;
 
@@ -21,7 +20,10 @@ import net.minecraft.world.entity.projectile.AbstractThrownPotion;
 import net.minecraft.world.entity.projectile.AbstractArrow;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.player.Inventory;
+import net.minecraft.world.entity.ai.goal.target.HurtByTargetGoal;
+import net.minecraft.world.entity.ai.goal.RandomStrollGoal;
 import net.minecraft.world.entity.ai.goal.RandomLookAroundGoal;
+import net.minecraft.world.entity.ai.goal.MeleeAttackGoal;
 import net.minecraft.world.entity.ai.goal.FloatGoal;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
@@ -42,17 +44,18 @@ import net.minecraft.core.registries.BuiltInRegistries;
 
 import net.mcreator.itacraft.world.inventory.SkatteetatenGuiMenu;
 import net.mcreator.itacraft.procedures.SkattemanOnInitialEntitySpawnProcedure;
+import net.mcreator.itacraft.procedures.SkatteetatenOnEntityTickProcedure;
 
 import javax.annotation.Nullable;
 
 import io.netty.buffer.Unpooled;
 
-public class SkattemanEntity extends PathfinderMob {
-	public SkattemanEntity(EntityType<SkattemanEntity> type, Level world) {
+public class SkatteetatenEntity extends PathfinderMob {
+	public SkatteetatenEntity(EntityType<SkatteetatenEntity> type, Level world) {
 		super(type, world);
 		xpReward = 0;
 		setNoAi(false);
-		setCustomName(Component.literal("skatteetaten"));
+		setCustomName(Component.literal("Skatteetaten"));
 		setCustomNameVisible(true);
 		setPersistenceRequired();
 	}
@@ -60,8 +63,16 @@ public class SkattemanEntity extends PathfinderMob {
 	@Override
 	protected void registerGoals() {
 		super.registerGoals();
-		this.goalSelector.addGoal(1, new RandomLookAroundGoal(this));
-		this.goalSelector.addGoal(2, new FloatGoal(this));
+		this.goalSelector.addGoal(1, new MeleeAttackGoal(this, 1.2, false) {
+			@Override
+			protected boolean canPerformAttack(LivingEntity entity) {
+				return this.isTimeToAttack() && this.mob.distanceToSqr(entity) < (this.mob.getBbWidth() * this.mob.getBbWidth() + entity.getBbWidth()) && this.mob.getSensing().hasLineOfSight(entity);
+			}
+		});
+		this.goalSelector.addGoal(2, new RandomStrollGoal(this, 1));
+		this.targetSelector.addGoal(3, new HurtByTargetGoal(this));
+		this.goalSelector.addGoal(4, new RandomLookAroundGoal(this));
+		this.goalSelector.addGoal(5, new FloatGoal(this));
 	}
 
 	@Override
@@ -118,11 +129,11 @@ public class SkattemanEntity extends PathfinderMob {
 	@Override
 	public SpawnGroupData finalizeSpawn(ServerLevelAccessor world, DifficultyInstance difficulty, EntitySpawnReason reason, @Nullable SpawnGroupData livingdata) {
 		SpawnGroupData retval = super.finalizeSpawn(world, difficulty, reason, livingdata);
-		SkattemanOnInitialEntitySpawnProcedure.execute(world, this.getX(), this.getY(), this.getZ(), this);
+		SkattemanOnInitialEntitySpawnProcedure.execute(world, getX(), getY(), getZ(), this);
 		return retval;
 	}
 
-	private final ItemStackHandler inventory = new ItemStackHandler(9);
+	private final ItemStackHandler inventory = new ItemStackHandler(2);
 	private final CombinedInvWrapper combined = new CombinedInvWrapper(inventory, new EntityHandsInvWrapper(this), new EntityArmorInvWrapper(this));
 
 	public CombinedInvWrapper getCombinedInventory() {
@@ -160,7 +171,7 @@ public class SkattemanEntity extends PathfinderMob {
 			serverPlayer.openMenu(new MenuProvider() {
 				@Override
 				public Component getDisplayName() {
-					return Component.literal("Skatteman");
+					return Component.literal("Skatteetaten");
 				}
 
 				@Override
@@ -168,7 +179,7 @@ public class SkattemanEntity extends PathfinderMob {
 					FriendlyByteBuf packetBuffer = new FriendlyByteBuf(Unpooled.buffer());
 					packetBuffer.writeBlockPos(sourceentity.blockPosition());
 					packetBuffer.writeByte(0);
-					packetBuffer.writeVarInt(SkattemanEntity.this.getId());
+					packetBuffer.writeVarInt(SkatteetatenEntity.this.getId());
 					return new SkatteetatenGuiMenu(id, inventory, packetBuffer);
 				}
 			}, buf -> {
@@ -182,23 +193,9 @@ public class SkattemanEntity extends PathfinderMob {
 	}
 
 	@Override
-	public boolean canDrownInFluidType(FluidType type) {
-		double x = this.getX();
-		double y = this.getY();
-		double z = this.getZ();
-		Level world = this.level();
-		Entity entity = this;
-		return false;
-	}
-
-	@Override
-	public boolean isPushedByFluid() {
-		double x = this.getX();
-		double y = this.getY();
-		double z = this.getZ();
-		Level world = this.level();
-		Entity entity = this;
-		return false;
+	public void baseTick() {
+		super.baseTick();
+		SkatteetatenOnEntityTickProcedure.execute(level(), this);
 	}
 
 	public static void init(RegisterSpawnPlacementsEvent event) {

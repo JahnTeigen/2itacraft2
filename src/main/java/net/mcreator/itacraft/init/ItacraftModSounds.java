@@ -30,4 +30,8 @@ public class ItacraftModSounds {
 	public static final DeferredHolder<SoundEvent, SoundEvent> RETARDLIVING = REGISTRY.register("retardliving", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("itacraft", "retardliving")));
 	public static final DeferredHolder<SoundEvent, SoundEvent> RETARDDOD = REGISTRY.register("retarddod", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("itacraft", "retarddod")));
 	public static final DeferredHolder<SoundEvent, SoundEvent> CONDOME_APPLICATION = REGISTRY.register("condome_application", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("itacraft", "condome_application")));
+	public static final DeferredHolder<SoundEvent, SoundEvent> ENTOMBED_DEFTONES = REGISTRY.register("entombed-deftones", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("itacraft", "entombed-deftones")));
+	public static final DeferredHolder<SoundEvent, SoundEvent> WE_ARE_CHARLIE_KIRK = REGISTRY.register("we-are-charlie-kirk", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("itacraft", "we-are-charlie-kirk")));
+	public static final DeferredHolder<SoundEvent, SoundEvent> JARVIS___EXPLODE_HIS_BALLS_PLZ = REGISTRY.register("jarvis...explode-his-balls-plz",
+			() -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("itacraft", "jarvis...explode-his-balls-plz")));
 }

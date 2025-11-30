@@ -2,6 +2,10 @@
   "replace": false,
   "values": [
     "itacraft:max_burgers",
-    "itacraft:ehhhh"
+    "itacraft:ehhhh",
+    "itacraft:painting_1",
+    "itacraft:painting_2",
+    "itacraft:painting_3",
+    "itacraft:coolpainting"
   ]
 }

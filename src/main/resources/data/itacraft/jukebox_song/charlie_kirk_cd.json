@@ -1,0 +1,8 @@
+{
+  "comparator_output": 0,
+  "description": {
+    "translate": "item.itacraft.charlie_kirk_cd.desc"
+  },
+  "length_in_seconds": 5,
+  "sound_event": "itacraft:we-are-charlie-kirk"
+}

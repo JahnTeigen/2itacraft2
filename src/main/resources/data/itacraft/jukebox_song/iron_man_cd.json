@@ -1,0 +1,8 @@
+{
+  "comparator_output": 0,
+  "description": {
+    "translate": "item.itacraft.iron_man_cd.desc"
+  },
+  "length_in_seconds": 5,
+  "sound_event": "itacraft:jarvis...explode-his-balls-plz"
+}

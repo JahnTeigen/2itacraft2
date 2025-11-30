@@ -2641,21 +2641,6 @@
       "path": "~/Matvey"
     },
     {
-      "name": "Skatteman",
-      "type": "livingentity",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "skatteman",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/itacraft/items/skatteman_spawn_egg.json",
-          "src/main/java/net/mcreator/itacraft/entity/SkattemanEntity.java",
-          "src/main/java/net/mcreator/itacraft/client/renderer/SkattemanRenderer.java",
-          "src/main/resources/assets/itacraft/models/item/skatteman_spawn_egg.json"
-        ]
-      }
-    },
-    {
       "name": "RadioactiveWasteBarrelRecipe",
       "type": "recipe",
       "compiles": true,
@@ -3321,6 +3306,162 @@
           "src/main/resources/data/itacraft/painting_variant/ehhhh.json"
         ]
       }
+    },
+    {
+      "name": "CharlieKirkCD",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "charlie_kirk_cd",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/itacraft/items/charlie_kirk_cd.json",
+          "src/main/java/net/mcreator/itacraft/item/CharlieKirkCDItem.java",
+          "src/main/resources/data/itacraft/jukebox_song/charlie_kirk_cd.json",
+          "src/main/resources/assets/itacraft/models/item/charlie_kirk_cd.json"
+        ]
+      },
+      "path": "~/Matvey/Music"
+    },
+    {
+      "name": "Painting1",
+      "type": "painting",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "painting_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/itacraft/painting_variant/painting_1.json"
+        ]
+      },
+      "path": "~/Matvey"
+    },
+    {
+      "name": "Painting2",
+      "type": "painting",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "painting_2",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/itacraft/painting_variant/painting_2.json"
+        ]
+      },
+      "path": "~/Matvey"
+    },
+    {
+      "name": "GuggeCraft5",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gugge_craft_5",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/itacraft/recipe/gugge_craft_5.json",
+          "src/main/resources/data/itacraft/advancement/recipes/gugge_craft_5.json"
+        ]
+      },
+      "path": "~/Matvey"
+    },
+    {
+      "name": "Painting3",
+      "type": "painting",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "painting_3",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/itacraft/painting_variant/painting_3.json"
+        ]
+      },
+      "path": "~/Matvey"
+    },
+    {
+      "name": "SkatteetatenOnEntityTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "skatteetaten_on_entity_tick",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/mcreator/itacraft/procedures/SkatteetatenOnEntityTickProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "DeftonesCD",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "deftones_cd",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/itacraft/items/deftones_cd.json",
+          "src/main/java/net/mcreator/itacraft/item/DeftonesCDItem.java",
+          "src/main/resources/data/itacraft/jukebox_song/deftones_cd.json",
+          "src/main/resources/assets/itacraft/models/item/deftones_cd.json"
+        ]
+      },
+      "path": "~/Matvey/Music"
+    },
+    {
+      "name": "Skatteetaten",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "skatteetaten",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/itacraft/entity/SkatteetatenEntity.java",
+          "src/main/java/net/mcreator/itacraft/client/renderer/SkatteetatenRenderer.java",
+          "src/main/resources/assets/itacraft/items/skatteetaten_spawn_egg.json",
+          "src/main/resources/data/itacraft/neoforge/biome_modifier/skatteetaten_biome_modifier.json",
+          "src/main/resources/assets/itacraft/models/item/skatteetaten_spawn_egg.json"
+        ]
+      }
+    },
+    {
+      "name": "SkattemanOnInitialEntitySpawn",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "skatteman_on_initial_entity_spawn",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/mcreator/itacraft/procedures/SkattemanOnInitialEntitySpawnProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "Coolpainting",
+      "type": "painting",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "coolpainting",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/itacraft/painting_variant/coolpainting.json"
+        ]
+      },
+      "path": "~/Matvey"
+    },
+    {
+      "name": "IronManCD",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "iron_man_cd",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/itacraft/jukebox_song/iron_man_cd.json",
+          "src/main/resources/assets/itacraft/items/iron_man_cd.json",
+          "src/main/java/net/mcreator/itacraft/item/IronManCDItem.java",
+          "src/main/resources/assets/itacraft/models/item/iron_man_cd.json"
+        ]
+      },
+      "path": "~/Matvey/Music"
     }
   ],
   "variable_elements": [
@@ -3489,6 +3630,30 @@
       ],
       "category": "neutral",
       "subtitle": ""
+    },
+    {
+      "name": "entombed-deftones",
+      "files": [
+        "entombed"
+      ],
+      "category": "music",
+      "subtitle": "\u003centombed\u003e"
+    },
+    {
+      "name": "we-are-charlie-kirk",
+      "files": [
+        "we_are_charlie_kirk"
+      ],
+      "category": "music",
+      "subtitle": "\u003ccharlie kirk\u003e"
+    },
+    {
+      "name": "jarvis...explode-his-balls-plz",
+      "files": [
+        "the_clash___should_i_stay_or_should_i_go__official_audio_"
+      ],
+      "category": "neutral",
+      "subtitle": "\u003cjarvis\u003e"
     }
   ],
   "tag_elements": {
@@ -3585,6 +3750,11 @@
     ],
     "ENTITIES:minecraft:illager": [
       "~CUSTOM:RetardedGamerGirl"
+    ],
+    "ITEMS:minecraft:music_discs": [
+      "~CUSTOM:IronManCD",
+      "~CUSTOM:DeftonesCD",
+      "~CUSTOM:CharlieKirkCD"
     ]
   },
   "tab_element_order": {},
@@ -3788,7 +3958,12 @@
     "children": [
       {
         "name": "Matvey",
-        "children": []
+        "children": [
+          {
+            "name": "Music",
+            "children": []
+          }
+        ]
       },
       {
         "name": "Procedures",

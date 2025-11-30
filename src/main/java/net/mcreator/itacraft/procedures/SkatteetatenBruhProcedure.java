@@ -5,6 +5,7 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.core.component.DataComponents;
+import net.minecraft.network.chat.Component;
 
 import net.mcreator.itacraft.init.ItacraftModMenus;
 import net.mcreator.itacraft.init.ItacraftModItems;
@@ -19,16 +20,27 @@ public class SkatteetatenBruhProcedure {
         
         // Check if it's a Hawk Phone
         if (phoneItem.getItem() == ItacraftModItems.HAWK_PHONE.get()) {
-            // Get the money from the ACTUAL phone item in the slot (not a new ItemStack!)
+            // Get the money from the ACTUAL phone item in the slot
             double currentMoney = phoneItem.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("money").orElse(0.0);
             
             if (currentMoney >= 1500) {
                 // Take 50% of the money from the phone
                 double newMoney = currentMoney * 0.5; // 50% remaining
                 CustomData.update(DataComponents.CUSTOM_DATA, phoneItem, tag -> tag.putDouble("money", newMoney));
+                
+                // Mark player as PAID
+                entity.getPersistentData().putInt("payed", 1);
+                
+                if (entity instanceof Player _player) {
+                    _player.displayClientMessage(Component.literal("§aTax paid! You're safe."), true);
+                }
             } else {
                 // Take 50% of random items from player's inventory
                 removeRandomItemsFromInventory(entity);
+                
+                if (entity instanceof Player _player) {
+                    _player.displayClientMessage(Component.literal("§cNot enough money! Random items taken as penalty."), true);
+                }
             }
         }
     }

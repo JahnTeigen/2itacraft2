@@ -41,10 +41,11 @@ public class DoorPlacedByPlayerProcedure {
 			ItacraftMod.queueServerWork((int) Mth.nextDouble(RandomSource.create(), 10, 10), () -> {
 				if (world instanceof ServerLevel _level)
 					_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
-							"execute if entity @e[type=itacraft:skatteman,distance=..10] run kill @e[type=itacraft:skatteman]");
+							"execute if entity @e[type=itacraft:skatteetaten,distance=..10] run kill @e[type=itacraft:skatteetaten]");
 				if (world instanceof ServerLevel _level) {
-					Entity entityToSpawn = ItacraftModEntities.SKATTEMAN.get().spawn(_level, BlockPos.containing(x + 2, y, z + 2), EntitySpawnReason.MOB_SUMMONED);
+					Entity entityToSpawn = ItacraftModEntities.SKATTEETATEN.get().spawn(_level, BlockPos.containing(x + 2, y, z + 2), EntitySpawnReason.MOB_SUMMONED);
 					if (entityToSpawn != null) {
+						entityToSpawn.setYRot(world.getRandom().nextFloat() * 360F);
 					}
 				}
 			});

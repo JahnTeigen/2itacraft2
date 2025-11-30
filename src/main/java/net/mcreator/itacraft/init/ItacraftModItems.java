@@ -81,7 +81,6 @@ public class ItacraftModItems {
 	public static final DeferredItem<Item> HDMI_PLUG;
 	public static final DeferredItem<Item> HDMI_CABLE;
 	public static final DeferredItem<Item> VIPPS_RANER_SPAWN_EGG;
-	public static final DeferredItem<Item> SKATTEMAN_SPAWN_EGG;
 	public static final DeferredItem<Item> CUM;
 	public static final DeferredItem<Item> FETUS;
 	public static final DeferredItem<Item> SOLDERING_TABLE;
@@ -93,6 +92,10 @@ public class ItacraftModItems {
 	public static final DeferredItem<Item> RADIATED_CUM;
 	public static final DeferredItem<Item> DILDO;
 	public static final DeferredItem<Item> CONDOME;
+	public static final DeferredItem<Item> CHARLIE_KIRK_CD;
+	public static final DeferredItem<Item> DEFTONES_CD;
+	public static final DeferredItem<Item> SKATTEETATEN_SPAWN_EGG;
+	public static final DeferredItem<Item> IRON_MAN_CD;
 	static {
 		GEIR_HAOY_SPAWN_EGG = register("geir_haoy_spawn_egg", properties -> new SpawnEggItem(ItacraftModEntities.GEIR_HAOY.get(), properties));
 		KOG_STOCK = register("kog_stock", KOGStockItem::new);
@@ -147,7 +150,6 @@ public class ItacraftModItems {
 		HDMI_PLUG = register("hdmi_plug", HDMIPlugItem::new);
 		HDMI_CABLE = register("hdmi_cable", HDMICableItem::new);
 		VIPPS_RANER_SPAWN_EGG = register("vipps_raner_spawn_egg", properties -> new SpawnEggItem(ItacraftModEntities.VIPPS_RANER.get(), properties));
-		SKATTEMAN_SPAWN_EGG = register("skatteman_spawn_egg", properties -> new SpawnEggItem(ItacraftModEntities.SKATTEMAN.get(), properties));
 		CUM = register("cum", CumitemItem::new);
 		FETUS = register("fetus", FetusItem::new);
 		SOLDERING_TABLE = block(ItacraftModBlocks.SOLDERING_TABLE, new Item.Properties().rarity(Rarity.UNCOMMON));
@@ -159,6 +161,10 @@ public class ItacraftModItems {
 		RADIATED_CUM = register("radiated_cum", RadiatedCumItem::new);
 		DILDO = register("dildo", DildoItem::new);
 		CONDOME = register("condome", CondomeItem::new);
+		CHARLIE_KIRK_CD = register("charlie_kirk_cd", CharlieKirkCDItem::new);
+		DEFTONES_CD = register("deftones_cd", DeftonesCDItem::new);
+		SKATTEETATEN_SPAWN_EGG = register("skatteetaten_spawn_egg", properties -> new SpawnEggItem(ItacraftModEntities.SKATTEETATEN.get(), properties));
+		IRON_MAN_CD = register("iron_man_cd", IronManCDItem::new);
 	}
 
 	// Start of user code block custom items
