@@ -1,0 +1,9 @@
+{
+  "_fv": 79,
+  "_type": "function",
+  "definition": {
+    "code": "# Skatteetaten Timer Function - SCOREBOARD VERSION\nexecute as @s run tellraw @s [\"\",{\"text\":\"[DEBUG] Function started\",\"color\":\"green\"}]\n\n# Check if timer already running\nexecute as @s store result score #temp_check tempscore run scoreboard players get @s skatte_timer\n\n# If no timer, start it (value 0 means no timer)\nexecute as @s if score #temp_check tempscore matches 0 run scoreboard players set @s skatte_timer 12000\nexecute as @s if score #temp_check tempscore matches 0 run tellraw @s [\"\",{\"text\":\"Timer started: 12000 ticks\",\"color\":\"green\"}]\n\n# If timer exists, show current value  \nexecute as @s unless score #temp_check tempscore matches 0 run tellraw @s [\"\",{\"text\":\"Timer running: \",\"color\":\"yellow\"},{\"score\":{\"name\":\"@s\",\"objective\":\"skatte_timer\"},\"color\":\"red\"},{\"text\":\" ticks\",\"color\":\"yellow\"}]\n\n# Show current scoreboard value\nexecute as @s run tellraw @s [\"\",{\"text\":\"Current timer: \",\"color\":\"gold\"},{\"score\":{\"name\":\"@s\",\"objective\":\"skatte_timer\"},\"color\":\"green\"}]",
+    "name": "skatteetaten_timer_function",
+    "namespace": "mod"
+  }
+}

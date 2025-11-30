@@ -161,5 +161,21 @@
         "stream": false
       }
     ]
+  },
+  "explosionmissle": {
+    "sounds": [
+      {
+        "name": "itacraft:missile_and_explosion_green_screen_and_chroma_key_with_sound_effect",
+        "stream": false
+      }
+    ]
+  },
+  "misslelockedon": {
+    "sounds": [
+      {
+        "name": "itacraft:dcs_f18c_rwr_sound_effects",
+        "stream": false
+      }
+    ]
   }
 }
