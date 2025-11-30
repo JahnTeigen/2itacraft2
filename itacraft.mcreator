@@ -2549,37 +2549,6 @@
       "path": "~/Procedures/PoopLogic"
     },
     {
-      "name": "DoorPlacedByPlayer",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "door_placed_by_player",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ],
-        "files": [
-          "src/main/java/net/mcreator/itacraft/procedures/DoorPlacedByPlayerProcedure.java"
-        ]
-      },
-      "path": "~/Procedures"
-    },
-    {
       "name": "Prolaps",
       "type": "damagetype",
       "compiles": true,
@@ -2768,37 +2737,6 @@
         ]
       },
       "path": "~/Matvey"
-    },
-    {
-      "name": "OnDoorRightClicked",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "on_door_right_clicked",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ],
-        "files": [
-          "src/main/java/net/mcreator/itacraft/procedures/OnDoorRightClickedProcedure.java"
-        ]
-      },
-      "path": "~/Procedures"
     },
     {
       "name": "Fetus",
