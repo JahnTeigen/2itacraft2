@@ -28,15 +28,13 @@ public class SolderProcedureProcedure {
 					_level.getServer().getPlayerList().broadcastSystemMessage(Component.literal("Slot 1 is 1"), false);
 				}
 				for (int index0 = 0; index0 < 8; index0++) {
-					ItacraftMod.queueServerWork(80, () -> {
-						entity.getPersistentData().putDouble("solderProgress", (entity.getPersistentData().getDoubleOr("tagName", 0) + 1));
-					});
+					entity.getPersistentData().putDouble("solderProgress", (entity.getPersistentData().getDoubleOr("tagName", 0) + 1));
 				}
 				if (entity.getPersistentData().getDoubleOr("tagName", 0) == 8) {
 					if (entity instanceof Player _player && _player.containerMenu instanceof ItacraftModMenus.MenuAccessor _menu) {
-						ItemStack _setstack10 = new ItemStack(ItacraftModItems.CIRCUIT_BOARD.get()).copy();
-						_setstack10.setCount(1);
-						_menu.getSlots().get(2).set(_setstack10);
+						ItemStack _setstack9 = new ItemStack(ItacraftModItems.CIRCUIT_BOARD.get()).copy();
+						_setstack9.setCount(1);
+						_menu.getSlots().get(2).set(_setstack9);
 						_menu.getSlots().get(1).remove(1);
 						_player.containerMenu.broadcastChanges();
 					}

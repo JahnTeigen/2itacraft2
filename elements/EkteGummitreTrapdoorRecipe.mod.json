@@ -1,0 +1,53 @@
+{
+  "_fv": 79,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 2,
+    "group": "wooden_trapdoor",
+    "unlockingItems": [
+      {
+        "value": "CUSTOM:EkteGummitrePlanks"
+      }
+    ],
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "REDSTONE",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:EkteGummitrePlanks"
+      },
+      {
+        "value": "CUSTOM:EkteGummitrePlanks"
+      },
+      {
+        "value": "CUSTOM:EkteGummitrePlanks"
+      },
+      {
+        "value": "CUSTOM:EkteGummitrePlanks"
+      },
+      {
+        "value": "CUSTOM:EkteGummitrePlanks"
+      },
+      {
+        "value": "CUSTOM:EkteGummitrePlanks"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:EkteGummitreTrapdoor"
+    },
+    "name": "ekte_gummitre_trapdoor_recipe",
+    "namespace": "mod"
+  }
+}

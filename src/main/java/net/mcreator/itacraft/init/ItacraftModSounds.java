@@ -36,4 +36,5 @@ public class ItacraftModSounds {
 			() -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("itacraft", "jarvis...explode-his-balls-plz")));
 	public static final DeferredHolder<SoundEvent, SoundEvent> EXPLOSIONMISSLE = REGISTRY.register("explosionmissle", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("itacraft", "explosionmissle")));
 	public static final DeferredHolder<SoundEvent, SoundEvent> MISSLELOCKEDON = REGISTRY.register("misslelockedon", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("itacraft", "misslelockedon")));
+	public static final DeferredHolder<SoundEvent, SoundEvent> CONDOME_UNEQUIP = REGISTRY.register("condome_unequip", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("itacraft", "condome_unequip")));
 }

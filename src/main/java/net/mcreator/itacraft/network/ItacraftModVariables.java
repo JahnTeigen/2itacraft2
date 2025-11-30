@@ -164,16 +164,13 @@ public class ItacraftModVariables {
 		}, instance -> instance.save(new CompoundTag(), ctx.levelOrThrow().registryAccess())));
 		boolean _syncDirty = false;
 		public double aura = 0;
-		public double solderingProgress = 0;
 
 		public void read(CompoundTag nbt, HolderLookup.Provider lookupProvider) {
 			aura = nbt.getDoubleOr("aura", 0);
-			solderingProgress = nbt.getDoubleOr("solderingProgress", 0);
 		}
 
 		public CompoundTag save(CompoundTag nbt, HolderLookup.Provider lookupProvider) {
 			nbt.putDouble("aura", aura);
-			nbt.putDouble("solderingProgress", solderingProgress);
 			return nbt;
 		}
 

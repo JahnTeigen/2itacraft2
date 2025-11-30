@@ -18,5 +18,9 @@ public class ItacraftModTrades {
 		if (event.getType() == VillagerProfession.LIBRARIAN) {
 			event.getTrades().get(1).add(new BasicItemListing(new ItemStack(ItacraftModItems.KOG_STOCK.get()), new ItemStack(ItacraftModItems.FEM_HUNDRE_KRONER.get(), 2), 32, 9999, 0.03f));
 		}
+		if (event.getType() == VillagerProfession.ARMORER) {
+			event.getTrades().get(4)
+					.add(new BasicItemListing(new ItemStack(ItacraftModItems.ETT_TUSEN_KRONER.get(), 10), new ItemStack(ItacraftModItems.FEM_HUNDRE_KRONER.get(), 5), new ItemStack(ItacraftModBlocks.BLOCK_OF_BYGG_54.get()), 10, 5, 0.15f));
+		}
 	}
 }

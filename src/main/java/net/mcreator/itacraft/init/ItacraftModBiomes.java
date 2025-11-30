@@ -52,6 +52,10 @@ public class ItacraftModBiomes {
 							Climate.Parameter.point(0.0f), Climate.Parameter.span(-1.9944f, 2f), 0), biomeRegistry.getOrThrow(ResourceKey.create(Registries.BIOME, ResourceLocation.fromNamespaceAndPath("itacraft", "drammen")))));
 					addParameterPoint(parameters, new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(-1.55f, 0.222f), Climate.Parameter.span(-1.9878f, 0.5f), Climate.Parameter.span(0.3f, 1.9999f), Climate.Parameter.span(-0.5f, 0.5f),
 							Climate.Parameter.point(1.0f), Climate.Parameter.span(-1.9944f, 2f), 0), biomeRegistry.getOrThrow(ResourceKey.create(Registries.BIOME, ResourceLocation.fromNamespaceAndPath("itacraft", "drammen")))));
+					addParameterPoint(parameters, new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(-0.4947f, 0.5113f), Climate.Parameter.span(-0.5f, 0.5f), Climate.Parameter.span(0.3047f, 2f), Climate.Parameter.span(-0.4993f, 0.5f),
+							Climate.Parameter.point(0.0f), Climate.Parameter.span(-1f, 1f), 0), biomeRegistry.getOrThrow(ResourceKey.create(Registries.BIOME, ResourceLocation.fromNamespaceAndPath("itacraft", "skevven")))));
+					addParameterPoint(parameters, new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(-0.4947f, 0.5113f), Climate.Parameter.span(-0.5f, 0.5f), Climate.Parameter.span(0.3047f, 2f), Climate.Parameter.span(-0.4993f, 0.5f),
+							Climate.Parameter.point(1.0f), Climate.Parameter.span(-1f, 1f), 0), biomeRegistry.getOrThrow(ResourceKey.create(Registries.BIOME, ResourceLocation.fromNamespaceAndPath("itacraft", "skevven")))));
 					chunkGenerator.biomeSource = MultiNoiseBiomeSource.createFromList(new Climate.ParameterList<>(parameters));
 					chunkGenerator.featuresPerStep = Suppliers
 							.memoize(() -> FeatureSorter.buildFeaturesPerStep(List.copyOf(chunkGenerator.biomeSource.possibleBiomes()), biome -> chunkGenerator.generationSettingsGetter.apply(biome).features(), true));
@@ -73,6 +77,8 @@ public class ItacraftModBiomes {
 		List<SurfaceRules.RuleSource> customSurfaceRules = new ArrayList<>();
 		customSurfaceRules.add(
 				preliminarySurfaceRule(ResourceKey.create(Registries.BIOME, ResourceLocation.fromNamespaceAndPath("itacraft", "drammen")), Blocks.PACKED_MUD.defaultBlockState(), Blocks.MUD.defaultBlockState(), Blocks.BEDROCK.defaultBlockState()));
+		customSurfaceRules.add(
+				preliminarySurfaceRule(ResourceKey.create(Registries.BIOME, ResourceLocation.fromNamespaceAndPath("itacraft", "skevven")), Blocks.GRASS_BLOCK.defaultBlockState(), Blocks.DIRT.defaultBlockState(), Blocks.SAND.defaultBlockState()));
 		if (currentRuleSource instanceof SurfaceRules.SequenceRuleSource sequenceRuleSource) {
 			customSurfaceRules.addAll(sequenceRuleSource.sequence());
 			return SurfaceRules.sequence(customSurfaceRules.toArray(SurfaceRules.RuleSource[]::new));

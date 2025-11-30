@@ -1,0 +1,9 @@
+{
+  "parent": "block/door_bottom_left",
+  "textures": {
+    "particle": "itacraft:block/ekte_gummitre_door_bottom",
+    "bottom": "itacraft:block/ekte_gummitre_door_bottom",
+    "top": "itacraft:block/ekte_gummitre_door_top"
+  },
+  "render_type": "cutout"
+}

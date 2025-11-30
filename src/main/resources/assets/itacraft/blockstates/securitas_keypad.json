@@ -1,0 +1,27 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "itacraft:block/securitas_keypad"
+    },
+    "facing=east": {
+      "model": "itacraft:block/securitas_keypad",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "itacraft:block/securitas_keypad",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "itacraft:block/securitas_keypad",
+      "y": 270
+    },
+    "facing=up": {
+      "model": "itacraft:block/securitas_keypad",
+      "x": 270
+    },
+    "facing=down": {
+      "model": "itacraft:block/securitas_keypad",
+      "x": 90
+    }
+  }
+}

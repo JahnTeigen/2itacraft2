@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "#itacraft:ekte_gummitre_logs",
+      "required": false
+    }
+  ]
+}

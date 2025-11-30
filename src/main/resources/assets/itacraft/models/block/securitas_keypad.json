@@ -1,0 +1,9 @@
+{
+  "parent": "itacraft:custom/securitaskeypad",
+  "textures": {
+    "all": "itacraft:block/securitas_keypad_texture",
+    "particle": "itacraft:block/securitas_keypad_texture",
+    "0": "itacraft:block/securitas_keypad_texture"
+  },
+  "render_type": "solid"
+}

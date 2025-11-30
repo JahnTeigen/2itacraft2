@@ -1,29 +1,6 @@
 package net.mcreator.itacraft.procedures;
 
-import net.neoforged.neoforge.event.tick.PlayerTickEvent;
-import net.neoforged.fml.common.EventBusSubscriber;
-import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.bus.api.Event;
-
-import net.minecraft.world.scores.criteria.ObjectiveCriteria;
-import net.minecraft.world.scores.Scoreboard;
-import net.minecraft.world.scores.ScoreHolder;
-import net.minecraft.world.scores.Objective;
-import net.minecraft.world.phys.Vec3;
-import net.minecraft.world.phys.AABB;
-import net.minecraft.world.level.LevelAccessor;
-import net.minecraft.world.entity.EntitySpawnReason;
-import net.minecraft.world.entity.Entity;
-import net.minecraft.server.level.ServerLevel;
-import net.minecraft.network.chat.Component;
-import net.minecraft.core.BlockPos;
-
-import net.mcreator.itacraft.init.ItacraftModEntities;
-import net.mcreator.itacraft.ItacraftMod;
-
-import javax.annotation.Nullable;
-
-import java.util.Comparator;
 
 @EventBusSubscriber
 public class RandomSkatteetatenSpawnProcedureProcedure {

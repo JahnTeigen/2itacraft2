@@ -1,0 +1,53 @@
+{
+  "_fv": 79,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "unlockingItems": [
+      {
+        "value": "CUSTOM:CircuitBoard"
+      }
+    ],
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:WhiteColoredPlastic"
+      },
+      {
+        "value": "CUSTOM:WhiteColoredPlastic"
+      },
+      {
+        "value": "CUSTOM:WhiteColoredPlastic"
+      },
+      {
+        "value": "CUSTOM:WhiteColoredPlastic"
+      },
+      {
+        "value": "CUSTOM:CircuitBoard"
+      },
+      {
+        "value": "CUSTOM:WhiteColoredPlastic"
+      },
+      {
+        "value": "CUSTOM:WhiteColoredPlastic"
+      },
+      {
+        "value": "CUSTOM:WhiteColoredPlastic"
+      },
+      {
+        "value": "CUSTOM:WhiteColoredPlastic"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:SecuritasKeypad"
+    },
+    "name": "securitas_keypad_recipe",
+    "namespace": "mod"
+  }
+}

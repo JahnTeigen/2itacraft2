@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "itacraft:block/stripped_ekte_gummitre_log_top",
+    "up": "itacraft:block/stripped_ekte_gummitre_log_top",
+    "north": "itacraft:block/stripped_ekte_gummitre_log",
+    "east": "itacraft:block/stripped_ekte_gummitre_log",
+    "south": "itacraft:block/stripped_ekte_gummitre_log",
+    "west": "itacraft:block/stripped_ekte_gummitre_log",
+    "particle": "itacraft:block/stripped_ekte_gummitre_log_top"
+  },
+  "render_type": "solid"
+}

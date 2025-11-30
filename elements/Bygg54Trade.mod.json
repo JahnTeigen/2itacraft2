@@ -1,0 +1,33 @@
+{
+  "_fv": 79,
+  "_type": "villagertrade",
+  "definition": {
+    "tradeEntries": [
+      {
+        "villagerProfession": {
+          "value": "ARMORER"
+        },
+        "entries": [
+          {
+            "price1": {
+              "value": "CUSTOM:EttTusenKroner"
+            },
+            "countPrice1": 10,
+            "price2": {
+              "value": "CUSTOM:FemHundreKroner"
+            },
+            "countPrice2": 5,
+            "offer": {
+              "value": "CUSTOM:BlockOfBygg54"
+            },
+            "countOffer": 1,
+            "level": 4,
+            "maxTrades": 10,
+            "xp": 5,
+            "priceMultiplier": 0.15
+          }
+        ]
+      }
+    ]
+  }
+}

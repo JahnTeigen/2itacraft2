@@ -29,6 +29,7 @@ public class ItacraftModTabs {
 				tabData.accept(ItacraftModBlocks.HP_WORKSTATION.get().asItem());
 				tabData.accept(ItacraftModBlocks.HP_MONITOR.get().asItem());
 				tabData.accept(ItacraftModItems.CIRCUIT_BOARD.get());
+				tabData.accept(ItacraftModBlocks.SECURITAS_KEYPAD.get().asItem());
 			}).withSearchBar().withTabsBefore(STOCKS.getId()).build());
 
 	@SubscribeEvent
@@ -74,12 +75,27 @@ public class ItacraftModTabs {
 			tabData.accept(ItacraftModItems.MICROPLASTIC.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
 			tabData.accept(ItacraftModBlocks.BLOCK_OF_BYGG_54.get().asItem());
+			tabData.accept(ItacraftModBlocks.EKTE_GUMMITRE_DOOR.get().asItem());
+			tabData.accept(ItacraftModBlocks.EKTE_GUMMITRE_WOOD.get().asItem());
+			tabData.accept(ItacraftModBlocks.EKTE_GUMMITRE_SLAB.get().asItem());
+			tabData.accept(ItacraftModBlocks.EKTE_GUMMITRE_TRAPDOOR.get().asItem());
+			tabData.accept(ItacraftModBlocks.EKTE_GUMMITRE_PRESSURE_PLATE.get().asItem());
+			tabData.accept(ItacraftModBlocks.EKTE_GUMMITRE_LOG.get().asItem());
+			tabData.accept(ItacraftModBlocks.STRIPPED_EKTE_GUMMITRE_LOG.get().asItem());
+			tabData.accept(ItacraftModBlocks.EKTE_GUMMITRE_PLANKS.get().asItem());
+			tabData.accept(ItacraftModBlocks.EKTE_GUMMITRE_BUTTON.get().asItem());
+			tabData.accept(ItacraftModBlocks.EKTE_GUMMITRE_FENCE.get().asItem());
+			tabData.accept(ItacraftModBlocks.EKTE_GUMMITRE_FENCE_GATE.get().asItem());
+			tabData.accept(ItacraftModBlocks.STRIPPED_EKTE_GUMMITRE_WOOD.get().asItem());
+			tabData.accept(ItacraftModBlocks.EKTE_GUMMITRE_STAIRS.get().asItem());
 		} else if (tabData.getTabKey() == CreativeModeTabs.INGREDIENTS) {
 			tabData.accept(ItacraftModItems.PLASTIC.get());
 			tabData.accept(ItacraftModItems.WHITE_COLORED_PLASTIC.get());
 			tabData.accept(ItacraftModItems.RED_COLORED_PLASTIC.get());
 			tabData.accept(ItacraftModItems.TRANSPARENT_PLASTIC.get());
 			tabData.accept(ItacraftModItems.PLASTIC_CIRCUIT_BOARD_MOLD.get());
+			tabData.accept(ItacraftModItems.RUBBER.get());
+			tabData.accept(ItacraftModItems.LATEX.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.OP_BLOCKS) {
 			if (tabData.hasPermissions()) {
 				tabData.accept(ItacraftModBlocks.RUSSIA_BLOCK.get().asItem());
@@ -98,6 +114,7 @@ public class ItacraftModTabs {
 			tabData.accept(ItacraftModItems.LEAD.get());
 			tabData.accept(ItacraftModBlocks.LEAD_ORE.get().asItem());
 			tabData.accept(ItacraftModBlocks.MARIJUANA.get().asItem());
+			tabData.accept(ItacraftModBlocks.EKTE_GUMMITRE_LEAVES.get().asItem());
 		}
 	}
 }
