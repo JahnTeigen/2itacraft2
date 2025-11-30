@@ -2793,10 +2793,6 @@
       "metadata": {
         "dependencies": [
           {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
             "name": "x",
             "type": "number"
           },
@@ -3226,6 +3222,10 @@
       "registry_name": "condome_display_condition",
       "metadata": {
         "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
           {
             "name": "world",
             "type": "world"
@@ -3735,7 +3735,19 @@
       "subtitles.condome_application": "",
       "gui.itacraft.corner_overlay.label_condome_equipped": "CONDOME EQUIPPED",
       "subtitles.retarddod": "",
-      "subtitles.retardliving": ""
+      "subtitles.retardliving": "",
+      "item.itacraft.soldering_table": "Soldering Table",
+      "item.itacraft.nal_med_cum": "Nål med Cum",
+      "item_group.itacraft.electronics": "Electronics",
+      "item.itacraft.plastic_circuit_board_mold": "Plastic Circuit Board Mold",
+      "item.itacraft.circuit_board": "Circuit Board",
+      "item.itacraft.microplastic": "Microplastic",
+      "gui.itacraft.soldering_table_gui.button_solder": "Solder",
+      "item.itacraft.dildo": "Dildo",
+      "item.itacraft.condome": "Condome",
+      "key.itacraft.equip_condome_shortcut": "Equip Condome Shortcut",
+      "painting.itacraft.ehhhh.author": "Ådne",
+      "painting.itacraft.ehhhh.title": "The gay furry"
     }
   },
   "metadata": {
