@@ -55,8 +55,8 @@
       "registry_name": "oslo_bors",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/itacraft/client/gui/OsloBorsScreen.java",
           "src/main/java/net/mcreator/itacraft/world/inventory/OsloBorsMenu.java",
+          "src/main/java/net/mcreator/itacraft/client/gui/OsloBorsScreen.java",
           "src/main/java/net/mcreator/itacraft/network/OsloBorsButtonMessage.java"
         ]
       },
@@ -247,9 +247,9 @@
       "registry_name": "femti_kroner",
       "metadata": {
         "files": [
-          "src/main/resources/assets/itacraft/models/item/femti_kroner.json",
+          "src/main/resources/assets/itacraft/items/femti_kroner.json",
           "src/main/java/net/mcreator/itacraft/item/FemtiKronerItem.java",
-          "src/main/resources/assets/itacraft/items/femti_kroner.json"
+          "src/main/resources/assets/itacraft/models/item/femti_kroner.json"
         ]
       },
       "path": "~/Fredrik"
@@ -543,9 +543,9 @@
       "registry_name": "heroin",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/itacraft/item/HeroinItem.java",
           "src/main/resources/assets/itacraft/items/heroin.json",
-          "src/main/resources/assets/itacraft/models/item/heroin.json"
+          "src/main/resources/assets/itacraft/models/item/heroin.json",
+          "src/main/java/net/mcreator/itacraft/item/HeroinItem.java"
         ]
       },
       "path": "~/Fredrik"
@@ -707,8 +707,8 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/itacraft/items/rj_45_type_plug.json",
-          "src/main/resources/assets/itacraft/models/item/rj_45_type_plug.json",
-          "src/main/java/net/mcreator/itacraft/item/RJ45TypePlugItem.java"
+          "src/main/java/net/mcreator/itacraft/item/RJ45TypePlugItem.java",
+          "src/main/resources/assets/itacraft/models/item/rj_45_type_plug.json"
         ]
       },
       "path": "~/Fredrik"
@@ -722,8 +722,8 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/itacraft/items/modular_pliers.json",
-          "src/main/java/net/mcreator/itacraft/item/ModularPliersItem.java",
-          "src/main/resources/assets/itacraft/models/item/modular_pliers.json"
+          "src/main/resources/assets/itacraft/models/item/modular_pliers.json",
+          "src/main/java/net/mcreator/itacraft/item/ModularPliersItem.java"
         ]
       },
       "path": "~/Fredrik"
@@ -751,9 +751,9 @@
       "registry_name": "patch_table_gui",
       "metadata": {
         "files": [
+          "src/main/java/net/mcreator/itacraft/client/gui/PatchTableGUIScreen.java",
           "src/main/java/net/mcreator/itacraft/world/inventory/PatchTableGUIMenu.java",
-          "src/main/java/net/mcreator/itacraft/network/PatchTableGUIButtonMessage.java",
-          "src/main/java/net/mcreator/itacraft/client/gui/PatchTableGUIScreen.java"
+          "src/main/java/net/mcreator/itacraft/network/PatchTableGUIButtonMessage.java"
         ]
       },
       "path": "~/Fredrik"
@@ -789,9 +789,9 @@
       "registry_name": "foiled_rj_45_type_ethernet_cable",
       "metadata": {
         "files": [
-          "src/main/resources/assets/itacraft/models/item/foiled_rj_45_type_ethernet_cable.json",
+          "src/main/resources/assets/itacraft/items/foiled_rj_45_type_ethernet_cable.json",
           "src/main/java/net/mcreator/itacraft/item/FoiledRJ45TypeEthernetCableItem.java",
-          "src/main/resources/assets/itacraft/items/foiled_rj_45_type_ethernet_cable.json"
+          "src/main/resources/assets/itacraft/models/item/foiled_rj_45_type_ethernet_cable.json"
         ]
       },
       "path": "~/Fredrik"
@@ -893,9 +893,9 @@
       "registry_name": "white_colored_plastic",
       "metadata": {
         "files": [
-          "src/main/resources/assets/itacraft/models/item/white_colored_plastic.json",
+          "src/main/java/net/mcreator/itacraft/item/WhiteColoredPlasticItem.java",
           "src/main/resources/assets/itacraft/items/white_colored_plastic.json",
-          "src/main/java/net/mcreator/itacraft/item/WhiteColoredPlasticItem.java"
+          "src/main/resources/assets/itacraft/models/item/white_colored_plastic.json"
         ]
       },
       "path": "~/Fredrik"
@@ -955,8 +955,8 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/itacraft/items/fem_kroner.json",
-          "src/main/java/net/mcreator/itacraft/item/FemKronerItem.java",
-          "src/main/resources/assets/itacraft/models/item/fem_kroner.json"
+          "src/main/resources/assets/itacraft/models/item/fem_kroner.json",
+          "src/main/java/net/mcreator/itacraft/item/FemKronerItem.java"
         ]
       },
       "path": "~/Fredrik"
@@ -1043,8 +1043,8 @@
       "registry_name": "fem_hundre_kroner_recipe",
       "metadata": {
         "files": [
-          "src/main/resources/data/itacraft/advancement/recipes/fem_hundre_kroner_recipe.json",
-          "src/main/resources/data/itacraft/recipe/fem_hundre_kroner_recipe.json"
+          "src/main/resources/data/itacraft/recipe/fem_hundre_kroner_recipe.json",
+          "src/main/resources/data/itacraft/advancement/recipes/fem_hundre_kroner_recipe.json"
         ]
       },
       "path": "~/Fredrik"
@@ -1072,8 +1072,8 @@
       "registry_name": "red_colored_plastic_recipe",
       "metadata": {
         "files": [
-          "src/main/resources/data/itacraft/advancement/recipes/red_colored_plastic_recipe.json",
-          "src/main/resources/data/itacraft/recipe/red_colored_plastic_recipe.json"
+          "src/main/resources/data/itacraft/recipe/red_colored_plastic_recipe.json",
+          "src/main/resources/data/itacraft/advancement/recipes/red_colored_plastic_recipe.json"
         ]
       },
       "path": "~/Fredrik"
@@ -1690,8 +1690,8 @@
       "registry_name": "nal_recipe",
       "metadata": {
         "files": [
-          "src/main/resources/data/itacraft/recipe/nal_recipe.json",
-          "src/main/resources/data/itacraft/advancement/recipes/nal_recipe.json"
+          "src/main/resources/data/itacraft/advancement/recipes/nal_recipe.json",
+          "src/main/resources/data/itacraft/recipe/nal_recipe.json"
         ]
       },
       "path": "~/Fredrik"
@@ -2019,9 +2019,9 @@
       "registry_name": "vipps_bank",
       "metadata": {
         "files": [
-          "src/main/resources/data/itacraft/worldgen/structure/vipps_bank.json",
           "src/main/resources/data/itacraft/worldgen/template_pool/vipps_bank.json",
-          "src/main/resources/data/itacraft/worldgen/structure_set/vipps_bank.json"
+          "src/main/resources/data/itacraft/worldgen/structure_set/vipps_bank.json",
+          "src/main/resources/data/itacraft/worldgen/structure/vipps_bank.json"
         ]
       }
     },
@@ -2291,8 +2291,8 @@
       "registry_name": "lead_armour_recipe",
       "metadata": {
         "files": [
-          "src/main/resources/data/itacraft/recipe/lead_armour_chestplate_recipe.json",
-          "src/main/resources/data/itacraft/advancement/recipes/lead_armour_recipe.json"
+          "src/main/resources/data/itacraft/advancement/recipes/lead_armour_recipe.json",
+          "src/main/resources/data/itacraft/recipe/lead_armour_chestplate_recipe.json"
         ]
       },
       "path": "~/Matvey"
@@ -2396,8 +2396,8 @@
       "registry_name": "hawk_osgui",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/itacraft/world/inventory/HawkOSGUIMenu.java",
-          "src/main/java/net/mcreator/itacraft/client/gui/HawkOSGUIScreen.java"
+          "src/main/java/net/mcreator/itacraft/client/gui/HawkOSGUIScreen.java",
+          "src/main/java/net/mcreator/itacraft/world/inventory/HawkOSGUIMenu.java"
         ]
       },
       "path": "~/Fredrik"
@@ -2410,8 +2410,8 @@
       "registry_name": "hdmi_plug_recipe",
       "metadata": {
         "files": [
-          "src/main/resources/data/itacraft/recipe/hdmi_plug_recipe.json",
-          "src/main/resources/data/itacraft/advancement/recipes/hdmi_plug_recipe.json"
+          "src/main/resources/data/itacraft/advancement/recipes/hdmi_plug_recipe.json",
+          "src/main/resources/data/itacraft/recipe/hdmi_plug_recipe.json"
         ]
       },
       "path": "~/Fredrik"
@@ -2631,8 +2631,8 @@
       "registry_name": "gugge_craft_3",
       "metadata": {
         "files": [
-          "src/main/resources/data/itacraft/advancement/recipes/gugge_craft_3.json",
-          "src/main/resources/data/itacraft/recipe/gugge_craft_3.json"
+          "src/main/resources/data/itacraft/recipe/gugge_craft_3.json",
+          "src/main/resources/data/itacraft/advancement/recipes/gugge_craft_3.json"
         ]
       },
       "path": "~/Matvey"
@@ -3238,8 +3238,8 @@
       "registry_name": "matvey_hus",
       "metadata": {
         "files": [
-          "src/main/resources/data/itacraft/worldgen/structure/matvey_hus.json",
           "src/main/resources/data/itacraft/worldgen/template_pool/matvey_hus.json",
+          "src/main/resources/data/itacraft/worldgen/structure/matvey_hus.json",
           "src/main/resources/data/itacraft/worldgen/structure_set/matvey_hus.json"
         ]
       },
@@ -3307,8 +3307,8 @@
       "registry_name": "gugge_craft_5",
       "metadata": {
         "files": [
-          "src/main/resources/data/itacraft/recipe/gugge_craft_5.json",
-          "src/main/resources/data/itacraft/advancement/recipes/gugge_craft_5.json"
+          "src/main/resources/data/itacraft/advancement/recipes/gugge_craft_5.json",
+          "src/main/resources/data/itacraft/recipe/gugge_craft_5.json"
         ]
       },
       "path": "~/Matvey"
@@ -3552,18 +3552,18 @@
       "registry_name": "ekte_gummitre_door",
       "metadata": {
         "files": [
-          "src/main/resources/assets/itacraft/models/block/ekte_gummitre_door_top_right.json",
-          "src/main/resources/assets/itacraft/models/block/ekte_gummitre_door_bottom_left_open.json",
           "src/main/resources/assets/itacraft/items/ekte_gummitre_door.json",
-          "src/main/resources/assets/itacraft/models/block/ekte_gummitre_door_bottom_right.json",
-          "src/main/resources/assets/itacraft/models/block/ekte_gummitre_door_top_left_open.json",
-          "src/main/resources/assets/itacraft/models/block/ekte_gummitre_door_bottom_right_open.json",
-          "src/main/resources/assets/itacraft/models/block/ekte_gummitre_door_top_left.json",
-          "src/main/resources/assets/itacraft/models/block/ekte_gummitre_door_top_right_open.json",
-          "src/main/resources/assets/itacraft/models/block/ekte_gummitre_door_bottom_left.json",
           "src/main/resources/assets/itacraft/models/item/ekte_gummitre_door.json",
-          "src/main/resources/data/itacraft/loot_table/blocks/ekte_gummitre_door.json",
+          "src/main/resources/assets/itacraft/models/block/ekte_gummitre_door_top_left_open.json",
+          "src/main/resources/assets/itacraft/models/block/ekte_gummitre_door_top_right_open.json",
+          "src/main/resources/assets/itacraft/models/block/ekte_gummitre_door_top_right.json",
           "src/main/resources/assets/itacraft/blockstates/ekte_gummitre_door.json",
+          "src/main/resources/data/itacraft/loot_table/blocks/ekte_gummitre_door.json",
+          "src/main/resources/assets/itacraft/models/block/ekte_gummitre_door_bottom_right.json",
+          "src/main/resources/assets/itacraft/models/block/ekte_gummitre_door_top_left.json",
+          "src/main/resources/assets/itacraft/models/block/ekte_gummitre_door_bottom_left.json",
+          "src/main/resources/assets/itacraft/models/block/ekte_gummitre_door_bottom_right_open.json",
+          "src/main/resources/assets/itacraft/models/block/ekte_gummitre_door_bottom_left_open.json",
           "src/main/java/net/mcreator/itacraft/block/EkteGummitreDoorBlock.java"
         ]
       },
@@ -3588,8 +3588,8 @@
       "registry_name": "latex_recipe",
       "metadata": {
         "files": [
-          "src/main/resources/data/itacraft/advancement/recipes/latex_recipe.json",
-          "src/main/resources/data/itacraft/recipe/latex_recipe.json"
+          "src/main/resources/data/itacraft/recipe/latex_recipe.json",
+          "src/main/resources/data/itacraft/advancement/recipes/latex_recipe.json"
         ]
       },
       "path": "~/Fredrik"
@@ -3602,12 +3602,12 @@
       "registry_name": "ekte_gummitre_wood",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/itacraft/block/EkteGummitreWoodBlock.java",
-          "src/main/resources/assets/itacraft/models/block/ekte_gummitre_wood.json",
           "src/main/resources/assets/itacraft/models/item/ekte_gummitre_wood.json",
+          "src/main/resources/data/itacraft/loot_table/blocks/ekte_gummitre_wood.json",
+          "src/main/java/net/mcreator/itacraft/block/EkteGummitreWoodBlock.java",
           "src/main/resources/assets/itacraft/items/ekte_gummitre_wood.json",
           "src/main/resources/assets/itacraft/blockstates/ekte_gummitre_wood.json",
-          "src/main/resources/data/itacraft/loot_table/blocks/ekte_gummitre_wood.json"
+          "src/main/resources/assets/itacraft/models/block/ekte_gummitre_wood.json"
         ]
       },
       "path": "~/Fredrik"
@@ -3620,14 +3620,14 @@
       "registry_name": "ekte_gummitre_slab",
       "metadata": {
         "files": [
-          "src/main/resources/assets/itacraft/models/item/ekte_gummitre_slab.json",
-          "src/main/java/net/mcreator/itacraft/block/EkteGummitreSlabBlock.java",
-          "src/main/resources/data/itacraft/loot_table/blocks/ekte_gummitre_slab.json",
-          "src/main/resources/assets/itacraft/items/ekte_gummitre_slab.json",
+          "src/main/resources/assets/itacraft/blockstates/ekte_gummitre_slab.json",
           "src/main/resources/assets/itacraft/models/block/ekte_gummitre_slab.json",
           "src/main/resources/assets/itacraft/models/block/ekte_gummitre_slab_top.json",
-          "src/main/resources/assets/itacraft/blockstates/ekte_gummitre_slab.json",
-          "src/main/resources/assets/itacraft/models/block/ekte_gummitre_slab_full.json"
+          "src/main/resources/data/itacraft/loot_table/blocks/ekte_gummitre_slab.json",
+          "src/main/resources/assets/itacraft/models/item/ekte_gummitre_slab.json",
+          "src/main/resources/assets/itacraft/models/block/ekte_gummitre_slab_full.json",
+          "src/main/java/net/mcreator/itacraft/block/EkteGummitreSlabBlock.java",
+          "src/main/resources/assets/itacraft/items/ekte_gummitre_slab.json"
         ]
       },
       "path": "~/Fredrik"
@@ -3640,8 +3640,8 @@
       "registry_name": "ekte_gummitre_wood_recipe",
       "metadata": {
         "files": [
-          "src/main/resources/data/itacraft/recipe/ekte_gummitre_wood_recipe.json",
-          "src/main/resources/data/itacraft/advancement/recipes/ekte_gummitre_wood_recipe.json"
+          "src/main/resources/data/itacraft/advancement/recipes/ekte_gummitre_wood_recipe.json",
+          "src/main/resources/data/itacraft/recipe/ekte_gummitre_wood_recipe.json"
         ]
       },
       "path": "~/Fredrik"
@@ -3681,8 +3681,8 @@
       "registry_name": "ekte_gummitre_fence_gate_recipe",
       "metadata": {
         "files": [
-          "src/main/resources/data/itacraft/advancement/recipes/ekte_gummitre_fence_gate_recipe.json",
-          "src/main/resources/data/itacraft/recipe/ekte_gummitre_fence_gate_recipe.json"
+          "src/main/resources/data/itacraft/recipe/ekte_gummitre_fence_gate_recipe.json",
+          "src/main/resources/data/itacraft/advancement/recipes/ekte_gummitre_fence_gate_recipe.json"
         ]
       },
       "path": "~/Fredrik"
@@ -3710,8 +3710,8 @@
       "metadata": {
         "files": [
           "src/main/resources/data/itacraft/worldgen/biome/skevven.json",
-          "src/main/resources/data/itacraft/worldgen/configured_feature/skevven_tree.json",
-          "src/main/resources/data/itacraft/worldgen/placed_feature/skevven_tree.json"
+          "src/main/resources/data/itacraft/worldgen/placed_feature/skevven_tree.json",
+          "src/main/resources/data/itacraft/worldgen/configured_feature/skevven_tree.json"
         ]
       },
       "path": "~/Fredrik"
@@ -3738,12 +3738,12 @@
       "registry_name": "ekte_gummitre_trapdoor",
       "metadata": {
         "files": [
-          "src/main/resources/assets/itacraft/models/block/ekte_gummitre_trapdoor.json",
-          "src/main/resources/assets/itacraft/models/block/ekte_gummitre_trapdoor_top.json",
-          "src/main/resources/assets/itacraft/blockstates/ekte_gummitre_trapdoor.json",
-          "src/main/resources/data/itacraft/loot_table/blocks/ekte_gummitre_trapdoor.json",
           "src/main/java/net/mcreator/itacraft/block/EkteGummitreTrapdoorBlock.java",
+          "src/main/resources/data/itacraft/loot_table/blocks/ekte_gummitre_trapdoor.json",
+          "src/main/resources/assets/itacraft/models/block/ekte_gummitre_trapdoor.json",
           "src/main/resources/assets/itacraft/items/ekte_gummitre_trapdoor.json",
+          "src/main/resources/assets/itacraft/blockstates/ekte_gummitre_trapdoor.json",
+          "src/main/resources/assets/itacraft/models/block/ekte_gummitre_trapdoor_top.json",
           "src/main/resources/assets/itacraft/models/item/ekte_gummitre_trapdoor.json",
           "src/main/resources/assets/itacraft/models/block/ekte_gummitre_trapdoor_open.json"
         ]
@@ -3758,13 +3758,13 @@
       "registry_name": "ekte_gummitre_pressure_plate",
       "metadata": {
         "files": [
-          "src/main/resources/data/itacraft/loot_table/blocks/ekte_gummitre_pressure_plate.json",
-          "src/main/resources/assets/itacraft/items/ekte_gummitre_pressure_plate.json",
-          "src/main/resources/assets/itacraft/models/item/ekte_gummitre_pressure_plate.json",
-          "src/main/resources/assets/itacraft/blockstates/ekte_gummitre_pressure_plate.json",
           "src/main/resources/assets/itacraft/models/block/ekte_gummitre_pressure_plate.json",
+          "src/main/resources/data/itacraft/loot_table/blocks/ekte_gummitre_pressure_plate.json",
+          "src/main/resources/assets/itacraft/blockstates/ekte_gummitre_pressure_plate.json",
+          "src/main/resources/assets/itacraft/models/block/ekte_gummitre_pressure_plate_down.json",
           "src/main/java/net/mcreator/itacraft/block/EkteGummitrePressurePlateBlock.java",
-          "src/main/resources/assets/itacraft/models/block/ekte_gummitre_pressure_plate_down.json"
+          "src/main/resources/assets/itacraft/items/ekte_gummitre_pressure_plate.json",
+          "src/main/resources/assets/itacraft/models/item/ekte_gummitre_pressure_plate.json"
         ]
       },
       "path": "~/Fredrik"
@@ -3806,11 +3806,11 @@
       "registry_name": "ekte_gummitre_log",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/itacraft/block/EkteGummitreLogBlock.java",
           "src/main/resources/assets/itacraft/items/ekte_gummitre_log.json",
+          "src/main/java/net/mcreator/itacraft/block/EkteGummitreLogBlock.java",
+          "src/main/resources/assets/itacraft/models/block/ekte_gummitre_log.json",
           "src/main/resources/assets/itacraft/models/item/ekte_gummitre_log.json",
-          "src/main/resources/assets/itacraft/blockstates/ekte_gummitre_log.json",
-          "src/main/resources/assets/itacraft/models/block/ekte_gummitre_log.json"
+          "src/main/resources/assets/itacraft/blockstates/ekte_gummitre_log.json"
         ]
       },
       "path": "~/Fredrik"
@@ -3837,12 +3837,12 @@
       "registry_name": "securitas_keypad",
       "metadata": {
         "files": [
+          "src/main/java/net/mcreator/itacraft/block/SecuritasKeypadBlock.java",
+          "src/main/resources/assets/itacraft/models/item/securitas_keypad.json",
           "src/main/resources/assets/itacraft/items/securitas_keypad.json",
           "src/main/resources/assets/itacraft/blockstates/securitas_keypad.json",
-          "src/main/resources/data/itacraft/loot_table/blocks/securitas_keypad.json",
           "src/main/resources/assets/itacraft/models/block/securitas_keypad.json",
-          "src/main/java/net/mcreator/itacraft/block/SecuritasKeypadBlock.java",
-          "src/main/resources/assets/itacraft/models/item/securitas_keypad.json"
+          "src/main/resources/data/itacraft/loot_table/blocks/securitas_keypad.json"
         ]
       },
       "path": "~/Fredrik"
@@ -3855,12 +3855,12 @@
       "registry_name": "stripped_ekte_gummitre_log",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/itacraft/block/StrippedEkteGummitreLogBlock.java",
-          "src/main/resources/assets/itacraft/items/stripped_ekte_gummitre_log.json",
           "src/main/resources/assets/itacraft/models/item/stripped_ekte_gummitre_log.json",
-          "src/main/resources/assets/itacraft/models/block/stripped_ekte_gummitre_log.json",
           "src/main/resources/assets/itacraft/blockstates/stripped_ekte_gummitre_log.json",
-          "src/main/resources/data/itacraft/loot_table/blocks/stripped_ekte_gummitre_log.json"
+          "src/main/resources/assets/itacraft/models/block/stripped_ekte_gummitre_log.json",
+          "src/main/resources/data/itacraft/loot_table/blocks/stripped_ekte_gummitre_log.json",
+          "src/main/java/net/mcreator/itacraft/block/StrippedEkteGummitreLogBlock.java",
+          "src/main/resources/assets/itacraft/items/stripped_ekte_gummitre_log.json"
         ]
       },
       "path": "~/Fredrik"
@@ -3887,8 +3887,8 @@
       "registry_name": "securitas_keypad_recipe",
       "metadata": {
         "files": [
-          "src/main/resources/data/itacraft/advancement/recipes/securitas_keypad_recipe.json",
-          "src/main/resources/data/itacraft/recipe/securitas_keypad_recipe.json"
+          "src/main/resources/data/itacraft/recipe/securitas_keypad_recipe.json",
+          "src/main/resources/data/itacraft/advancement/recipes/securitas_keypad_recipe.json"
         ]
       },
       "path": "~/Fredrik"
@@ -3901,8 +3901,8 @@
       "registry_name": "ekte_gummitre_fence_recipe",
       "metadata": {
         "files": [
-          "src/main/resources/data/itacraft/advancement/recipes/ekte_gummitre_fence_recipe.json",
-          "src/main/resources/data/itacraft/recipe/ekte_gummitre_fence_recipe.json"
+          "src/main/resources/data/itacraft/recipe/ekte_gummitre_fence_recipe.json",
+          "src/main/resources/data/itacraft/advancement/recipes/ekte_gummitre_fence_recipe.json"
         ]
       },
       "path": "~/Fredrik"
@@ -3915,8 +3915,8 @@
       "registry_name": "ekte_gummitre_slab_recipe",
       "metadata": {
         "files": [
-          "src/main/resources/data/itacraft/recipe/ekte_gummitre_slab_recipe.json",
-          "src/main/resources/data/itacraft/advancement/recipes/ekte_gummitre_slab_recipe.json"
+          "src/main/resources/data/itacraft/advancement/recipes/ekte_gummitre_slab_recipe.json",
+          "src/main/resources/data/itacraft/recipe/ekte_gummitre_slab_recipe.json"
         ]
       },
       "path": "~/Fredrik"
@@ -3929,8 +3929,8 @@
       "registry_name": "ekte_gummitre_door_recipe",
       "metadata": {
         "files": [
-          "src/main/resources/data/itacraft/recipe/ekte_gummitre_door_recipe.json",
-          "src/main/resources/data/itacraft/advancement/recipes/ekte_gummitre_door_recipe.json"
+          "src/main/resources/data/itacraft/advancement/recipes/ekte_gummitre_door_recipe.json",
+          "src/main/resources/data/itacraft/recipe/ekte_gummitre_door_recipe.json"
         ]
       },
       "path": "~/Fredrik"
@@ -3943,8 +3943,8 @@
       "registry_name": "latex",
       "metadata": {
         "files": [
-          "src/main/resources/assets/itacraft/models/item/latex.json",
           "src/main/java/net/mcreator/itacraft/item/LatexItem.java",
+          "src/main/resources/assets/itacraft/models/item/latex.json",
           "src/main/resources/assets/itacraft/items/latex.json"
         ]
       },
@@ -3973,11 +3973,11 @@
       "registry_name": "ekte_gummitre_planks",
       "metadata": {
         "files": [
+          "src/main/java/net/mcreator/itacraft/block/EkteGummitrePlanksBlock.java",
+          "src/main/resources/assets/itacraft/models/item/ekte_gummitre_planks.json",
           "src/main/resources/assets/itacraft/blockstates/ekte_gummitre_planks.json",
           "src/main/resources/assets/itacraft/items/ekte_gummitre_planks.json",
-          "src/main/resources/assets/itacraft/models/item/ekte_gummitre_planks.json",
           "src/main/resources/assets/itacraft/models/block/ekte_gummitre_planks.json",
-          "src/main/java/net/mcreator/itacraft/block/EkteGummitrePlanksBlock.java",
           "src/main/resources/data/itacraft/loot_table/blocks/ekte_gummitre_planks.json"
         ]
       },
@@ -3991,12 +3991,12 @@
       "registry_name": "ekte_gummitre_leaves",
       "metadata": {
         "files": [
-          "src/main/resources/assets/itacraft/models/item/ekte_gummitre_leaves.json",
           "src/main/resources/assets/itacraft/items/ekte_gummitre_leaves.json",
           "src/main/resources/data/itacraft/loot_table/blocks/ekte_gummitre_leaves.json",
+          "src/main/resources/assets/itacraft/models/block/ekte_gummitre_leaves.json",
           "src/main/resources/assets/itacraft/blockstates/ekte_gummitre_leaves.json",
-          "src/main/java/net/mcreator/itacraft/block/EkteGummitreLeavesBlock.java",
-          "src/main/resources/assets/itacraft/models/block/ekte_gummitre_leaves.json"
+          "src/main/resources/assets/itacraft/models/item/ekte_gummitre_leaves.json",
+          "src/main/java/net/mcreator/itacraft/block/EkteGummitreLeavesBlock.java"
         ]
       },
       "path": "~/Fredrik"
@@ -4009,8 +4009,8 @@
       "registry_name": "ekte_gummitre_pressure_plate_recipe",
       "metadata": {
         "files": [
-          "src/main/resources/data/itacraft/advancement/recipes/ekte_gummitre_pressure_plate_recipe.json",
-          "src/main/resources/data/itacraft/recipe/ekte_gummitre_pressure_plate_recipe.json"
+          "src/main/resources/data/itacraft/recipe/ekte_gummitre_pressure_plate_recipe.json",
+          "src/main/resources/data/itacraft/advancement/recipes/ekte_gummitre_pressure_plate_recipe.json"
         ]
       },
       "path": "~/Fredrik"
@@ -4024,13 +4024,13 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/itacraft/models/item/ekte_gummitre_button.json",
+          "src/main/resources/assets/itacraft/models/block/ekte_gummitre_button_inventory.json",
+          "src/main/resources/assets/itacraft/blockstates/ekte_gummitre_button.json",
           "src/main/resources/assets/itacraft/models/block/ekte_gummitre_button_pressed.json",
           "src/main/resources/assets/itacraft/items/ekte_gummitre_button.json",
-          "src/main/resources/assets/itacraft/blockstates/ekte_gummitre_button.json",
+          "src/main/resources/data/itacraft/loot_table/blocks/ekte_gummitre_button.json",
           "src/main/java/net/mcreator/itacraft/block/EkteGummitreButtonBlock.java",
-          "src/main/resources/assets/itacraft/models/block/ekte_gummitre_button.json",
-          "src/main/resources/assets/itacraft/models/block/ekte_gummitre_button_inventory.json",
-          "src/main/resources/data/itacraft/loot_table/blocks/ekte_gummitre_button.json"
+          "src/main/resources/assets/itacraft/models/block/ekte_gummitre_button.json"
         ]
       },
       "path": "~/Fredrik"
@@ -4043,14 +4043,14 @@
       "registry_name": "ekte_gummitre_fence",
       "metadata": {
         "files": [
+          "src/main/resources/assets/itacraft/items/ekte_gummitre_fence.json",
           "src/main/resources/data/itacraft/loot_table/blocks/ekte_gummitre_fence.json",
-          "src/main/resources/assets/itacraft/models/item/ekte_gummitre_fence.json",
-          "src/main/resources/assets/itacraft/blockstates/ekte_gummitre_fence.json",
           "src/main/resources/assets/itacraft/models/block/ekte_gummitre_fence_post.json",
           "src/main/resources/assets/itacraft/models/block/ekte_gummitre_fence.json",
-          "src/main/resources/assets/itacraft/items/ekte_gummitre_fence.json",
+          "src/main/resources/assets/itacraft/models/item/ekte_gummitre_fence.json",
+          "src/main/resources/assets/itacraft/models/block/ekte_gummitre_fence_inventory.json",
           "src/main/java/net/mcreator/itacraft/block/EkteGummitreFenceBlock.java",
-          "src/main/resources/assets/itacraft/models/block/ekte_gummitre_fence_inventory.json"
+          "src/main/resources/assets/itacraft/blockstates/ekte_gummitre_fence.json"
         ]
       },
       "path": "~/Fredrik"
@@ -4063,15 +4063,15 @@
       "registry_name": "ekte_gummitre_fence_gate",
       "metadata": {
         "files": [
-          "src/main/resources/assets/itacraft/models/item/ekte_gummitre_fence_gate.json",
-          "src/main/resources/assets/itacraft/blockstates/ekte_gummitre_fence_gate.json",
-          "src/main/resources/assets/itacraft/models/block/ekte_gummitre_fence_gate.json",
-          "src/main/resources/assets/itacraft/models/block/ekte_gummitre_fence_gate_wall_open.json",
-          "src/main/resources/assets/itacraft/models/block/ekte_gummitre_fence_gate_open.json",
           "src/main/resources/data/itacraft/loot_table/blocks/ekte_gummitre_fence_gate.json",
-          "src/main/java/net/mcreator/itacraft/block/EkteGummitreFenceGateBlock.java",
+          "src/main/resources/assets/itacraft/models/block/ekte_gummitre_fence_gate.json",
+          "src/main/resources/assets/itacraft/models/block/ekte_gummitre_fence_gate_wall.json",
+          "src/main/resources/assets/itacraft/blockstates/ekte_gummitre_fence_gate.json",
+          "src/main/resources/assets/itacraft/models/block/ekte_gummitre_fence_gate_open.json",
+          "src/main/resources/assets/itacraft/models/item/ekte_gummitre_fence_gate.json",
+          "src/main/resources/assets/itacraft/models/block/ekte_gummitre_fence_gate_wall_open.json",
           "src/main/resources/assets/itacraft/items/ekte_gummitre_fence_gate.json",
-          "src/main/resources/assets/itacraft/models/block/ekte_gummitre_fence_gate_wall.json"
+          "src/main/java/net/mcreator/itacraft/block/EkteGummitreFenceGateBlock.java"
         ]
       },
       "path": "~/Fredrik"
@@ -4084,12 +4084,12 @@
       "registry_name": "stripped_ekte_gummitre_wood",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/itacraft/block/StrippedEkteGummitreWoodBlock.java",
+          "src/main/resources/assets/itacraft/blockstates/stripped_ekte_gummitre_wood.json",
+          "src/main/resources/data/itacraft/loot_table/blocks/stripped_ekte_gummitre_wood.json",
+          "src/main/resources/assets/itacraft/models/block/stripped_ekte_gummitre_wood.json",
           "src/main/resources/assets/itacraft/models/item/stripped_ekte_gummitre_wood.json",
           "src/main/resources/assets/itacraft/items/stripped_ekte_gummitre_wood.json",
-          "src/main/resources/assets/itacraft/models/block/stripped_ekte_gummitre_wood.json",
-          "src/main/resources/data/itacraft/loot_table/blocks/stripped_ekte_gummitre_wood.json",
-          "src/main/resources/assets/itacraft/blockstates/stripped_ekte_gummitre_wood.json"
+          "src/main/java/net/mcreator/itacraft/block/StrippedEkteGummitreWoodBlock.java"
         ]
       },
       "path": "~/Fredrik"
@@ -4102,14 +4102,14 @@
       "registry_name": "ekte_gummitre_stairs",
       "metadata": {
         "files": [
-          "src/main/resources/assets/itacraft/models/block/ekte_gummitre_stairs.json",
-          "src/main/resources/assets/itacraft/models/block/ekte_gummitre_stairs_inner.json",
-          "src/main/java/net/mcreator/itacraft/block/EkteGummitreStairsBlock.java",
-          "src/main/resources/data/itacraft/loot_table/blocks/ekte_gummitre_stairs.json",
-          "src/main/resources/assets/itacraft/models/item/ekte_gummitre_stairs.json",
-          "src/main/resources/assets/itacraft/models/block/ekte_gummitre_stairs_outer.json",
           "src/main/resources/assets/itacraft/items/ekte_gummitre_stairs.json",
-          "src/main/resources/assets/itacraft/blockstates/ekte_gummitre_stairs.json"
+          "src/main/resources/assets/itacraft/models/block/ekte_gummitre_stairs_outer.json",
+          "src/main/resources/assets/itacraft/models/block/ekte_gummitre_stairs.json",
+          "src/main/resources/data/itacraft/loot_table/blocks/ekte_gummitre_stairs.json",
+          "src/main/resources/assets/itacraft/models/block/ekte_gummitre_stairs_inner.json",
+          "src/main/resources/assets/itacraft/models/item/ekte_gummitre_stairs.json",
+          "src/main/resources/assets/itacraft/blockstates/ekte_gummitre_stairs.json",
+          "src/main/java/net/mcreator/itacraft/block/EkteGummitreStairsBlock.java"
         ]
       },
       "path": "~/Fredrik"
@@ -4122,8 +4122,8 @@
       "registry_name": "stripped_ekte_gummitre_wood_recipe",
       "metadata": {
         "files": [
-          "src/main/resources/data/itacraft/recipe/stripped_ekte_gummitre_wood_recipe.json",
-          "src/main/resources/data/itacraft/advancement/recipes/stripped_ekte_gummitre_wood_recipe.json"
+          "src/main/resources/data/itacraft/advancement/recipes/stripped_ekte_gummitre_wood_recipe.json",
+          "src/main/resources/data/itacraft/recipe/stripped_ekte_gummitre_wood_recipe.json"
         ]
       },
       "path": "~/Fredrik"
@@ -4729,22 +4729,24 @@
       "item.itacraft.ekte_gummitre_fence": "Ekte Gummitre Fence",
       "item.itacraft.ekte_gummitre_fence_gate": "Ekte Gummitre Fence Gate",
       "item.itacraft.stripped_ekte_gummitre_wood": "Stripped Ekte Gummitre Wood",
-      "item.itacraft.ekte_gummitre_stairs": "Ekte Gummitre Stairs"
+      "item.itacraft.ekte_gummitre_stairs": "Ekte Gummitre Stairs",
+      "item.itacraft.salto_las": "Salto Las",
+      "item.itacraft.used_condome": "Used Condome"
     }
   },
   "metadata": {
     "files": [
       "src/main/java/net/mcreator/itacraft/mixin/NoiseGeneratorSettingsMixin.java",
       "src/main/java/net/mcreator/itacraft/init/ItacraftModBiomes.java",
-      "src/main/java/net/mcreator/itacraft/init/ItacraftModFluidTypes.java",
       "src/main/java/net/mcreator/itacraft/init/ItacraftModFluids.java",
-      "src/main/java/net/mcreator/itacraft/init/ItacraftModMenus.java",
+      "src/main/java/net/mcreator/itacraft/init/ItacraftModFluidTypes.java",
       "src/main/java/net/mcreator/itacraft/init/ItacraftModScreens.java",
+      "src/main/java/net/mcreator/itacraft/init/ItacraftModMenus.java",
       "src/main/java/net/mcreator/itacraft/network/MenuStateUpdateMessage.java",
       "src/main/java/net/mcreator/itacraft/init/ItacraftModKeyMappings.java",
       "src/main/resources/data/minecraft/tags/painting_variant/placeable.json",
-      "src/main/java/net/mcreator/itacraft/init/ItacraftModParticleTypes.java",
       "src/main/java/net/mcreator/itacraft/init/ItacraftModParticles.java",
+      "src/main/java/net/mcreator/itacraft/init/ItacraftModParticleTypes.java",
       "src/main/java/net/mcreator/itacraft/init/ItacraftModMobEffects.java",
       "src/main/java/net/mcreator/itacraft/init/ItacraftModPotions.java",
       "src/main/java/net/mcreator/itacraft/init/ItacraftModTrades.java",
@@ -4753,15 +4755,15 @@
       "src/main/java/net/mcreator/itacraft/init/ItacraftModItems.java",
       "src/main/java/net/mcreator/itacraft/init/ItacraftModEntityRenderers.java",
       "src/main/java/net/mcreator/itacraft/init/ItacraftModEntities.java",
-      "src/main/resources/pack.mcmeta",
-      "src/main/resources/META-INF/accesstransformer.cfg",
-      "src/main/java/net/mcreator/itacraft/init/ItacraftModModels.java",
       "src/main/java/net/mcreator/itacraft/init/ItacraftModTabs.java",
-      "src/main/java/net/mcreator/itacraft/network/ItacraftModVariables.java",
+      "src/main/java/net/mcreator/itacraft/init/ItacraftModModels.java",
       "src/main/java/net/mcreator/itacraft/ItacraftMod.java",
-      "src/main/resources/assets/itacraft/sounds.json",
+      "src/main/resources/pack.mcmeta",
       "src/main/resources/itacraft.mixins.json",
       "src/main/resources/META-INF/neoforge.mods.toml",
+      "src/main/resources/assets/itacraft/sounds.json",
+      "src/main/java/net/mcreator/itacraft/network/ItacraftModVariables.java",
+      "src/main/resources/META-INF/accesstransformer.cfg",
       "src/main/java/net/mcreator/itacraft/init/ItacraftModSounds.java"
     ]
   },
