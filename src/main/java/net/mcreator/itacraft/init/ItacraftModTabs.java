@@ -69,6 +69,7 @@ public class ItacraftModTabs {
 			tabData.accept(ItacraftModItems.COMMUNISM.get());
 			tabData.accept(ItacraftModItems.TOM_NAL.get());
 			tabData.accept(ItacraftModItems.DILDO.get());
+			tabData.accept(ItacraftModItems.KDA_KORT.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS) {
 			tabData.accept(ItacraftModItems.HEROIN.get());
 			tabData.accept(ItacraftModItems.NAL_MED_NOE_RART_I.get());

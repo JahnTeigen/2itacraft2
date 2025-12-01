@@ -3695,8 +3695,8 @@
       "registry_name": "ekte_gummitre_trapdoor_recipe",
       "metadata": {
         "files": [
-          "src/main/resources/data/itacraft/recipe/ekte_gummitre_trapdoor_recipe.json",
-          "src/main/resources/data/itacraft/advancement/recipes/ekte_gummitre_trapdoor_recipe.json"
+          "src/main/resources/data/itacraft/advancement/recipes/ekte_gummitre_trapdoor_recipe.json",
+          "src/main/resources/data/itacraft/recipe/ekte_gummitre_trapdoor_recipe.json"
         ]
       },
       "path": "~/Fredrik"
@@ -3777,9 +3777,9 @@
       "registry_name": "rubber",
       "metadata": {
         "files": [
+          "src/main/resources/assets/itacraft/models/item/rubber.json",
           "src/main/java/net/mcreator/itacraft/item/RubberItem.java",
-          "src/main/resources/assets/itacraft/items/rubber.json",
-          "src/main/resources/assets/itacraft/models/item/rubber.json"
+          "src/main/resources/assets/itacraft/items/rubber.json"
         ]
       },
       "path": "~/Fredrik"
@@ -3823,8 +3823,8 @@
       "registry_name": "securitas_gui",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/itacraft/client/gui/SecuritasGUIScreen.java",
-          "src/main/java/net/mcreator/itacraft/world/inventory/SecuritasGUIMenu.java"
+          "src/main/java/net/mcreator/itacraft/world/inventory/SecuritasGUIMenu.java",
+          "src/main/java/net/mcreator/itacraft/client/gui/SecuritasGUIScreen.java"
         ]
       },
       "path": "~/Fredrik"
@@ -3873,8 +3873,8 @@
       "registry_name": "ekte_gummitre_stairs_recipe",
       "metadata": {
         "files": [
-          "src/main/resources/data/itacraft/advancement/recipes/ekte_gummitre_stairs_recipe.json",
-          "src/main/resources/data/itacraft/recipe/ekte_gummitre_stairs_recipe.json"
+          "src/main/resources/data/itacraft/recipe/ekte_gummitre_stairs_recipe.json",
+          "src/main/resources/data/itacraft/advancement/recipes/ekte_gummitre_stairs_recipe.json"
         ]
       },
       "path": "~/Fredrik"
@@ -4156,6 +4156,37 @@
         ]
       },
       "path": "~/Fredrik"
+    },
+    {
+      "name": "SaltoLas",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "salto_las",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/itacraft/block/SaltoLasBlock.java",
+          "src/main/resources/assets/itacraft/blockstates/salto_las.json",
+          "src/main/resources/assets/itacraft/models/item/salto_las.json",
+          "src/main/resources/data/itacraft/loot_table/blocks/salto_las.json",
+          "src/main/resources/assets/itacraft/items/salto_las.json",
+          "src/main/resources/assets/itacraft/models/block/salto_las.json"
+        ]
+      }
+    },
+    {
+      "name": "KDAKort",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kda_kort",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/itacraft/items/kda_kort.json",
+          "src/main/java/net/mcreator/itacraft/item/KDAKortItem.java",
+          "src/main/resources/assets/itacraft/models/item/kda_kort.json"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -4507,9 +4538,6 @@
     ],
     "BLOCKS:minecraft:stairs": [
       "~CUSTOM:EkteGummitreStairs"
-    ],
-    "BIOMES:minecraft:has_structure/village_plains": [
-      "~CUSTOM:Skevven"
     ]
   },
   "tab_element_order": {},

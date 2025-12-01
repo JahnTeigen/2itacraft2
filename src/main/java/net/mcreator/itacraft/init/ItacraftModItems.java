@@ -115,6 +115,8 @@ public class ItacraftModItems {
 	public static final DeferredItem<Item> STRIPPED_EKTE_GUMMITRE_WOOD;
 	public static final DeferredItem<Item> EKTE_GUMMITRE_STAIRS;
 	public static final DeferredItem<Item> USED_CONDOME;
+	public static final DeferredItem<Item> SALTO_LAS;
+	public static final DeferredItem<Item> KDA_KORT;
 	static {
 		GEIR_HAOY_SPAWN_EGG = register("geir_haoy_spawn_egg", properties -> new SpawnEggItem(ItacraftModEntities.GEIR_HAOY.get(), properties));
 		KOG_STOCK = register("kog_stock", KOGStockItem::new);
@@ -202,6 +204,8 @@ public class ItacraftModItems {
 		STRIPPED_EKTE_GUMMITRE_WOOD = block(ItacraftModBlocks.STRIPPED_EKTE_GUMMITRE_WOOD);
 		EKTE_GUMMITRE_STAIRS = block(ItacraftModBlocks.EKTE_GUMMITRE_STAIRS);
 		USED_CONDOME = register("used_condome", UsedCondomeItem::new);
+		SALTO_LAS = block(ItacraftModBlocks.SALTO_LAS);
+		KDA_KORT = register("kda_kort", KDAKortItem::new);
 	}
 
 	// Start of user code block custom items
