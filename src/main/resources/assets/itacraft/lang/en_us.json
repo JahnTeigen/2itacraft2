@@ -197,5 +197,11 @@
   "item.itacraft.ekte_gummitre_fence_gate": "Ekte Gummitre Fence Gate",
   "item.itacraft.stripped_ekte_gummitre_wood": "Stripped Ekte Gummitre Wood",
   "item.itacraft.ekte_gummitre_stairs": "Ekte Gummitre Stairs",
-  "item.itacraft.used_condome": "Used Condome"
+  "item.itacraft.used_condome": "Used Condome",
+  "item.itacraft.salto_las": "Salto Las",
+  "item.itacraft.kda_kort": "KDA Kort",
+  "item.itacraft.bodils_sperm_bucket": "Bodils Sperm Bucket",
+  "fluid_type.itacraft.bodils_sperm": "Bodils Sperm",
+  "fluid.itacraft.bodils_sperm": "Bodils Sperm",
+  "block.itacraft.bodils_sperm": "Bodils Sperm"
 }

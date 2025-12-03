@@ -44,6 +44,7 @@ public class ItacraftModBlocks {
 	public static final DeferredBlock<Block> STRIPPED_EKTE_GUMMITRE_WOOD;
 	public static final DeferredBlock<Block> EKTE_GUMMITRE_STAIRS;
 	public static final DeferredBlock<Block> SALTO_LAS;
+	public static final DeferredBlock<Block> BODILS_SPERM;
 	static {
 		ANDREAS = register("andreas", AndreasBlock::new);
 		KONGSBERG_GRUPPEN_PORTAL = register("kongsberg_gruppen_portal", KongsbergGruppenPortalBlock::new);
@@ -73,6 +74,7 @@ public class ItacraftModBlocks {
 		STRIPPED_EKTE_GUMMITRE_WOOD = register("stripped_ekte_gummitre_wood", StrippedEkteGummitreWoodBlock::new);
 		EKTE_GUMMITRE_STAIRS = register("ekte_gummitre_stairs", EkteGummitreStairsBlock::new);
 		SALTO_LAS = register("salto_las", SaltoLasBlock::new);
+		BODILS_SPERM = register("bodils_sperm", BodilsSpermBlock::new);
 	}
 
 	// Start of user code block custom blocks
