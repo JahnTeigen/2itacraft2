@@ -81,7 +81,7 @@ public class GamerGirlEntity extends Monster {
 		Entity entity = this;
 		Level world = this.level();
 
-		GudrunRightclickedOnEntityProcedure.execute(world, entity);
+		GudrunRightclickedOnEntityProcedure.execute(world, sourceentity);
 		return retval;
 	}
 

@@ -14,15 +14,15 @@ import net.minecraft.network.chat.Component;
 import net.mcreator.itacraft.init.ItacraftModItems;
 
 public class GudrunRightclickedOnEntityProcedure {
-	public static void execute(LevelAccessor world, Entity entity) {
-		if (entity == null)
+	public static void execute(LevelAccessor world, Entity sourceentity) {
+		if (sourceentity == null)
 			return;
-		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.BUCKET) {
-			if (entity instanceof Player _player) {
+		if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.BUCKET) {
+			if (sourceentity instanceof Player _player) {
 				ItemStack _stktoremove = new ItemStack(Items.BUCKET);
 				_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
 			}
-			if (entity instanceof Player _player) {
+			if (sourceentity instanceof Player _player) {
 				ItemStack _setstack = new ItemStack(ItacraftModItems.BODILS_SPERM_BUCKET.get()).copy();
 				_setstack.setCount(1);
 				ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
