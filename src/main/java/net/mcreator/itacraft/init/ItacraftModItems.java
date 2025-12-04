@@ -117,6 +117,7 @@ public class ItacraftModItems {
 	public static final DeferredItem<Item> USED_CONDOME;
 	public static final DeferredItem<Item> SALTO_LAS;
 	public static final DeferredItem<Item> KDA_KORT;
+	public static final DeferredItem<Item> BODILS_SPERM_BUCKET;
 	static {
 		GEIR_HAOY_SPAWN_EGG = register("geir_haoy_spawn_egg", properties -> new SpawnEggItem(ItacraftModEntities.GEIR_HAOY.get(), properties));
 		KOG_STOCK = register("kog_stock", KOGStockItem::new);
@@ -206,6 +207,7 @@ public class ItacraftModItems {
 		USED_CONDOME = register("used_condome", UsedCondomeItem::new);
 		SALTO_LAS = block(ItacraftModBlocks.SALTO_LAS);
 		KDA_KORT = register("kda_kort", KDAKortItem::new);
+		BODILS_SPERM_BUCKET = register("bodils_sperm_bucket", BodilsSpermItem::new);
 	}
 
 	// Start of user code block custom items
@@ -233,6 +235,7 @@ public class ItacraftModItems {
 	@SubscribeEvent
 	public static void registerCapabilities(RegisterCapabilitiesEvent event) {
 		event.registerItem(Capabilities.FluidHandler.ITEM, (stack, context) -> new FluidBucketWrapper(stack), OIL_BUCKET.get());
+		event.registerItem(Capabilities.FluidHandler.ITEM, (stack, context) -> new FluidBucketWrapper(stack), BODILS_SPERM_BUCKET.get());
 	}
 
 	@EventBusSubscriber(Dist.CLIENT)

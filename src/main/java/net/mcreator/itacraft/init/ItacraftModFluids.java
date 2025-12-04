@@ -17,12 +17,15 @@ import net.minecraft.client.renderer.chunk.ChunkSectionLayer;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 
 import net.mcreator.itacraft.fluid.OilFluid;
+import net.mcreator.itacraft.fluid.BodilsSpermFluid;
 import net.mcreator.itacraft.ItacraftMod;
 
 public class ItacraftModFluids {
 	public static final DeferredRegister<Fluid> REGISTRY = DeferredRegister.create(BuiltInRegistries.FLUID, ItacraftMod.MODID);
 	public static final DeferredHolder<Fluid, FlowingFluid> OIL = REGISTRY.register("oil", () -> new OilFluid.Source());
 	public static final DeferredHolder<Fluid, FlowingFluid> FLOWING_OIL = REGISTRY.register("flowing_oil", () -> new OilFluid.Flowing());
+	public static final DeferredHolder<Fluid, FlowingFluid> BODILS_SPERM = REGISTRY.register("bodils_sperm", () -> new BodilsSpermFluid.Source());
+	public static final DeferredHolder<Fluid, FlowingFluid> FLOWING_BODILS_SPERM = REGISTRY.register("flowing_bodils_sperm", () -> new BodilsSpermFluid.Flowing());
 
 	@EventBusSubscriber(Dist.CLIENT)
 	public static class FluidsClientSideHandler {
@@ -30,6 +33,8 @@ public class ItacraftModFluids {
 		public static void clientSetup(FMLClientSetupEvent event) {
 			ItemBlockRenderTypes.setRenderLayer(OIL.get(), ChunkSectionLayer.TRANSLUCENT);
 			ItemBlockRenderTypes.setRenderLayer(FLOWING_OIL.get(), ChunkSectionLayer.TRANSLUCENT);
+			ItemBlockRenderTypes.setRenderLayer(BODILS_SPERM.get(), ChunkSectionLayer.TRANSLUCENT);
+			ItemBlockRenderTypes.setRenderLayer(FLOWING_BODILS_SPERM.get(), ChunkSectionLayer.TRANSLUCENT);
 		}
 	}
 }

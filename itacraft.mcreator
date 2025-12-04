@@ -2832,18 +2832,6 @@
             "type": "entity"
           },
           {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
             "name": "world",
             "type": "world"
           }
@@ -3707,8 +3695,8 @@
       "registry_name": "ekte_gummitre_trapdoor_recipe",
       "metadata": {
         "files": [
-          "src/main/resources/data/itacraft/recipe/ekte_gummitre_trapdoor_recipe.json",
-          "src/main/resources/data/itacraft/advancement/recipes/ekte_gummitre_trapdoor_recipe.json"
+          "src/main/resources/data/itacraft/advancement/recipes/ekte_gummitre_trapdoor_recipe.json",
+          "src/main/resources/data/itacraft/recipe/ekte_gummitre_trapdoor_recipe.json"
         ]
       },
       "path": "~/Fredrik"
@@ -3835,8 +3823,8 @@
       "registry_name": "securitas_gui",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/itacraft/client/gui/SecuritasGUIScreen.java",
-          "src/main/java/net/mcreator/itacraft/world/inventory/SecuritasGUIMenu.java"
+          "src/main/java/net/mcreator/itacraft/world/inventory/SecuritasGUIMenu.java",
+          "src/main/java/net/mcreator/itacraft/client/gui/SecuritasGUIScreen.java"
         ]
       },
       "path": "~/Fredrik"
@@ -4199,6 +4187,48 @@
           "src/main/resources/assets/itacraft/models/item/kda_kort.json"
         ]
       }
+    },
+    {
+      "name": "BodilsSperm",
+      "type": "fluid",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bodils_sperm",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/itacraft/fluid/types/BodilsSpermFluidType.java",
+          "src/main/java/net/mcreator/itacraft/client/fluid/BodilsSpermFluidExtension.java",
+          "src/main/java/net/mcreator/itacraft/block/BodilsSpermBlock.java",
+          "src/main/resources/assets/itacraft/items/bodils_sperm_bucket.json",
+          "src/main/resources/assets/itacraft/models/block/bodils_sperm.json",
+          "src/main/java/net/mcreator/itacraft/fluid/BodilsSpermFluid.java",
+          "src/main/java/net/mcreator/itacraft/item/BodilsSpermItem.java",
+          "src/main/resources/assets/itacraft/blockstates/bodils_sperm.json"
+        ]
+      }
+    },
+    {
+      "name": "GudrunRightclickedOnEntity",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gudrun_rightclicked_on_entity",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/itacraft/procedures/GudrunRightclickedOnEntityProcedure.java"
+        ]
+      },
+      "path": "~/Fredrik"
     }
   ],
   "variable_elements": [
@@ -4458,6 +4488,7 @@
       "CUSTOM:PatchCable"
     ],
     "BLOCKS:minecraft:replaceable": [
+      "~CUSTOM:BodilsSperm",
       "~CUSTOM:Oil"
     ],
     "BLOCKS:minecraft:mineable/pickaxe": [
@@ -4550,9 +4581,6 @@
     ],
     "BLOCKS:minecraft:stairs": [
       "~CUSTOM:EkteGummitreStairs"
-    ],
-    "BIOMES:minecraft:has_structure/village_plains": [
-      "~CUSTOM:Skevven"
     ]
   },
   "tab_element_order": {},

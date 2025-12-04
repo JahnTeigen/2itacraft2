@@ -9,9 +9,11 @@ import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.fluids.FluidType;
 
 import net.mcreator.itacraft.fluid.types.OilFluidType;
+import net.mcreator.itacraft.fluid.types.BodilsSpermFluidType;
 import net.mcreator.itacraft.ItacraftMod;
 
 public class ItacraftModFluidTypes {
 	public static final DeferredRegister<FluidType> REGISTRY = DeferredRegister.create(NeoForgeRegistries.FLUID_TYPES, ItacraftMod.MODID);
 	public static final DeferredHolder<FluidType, FluidType> OIL_TYPE = REGISTRY.register("oil", () -> new OilFluidType());
+	public static final DeferredHolder<FluidType, FluidType> BODILS_SPERM_TYPE = REGISTRY.register("bodils_sperm", () -> new BodilsSpermFluidType());
 }
