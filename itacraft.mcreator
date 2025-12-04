@@ -2832,6 +2832,18 @@
             "type": "entity"
           },
           {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
             "name": "world",
             "type": "world"
           }
@@ -3695,8 +3707,8 @@
       "registry_name": "ekte_gummitre_trapdoor_recipe",
       "metadata": {
         "files": [
-          "src/main/resources/data/itacraft/advancement/recipes/ekte_gummitre_trapdoor_recipe.json",
-          "src/main/resources/data/itacraft/recipe/ekte_gummitre_trapdoor_recipe.json"
+          "src/main/resources/data/itacraft/recipe/ekte_gummitre_trapdoor_recipe.json",
+          "src/main/resources/data/itacraft/advancement/recipes/ekte_gummitre_trapdoor_recipe.json"
         ]
       },
       "path": "~/Fredrik"
@@ -3777,9 +3789,9 @@
       "registry_name": "rubber",
       "metadata": {
         "files": [
-          "src/main/resources/assets/itacraft/models/item/rubber.json",
           "src/main/java/net/mcreator/itacraft/item/RubberItem.java",
-          "src/main/resources/assets/itacraft/items/rubber.json"
+          "src/main/resources/assets/itacraft/items/rubber.json",
+          "src/main/resources/assets/itacraft/models/item/rubber.json"
         ]
       },
       "path": "~/Fredrik"
@@ -3823,8 +3835,8 @@
       "registry_name": "securitas_gui",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/itacraft/world/inventory/SecuritasGUIMenu.java",
-          "src/main/java/net/mcreator/itacraft/client/gui/SecuritasGUIScreen.java"
+          "src/main/java/net/mcreator/itacraft/client/gui/SecuritasGUIScreen.java",
+          "src/main/java/net/mcreator/itacraft/world/inventory/SecuritasGUIMenu.java"
         ]
       },
       "path": "~/Fredrik"
@@ -3873,8 +3885,8 @@
       "registry_name": "ekte_gummitre_stairs_recipe",
       "metadata": {
         "files": [
-          "src/main/resources/data/itacraft/recipe/ekte_gummitre_stairs_recipe.json",
-          "src/main/resources/data/itacraft/advancement/recipes/ekte_gummitre_stairs_recipe.json"
+          "src/main/resources/data/itacraft/advancement/recipes/ekte_gummitre_stairs_recipe.json",
+          "src/main/resources/data/itacraft/recipe/ekte_gummitre_stairs_recipe.json"
         ]
       },
       "path": "~/Fredrik"
@@ -4538,6 +4550,9 @@
     ],
     "BLOCKS:minecraft:stairs": [
       "~CUSTOM:EkteGummitreStairs"
+    ],
+    "BIOMES:minecraft:has_structure/village_plains": [
+      "~CUSTOM:Skevven"
     ]
   },
   "tab_element_order": {},
@@ -4741,7 +4756,9 @@
       "item.itacraft.ekte_gummitre_fence_gate": "Ekte Gummitre Fence Gate",
       "item.itacraft.stripped_ekte_gummitre_wood": "Stripped Ekte Gummitre Wood",
       "item.itacraft.ekte_gummitre_stairs": "Ekte Gummitre Stairs",
-      "item.itacraft.used_condome": "Used Condome"
+      "item.itacraft.used_condome": "Used Condome",
+      "item.itacraft.salto_las": "Salto Las",
+      "item.itacraft.kda_kort": "KDA Kort"
     }
   },
   "metadata": {
