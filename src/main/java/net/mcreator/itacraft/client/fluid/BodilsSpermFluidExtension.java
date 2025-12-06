@@ -1,5 +1,15 @@
 package net.mcreator.itacraft.client.fluid;
 
+import net.neoforged.neoforge.client.extensions.common.RegisterClientExtensionsEvent;
+import net.neoforged.neoforge.client.extensions.common.IClientFluidTypeExtensions;
+import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.api.distmarker.Dist;
+
+import net.minecraft.resources.ResourceLocation;
+
+import net.mcreator.itacraft.init.ItacraftModFluidTypes;
+
 @EventBusSubscriber(Dist.CLIENT)
 public class BodilsSpermFluidExtension {
 	@SubscribeEvent

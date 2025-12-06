@@ -2832,6 +2832,18 @@
             "type": "entity"
           },
           {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
             "name": "world",
             "type": "world"
           }
@@ -3695,8 +3707,8 @@
       "registry_name": "ekte_gummitre_trapdoor_recipe",
       "metadata": {
         "files": [
-          "src/main/resources/data/itacraft/advancement/recipes/ekte_gummitre_trapdoor_recipe.json",
-          "src/main/resources/data/itacraft/recipe/ekte_gummitre_trapdoor_recipe.json"
+          "src/main/resources/data/itacraft/recipe/ekte_gummitre_trapdoor_recipe.json",
+          "src/main/resources/data/itacraft/advancement/recipes/ekte_gummitre_trapdoor_recipe.json"
         ]
       },
       "path": "~/Fredrik"
@@ -3823,8 +3835,8 @@
       "registry_name": "securitas_gui",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/itacraft/world/inventory/SecuritasGUIMenu.java",
-          "src/main/java/net/mcreator/itacraft/client/gui/SecuritasGUIScreen.java"
+          "src/main/java/net/mcreator/itacraft/client/gui/SecuritasGUIScreen.java",
+          "src/main/java/net/mcreator/itacraft/world/inventory/SecuritasGUIMenu.java"
         ]
       },
       "path": "~/Fredrik"
@@ -4229,6 +4241,88 @@
         ]
       },
       "path": "~/Fredrik"
+    },
+    {
+      "name": "TitleScreenOverlay",
+      "type": "overlay",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "title_screen_overlay",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/itacraft/client/screens/TitleScreenOverlayOverlay.java"
+        ]
+      },
+      "path": "~/Fredrik"
+    },
+    {
+      "name": "AdPopup",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ad_popup",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/itacraft/world/inventory/AdPopupMenu.java",
+          "src/main/java/net/mcreator/itacraft/network/AdPopupButtonMessage.java",
+          "src/main/java/net/mcreator/itacraft/client/gui/AdPopupScreen.java"
+        ]
+      },
+      "path": "~/Fredrik"
+    },
+    {
+      "name": "CloseAdProcedure",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "close_ad_procedure",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/itacraft/procedures/CloseAdProcedureProcedure.java"
+        ]
+      },
+      "path": "~/Fredrik"
+    },
+    {
+      "name": "PopupDisplayProcedure",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "popup_display_procedure",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/itacraft/procedures/PopupDisplayProcedureProcedure.java"
+        ]
+      },
+      "path": "~/Fredrik"
     }
   ],
   "variable_elements": [
@@ -4581,6 +4675,9 @@
     ],
     "BLOCKS:minecraft:stairs": [
       "~CUSTOM:EkteGummitreStairs"
+    ],
+    "BIOMES:minecraft:has_structure/village_plains": [
+      "~CUSTOM:Skevven"
     ]
   },
   "tab_element_order": {},
@@ -4786,7 +4883,12 @@
       "item.itacraft.ekte_gummitre_stairs": "Ekte Gummitre Stairs",
       "item.itacraft.used_condome": "Used Condome",
       "item.itacraft.salto_las": "Salto Las",
-      "item.itacraft.kda_kort": "KDA Kort"
+      "item.itacraft.kda_kort": "KDA Kort",
+      "item.itacraft.bodils_sperm_bucket": "Bodils Sperm Bucket",
+      "fluid_type.itacraft.bodils_sperm": "Bodils Sperm",
+      "fluid.itacraft.bodils_sperm": "Bodils Sperm",
+      "block.itacraft.bodils_sperm": "Bodils Sperm",
+      "gui.itacraft.ad_popup.button_empty": ""
     }
   },
   "metadata": {

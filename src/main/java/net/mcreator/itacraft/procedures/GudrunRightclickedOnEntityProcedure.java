@@ -1,6 +1,17 @@
 package net.mcreator.itacraft.procedures;
 
-import net.neoforged.bus.api.Event;
+import net.neoforged.neoforge.items.ItemHandlerHelper;
+
+import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.item.Items;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.server.level.ServerLevel;
+import net.minecraft.network.chat.Component;
+
+import net.mcreator.itacraft.init.ItacraftModItems;
 
 public class GudrunRightclickedOnEntityProcedure {
 	public static void execute(LevelAccessor world, Entity sourceentity) {
