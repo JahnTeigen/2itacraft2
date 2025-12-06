@@ -170,5 +170,11 @@
   "gui.itacraft.skatteetaten_gui.label_empty": ":)",
   "gui.itacraft.skatteetaten_gui.label_jeg_tar_50": "* Jeg tar 50%",
   "gui.itacraft.skatteetaten_gui.label_loper_du_vekk": "* løper du vekk",
-  "gui.itacraft.skatteetaten_gui.label_regler": "regler:"
+  "gui.itacraft.skatteetaten_gui.label_regler": "regler:",
+  "item.itacraft.charlie_kirk_cd.desc": "WE ARE CHARLIE KIRK! WE CARRY THE FLAME!",
+  "item.itacraft.charlie_kirk_cd": "Charlie Kirk CD",
+  "item.itacraft.deftones_cd": "Deftones CD",
+  "item.itacraft.deftones_cd.desc": "Deftones: Entombed",
+  "item.itacraft.iron_man_cd": "Iron Man CD",
+  "item.itacraft.iron_man_cd.desc": "Jarvis.. Show me this dudes balls on google please ,\u0027:)"
 }
