@@ -26,5 +26,6 @@ public class ItacraftModEntityRenderers {
 		event.registerEntityRenderer(ItacraftModEntities.VIPPS_RANER.get(), VippsRanerRenderer::new);
 		event.registerEntityRenderer(ItacraftModEntities.SKATTEETATEN.get(), SkatteetatenRenderer::new);
 		event.registerEntityRenderer(ItacraftModEntities.RETARDED_GAMER_GIRL.get(), RetardedGamerGirlRenderer::new);
+		event.registerEntityRenderer(ItacraftModEntities.HOMING_MISSILE_ENTITY.get(), HomingMissileEntityRenderer::new);
 	}
 }

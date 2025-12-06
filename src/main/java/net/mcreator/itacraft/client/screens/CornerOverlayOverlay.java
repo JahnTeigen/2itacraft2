@@ -45,7 +45,7 @@ public class CornerOverlayOverlay {
 				event.getGuiGraphics().blit(RenderPipelines.GUI_TEXTURED, ResourceLocation.parse("itacraft:textures/screens/andreas_vanna_ut.png"), w / 2 + -245, h / 2 + -237, 0, 0, 517, 442, 517, 442);
 			}
 			if (CondomeDisplayConditionProcedure.execute(world, entity))
-				event.getGuiGraphics().drawString(Minecraft.getInstance().font, Component.translatable("gui.itacraft.corner_overlay.label_condome_equipped"), 26, 10, -10092340, false);
+				event.getGuiGraphics().drawString(Minecraft.getInstance().font, Component.translatable("gui.itacraft.corner_overlay.label_condome_equipped"), 26, 10, -26368, false);
 		}
 	}
 }

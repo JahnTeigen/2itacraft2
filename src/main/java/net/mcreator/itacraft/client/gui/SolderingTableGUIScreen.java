@@ -5,6 +5,7 @@ import net.neoforged.neoforge.client.network.ClientPacketDistributor;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.player.Inventory;
+import net.minecraft.util.Mth;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
 import net.minecraft.client.renderer.RenderPipelines;
@@ -13,6 +14,7 @@ import net.minecraft.client.gui.components.Button;
 import net.minecraft.client.gui.GuiGraphics;
 
 import net.mcreator.itacraft.world.inventory.SolderingTableGUIMenu;
+import net.mcreator.itacraft.procedures.SolderingProgressValueProviderProcedure;
 import net.mcreator.itacraft.network.SolderingTableGUIButtonMessage;
 import net.mcreator.itacraft.init.ItacraftModScreens;
 
@@ -51,7 +53,8 @@ public class SolderingTableGUIScreen extends AbstractContainerScreen<SolderingTa
 		guiGraphics.blit(RenderPipelines.GUI_TEXTURED, ResourceLocation.parse("itacraft:textures/screens/solderingtable_gui.png"), this.leftPos + 1, this.topPos + 0, 0, 0, 200, 200, 200, 200);
 		guiGraphics.blit(RenderPipelines.GUI_TEXTURED, ResourceLocation.parse("itacraft:textures/screens/mold_placeholder.png"), this.leftPos + 41, this.topPos + 43, 0, 0, 16, 16, 16, 16);
 		guiGraphics.blit(RenderPipelines.GUI_TEXTURED, ResourceLocation.parse("itacraft:textures/screens/ingot_placeholder.png"), this.leftPos + 92, this.topPos + 42, 0, 0, 16, 16, 16, 16);
-		guiGraphics.blit(RenderPipelines.GUI_TEXTURED, ResourceLocation.parse("itacraft:textures/screens/progress_circle_sprite.png"), this.leftPos + 92, this.topPos + 6, 0, 0, 16, 16, 144, 16);
+		guiGraphics.blit(RenderPipelines.GUI_TEXTURED, ResourceLocation.parse("itacraft:textures/screens/progress_circle_sprite.png"), this.leftPos + 92, this.topPos + 6,
+				Mth.clamp((int) SolderingProgressValueProviderProcedure.execute(world, x, y, z) * 16, 0, 128), 0, 16, 16, 144, 16);
 	}
 
 	@Override

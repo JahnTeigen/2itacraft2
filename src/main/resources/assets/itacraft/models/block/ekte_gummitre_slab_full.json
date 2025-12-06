@@ -1,0 +1,10 @@
+{
+  "parent": "block/cube_bottom_top",
+  "textures": {
+    "particle": "itacraft:block/ekte_gummitre_planks",
+    "bottom": "itacraft:block/ekte_gummitre_planks",
+    "top": "itacraft:block/ekte_gummitre_planks",
+    "side": "itacraft:block/ekte_gummitre_planks"
+  },
+  "render_type": "solid"
+}

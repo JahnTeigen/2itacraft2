@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "itacraft:block/ekte_gummitre_wood",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "itacraft:block/ekte_gummitre_wood"
+    },
+    "axis=z": {
+      "model": "itacraft:block/ekte_gummitre_wood",
+      "x": 90
+    }
+  }
+}

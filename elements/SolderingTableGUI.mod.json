@@ -16,7 +16,8 @@
           "sprite": "progress_circle_sprite.png",
           "spritesCount": 9,
           "spriteIndex": {
-            "fixedValue": 0.0
+            "fixedValue": 0.0,
+            "name": "SolderingProgressValueProvider"
           },
           "x": 206,
           "y": 26,

@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "itacraft:block/ekte_gummitre_leaves",
+    "particle": "itacraft:block/ekte_gummitre_leaves"
+  }
+}

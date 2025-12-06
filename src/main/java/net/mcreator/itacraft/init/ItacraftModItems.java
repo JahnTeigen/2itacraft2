@@ -18,6 +18,7 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.item.SpawnEggItem;
 import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.DoubleHighBlockItem;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.resources.ResourceLocation;
 
@@ -96,6 +97,27 @@ public class ItacraftModItems {
 	public static final DeferredItem<Item> CHARLIE_KIRK_CD;
 	public static final DeferredItem<Item> DEFTONES_CD;
 	public static final DeferredItem<Item> IRON_MAN_CD;
+	public static final DeferredItem<Item> EKTE_GUMMITRE_DOOR;
+	public static final DeferredItem<Item> USED_CONDOME;
+	public static final DeferredItem<Item> EKTE_GUMMITRE_WOOD;
+	public static final DeferredItem<Item> EKTE_GUMMITRE_SLAB;
+	public static final DeferredItem<Item> EKTE_GUMMITRE_TRAPDOOR;
+	public static final DeferredItem<Item> BODILS_SPERM_BUCKET;
+	public static final DeferredItem<Item> SECURITAS_KEYPAD;
+	public static final DeferredItem<Item> LATEX;
+	public static final DeferredItem<Item> EKTE_GUMMITRE_FENCE;
+	public static final DeferredItem<Item> EKTE_GUMMITRE_FENCE_GATE;
+	public static final DeferredItem<Item> STRIPPED_EKTE_GUMMITRE_WOOD;
+	public static final DeferredItem<Item> SALTO_LAS;
+	public static final DeferredItem<Item> EKTE_GUMMITRE_PRESSURE_PLATE;
+	public static final DeferredItem<Item> RUBBER;
+	public static final DeferredItem<Item> EKTE_GUMMITRE_LOG;
+	public static final DeferredItem<Item> STRIPPED_EKTE_GUMMITRE_LOG;
+	public static final DeferredItem<Item> EKTE_GUMMITRE_PLANKS;
+	public static final DeferredItem<Item> EKTE_GUMMITRE_LEAVES;
+	public static final DeferredItem<Item> EKTE_GUMMITRE_BUTTON;
+	public static final DeferredItem<Item> KDA_KORT;
+	public static final DeferredItem<Item> EKTE_GUMMITRE_STAIRS;
 	static {
 		GEIR_HAOY_SPAWN_EGG = register("geir_haoy_spawn_egg", properties -> new SpawnEggItem(ItacraftModEntities.GEIR_HAOY.get(), properties));
 		KOG_STOCK = register("kog_stock", KOGStockItem::new);
@@ -165,6 +187,27 @@ public class ItacraftModItems {
 		CHARLIE_KIRK_CD = register("charlie_kirk_cd", CharlieKirkCDItem::new);
 		DEFTONES_CD = register("deftones_cd", DeftonesCDItem::new);
 		IRON_MAN_CD = register("iron_man_cd", IronManCDItem::new);
+		EKTE_GUMMITRE_DOOR = doubleBlock(ItacraftModBlocks.EKTE_GUMMITRE_DOOR);
+		USED_CONDOME = register("used_condome", UsedCondomeItem::new);
+		EKTE_GUMMITRE_WOOD = block(ItacraftModBlocks.EKTE_GUMMITRE_WOOD);
+		EKTE_GUMMITRE_SLAB = block(ItacraftModBlocks.EKTE_GUMMITRE_SLAB);
+		EKTE_GUMMITRE_TRAPDOOR = block(ItacraftModBlocks.EKTE_GUMMITRE_TRAPDOOR);
+		BODILS_SPERM_BUCKET = register("bodils_sperm_bucket", BodilsSpermItem::new);
+		SECURITAS_KEYPAD = block(ItacraftModBlocks.SECURITAS_KEYPAD, new Item.Properties().stacksTo(1));
+		LATEX = register("latex", LatexItem::new);
+		EKTE_GUMMITRE_FENCE = block(ItacraftModBlocks.EKTE_GUMMITRE_FENCE);
+		EKTE_GUMMITRE_FENCE_GATE = block(ItacraftModBlocks.EKTE_GUMMITRE_FENCE_GATE);
+		STRIPPED_EKTE_GUMMITRE_WOOD = block(ItacraftModBlocks.STRIPPED_EKTE_GUMMITRE_WOOD);
+		SALTO_LAS = block(ItacraftModBlocks.SALTO_LAS);
+		EKTE_GUMMITRE_PRESSURE_PLATE = block(ItacraftModBlocks.EKTE_GUMMITRE_PRESSURE_PLATE);
+		RUBBER = register("rubber", RubberItem::new);
+		EKTE_GUMMITRE_LOG = block(ItacraftModBlocks.EKTE_GUMMITRE_LOG);
+		STRIPPED_EKTE_GUMMITRE_LOG = block(ItacraftModBlocks.STRIPPED_EKTE_GUMMITRE_LOG);
+		EKTE_GUMMITRE_PLANKS = block(ItacraftModBlocks.EKTE_GUMMITRE_PLANKS);
+		EKTE_GUMMITRE_LEAVES = block(ItacraftModBlocks.EKTE_GUMMITRE_LEAVES);
+		EKTE_GUMMITRE_BUTTON = block(ItacraftModBlocks.EKTE_GUMMITRE_BUTTON);
+		KDA_KORT = register("kda_kort", KDAKortItem::new);
+		EKTE_GUMMITRE_STAIRS = block(ItacraftModBlocks.EKTE_GUMMITRE_STAIRS);
 	}
 
 	// Start of user code block custom items
@@ -181,9 +224,18 @@ public class ItacraftModItems {
 		return REGISTRY.registerItem(block.getId().getPath(), prop -> new BlockItem(block.get(), prop), properties);
 	}
 
+	private static DeferredItem<Item> doubleBlock(DeferredHolder<Block, Block> block) {
+		return doubleBlock(block, new Item.Properties());
+	}
+
+	private static DeferredItem<Item> doubleBlock(DeferredHolder<Block, Block> block, Item.Properties properties) {
+		return REGISTRY.registerItem(block.getId().getPath(), prop -> new DoubleHighBlockItem(block.get(), prop), properties);
+	}
+
 	@SubscribeEvent
 	public static void registerCapabilities(RegisterCapabilitiesEvent event) {
 		event.registerItem(Capabilities.FluidHandler.ITEM, (stack, context) -> new FluidBucketWrapper(stack), OIL_BUCKET.get());
+		event.registerItem(Capabilities.FluidHandler.ITEM, (stack, context) -> new FluidBucketWrapper(stack), BODILS_SPERM_BUCKET.get());
 	}
 
 	@EventBusSubscriber(Dist.CLIENT)

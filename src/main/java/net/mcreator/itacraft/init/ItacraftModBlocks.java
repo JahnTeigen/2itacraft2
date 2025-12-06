@@ -28,6 +28,23 @@ public class ItacraftModBlocks {
 	public static final DeferredBlock<Block> LEAD_ORE;
 	public static final DeferredBlock<Block> MARIJUANA;
 	public static final DeferredBlock<Block> SOLDERING_TABLE;
+	public static final DeferredBlock<Block> EKTE_GUMMITRE_DOOR;
+	public static final DeferredBlock<Block> EKTE_GUMMITRE_WOOD;
+	public static final DeferredBlock<Block> EKTE_GUMMITRE_SLAB;
+	public static final DeferredBlock<Block> EKTE_GUMMITRE_TRAPDOOR;
+	public static final DeferredBlock<Block> BODILS_SPERM;
+	public static final DeferredBlock<Block> SECURITAS_KEYPAD;
+	public static final DeferredBlock<Block> EKTE_GUMMITRE_FENCE;
+	public static final DeferredBlock<Block> EKTE_GUMMITRE_FENCE_GATE;
+	public static final DeferredBlock<Block> STRIPPED_EKTE_GUMMITRE_WOOD;
+	public static final DeferredBlock<Block> SALTO_LAS;
+	public static final DeferredBlock<Block> EKTE_GUMMITRE_PRESSURE_PLATE;
+	public static final DeferredBlock<Block> EKTE_GUMMITRE_LOG;
+	public static final DeferredBlock<Block> STRIPPED_EKTE_GUMMITRE_LOG;
+	public static final DeferredBlock<Block> EKTE_GUMMITRE_PLANKS;
+	public static final DeferredBlock<Block> EKTE_GUMMITRE_LEAVES;
+	public static final DeferredBlock<Block> EKTE_GUMMITRE_BUTTON;
+	public static final DeferredBlock<Block> EKTE_GUMMITRE_STAIRS;
 	static {
 		ANDREAS = register("andreas", AndreasBlock::new);
 		KONGSBERG_GRUPPEN_PORTAL = register("kongsberg_gruppen_portal", KongsbergGruppenPortalBlock::new);
@@ -41,6 +58,23 @@ public class ItacraftModBlocks {
 		LEAD_ORE = register("lead_ore", LeadOreBlock::new);
 		MARIJUANA = register("marijuana", MarijuanaBlock::new);
 		SOLDERING_TABLE = register("soldering_table", SolderingTableBlock::new);
+		EKTE_GUMMITRE_DOOR = register("ekte_gummitre_door", EkteGummitreDoorBlock::new);
+		EKTE_GUMMITRE_WOOD = register("ekte_gummitre_wood", EkteGummitreWoodBlock::new);
+		EKTE_GUMMITRE_SLAB = register("ekte_gummitre_slab", EkteGummitreSlabBlock::new);
+		EKTE_GUMMITRE_TRAPDOOR = register("ekte_gummitre_trapdoor", EkteGummitreTrapdoorBlock::new);
+		BODILS_SPERM = register("bodils_sperm", BodilsSpermBlock::new);
+		SECURITAS_KEYPAD = register("securitas_keypad", SecuritasKeypadBlock::new);
+		EKTE_GUMMITRE_FENCE = register("ekte_gummitre_fence", EkteGummitreFenceBlock::new);
+		EKTE_GUMMITRE_FENCE_GATE = register("ekte_gummitre_fence_gate", EkteGummitreFenceGateBlock::new);
+		STRIPPED_EKTE_GUMMITRE_WOOD = register("stripped_ekte_gummitre_wood", StrippedEkteGummitreWoodBlock::new);
+		SALTO_LAS = register("salto_las", SaltoLasBlock::new);
+		EKTE_GUMMITRE_PRESSURE_PLATE = register("ekte_gummitre_pressure_plate", EkteGummitrePressurePlateBlock::new);
+		EKTE_GUMMITRE_LOG = register("ekte_gummitre_log", EkteGummitreLogBlock::new);
+		STRIPPED_EKTE_GUMMITRE_LOG = register("stripped_ekte_gummitre_log", StrippedEkteGummitreLogBlock::new);
+		EKTE_GUMMITRE_PLANKS = register("ekte_gummitre_planks", EkteGummitrePlanksBlock::new);
+		EKTE_GUMMITRE_LEAVES = register("ekte_gummitre_leaves", EkteGummitreLeavesBlock::new);
+		EKTE_GUMMITRE_BUTTON = register("ekte_gummitre_button", EkteGummitreButtonBlock::new);
+		EKTE_GUMMITRE_STAIRS = register("ekte_gummitre_stairs", EkteGummitreStairsBlock::new);
 	}
 
 	// Start of user code block custom blocks

@@ -1,0 +1,51 @@
+{
+  "_fv": 79,
+  "_type": "overlay",
+  "definition": {
+    "priority": "HIGHEST",
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "ad_a.png",
+          "use1Xscale": true,
+          "anchorPoint": "CENTER_LEFT",
+          "x": -14,
+          "y": 24,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ad_b.png",
+          "use1Xscale": true,
+          "anchorPoint": "BOTTOM_CENTER",
+          "x": 119,
+          "y": 150,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ad_c.png",
+          "use1Xscale": true,
+          "anchorPoint": "CENTER_RIGHT",
+          "x": 315,
+          "y": 24,
+          "locked": false
+        }
+      }
+    ],
+    "baseTexture": "",
+    "overlayTarget": "MainMenu",
+    "gridSettings": {
+      "sx": 14,
+      "sy": 14,
+      "ox": 13,
+      "oy": 18,
+      "snapOnGrid": true
+    }
+  }
+}

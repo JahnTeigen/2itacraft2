@@ -1,0 +1,28 @@
+{
+  "_fv": 79,
+  "_type": "projectile",
+  "definition": {
+    "projectileItem": {
+      "value": "Items.ARROW"
+    },
+    "showParticles": true,
+    "actionSound": {
+      "value": "entity.arrow.shoot"
+    },
+    "igniteFire": false,
+    "disableGravity": false,
+    "power": 3.0,
+    "damage": 10000.0,
+    "knockback": 5,
+    "entityModel": "Modelhoming_missle",
+    "customModelTexture": "missle.png",
+    "modelWidth": 0.5,
+    "modelHeight": 0.5,
+    "onHitsBlock": {
+      "name": "HomingMissileEntityProjectileHitsBlock"
+    },
+    "onHitsPlayer": {
+      "name": "HomingMissileEntityProjectileHitsPlayer"
+    }
+  }
+}

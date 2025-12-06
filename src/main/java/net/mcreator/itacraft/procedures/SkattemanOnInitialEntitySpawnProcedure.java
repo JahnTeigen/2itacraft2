@@ -11,6 +11,8 @@ import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.nbt.CompoundTag;
 
+import net.mcreator.itacraft.entity.HomingMissileEntityEntity;
+
 import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -56,7 +58,7 @@ public class SkattemanOnInitialEntitySpawnProcedure {
         
         CompoundTag entityData = entity.getPersistentData();
         
-        // Check if timer is active - use Optional methods properly
+        // Check if timer is active - use proper NBT checking for Minecraft 1.21.8
         if (entityData.contains("timerActive") && entityData.getBoolean("timerActive").orElse(false)) {
             int currentTimer = entityData.getInt("taxTimer").orElse(0);
             
@@ -77,28 +79,41 @@ public class SkattemanOnInitialEntitySpawnProcedure {
         
         if (!entity.isAlive()) return;
         
-        // Find the target player - use Optional methods properly
-        String playerUUID = entityData.getString("targetPlayer").orElse("");
+        // Find the target player
+        String playerUUID = "";
+        if (entityData.contains("targetPlayer")) {
+            playerUUID = entityData.getString("targetPlayer").orElse("");
+        }
+        
         Player targetPlayer = null;
         
         if (world instanceof ServerLevel serverLevel && !playerUUID.isEmpty()) {
-            // Try to find player by name (since getPlayerByName expects username, not UUID)
-            targetPlayer = findNearestPlayer(serverLevel, entity);
-        } else if (world instanceof ServerLevel serverLevel) {
+            targetPlayer = findPlayerByUUID(serverLevel, playerUUID);
+        }
+        
+        // Fallback to nearest player if UUID method fails
+        if (targetPlayer == null && world instanceof ServerLevel serverLevel) {
             targetPlayer = findNearestPlayer(serverLevel, entity);
         }
         
         if (targetPlayer != null && targetPlayer.isAlive()) {
             // Check payment status
-            int paidStatus = targetPlayer.getPersistentData().getInt("payed").orElse(0);
+            int paidStatus = 0;
+            if (targetPlayer.getPersistentData().contains("payed")) {
+                paidStatus = targetPlayer.getPersistentData().getInt("payed").orElse(0);
+            }
             
             if (paidStatus != 1) {
-                targetPlayer.displayClientMessage(Component.literal("§4§lSKATTEETATEN: Time's up! Seizing all assets!"), false);
+                targetPlayer.displayClientMessage(Component.literal("§4§lSKATTEETATEN: Time's up! Seizing all assets and launching missile!"), false);
+                
+                // Spawn homing missile using our custom entity
+                spawnHomingMissile(world, targetPlayer);
+                
                 targetPlayer.getInventory().clearContent();
                 
                 // Cast to Level for chest clearing
-                if (world instanceof Level) {
-                    clearNearbyChests((Level) world, targetPlayer.blockPosition(), 20);
+                if (world instanceof Level levelWorld) {
+                    clearNearbyChests(levelWorld, targetPlayer.blockPosition(), 20);
                 }
             } else {
                 targetPlayer.displayClientMessage(Component.literal("§a§lSKATTEETATEN: Payment confirmed. Have a nice day."), false);
@@ -110,8 +125,21 @@ public class SkattemanOnInitialEntitySpawnProcedure {
         entity.discard();
     }
     
+    private static void spawnHomingMissile(LevelAccessor world, Player targetPlayer) {
+        if (!(world instanceof ServerLevel serverLevel)) return;
+        
+        // Use our custom homing missile entity
+        HomingMissileEntityEntity.spawnHomingMissile(serverLevel, targetPlayer);
+    }
+    
+    private static Player findPlayerByUUID(ServerLevel level, String uuid) {
+        return level.players().stream()
+            .filter(player -> player.getStringUUID().equals(uuid))
+            .findFirst()
+            .orElse(null);
+    }
+    
     private static Player findNearestPlayer(ServerLevel level, Entity entity) {
-        // Fallback method to find nearest player
         List<Player> players = level.players().stream()
             .map(p -> (Player) p)
             .collect(Collectors.toList());

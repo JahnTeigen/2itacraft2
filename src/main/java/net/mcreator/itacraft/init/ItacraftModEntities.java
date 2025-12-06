@@ -64,6 +64,8 @@ public class ItacraftModEntities {
 			EntityType.Builder.<RetardedGamerGirlEntity>of(RetardedGamerGirlEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
 
 					.ridingOffset(-0.6f).sized(0.6f, 1.8f));
+	public static final DeferredHolder<EntityType<?>, EntityType<HomingMissileEntityEntity>> HOMING_MISSILE_ENTITY = register("homing_missile_entity",
+			EntityType.Builder.<HomingMissileEntityEntity>of(HomingMissileEntityEntity::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 
 	// Start of user code block custom entities
 	// End of user code block custom entities

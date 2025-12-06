@@ -49,7 +49,7 @@ public record SolderingTableGUIButtonMessage(int buttonID, int x, int y, int z) 
 			return;
 		if (buttonID == 0) {
 
-			SolderProcedureProcedure.execute(world, entity);
+			SolderProcedureProcedure.execute(world, x, y, z, entity);
 		}
 	}
 

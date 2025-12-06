@@ -8,11 +8,7 @@ import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.api.distmarker.Dist;
 
-import net.mcreator.itacraft.client.model.ModelTonyHaynes;
-import net.mcreator.itacraft.client.model.ModelJude;
-import net.mcreator.itacraft.client.model.ModelGeirHaoy;
-import net.mcreator.itacraft.client.model.ModelGamerGirl;
-import net.mcreator.itacraft.client.model.ModelBodil;
+import net.mcreator.itacraft.client.model.*;
 
 @EventBusSubscriber(Dist.CLIENT)
 public class ItacraftModModels {
@@ -23,5 +19,6 @@ public class ItacraftModModels {
 		event.registerLayerDefinition(ModelBodil.LAYER_LOCATION, ModelBodil::createBodyLayer);
 		event.registerLayerDefinition(ModelGeirHaoy.LAYER_LOCATION, ModelGeirHaoy::createBodyLayer);
 		event.registerLayerDefinition(ModelGamerGirl.LAYER_LOCATION, ModelGamerGirl::createBodyLayer);
+		event.registerLayerDefinition(Modelhoming_missle.LAYER_LOCATION, Modelhoming_missle::createBodyLayer);
 	}
 }

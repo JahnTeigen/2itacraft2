@@ -1,0 +1,8 @@
+{
+  "parent": "block/template_fence_gate_wall_open",
+  "textures": {
+    "texture": "itacraft:block/ekte_gummitre_planks",
+    "particle": "itacraft:block/ekte_gummitre_planks"
+  },
+  "render_type": "solid"
+}

@@ -1120,8 +1120,8 @@
       "registry_name": "russiaparticles",
       "metadata": {
         "files": [
-          "src/main/resources/assets/itacraft/particles/russiaparticles.json",
-          "src/main/java/net/mcreator/itacraft/client/particle/RussiaparticlesParticle.java"
+          "src/main/java/net/mcreator/itacraft/client/particle/RussiaparticlesParticle.java",
+          "src/main/resources/assets/itacraft/particles/russiaparticles.json"
         ]
       },
       "path": "~/Matvey"
@@ -1482,8 +1482,8 @@
       "registry_name": "recharge_projectile",
       "metadata": {
         "files": [
-          "src/main/resources/data/itacraft/advancement/recipes/recharge_projectile.json",
-          "src/main/resources/data/itacraft/recipe/recharge_projectile.json"
+          "src/main/resources/data/itacraft/recipe/recharge_projectile.json",
+          "src/main/resources/data/itacraft/advancement/recipes/recharge_projectile.json"
         ]
       },
       "path": "~/Matvey"
@@ -1950,9 +1950,9 @@
       "registry_name": "vipps_bank",
       "metadata": {
         "files": [
-          "src/main/resources/data/itacraft/worldgen/structure_set/vipps_bank.json",
           "src/main/resources/data/itacraft/worldgen/structure/vipps_bank.json",
-          "src/main/resources/data/itacraft/worldgen/template_pool/vipps_bank.json"
+          "src/main/resources/data/itacraft/worldgen/template_pool/vipps_bank.json",
+          "src/main/resources/data/itacraft/worldgen/structure_set/vipps_bank.json"
         ]
       }
     },
@@ -2318,8 +2318,8 @@
       "registry_name": "gugge_craft_2",
       "metadata": {
         "files": [
-          "src/main/resources/data/itacraft/recipe/gugge_craft_2.json",
-          "src/main/resources/data/itacraft/advancement/recipes/gugge_craft_2.json"
+          "src/main/resources/data/itacraft/advancement/recipes/gugge_craft_2.json",
+          "src/main/resources/data/itacraft/recipe/gugge_craft_2.json"
         ]
       },
       "path": "~/Matvey"
@@ -2332,8 +2332,8 @@
       "registry_name": "gugge_craft_3",
       "metadata": {
         "files": [
-          "src/main/resources/data/itacraft/recipe/gugge_craft_3.json",
-          "src/main/resources/data/itacraft/advancement/recipes/gugge_craft_3.json"
+          "src/main/resources/data/itacraft/advancement/recipes/gugge_craft_3.json",
+          "src/main/resources/data/itacraft/recipe/gugge_craft_3.json"
         ]
       },
       "path": "~/Matvey"
@@ -2671,68 +2671,6 @@
       "path": "~/Matvey"
     },
     {
-      "name": "OnDoorRightClicked",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "on_door_right_clicked",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ],
-        "files": [
-          "src/main/java/net/mcreator/itacraft/procedures/OnDoorRightClickedProcedure.java"
-        ]
-      },
-      "path": "~/Procedures"
-    },
-    {
-      "name": "DoorPlacedByPlayer",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "door_placed_by_player",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ],
-        "files": [
-          "src/main/java/net/mcreator/itacraft/procedures/DoorPlacedByPlayerProcedure.java"
-        ]
-      },
-      "path": "~/Procedures"
-    },
-    {
       "name": "HDMICableRecipe",
       "type": "recipe",
       "compiles": true,
@@ -2768,8 +2706,8 @@
       "registry_name": "hdmi_plug_recipe",
       "metadata": {
         "files": [
-          "src/main/resources/data/itacraft/advancement/recipes/hdmi_plug_recipe.json",
-          "src/main/resources/data/itacraft/recipe/hdmi_plug_recipe.json"
+          "src/main/resources/data/itacraft/recipe/hdmi_plug_recipe.json",
+          "src/main/resources/data/itacraft/advancement/recipes/hdmi_plug_recipe.json"
         ]
       },
       "path": "~/Fredrik"
@@ -3062,9 +3000,9 @@
       "registry_name": "matvey_hus",
       "metadata": {
         "files": [
-          "src/main/resources/data/itacraft/worldgen/structure_set/matvey_hus.json",
+          "src/main/resources/data/itacraft/worldgen/structure/matvey_hus.json",
           "src/main/resources/data/itacraft/worldgen/template_pool/matvey_hus.json",
-          "src/main/resources/data/itacraft/worldgen/structure/matvey_hus.json"
+          "src/main/resources/data/itacraft/worldgen/structure_set/matvey_hus.json"
         ]
       },
       "path": "~/Matvey"
@@ -3385,6 +3323,905 @@
           "src/main/java/net/mcreator/itacraft/procedures/SkatteetatenOnEntityTickProcedure.java"
         ]
       }
+    },
+    {
+      "name": "EkteGummitreDoor",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ekte_gummitre_door",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/itacraft/models/item/ekte_gummitre_door.json",
+          "src/main/resources/assets/itacraft/models/block/ekte_gummitre_door_top_left.json",
+          "src/main/resources/assets/itacraft/models/block/ekte_gummitre_door_bottom_right.json",
+          "src/main/resources/data/itacraft/loot_table/blocks/ekte_gummitre_door.json",
+          "src/main/resources/assets/itacraft/models/block/ekte_gummitre_door_bottom_left.json",
+          "src/main/resources/assets/itacraft/models/block/ekte_gummitre_door_top_right_open.json",
+          "src/main/resources/assets/itacraft/items/ekte_gummitre_door.json",
+          "src/main/resources/assets/itacraft/models/block/ekte_gummitre_door_bottom_left_open.json",
+          "src/main/resources/assets/itacraft/blockstates/ekte_gummitre_door.json",
+          "src/main/resources/assets/itacraft/models/block/ekte_gummitre_door_bottom_right_open.json",
+          "src/main/resources/assets/itacraft/models/block/ekte_gummitre_door_top_right.json",
+          "src/main/resources/assets/itacraft/models/block/ekte_gummitre_door_top_left_open.json",
+          "src/main/java/net/mcreator/itacraft/block/EkteGummitreDoorBlock.java"
+        ]
+      },
+      "path": "~/Fredrik"
+    },
+    {
+      "name": "UsedCondomeRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "used_condome_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/itacraft/advancement/recipes/used_condome_recipe.json",
+          "src/main/resources/data/itacraft/recipe/used_condome_recipe.json"
+        ]
+      },
+      "path": "~/Fredrik"
+    },
+    {
+      "name": "UsedCondome",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "used_condome",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/itacraft/models/item/used_condome.json",
+          "src/main/java/net/mcreator/itacraft/item/UsedCondomeItem.java",
+          "src/main/resources/assets/itacraft/items/used_condome.json"
+        ]
+      },
+      "path": "~/Fredrik"
+    },
+    {
+      "name": "Bygg54Trade",
+      "type": "villagertrade",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bygg_54_trade",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Fredrik"
+    },
+    {
+      "name": "LatexRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "latex_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/itacraft/recipe/latex_recipe.json",
+          "src/main/resources/data/itacraft/advancement/recipes/latex_recipe.json"
+        ]
+      },
+      "path": "~/Fredrik"
+    },
+    {
+      "name": "EkteGummitreWood",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ekte_gummitre_wood",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/itacraft/models/item/ekte_gummitre_wood.json",
+          "src/main/resources/assets/itacraft/items/ekte_gummitre_wood.json",
+          "src/main/resources/assets/itacraft/blockstates/ekte_gummitre_wood.json",
+          "src/main/resources/assets/itacraft/models/block/ekte_gummitre_wood.json",
+          "src/main/resources/data/itacraft/loot_table/blocks/ekte_gummitre_wood.json",
+          "src/main/java/net/mcreator/itacraft/block/EkteGummitreWoodBlock.java"
+        ]
+      },
+      "path": "~/Fredrik"
+    },
+    {
+      "name": "HomingMissileEntityProjectileHitsBlock",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "homing_missile_entity_projectile_hits_block",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/itacraft/procedures/HomingMissileEntityProjectileHitsBlockProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "EkteGummitreSlab",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ekte_gummitre_slab",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/itacraft/block/EkteGummitreSlabBlock.java",
+          "src/main/resources/data/itacraft/loot_table/blocks/ekte_gummitre_slab.json",
+          "src/main/resources/assets/itacraft/models/item/ekte_gummitre_slab.json",
+          "src/main/resources/assets/itacraft/models/block/ekte_gummitre_slab.json",
+          "src/main/resources/assets/itacraft/models/block/ekte_gummitre_slab_full.json",
+          "src/main/resources/assets/itacraft/blockstates/ekte_gummitre_slab.json",
+          "src/main/resources/assets/itacraft/items/ekte_gummitre_slab.json",
+          "src/main/resources/assets/itacraft/models/block/ekte_gummitre_slab_top.json"
+        ]
+      },
+      "path": "~/Fredrik"
+    },
+    {
+      "name": "SkatteetatenTimerFunction",
+      "type": "function",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "skatteetaten_timer_function",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/itacraft/function/skatteetaten_timer_function.mcfunction"
+        ]
+      }
+    },
+    {
+      "name": "EkteGummitrePlanksRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ekte_gummitre_planks_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/itacraft/recipe/ekte_gummitre_planks_recipe.json",
+          "src/main/resources/data/itacraft/advancement/recipes/ekte_gummitre_planks_recipe.json"
+        ]
+      },
+      "path": "~/Fredrik"
+    },
+    {
+      "name": "EkteGummitreLogLoot",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ekte_gummitre_log_loot",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/itacraft/loot_table/blocks/ekte_gummitre_log.json"
+        ]
+      },
+      "path": "~/Fredrik"
+    },
+    {
+      "name": "EkteGummitreFenceGateRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ekte_gummitre_fence_gate_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/itacraft/advancement/recipes/ekte_gummitre_fence_gate_recipe.json",
+          "src/main/resources/data/itacraft/recipe/ekte_gummitre_fence_gate_recipe.json"
+        ]
+      },
+      "path": "~/Fredrik"
+    },
+    {
+      "name": "EkteGummitreTrapdoor",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ekte_gummitre_trapdoor",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/itacraft/loot_table/blocks/ekte_gummitre_trapdoor.json",
+          "src/main/resources/assets/itacraft/models/block/ekte_gummitre_trapdoor_top.json",
+          "src/main/resources/assets/itacraft/models/block/ekte_gummitre_trapdoor_open.json",
+          "src/main/java/net/mcreator/itacraft/block/EkteGummitreTrapdoorBlock.java",
+          "src/main/resources/assets/itacraft/blockstates/ekte_gummitre_trapdoor.json",
+          "src/main/resources/assets/itacraft/items/ekte_gummitre_trapdoor.json",
+          "src/main/resources/assets/itacraft/models/block/ekte_gummitre_trapdoor.json",
+          "src/main/resources/assets/itacraft/models/item/ekte_gummitre_trapdoor.json"
+        ]
+      },
+      "path": "~/Fredrik"
+    },
+    {
+      "name": "AdPopup",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ad_popup",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/itacraft/network/AdPopupButtonMessage.java",
+          "src/main/java/net/mcreator/itacraft/client/gui/AdPopupScreen.java",
+          "src/main/java/net/mcreator/itacraft/world/inventory/AdPopupMenu.java"
+        ]
+      },
+      "path": "~/Fredrik"
+    },
+    {
+      "name": "HomingMissileEntityProjectileHitsPlayer",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "homing_missile_entity_projectile_hits_player",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/itacraft/procedures/HomingMissileEntityProjectileHitsPlayerProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "SecuritasGUI",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "securitas_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/itacraft/client/gui/SecuritasGUIScreen.java",
+          "src/main/java/net/mcreator/itacraft/world/inventory/SecuritasGUIMenu.java"
+        ]
+      },
+      "path": "~/Fredrik"
+    },
+    {
+      "name": "BodilsSperm",
+      "type": "fluid",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bodils_sperm",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/itacraft/block/BodilsSpermBlock.java",
+          "src/main/java/net/mcreator/itacraft/fluid/types/BodilsSpermFluidType.java",
+          "src/main/java/net/mcreator/itacraft/fluid/BodilsSpermFluid.java",
+          "src/main/java/net/mcreator/itacraft/item/BodilsSpermItem.java",
+          "src/main/resources/assets/itacraft/models/block/bodils_sperm.json",
+          "src/main/resources/assets/itacraft/blockstates/bodils_sperm.json",
+          "src/main/java/net/mcreator/itacraft/client/fluid/BodilsSpermFluidExtension.java",
+          "src/main/resources/assets/itacraft/items/bodils_sperm_bucket.json"
+        ]
+      }
+    },
+    {
+      "name": "SecuritasKeypad",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "securitas_keypad",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/itacraft/loot_table/blocks/securitas_keypad.json",
+          "src/main/resources/assets/itacraft/models/item/securitas_keypad.json",
+          "src/main/resources/assets/itacraft/blockstates/securitas_keypad.json",
+          "src/main/resources/assets/itacraft/items/securitas_keypad.json",
+          "src/main/resources/assets/itacraft/models/block/securitas_keypad.json",
+          "src/main/java/net/mcreator/itacraft/block/SecuritasKeypadBlock.java"
+        ]
+      },
+      "path": "~/Fredrik"
+    },
+    {
+      "name": "EkteGummitreFenceRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ekte_gummitre_fence_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/itacraft/recipe/ekte_gummitre_fence_recipe.json",
+          "src/main/resources/data/itacraft/advancement/recipes/ekte_gummitre_fence_recipe.json"
+        ]
+      },
+      "path": "~/Fredrik"
+    },
+    {
+      "name": "Skatteetatentickloop",
+      "type": "function",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "skatteetatentickloop",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/itacraft/function/skatteetatentickloop.mcfunction"
+        ]
+      }
+    },
+    {
+      "name": "Latex",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "latex",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/itacraft/models/item/latex.json",
+          "src/main/java/net/mcreator/itacraft/item/LatexItem.java",
+          "src/main/resources/assets/itacraft/items/latex.json"
+        ]
+      },
+      "path": "~/Fredrik"
+    },
+    {
+      "name": "ByggFemtifire",
+      "type": "structure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bygg_femtifire",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/itacraft/worldgen/structure/bygg_femtifire.json",
+          "src/main/resources/data/itacraft/worldgen/template_pool/bygg_femtifire.json",
+          "src/main/resources/data/itacraft/worldgen/structure_set/bygg_femtifire.json"
+        ]
+      },
+      "path": "~/Fredrik"
+    },
+    {
+      "name": "EkteGummitrePressurePlateRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ekte_gummitre_pressure_plate_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/itacraft/advancement/recipes/ekte_gummitre_pressure_plate_recipe.json",
+          "src/main/resources/data/itacraft/recipe/ekte_gummitre_pressure_plate_recipe.json"
+        ]
+      },
+      "path": "~/Fredrik"
+    },
+    {
+      "name": "EkteGummitreFence",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ekte_gummitre_fence",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/itacraft/models/block/ekte_gummitre_fence_inventory.json",
+          "src/main/resources/data/itacraft/loot_table/blocks/ekte_gummitre_fence.json",
+          "src/main/resources/assets/itacraft/models/block/ekte_gummitre_fence.json",
+          "src/main/java/net/mcreator/itacraft/block/EkteGummitreFenceBlock.java",
+          "src/main/resources/assets/itacraft/blockstates/ekte_gummitre_fence.json",
+          "src/main/resources/assets/itacraft/models/item/ekte_gummitre_fence.json",
+          "src/main/resources/assets/itacraft/models/block/ekte_gummitre_fence_post.json",
+          "src/main/resources/assets/itacraft/items/ekte_gummitre_fence.json"
+        ]
+      },
+      "path": "~/Fredrik"
+    },
+    {
+      "name": "EkteGummitreFenceGate",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ekte_gummitre_fence_gate",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/itacraft/loot_table/blocks/ekte_gummitre_fence_gate.json",
+          "src/main/java/net/mcreator/itacraft/block/EkteGummitreFenceGateBlock.java",
+          "src/main/resources/assets/itacraft/models/item/ekte_gummitre_fence_gate.json",
+          "src/main/resources/assets/itacraft/models/block/ekte_gummitre_fence_gate_wall_open.json",
+          "src/main/resources/assets/itacraft/models/block/ekte_gummitre_fence_gate_open.json",
+          "src/main/resources/assets/itacraft/items/ekte_gummitre_fence_gate.json",
+          "src/main/resources/assets/itacraft/models/block/ekte_gummitre_fence_gate.json",
+          "src/main/resources/assets/itacraft/models/block/ekte_gummitre_fence_gate_wall.json",
+          "src/main/resources/assets/itacraft/blockstates/ekte_gummitre_fence_gate.json"
+        ]
+      },
+      "path": "~/Fredrik"
+    },
+    {
+      "name": "StrippedEkteGummitreWood",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stripped_ekte_gummitre_wood",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/itacraft/items/stripped_ekte_gummitre_wood.json",
+          "src/main/resources/assets/itacraft/models/item/stripped_ekte_gummitre_wood.json",
+          "src/main/resources/data/itacraft/loot_table/blocks/stripped_ekte_gummitre_wood.json",
+          "src/main/java/net/mcreator/itacraft/block/StrippedEkteGummitreWoodBlock.java",
+          "src/main/resources/assets/itacraft/blockstates/stripped_ekte_gummitre_wood.json",
+          "src/main/resources/assets/itacraft/models/block/stripped_ekte_gummitre_wood.json"
+        ]
+      },
+      "path": "~/Fredrik"
+    },
+    {
+      "name": "SaltoLas",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "salto_las",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/itacraft/items/salto_las.json",
+          "src/main/resources/assets/itacraft/models/item/salto_las.json",
+          "src/main/resources/assets/itacraft/models/block/salto_las.json",
+          "src/main/resources/assets/itacraft/blockstates/salto_las.json",
+          "src/main/java/net/mcreator/itacraft/block/SaltoLasBlock.java",
+          "src/main/resources/data/itacraft/loot_table/blocks/salto_las.json"
+        ]
+      }
+    },
+    {
+      "name": "CloseAdProcedure",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "close_ad_procedure",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/itacraft/procedures/CloseAdProcedureProcedure.java"
+        ]
+      },
+      "path": "~/Fredrik"
+    },
+    {
+      "name": "StrippedEkteGummitreWoodRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stripped_ekte_gummitre_wood_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/itacraft/advancement/recipes/stripped_ekte_gummitre_wood_recipe.json",
+          "src/main/resources/data/itacraft/recipe/stripped_ekte_gummitre_wood_recipe.json"
+        ]
+      },
+      "path": "~/Fredrik"
+    },
+    {
+      "name": "EkteGummitreWoodRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ekte_gummitre_wood_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/itacraft/advancement/recipes/ekte_gummitre_wood_recipe.json",
+          "src/main/resources/data/itacraft/recipe/ekte_gummitre_wood_recipe.json"
+        ]
+      },
+      "path": "~/Fredrik"
+    },
+    {
+      "name": "HomingMissileEntity",
+      "type": "projectile",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "homing_missile_entity",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/itacraft/client/renderer/HomingMissileEntityRenderer.java",
+          "src/main/java/net/mcreator/itacraft/entity/HomingMissileEntityEntity.java"
+        ]
+      }
+    },
+    {
+      "name": "TitleScreenOverlay",
+      "type": "overlay",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "title_screen_overlay",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/itacraft/client/screens/TitleScreenOverlayOverlay.java"
+        ]
+      },
+      "path": "~/Fredrik"
+    },
+    {
+      "name": "RandomSkatteetatenSpawnProcedure",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "random_skatteetaten_spawn_",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/itacraft/procedures/RandomSkatteetatenSpawnProcedureProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "EkteGummitreTrapdoorRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ekte_gummitre_trapdoor_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/itacraft/advancement/recipes/ekte_gummitre_trapdoor_recipe.json",
+          "src/main/resources/data/itacraft/recipe/ekte_gummitre_trapdoor_recipe.json"
+        ]
+      },
+      "path": "~/Fredrik"
+    },
+    {
+      "name": "Skevven",
+      "type": "biome",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "skevven",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/itacraft/worldgen/biome/skevven.json",
+          "src/main/resources/data/itacraft/worldgen/configured_feature/skevven_tree.json",
+          "src/main/resources/data/itacraft/worldgen/placed_feature/skevven_tree.json"
+        ]
+      },
+      "path": "~/Fredrik"
+    },
+    {
+      "name": "EkteGummitreButtonRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ekte_gummitre_button_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/itacraft/advancement/recipes/ekte_gummitre_button_recipe.json",
+          "src/main/resources/data/itacraft/recipe/ekte_gummitre_button_recipe.json"
+        ]
+      },
+      "path": "~/Fredrik"
+    },
+    {
+      "name": "EkteGummitrePressurePlate",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ekte_gummitre_pressure_plate",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/itacraft/models/block/ekte_gummitre_pressure_plate.json",
+          "src/main/resources/assets/itacraft/models/item/ekte_gummitre_pressure_plate.json",
+          "src/main/resources/assets/itacraft/blockstates/ekte_gummitre_pressure_plate.json",
+          "src/main/resources/data/itacraft/loot_table/blocks/ekte_gummitre_pressure_plate.json",
+          "src/main/resources/assets/itacraft/models/block/ekte_gummitre_pressure_plate_down.json",
+          "src/main/java/net/mcreator/itacraft/block/EkteGummitrePressurePlateBlock.java",
+          "src/main/resources/assets/itacraft/items/ekte_gummitre_pressure_plate.json"
+        ]
+      },
+      "path": "~/Fredrik"
+    },
+    {
+      "name": "Rubber",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rubber",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/itacraft/items/rubber.json",
+          "src/main/java/net/mcreator/itacraft/item/RubberItem.java",
+          "src/main/resources/assets/itacraft/models/item/rubber.json"
+        ]
+      },
+      "path": "~/Fredrik"
+    },
+    {
+      "name": "GudrunRightclickedOnEntity",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gudrun_rightclicked_on_entity",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/itacraft/procedures/GudrunRightclickedOnEntityProcedure.java"
+        ]
+      },
+      "path": "~/Fredrik"
+    },
+    {
+      "name": "CondomeRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "condome_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/itacraft/recipe/condome_recipe.json",
+          "src/main/resources/data/itacraft/advancement/recipes/condome_recipe.json"
+        ]
+      },
+      "path": "~/Fredrik"
+    },
+    {
+      "name": "EkteGummitreLog",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ekte_gummitre_log",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/itacraft/block/EkteGummitreLogBlock.java",
+          "src/main/resources/assets/itacraft/models/item/ekte_gummitre_log.json",
+          "src/main/resources/assets/itacraft/items/ekte_gummitre_log.json",
+          "src/main/resources/assets/itacraft/blockstates/ekte_gummitre_log.json",
+          "src/main/resources/assets/itacraft/models/block/ekte_gummitre_log.json"
+        ]
+      },
+      "path": "~/Fredrik"
+    },
+    {
+      "name": "StrippedEkteGummitreLog",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stripped_ekte_gummitre_log",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/itacraft/block/StrippedEkteGummitreLogBlock.java",
+          "src/main/resources/assets/itacraft/items/stripped_ekte_gummitre_log.json",
+          "src/main/resources/data/itacraft/loot_table/blocks/stripped_ekte_gummitre_log.json",
+          "src/main/resources/assets/itacraft/blockstates/stripped_ekte_gummitre_log.json",
+          "src/main/resources/assets/itacraft/models/item/stripped_ekte_gummitre_log.json",
+          "src/main/resources/assets/itacraft/models/block/stripped_ekte_gummitre_log.json"
+        ]
+      },
+      "path": "~/Fredrik"
+    },
+    {
+      "name": "EkteGummitreStairsRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ekte_gummitre_stairs_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/itacraft/advancement/recipes/ekte_gummitre_stairs_recipe.json",
+          "src/main/resources/data/itacraft/recipe/ekte_gummitre_stairs_recipe.json"
+        ]
+      },
+      "path": "~/Fredrik"
+    },
+    {
+      "name": "SecuritasKeypadRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "securitas_keypad_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/itacraft/recipe/securitas_keypad_recipe.json",
+          "src/main/resources/data/itacraft/advancement/recipes/securitas_keypad_recipe.json"
+        ]
+      },
+      "path": "~/Fredrik"
+    },
+    {
+      "name": "EkteGummitreSlabRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ekte_gummitre_slab_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/itacraft/recipe/ekte_gummitre_slab_recipe.json",
+          "src/main/resources/data/itacraft/advancement/recipes/ekte_gummitre_slab_recipe.json"
+        ]
+      },
+      "path": "~/Fredrik"
+    },
+    {
+      "name": "EkteGummitreDoorRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ekte_gummitre_door_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/itacraft/advancement/recipes/ekte_gummitre_door_recipe.json",
+          "src/main/resources/data/itacraft/recipe/ekte_gummitre_door_recipe.json"
+        ]
+      },
+      "path": "~/Fredrik"
+    },
+    {
+      "name": "EkteGummitrePlanks",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ekte_gummitre_planks",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/itacraft/loot_table/blocks/ekte_gummitre_planks.json",
+          "src/main/resources/assets/itacraft/items/ekte_gummitre_planks.json",
+          "src/main/resources/assets/itacraft/models/item/ekte_gummitre_planks.json",
+          "src/main/java/net/mcreator/itacraft/block/EkteGummitrePlanksBlock.java",
+          "src/main/resources/assets/itacraft/models/block/ekte_gummitre_planks.json",
+          "src/main/resources/assets/itacraft/blockstates/ekte_gummitre_planks.json"
+        ]
+      },
+      "path": "~/Fredrik"
+    },
+    {
+      "name": "PopupDisplayProcedure",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "popup_display_procedure",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/itacraft/procedures/PopupDisplayProcedureProcedure.java"
+        ]
+      },
+      "path": "~/Fredrik"
+    },
+    {
+      "name": "EkteGummitreLeaves",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ekte_gummitre_leaves",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/itacraft/blockstates/ekte_gummitre_leaves.json",
+          "src/main/resources/data/itacraft/loot_table/blocks/ekte_gummitre_leaves.json",
+          "src/main/resources/assets/itacraft/items/ekte_gummitre_leaves.json",
+          "src/main/resources/assets/itacraft/models/item/ekte_gummitre_leaves.json",
+          "src/main/resources/assets/itacraft/models/block/ekte_gummitre_leaves.json",
+          "src/main/java/net/mcreator/itacraft/block/EkteGummitreLeavesBlock.java"
+        ]
+      },
+      "path": "~/Fredrik"
+    },
+    {
+      "name": "EkteGummitreButton",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ekte_gummitre_button",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/itacraft/loot_table/blocks/ekte_gummitre_button.json",
+          "src/main/resources/assets/itacraft/models/block/ekte_gummitre_button_pressed.json",
+          "src/main/resources/assets/itacraft/items/ekte_gummitre_button.json",
+          "src/main/java/net/mcreator/itacraft/block/EkteGummitreButtonBlock.java",
+          "src/main/resources/assets/itacraft/models/item/ekte_gummitre_button.json",
+          "src/main/resources/assets/itacraft/models/block/ekte_gummitre_button.json",
+          "src/main/resources/assets/itacraft/models/block/ekte_gummitre_button_inventory.json",
+          "src/main/resources/assets/itacraft/blockstates/ekte_gummitre_button.json"
+        ]
+      },
+      "path": "~/Fredrik"
+    },
+    {
+      "name": "KDAKort",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kda_kort",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/itacraft/items/kda_kort.json",
+          "src/main/java/net/mcreator/itacraft/item/KDAKortItem.java",
+          "src/main/resources/assets/itacraft/models/item/kda_kort.json"
+        ]
+      }
+    },
+    {
+      "name": "EkteGummitreStairs",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ekte_gummitre_stairs",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/itacraft/models/block/ekte_gummitre_stairs.json",
+          "src/main/resources/assets/itacraft/models/block/ekte_gummitre_stairs_outer.json",
+          "src/main/resources/assets/itacraft/models/block/ekte_gummitre_stairs_inner.json",
+          "src/main/java/net/mcreator/itacraft/block/EkteGummitreStairsBlock.java",
+          "src/main/resources/assets/itacraft/blockstates/ekte_gummitre_stairs.json",
+          "src/main/resources/data/itacraft/loot_table/blocks/ekte_gummitre_stairs.json",
+          "src/main/resources/assets/itacraft/items/ekte_gummitre_stairs.json",
+          "src/main/resources/assets/itacraft/models/item/ekte_gummitre_stairs.json"
+        ]
+      },
+      "path": "~/Fredrik"
     }
   ],
   "variable_elements": [
@@ -3411,12 +4248,6 @@
       "type": "number",
       "scope": "player_persistent",
       "value": "0.0"
-    },
-    {
-      "name": "solderingProgress",
-      "type": "number",
-      "scope": "map",
-      "value": "0"
     },
     {
       "name": "isCondomeEquipped",
@@ -3577,6 +4408,30 @@
       ],
       "category": "neutral",
       "subtitle": "\u003cjarvis\u003e"
+    },
+    {
+      "name": "explosionmissle",
+      "files": [
+        "missile_and_explosion_green_screen_and_chroma_key_with_sound_effect"
+      ],
+      "category": "neutral",
+      "subtitle": ""
+    },
+    {
+      "name": "misslelockedon",
+      "files": [
+        "dcs_f18c_rwr_sound_effects"
+      ],
+      "category": "neutral",
+      "subtitle": ""
+    },
+    {
+      "name": "condome_unequip",
+      "files": [
+        "condome_unequip"
+      ],
+      "category": "neutral",
+      "subtitle": ""
     }
   ],
   "tag_elements": {
@@ -3626,9 +4481,11 @@
       "CUSTOM:PatchCable"
     ],
     "BLOCKS:minecraft:replaceable": [
+      "~CUSTOM:BodilsSperm",
       "~CUSTOM:Oil"
     ],
     "BLOCKS:minecraft:mineable/pickaxe": [
+      "~CUSTOM:SecuritasKeypad",
       "~CUSTOM:LeadOre",
       "~CUSTOM:HPMonitor",
       "~CUSTOM:HPWorkstation"
@@ -3678,6 +4535,45 @@
       "~CUSTOM:IronManCD",
       "~CUSTOM:DeftonesCD",
       "~CUSTOM:CharlieKirkCD"
+    ],
+    "BLOCKS:minecraft:mineable/axe": [
+      "~CUSTOM:EkteGummitreStairs",
+      "~CUSTOM:EkteGummitreButton",
+      "~CUSTOM:EkteGummitrePlanks",
+      "~CUSTOM:StrippedEkteGummitreLog",
+      "~CUSTOM:EkteGummitreLog",
+      "~CUSTOM:EkteGummitrePressurePlate",
+      "~CUSTOM:StrippedEkteGummitreWood",
+      "~CUSTOM:EkteGummitreFenceGate",
+      "~CUSTOM:EkteGummitreFence",
+      "~CUSTOM:EkteGummitreTrapdoor",
+      "~CUSTOM:EkteGummitreSlab",
+      "~CUSTOM:EkteGummitreWood",
+      "~CUSTOM:EkteGummitreDoor"
+    ],
+    "BLOCKS:minecraft:wooden_doors": [
+      "~CUSTOM:EkteGummitreDoor"
+    ],
+    "BLOCKS:minecraft:slabs": [
+      "~CUSTOM:EkteGummitreSlab"
+    ],
+    "BLOCKS:minecraft:wooden_trapdoors": [
+      "~CUSTOM:EkteGummitreTrapdoor"
+    ],
+    "BLOCKS:minecraft:wooden_fences": [
+      "~CUSTOM:EkteGummitreFence"
+    ],
+    "BLOCKS:minecraft:wooden_pressure_plates": [
+      "~CUSTOM:EkteGummitrePressurePlate"
+    ],
+    "BLOCKS:minecraft:leaves": [
+      "~CUSTOM:EkteGummitreLeaves"
+    ],
+    "BLOCKS:minecraft:wooden_buttons": [
+      "~CUSTOM:EkteGummitreButton"
+    ],
+    "BLOCKS:minecraft:stairs": [
+      "~CUSTOM:EkteGummitreStairs"
     ]
   },
   "tab_element_order": {},
@@ -3865,13 +4761,13 @@
   },
   "metadata": {
     "files": [
-      "src/main/java/net/mcreator/itacraft/init/ItacraftModBiomes.java",
       "src/main/java/net/mcreator/itacraft/mixin/NoiseGeneratorSettingsMixin.java",
+      "src/main/java/net/mcreator/itacraft/init/ItacraftModBiomes.java",
       "src/main/java/net/mcreator/itacraft/init/ItacraftModFluidTypes.java",
       "src/main/java/net/mcreator/itacraft/init/ItacraftModFluids.java",
-      "src/main/java/net/mcreator/itacraft/network/MenuStateUpdateMessage.java",
-      "src/main/java/net/mcreator/itacraft/init/ItacraftModScreens.java",
       "src/main/java/net/mcreator/itacraft/init/ItacraftModMenus.java",
+      "src/main/java/net/mcreator/itacraft/init/ItacraftModScreens.java",
+      "src/main/java/net/mcreator/itacraft/network/MenuStateUpdateMessage.java",
       "src/main/java/net/mcreator/itacraft/init/ItacraftModKeyMappings.java",
       "src/main/resources/data/minecraft/tags/painting_variant/placeable.json",
       "src/main/java/net/mcreator/itacraft/init/ItacraftModParticleTypes.java",
@@ -3882,18 +4778,18 @@
       "src/main/java/net/mcreator/itacraft/init/ItacraftModBlocks.java",
       "src/main/java/net/mcreator/itacraft/init/ItacraftModBlockEntities.java",
       "src/main/java/net/mcreator/itacraft/init/ItacraftModItems.java",
-      "src/main/java/net/mcreator/itacraft/init/ItacraftModEntities.java",
       "src/main/java/net/mcreator/itacraft/init/ItacraftModEntityRenderers.java",
-      "src/main/java/net/mcreator/itacraft/ItacraftMod.java",
-      "src/main/java/net/mcreator/itacraft/init/ItacraftModSounds.java",
-      "src/main/java/net/mcreator/itacraft/network/ItacraftModVariables.java",
-      "src/main/resources/itacraft.mixins.json",
-      "src/main/resources/META-INF/neoforge.mods.toml",
+      "src/main/java/net/mcreator/itacraft/init/ItacraftModEntities.java",
       "src/main/resources/pack.mcmeta",
-      "src/main/resources/assets/itacraft/sounds.json",
       "src/main/resources/META-INF/accesstransformer.cfg",
       "src/main/java/net/mcreator/itacraft/init/ItacraftModModels.java",
-      "src/main/java/net/mcreator/itacraft/init/ItacraftModTabs.java"
+      "src/main/java/net/mcreator/itacraft/init/ItacraftModTabs.java",
+      "src/main/java/net/mcreator/itacraft/network/ItacraftModVariables.java",
+      "src/main/java/net/mcreator/itacraft/ItacraftMod.java",
+      "src/main/resources/assets/itacraft/sounds.json",
+      "src/main/resources/itacraft.mixins.json",
+      "src/main/resources/META-INF/neoforge.mods.toml",
+      "src/main/java/net/mcreator/itacraft/init/ItacraftModSounds.java"
     ]
   },
   "foldersRoot": {

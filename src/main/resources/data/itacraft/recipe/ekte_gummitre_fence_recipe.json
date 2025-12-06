@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "wooden_fence",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "aba"
+  ],
+  "key": {
+    "a": "itacraft:deleted_mod_element",
+    "b": "minecraft:stick"
+  },
+  "result": {
+    "id": "itacraft:deleted_mod_element",
+    "count": 3
+  }
+}

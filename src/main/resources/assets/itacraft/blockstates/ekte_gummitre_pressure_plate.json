@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "powered=false": {
+      "model": "itacraft:block/ekte_gummitre_pressure_plate"
+    },
+    "powered=true": {
+      "model": "itacraft:block/ekte_gummitre_pressure_plate_down"
+    }
+  }
+}

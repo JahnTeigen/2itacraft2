@@ -62,17 +62,90 @@ public class SkatteetatenEntity extends PathfinderMob {
 
 	@Override
 	protected void registerGoals() {
-		super.registerGoals();
-		this.goalSelector.addGoal(1, new MeleeAttackGoal(this, 1.2, false) {
-			@Override
-			protected boolean canPerformAttack(LivingEntity entity) {
-				return this.isTimeToAttack() && this.mob.distanceToSqr(entity) < (this.mob.getBbWidth() * this.mob.getBbWidth() + entity.getBbWidth()) && this.mob.getSensing().hasLineOfSight(entity);
-			}
-		});
-		this.goalSelector.addGoal(2, new RandomStrollGoal(this, 1));
-		this.targetSelector.addGoal(3, new HurtByTargetGoal(this));
-		this.goalSelector.addGoal(4, new RandomLookAroundGoal(this));
-		this.goalSelector.addGoal(5, new FloatGoal(this));
+	    super.registerGoals();
+	    
+	    // Follow nearest player
+	    this.goalSelector.addGoal(1, new FollowPlayerGoal(this, 1.0, 10.0f, 2.0f));
+	    
+	    // Look at player
+	    this.goalSelector.addGoal(2, new net.minecraft.world.entity.ai.goal.LookAtPlayerGoal(this, Player.class, 8.0f));
+	    
+	    // Random look around when not following
+	    this.goalSelector.addGoal(3, new net.minecraft.world.entity.ai.goal.RandomLookAroundGoal(this));
+	    
+	    // Float in water
+	    this.goalSelector.addGoal(4, new net.minecraft.world.entity.ai.goal.FloatGoal(this));
+	}
+	
+	// Custom FollowPlayerGoal for Skatteetaten
+	static class FollowPlayerGoal extends net.minecraft.world.entity.ai.goal.Goal {
+	    private final PathfinderMob mob;
+	    private Player targetPlayer;
+	    private final double speedModifier;
+	    private final float stopDistance;
+	    private final float startDistance;
+	    private int timeToRecalcPath;
+	    
+	    public FollowPlayerGoal(PathfinderMob mob, double speed, float stopDistance, float startDistance) {
+	        this.mob = mob;
+	        this.speedModifier = speed;
+	        this.stopDistance = stopDistance;
+	        this.startDistance = startDistance;
+	        this.setFlags(java.util.EnumSet.of(net.minecraft.world.entity.ai.goal.Goal.Flag.MOVE, net.minecraft.world.entity.ai.goal.Goal.Flag.LOOK));
+	    }
+	    
+	    @Override
+	    public boolean canUse() {
+	        // Find nearest player to follow
+	        Player nearestPlayer = mob.level().getNearestPlayer(mob, 16);
+	        if (nearestPlayer != null && nearestPlayer.isAlive() && !nearestPlayer.isSpectator()) {
+	            this.targetPlayer = nearestPlayer;
+	            return true;
+	        }
+	        return false;
+	    }
+	    
+	    @Override
+	    public boolean canContinueToUse() {
+	        return targetPlayer != null && targetPlayer.isAlive() && 
+	               !targetPlayer.isSpectator() && 
+	               mob.distanceToSqr(targetPlayer) > (double)(stopDistance * stopDistance);
+	    }
+	    
+	    @Override
+	    public void start() {
+	        this.timeToRecalcPath = 0;
+	    }
+	    
+	    @Override
+	    public void stop() {
+	        this.targetPlayer = null;
+	        mob.getNavigation().stop();
+	    }
+	    
+	    @Override
+	    public void tick() {
+	        if (targetPlayer == null) return;
+	        
+	        mob.getLookControl().setLookAt(targetPlayer, 10.0f, (float)mob.getMaxHeadXRot());
+	        
+	        if (--timeToRecalcPath <= 0) {
+	            timeToRecalcPath = 10;
+	            
+	            if (!mob.isLeashed() && !mob.isPassenger()) {
+	                if (mob.distanceToSqr(targetPlayer) >= (double)(startDistance * startDistance)) {
+	                    // Move toward player
+	                    mob.getNavigation().moveTo(targetPlayer, speedModifier);
+	                } else {
+	                    // Stop if close enough
+	                    mob.getNavigation().stop();
+	                    
+	                    // Still look at player
+	                    mob.getLookControl().setLookAt(targetPlayer, 10.0f, (float)mob.getMaxHeadXRot());
+	                }
+	            }
+	        }
+	    }
 	}
 
 	@Override
@@ -194,21 +267,21 @@ public class SkatteetatenEntity extends PathfinderMob {
 
 	@Override
 	public void baseTick() {
-		super.baseTick();
-		SkatteetatenOnEntityTickProcedure.execute(level(), this);
+	    super.baseTick();
+	    SkatteetatenOnEntityTickProcedure.execute(level(), this);
 	}
 
 	public static void init(RegisterSpawnPlacementsEvent event) {
 	}
 
 	public static AttributeSupplier.Builder createAttributes() {
-		AttributeSupplier.Builder builder = Mob.createMobAttributes();
-		builder = builder.add(Attributes.MOVEMENT_SPEED, 0);
-		builder = builder.add(Attributes.MAX_HEALTH, 10);
-		builder = builder.add(Attributes.ARMOR, 0);
-		builder = builder.add(Attributes.ATTACK_DAMAGE, 0);
-		builder = builder.add(Attributes.FOLLOW_RANGE, 16);
-		builder = builder.add(Attributes.STEP_HEIGHT, 0.6);
-		return builder;
+	    AttributeSupplier.Builder builder = Mob.createMobAttributes();
+	    builder = builder.add(Attributes.MOVEMENT_SPEED, 0.9); // Faster movement to follow players
+	    builder = builder.add(Attributes.MAX_HEALTH, 10);
+	    builder = builder.add(Attributes.ARMOR, 0);
+	    builder = builder.add(Attributes.ATTACK_DAMAGE, 0);
+	    builder = builder.add(Attributes.FOLLOW_RANGE, 32); // Increased follow range
+	    builder = builder.add(Attributes.STEP_HEIGHT, 1.0); // Can step over blocks
+	    return builder;
 	}
 }

@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "itacraft:block/stripped_ekte_gummitre_log",
+    "particle": "itacraft:block/stripped_ekte_gummitre_log"
+  },
+  "render_type": "solid"
+}

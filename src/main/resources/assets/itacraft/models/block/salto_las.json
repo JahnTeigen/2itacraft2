@@ -1,0 +1,11 @@
+{
+  "parent": "itacraft:custom/salto_las",
+  "textures": {
+    "all": "itacraft:block/texture",
+    "particle": "itacraft:block/texture",
+    "0": "itacraft:block/texture",
+    "1": "itacraft:block/texture2",
+    "2": "itacraft:block/texture3"
+  },
+  "render_type": "solid"
+}
